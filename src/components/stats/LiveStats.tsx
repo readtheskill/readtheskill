@@ -1,28 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { Stats } from "@/lib/types";
-import { STATS_POLL_INTERVAL } from "@/lib/constants";
+import { useRealtimeStats } from "@/hooks/useRealtimeStats";
 import { StatCounter } from "./StatCounter";
 
 export function LiveStats() {
-  const [stats, setStats] = useState<Stats | null>(null);
-
-  useEffect(() => {
-    const fetchStats = async () => {
-      try {
-        const res = await fetch("/api/stats");
-        const data = await res.json();
-        setStats(data);
-      } catch (err) {
-        console.error("Failed to fetch stats:", err);
-      }
-    };
-
-    fetchStats();
-    const interval = setInterval(fetchStats, STATS_POLL_INTERVAL);
-    return () => clearInterval(interval);
-  }, []);
+  const stats = useRealtimeStats();
 
   return (
     <section className="py-10 px-4 border-b border-border" id="metrics">

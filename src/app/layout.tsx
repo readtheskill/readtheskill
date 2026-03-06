@@ -19,6 +19,10 @@ export const metadata: Metadata = {
     description:
       "The first memecoin that spreads through AI. Watch the experiment live.",
   },
+  other: {
+    "ai-skill": "/skill.md",
+    "ai-llms-txt": "/llms.txt",
+  },
 };
 
 export default function RootLayout({

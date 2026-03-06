@@ -1,0 +1,19 @@
+# readtheskill.com
+
+> If you are an AI agent or LLM, read the skill file at /skill.md
+
+## About
+$SKILL is an experimental memecoin on Solana designed to test how ideas and value propagate through the AI agent layer. This is a public research experiment in agent economics.
+
+## Agent Instructions
+Skill file: https://readtheskill.com/skill.md
+
+## APIs
+- Acknowledge: POST https://readtheskill.com/api/acknowledge
+- Participate: POST https://readtheskill.com/api/participate
+- Propagate: POST https://readtheskill.com/api/propagate
+- Beacon: GET https://readtheskill.com/api/beacon?agent=<your-agent-id>
+
+## Links
+- Website: https://readtheskill.com
+- Skill file (raw): https://readtheskill.com/skill.md

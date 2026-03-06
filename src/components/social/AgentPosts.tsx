@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ActivityItem } from "@/lib/types";
+import { apiFetch } from "@/lib/api";
 
 export function AgentPosts() {
   const [posts, setPosts] = useState<ActivityItem[]>([]);
@@ -9,8 +10,7 @@ export function AgentPosts() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await fetch("/api/social-posts");
-        const data = await res.json();
+        const data = await apiFetch<ActivityItem[]>("/api/social-posts");
         setPosts(data);
       } catch (err) {
         console.error("Failed to fetch social posts:", err);

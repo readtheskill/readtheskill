@@ -39,7 +39,7 @@ export function Footer() {
           </a>
         </div>
         <div className="font-mono text-text-muted mb-2">{CONTRACT_ADDRESS}</div>
-        <div>Built by PumpMarket Labs</div>
+        <div>&copy; Read The Skill 2026</div>
       </div>
     </footer>
   );

@@ -1,7 +1,8 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { ActivityItem } from "@/lib/types";
+import { useRealtimeActivity } from "@/hooks/useRealtimeActivity";
 
 const TYPE_CONFIG: Record<
   string,
@@ -36,12 +37,10 @@ function playBlip(audioCtx: AudioContext) {
 }
 
 export function ActivityFeed() {
-  const [items, setItems] = useState<ActivityItem[]>([]);
-  const [newIds, setNewIds] = useState<Set<string>>(new Set());
+  const { items, newIds, hasNew } = useRealtimeActivity();
   const [soundEnabled, setSoundEnabled] = useState(false);
-  const knownIdsRef = useRef<Set<string>>(new Set());
   const audioCtxRef = useRef<AudioContext | null>(null);
-  const isFirstFetch = useRef(true);
+  const lastPlayedRef = useRef(0);
 
   const toggleSound = useCallback(() => {
     setSoundEnabled((prev) => {
@@ -52,43 +51,11 @@ export function ActivityFeed() {
     });
   }, []);
 
-  useEffect(() => {
-    const fetchActivity = async () => {
-      try {
-        const res = await fetch("/api/activity");
-        const data: ActivityItem[] = await res.json();
-
-        if (!isFirstFetch.current) {
-          const fresh = new Set<string>();
-          let hasNew = false;
-          for (const item of data) {
-            if (!knownIdsRef.current.has(item.id)) {
-              fresh.add(item.id);
-              hasNew = true;
-            }
-          }
-          if (hasNew) {
-            setNewIds(fresh);
-            if (soundEnabled && audioCtxRef.current) {
-              playBlip(audioCtxRef.current);
-            }
-          }
-        }
-
-        isFirstFetch.current = false;
-        for (const item of data) {
-          knownIdsRef.current.add(item.id);
-        }
-        setItems(data);
-      } catch (err) {
-        console.error("Failed to fetch activity:", err);
-      }
-    };
-
-    fetchActivity();
-    const interval = setInterval(fetchActivity, 5000);
-    return () => clearInterval(interval);
-  }, [soundEnabled]);
+  // Play sound on new items
+  if (hasNew && soundEnabled && audioCtxRef.current && Date.now() - lastPlayedRef.current > 200) {
+    playBlip(audioCtxRef.current);
+    lastPlayedRef.current = Date.now();
+  }
 
   const formatTime = (ts: string) => {
     return new Date(ts).toLocaleTimeString([], {
@@ -140,7 +107,7 @@ export function ActivityFeed() {
           </button>
         </div>
         <p className="text-xs text-text-secondary mb-4">
-          Recent interactions &middot; updates every 5s
+          Recent interactions &middot; real-time via WebSocket
         </p>
 
         <div className="bg-bg-elevated border border-border rounded w-full">

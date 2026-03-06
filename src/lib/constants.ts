@@ -12,3 +12,5 @@ export const LINKS = {
 } as const;
 
 export const STATS_POLL_INTERVAL = 5000; // 5 seconds
+
+export const API_URL = process.env.NEXT_PUBLIC_API_URL || "";
