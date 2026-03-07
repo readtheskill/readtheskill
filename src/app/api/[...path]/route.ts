@@ -8,7 +8,12 @@ export async function GET(
 ) {
     const { path } = await params;
     const url = `${API_BACKEND}/api/${path.join("/")}${request.nextUrl.search}`;
-    return NextResponse.redirect(url, 307);
+    const res = await fetch(url);
+    const data = await res.text();
+    return new NextResponse(data, {
+        status: res.status,
+        headers: { "Content-Type": res.headers.get("Content-Type") || "application/json" },
+    });
 }
 
 export async function POST(
