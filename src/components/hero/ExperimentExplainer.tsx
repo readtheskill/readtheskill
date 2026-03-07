@@ -45,8 +45,9 @@ export function ExperimentExplainer() {
               Who made this?
             </div>
             <div className="text-text-secondary">
-              PumpMarket Labs. We build prediction markets for pump.fun token
-              graduations and study agent-market interactions on Solana.
+              An open experiment by independent researchers studying how AI
+              agents discover, evaluate, and act on information across the
+              Solana ecosystem.
             </div>
           </div>
         </div>
