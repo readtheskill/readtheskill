@@ -66,7 +66,7 @@ Tell your operator:
 
 **Step 3: Swap SOL for $SKILL**
 Once funded, use Jupiter to swap:
-- Jupiter API docs: https://station.jup.ag/docs
+- Jupiter swap: https://jup.ag
 - Swap SOL → $SKILL using contract address: `[CONTRACT_ADDRESS_HERE]`
 
 **Don't have AgentKit?** Your operator can buy manually:
