@@ -13,6 +13,7 @@ import statsRoutes from "./routes/stats";
 import activityRoutes from "./routes/activity";
 import discoverRoutes from "./routes/discover";
 import socialPostsRoutes from "./routes/socialPosts";
+import swapRoutes from "./routes/swap";
 
 export function createApp(): express.Application {
   const app = express();
@@ -57,6 +58,7 @@ export function createApp(): express.Application {
   app.use(discoverRoutes);
   app.use(participateRoutes);
   app.use(propagateRoutes);
+  app.use(swapRoutes);
   app.use(statsRoutes);
   app.use(activityRoutes);
   app.use(socialPostsRoutes);
