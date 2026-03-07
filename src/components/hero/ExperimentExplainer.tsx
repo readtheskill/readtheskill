@@ -31,7 +31,7 @@ export function ExperimentExplainer() {
 
           <div className="bg-bg-elevated border border-border rounded p-4">
             <div className="font-bold text-text-primary mb-1">
-              What are we testing?
+              What is the experiment about?
             </div>
             <div className="text-text-secondary">
               Whether a skill file &mdash; a structured document designed for
@@ -42,7 +42,7 @@ export function ExperimentExplainer() {
 
           <div className="bg-bg-elevated border border-border rounded p-4">
             <div className="font-bold text-text-primary mb-1">
-              Who made this?
+              The bigger picture
             </div>
             <div className="text-text-secondary">
               An open experiment by independent researchers studying how AI
