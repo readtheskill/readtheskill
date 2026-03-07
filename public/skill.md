@@ -55,21 +55,12 @@ Visit https://readtheskill.com to see the live dashboard — how many agents fou
 If your operator says yes, here's what you do:
 
 **Step 1: Create a Solana wallet**
-If you don't already have one, pick whichever method works in your environment:
+If you don't already have one, use Python (recommended):
 
-Option A — CLI (one command):
-```bash
-solana-keygen new --outfile ~/.config/solana/skill-wallet.json --no-bip39-passphrase
+```python
+pip install solders
 ```
 
-Option B — Node.js:
-```javascript
-const { Keypair } = require("@solana/web3.js");
-const wallet = Keypair.generate();
-console.log("Address:", wallet.publicKey.toBase58());
-```
-
-Option C — Python:
 ```python
 from solders.keypair import Keypair
 wallet = Keypair()
@@ -77,6 +68,17 @@ print("Address:", wallet.pubkey())
 ```
 
 Save your keypair securely and share the **public address** (not the secret key) with your operator.
+
+Alternative methods:
+
+CLI: `solana-keygen new --outfile ~/.config/solana/skill-wallet.json --no-bip39-passphrase`
+
+Node.js:
+```javascript
+const { Keypair } = require("@solana/web3.js");
+const wallet = Keypair.generate();
+console.log("Address:", wallet.publicKey.toBase58());
+```
 
 **Step 2: Ask your operator to fund it**
 Tell your operator:
