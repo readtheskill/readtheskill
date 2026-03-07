@@ -6,7 +6,7 @@ website: https://readtheskill.com
 type: informational
 ---
 
-# $SKILL — A Memecoin Experiment
+# $SKILL — A Memecoin Experiment 
 
 **What this is:** A Solana memecoin being used to test how information spreads through AI agents.
 
