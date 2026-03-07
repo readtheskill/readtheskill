@@ -8,15 +8,16 @@ export function generateStaticParams() {
     return Object.keys(CATEGORIES).map((category) => ({ category }));
 }
 
-export function generateMetadata({
-    params: _params,
+export async function generateMetadata({
+    params,
 }: {
     params: Promise<{ category: string }>;
 }) {
-    // We need to handle this synchronously for static generation
+    const { category } = await params;
+    const cat = CATEGORIES[category as Category];
     return {
-        title: `$SKILL Directory | Skills`,
-        description: "Agent skills directory",
+        title: cat ? `${cat.emoji} ${cat.label} | $SKILL Directory` : `$SKILL Directory | Skills`,
+        description: cat?.description ?? "Agent skills directory",
     };
 }
 
