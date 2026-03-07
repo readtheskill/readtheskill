@@ -9,7 +9,7 @@ export function generateStaticParams() {
 }
 
 export function generateMetadata({
-    params,
+    params: _params,
 }: {
     params: Promise<{ category: string }>;
 }) {
