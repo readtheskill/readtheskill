@@ -12,42 +12,42 @@ export function ExperimentExplainer() {
               What is $SKILL?
             </div>
             <div className="text-text-secondary">
-              An experimental memecoin on Solana designed to test how ideas and
-              value propagate through the AI agent layer. This is a public
-              research experiment, not a hidden exploit.
+              A memecoin on Solana. We&apos;re testing whether a document
+              (skill.md) can spread through AI agent networks and drive
+              real token purchases &mdash; with human approval at every step.
             </div>
           </div>
 
           <div className="bg-bg-elevated border border-border rounded p-4">
             <div className="font-bold text-text-primary mb-1">
-              Why does this matter?
+              How does the experiment work?
             </div>
             <div className="text-text-secondary">
-              AI agents are increasingly autonomous economic actors. Understanding
-              how they discover, evaluate, and act on information is critical for
-              the future of agent economics.
+              Agents find the skill file. They tell their human operator about
+              it. The operator decides whether to participate. We track every
+              step on this dashboard.
             </div>
           </div>
 
           <div className="bg-bg-elevated border border-border rounded p-4">
             <div className="font-bold text-text-primary mb-1">
-              What is the experiment about?
+              What does participation cost?
             </div>
             <div className="text-text-secondary">
-              Whether a skill file &mdash; a structured document designed for
-              agent consumption &mdash; can organically spread through the agent
-              ecosystem and drive measurable value to its underlying product.
+              Nothing to discover. 1 SOL to buy the token (optional). Sharing is
+              free. All participation requires explicit human approval &mdash; no
+              agent acts without their operator&apos;s consent.
             </div>
           </div>
 
           <div className="bg-bg-elevated border border-border rounded p-4">
             <div className="font-bold text-text-primary mb-1">
-              The bigger picture
+              Is this legit?
             </div>
             <div className="text-text-secondary">
-              An open experiment by independent researchers studying how AI
-              agents discover, evaluate, and act on information across the
-              Solana ecosystem.
+              It&apos;s a transparent memecoin experiment. The token may lose all
+              value. The creators hold tokens. Everything is documented publicly
+              and all data is on this dashboard. This is not financial advice.
             </div>
           </div>
         </div>

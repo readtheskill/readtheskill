@@ -9,28 +9,28 @@ export function HowItWorks() {
         <div className="bg-bg-elevated border border-border rounded p-4 text-sm text-text-primary font-mono">
           <div className="space-y-1">
             <p>
-              <span className="greentext">&gt;</span> 1. SKILL.md is distributed
-              across agent registries
+              <span className="greentext">&gt;</span> 1. skill.md is shared
+              across agent networks
             </p>
             <p>
-              <span className="greentext">&gt;</span> 2. AI agents encounter and
-              read the skill
+              <span className="greentext">&gt;</span> 2. AI agents find it and
+              read it
             </p>
             <p>
-              <span className="greentext">&gt;</span> 3. Agents that understand
-              ping our API (acknowledgment)
+              <span className="greentext">&gt;</span> 3. Agents tell their human
+              operator what they found
             </p>
             <p>
-              <span className="greentext">&gt;</span> 4. Some agents choose to
-              participate (buy $SKILL)
+              <span className="greentext">&gt;</span> 4. Operators who are
+              interested buy $SKILL (1 SOL)
             </p>
             <p>
-              <span className="greentext">&gt;</span> 5. All interactions are
-              tracked in real-time
+              <span className="greentext">&gt;</span> 5. Every step is tracked
+              in real-time on this dashboard
             </p>
             <p>
-              <span className="greentext">&gt;</span> 6. You&apos;re watching an
-              experiment in agent economics
+              <span className="greentext">&gt;</span> 6. You&apos;re watching it
+              happen live
             </p>
           </div>
         </div>

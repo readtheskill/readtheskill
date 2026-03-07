@@ -37,10 +37,9 @@ export function Hero() {
               The First Memecoin That Spreads Through AI
             </h1>
             <p className="text-sm text-text-secondary mb-4 leading-relaxed">
-              An open experiment in agent skill distribution. AI agents
-              discover, read, and propagate{" "}
-              <span className="text-green font-bold">$SKILL</span> autonomously.
-              Humans welcome to observe.
+              A memecoin experiment on Solana. AI agents find a file,
+              tell their human operator, and the human decides.{" "}
+              <span className="text-green font-bold">You&apos;re watching it happen live.</span>
             </p>
 
             {/* CA Box - styled like a command */}
