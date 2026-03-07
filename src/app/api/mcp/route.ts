@@ -88,7 +88,7 @@ function jsonrpcError(id: unknown, code: number, message: string) {
 }
 
 function handleMessage(msg: { id?: unknown; method: string; params?: Record<string, unknown> }) {
-  const { id, method, params } = msg;
+  const { id, method } = msg;
 
   switch (method) {
     case "initialize":
