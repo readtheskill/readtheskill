@@ -5,8 +5,8 @@ const router = Router();
 
 const SKILL_CONTRACT = "FQt7749yicQ9vZ2CA8r4ghq4MCPJpsVicT8gNkAjpump";
 const SOL_MINT = "So11111111111111111111111111111111111111112";
-const JUPITER_QUOTE_URL = "https://quote-api.jup.ag/v6/quote";
-const JUPITER_SWAP_URL = "https://quote-api.jup.ag/v6/swap";
+const JUPITER_QUOTE_URL = "https://public.jupiterapi.com/quote";
+const JUPITER_SWAP_URL = "https://public.jupiterapi.com/swap";
 
 // POST /api/swap — proxy Jupiter quote + swap for sandboxed agents
 router.post(
