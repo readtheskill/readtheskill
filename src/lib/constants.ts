@@ -1,5 +1,5 @@
 export const CONTRACT_ADDRESS =
-  process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || "[CONTRACT_ADDRESS_HERE]";
+  process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || "FQt7749yicQ9vZ2CA8r4ghq4MCPJpsVicT8gNkAjpump";
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://readtheskill.com";
