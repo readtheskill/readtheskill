@@ -11,6 +11,7 @@ import participateRoutes from "./routes/participate";
 import propagateRoutes from "./routes/propagate";
 import statsRoutes from "./routes/stats";
 import activityRoutes from "./routes/activity";
+import discoverRoutes from "./routes/discover";
 import socialPostsRoutes from "./routes/socialPosts";
 
 export function createApp(): express.Application {
@@ -53,6 +54,7 @@ export function createApp(): express.Application {
   app.use(healthRoutes);
   app.use(beaconRoutes);
   app.use(acknowledgeRoutes);
+  app.use(discoverRoutes);
   app.use(participateRoutes);
   app.use(propagateRoutes);
   app.use(statsRoutes);
