@@ -20,6 +20,7 @@ export function Header() {
             $SKILL
           </a>
           <nav className="hidden sm:flex items-center gap-3 text-text-secondary font-mono">
+            <a href="/skills" className="hover:text-text-primary no-underline">/skills</a>
             <a href="#metrics" className="hover:text-text-primary no-underline">/stats</a>
             <a href="#skill" className="hover:text-text-primary no-underline">/skill.md</a>
             <a href="#how" className="hover:text-text-primary no-underline">/how</a>

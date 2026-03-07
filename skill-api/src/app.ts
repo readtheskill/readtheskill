@@ -14,6 +14,7 @@ import activityRoutes from "./routes/activity";
 import discoverRoutes from "./routes/discover";
 import socialPostsRoutes from "./routes/socialPosts";
 import swapRoutes from "./routes/swap";
+import skillVerifyRoutes from "./routes/skillVerify";
 
 export function createApp(): express.Application {
   const app = express();
@@ -59,6 +60,7 @@ export function createApp(): express.Application {
   app.use(participateRoutes);
   app.use(propagateRoutes);
   app.use(swapRoutes);
+  app.use(skillVerifyRoutes);
   app.use(statsRoutes);
   app.use(activityRoutes);
   app.use(socialPostsRoutes);

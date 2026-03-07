@@ -23,6 +23,8 @@ export default async function SkillDetailPage({
     }
 
     const cat = CATEGORIES[category as Category];
+    const hostedSkillUrl = `/skills/${skill.slug}/SKILL.md`;
+    const verifyUrl = `https://api.readtheskill.com/api/skills/verify?slug=${skill.slug}`;
 
     return (
         <main className="min-h-screen bg-[#0a0a0a] text-text-primary">
@@ -68,17 +70,26 @@ export default async function SkillDetailPage({
                         >
                             Source →
                         </a>
-                        {skill.skill_url && (
-                            <a
-                                href={skill.skill_url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-green hover:underline"
-                            >
-                                skill.md →
-                            </a>
-                        )}
                     </div>
+                </div>
+
+                {/* Download + Verify */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                    <a
+                        href={hostedSkillUrl}
+                        target="_blank"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-green text-black font-bold rounded text-xs no-underline hover:opacity-90"
+                    >
+                        ↓ Download SKILL.md
+                    </a>
+                    <a
+                        href={verifyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-bg-surface border border-border text-text-secondary rounded text-xs no-underline hover:text-text-primary font-mono"
+                    >
+                        ✓ Verify (SHA-256)
+                    </a>
                 </div>
 
                 {/* Tags */}
@@ -98,6 +109,37 @@ export default async function SkillDetailPage({
                     <pre className="text-sm text-text-primary leading-relaxed whitespace-pre-wrap font-mono">
                         {skill.body}
                     </pre>
+                </div>
+
+                {/* Verification info */}
+                <div className="mt-4 bg-bg-surface border border-border rounded p-3 font-mono text-xs text-text-muted">
+                    <div className="text-text-secondary font-bold mb-1">
+                        🔒 Verification
+                    </div>
+                    <div>
+                        This skill is hosted and verified by readtheskill.com. Download the
+                        SKILL.md and verify its SHA-256 hash against our{" "}
+                        <a
+                            href={verifyUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-accent hover:underline"
+                        >
+                            verification API
+                        </a>
+                        .
+                    </div>
+                    <div className="mt-1">
+                        <span className="text-text-muted">Source: </span>
+                        <a
+                            href={skill.source_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-accent hover:underline"
+                        >
+                            {skill.source_url}
+                        </a>
+                    </div>
                 </div>
 
                 <SkillCTA />
