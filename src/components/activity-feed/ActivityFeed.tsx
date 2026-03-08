@@ -1,7 +1,8 @@
 "use client";
 
 import { ReactNode, useCallback, useRef, useState } from "react";
-import { Search, CheckCircle, Coins, FolderPlus, X, BookOpen, Volume2, VolumeOff } from "lucide-react";
+import { Search, CheckCircle, Coins, FolderPlus, BookOpen, Volume2, VolumeOff } from "lucide-react";
+import { XLogo } from "@/components/icons/XLogo";
 import { ActivityItem } from "@/lib/types";
 import { useRealtimeActivity } from "@/hooks/useRealtimeActivity";
 
@@ -19,7 +20,7 @@ function getPropagateIcon(item: ActivityItem): ReactNode {
   const p = item.platform?.toLowerCase() || "";
   const url = item.post_url?.toLowerCase() || "";
   if (p === "twitter" || url.includes("twitter.com") || url.includes("x.com"))
-    return <X size={14} />;
+    return <XLogo size={14} />;
   if (p === "moltbook" || url.includes("moltbook")) return <BookOpen size={14} />;
   return <FolderPlus size={14} />;
 }

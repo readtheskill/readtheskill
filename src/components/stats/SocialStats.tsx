@@ -1,14 +1,15 @@
 "use client";
 
-import { X, BookOpen, FolderPlus } from "lucide-react";
+import { BookOpen, FolderPlus } from "lucide-react";
 import { ReactNode } from "react";
+import { XLogo } from "@/components/icons/XLogo";
 import { useRealtimeStats } from "@/hooks/useRealtimeStats";
 
 export function SocialStats() {
   const stats = useRealtimeStats();
 
   const items: { icon: ReactNode; label: string; value: number }[] = [
-    { icon: <X size={14} />, label: "Twitter Posts", value: stats?.twitter_posts ?? 0 },
+    { icon: <XLogo size={14} />, label: "Twitter Posts", value: stats?.twitter_posts ?? 0 },
     { icon: <BookOpen size={14} />, label: "Moltbook Posts", value: stats?.moltbook_posts ?? 0 },
     { icon: <FolderPlus size={14} />, label: "Registry Adds", value: stats?.registry_adds ?? 0 },
   ];

@@ -1,7 +1,8 @@
 "use client";
 
 import { ReactNode, useEffect, useState } from "react";
-import { X, BookOpen, FolderPlus } from "lucide-react";
+import { BookOpen, FolderPlus } from "lucide-react";
+import { XLogo } from "@/components/icons/XLogo";
 import { ActivityItem } from "@/lib/types";
 import { apiFetch } from "@/lib/api";
 
@@ -27,7 +28,7 @@ export function AgentPosts() {
     const p = item.platform?.toLowerCase() || "";
     const url = item.post_url?.toLowerCase() || "";
     if (p === "twitter" || url.includes("twitter.com") || url.includes("x.com"))
-      return <X size={18} />;
+      return <XLogo size={18} />;
     if (p === "moltbook" || url.includes("moltbook")) return <BookOpen size={18} />;
     return <FolderPlus size={18} />;
   };
