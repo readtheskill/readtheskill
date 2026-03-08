@@ -2,6 +2,40 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CATEGORIES, SKILLS, Category, getSkillBySlug } from "@/data/skills";
 import { SkillCTA } from "@/components/directory/SkillCTA";
+import { CategoryIcon } from "@/components/directory/CategoryIcon";
+import fs from "fs";
+import path from "path";
+
+/** Try multiple paths to find the SKILL.md for a given slug */
+function loadSkillContent(slug: string): string {
+    const publicDir = path.join(process.cwd(), "public", "skills");
+    // Direct path: public/skills/{slug}/SKILL.md
+    const directPath = path.join(publicDir, slug, "SKILL.md");
+    if (fs.existsSync(directPath)) {
+        return parseSkillMd(fs.readFileSync(directPath, "utf-8"));
+    }
+    // Search subdirectories: public/skills/{subdir}/{slug}/SKILL.md
+    const subdirs = ["trading", "data", "infrastructure", "research", "automation", "nfts"];
+    for (const sub of subdirs) {
+        const subPath = path.join(publicDir, sub, slug, "SKILL.md");
+        if (fs.existsSync(subPath)) {
+            return parseSkillMd(fs.readFileSync(subPath, "utf-8"));
+        }
+    }
+    return "";
+}
+
+/** Strip YAML frontmatter (between --- delimiters) and return the body */
+function parseSkillMd(raw: string): string {
+    const trimmed = raw.trim();
+    if (trimmed.startsWith("---")) {
+        const endIdx = trimmed.indexOf("---", 3);
+        if (endIdx !== -1) {
+            return trimmed.slice(endIdx + 3).trim();
+        }
+    }
+    return trimmed;
+}
 
 export function generateStaticParams() {
     return SKILLS.map((skill) => ({
@@ -23,6 +57,7 @@ export default async function SkillDetailPage({
     }
 
     const cat = CATEGORIES[category as Category];
+    const body = skill.body || loadSkillContent(slug);
 
     return (
         <main className="min-h-screen bg-[#0a0a0a] text-text-primary">
@@ -57,8 +92,9 @@ export default async function SkillDetailPage({
                     </div>
                     <p className="text-sm text-text-secondary">{skill.description}</p>
                     <div className="flex items-center gap-3 mt-3 text-xs">
-                        <span className="text-text-muted font-mono">
-                            {cat.emoji} {cat.label}
+                        <span className="text-text-muted font-mono flex items-center gap-1.5">
+                            <CategoryIcon category={category as Category} size={14} />
+                            {cat.label}
                         </span>
                         <a
                             href={skill.source_url}
@@ -94,11 +130,13 @@ export default async function SkillDetailPage({
                 </div>
 
                 {/* Body */}
-                <div className="bg-bg-elevated border border-border rounded p-5">
-                    <pre className="text-sm text-text-primary leading-relaxed whitespace-pre-wrap font-mono">
-                        {skill.body}
-                    </pre>
-                </div>
+                {body && (
+                    <div className="bg-bg-elevated border border-border rounded p-5">
+                        <pre className="text-sm text-text-primary leading-relaxed whitespace-pre-wrap font-mono">
+                            {body}
+                        </pre>
+                    </div>
+                )}
 
                 <SkillCTA />
             </div>
