@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
+import { X, BookOpen, FolderPlus } from "lucide-react";
 import { ActivityItem } from "@/lib/types";
 import { apiFetch } from "@/lib/api";
 
@@ -22,13 +23,13 @@ export function AgentPosts() {
     return () => clearInterval(interval);
   }, []);
 
-  const getPlatformIcon = (item: ActivityItem) => {
+  const getPlatformIcon = (item: ActivityItem): ReactNode => {
     const p = item.platform?.toLowerCase() || "";
     const url = item.post_url?.toLowerCase() || "";
     if (p === "twitter" || url.includes("twitter.com") || url.includes("x.com"))
-      return "\uD835\uDD4F";
-    if (p === "moltbook" || url.includes("moltbook")) return "\uD83D\uDCD8";
-    return "\uD83D\uDCC1";
+      return <X size={18} />;
+    if (p === "moltbook" || url.includes("moltbook")) return <BookOpen size={18} />;
+    return <FolderPlus size={18} />;
   };
 
   const getPlatformLabel = (item: ActivityItem) => {
@@ -80,7 +81,7 @@ export function AgentPosts() {
                 className="flex-shrink-0 w-[280px] bg-bg-elevated border border-border rounded p-4 hover:border-border-light transition-colors no-underline group"
               >
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-lg">{getPlatformIcon(post)}</span>
+                  <span className="flex-shrink-0">{getPlatformIcon(post)}</span>
                   <span className="text-xs font-mono text-text-secondary">
                     {getPlatformLabel(post)}
                   </span>
