@@ -28,8 +28,9 @@ export function Hero() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
           {/* ASCII Art */}
           <div className="flex-shrink-0">
+            <div className="text-text-muted font-mono text-[7px] sm:text-[9px] md:text-xs select-none">$ SKILL</div>
             <pre className="text-green font-mono text-[7px] sm:text-[9px] md:text-xs leading-tight select-none">
-              <span className="text-text-muted">$ </span>{ASCII_ART}
+              {ASCII_ART}
             </pre>
           </div>
 
