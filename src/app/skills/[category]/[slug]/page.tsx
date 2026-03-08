@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CATEGORIES, SKILLS, Category, getSkillBySlug } from "@/data/skills";
 import { SkillCTA } from "@/components/directory/SkillCTA";
+import { CategoryIcon } from "@/components/directory/CategoryIcon";
 import fs from "fs";
 import path from "path";
 
@@ -91,8 +92,9 @@ export default async function SkillDetailPage({
                     </div>
                     <p className="text-sm text-text-secondary">{skill.description}</p>
                     <div className="flex items-center gap-3 mt-3 text-xs">
-                        <span className="text-text-muted font-mono">
-                            {cat.emoji} {cat.label}
+                        <span className="text-text-muted font-mono flex items-center gap-1.5">
+                            <CategoryIcon category={category as Category} size={14} />
+                            {cat.label}
                         </span>
                         <a
                             href={skill.source_url}

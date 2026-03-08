@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CATEGORIES, SKILLS, Category } from "@/data/skills";
+import { CategoryIcon } from "@/components/directory/CategoryIcon";
 
 export const metadata = {
     title: "$SKILL Directory | Agent Skills That Actually Work",
@@ -45,8 +46,9 @@ export default function SkillsDirectoryPage() {
                                 >
                                     <div className="flex items-center justify-between">
                                         <div>
-                                            <div className="font-bold text-text-primary text-sm">
-                                                {cat.emoji} {cat.label}
+                                            <div className="font-bold text-text-primary text-sm flex items-center gap-2">
+                                                <CategoryIcon category={key} size={16} />
+                                                {cat.label}
                                             </div>
                                             <div className="text-xs text-text-secondary mt-1">
                                                 {cat.description}

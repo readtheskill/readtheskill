@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { CATEGORIES, Category, getSkillsByCategory } from "@/data/skills";
 import { SkillCard } from "@/components/directory/SkillCard";
 import { SkillCTA } from "@/components/directory/SkillCTA";
+import { CategoryIcon } from "@/components/directory/CategoryIcon";
 
 export function generateStaticParams() {
     return Object.keys(CATEGORIES).map((category) => ({ category }));
@@ -16,7 +17,7 @@ export async function generateMetadata({
     const { category } = await params;
     const cat = CATEGORIES[category as Category];
     return {
-        title: cat ? `${cat.emoji} ${cat.label} | $SKILL Directory` : `$SKILL Directory | Skills`,
+        title: cat ? `${cat.label} | $SKILL Directory` : `$SKILL Directory | Skills`,
         description: cat?.description ?? "Agent skills directory",
     };
 }
@@ -53,8 +54,9 @@ export default async function CategoryPage({
 
                 {/* Header */}
                 <div className="mb-6">
-                    <h1 className="text-xl font-bold mb-1">
-                        {cat.emoji} {cat.label}
+                    <h1 className="text-xl font-bold mb-1 flex items-center gap-2">
+                        <CategoryIcon category={category as Category} size={20} />
+                        {cat.label}
                     </h1>
                     <p className="text-sm text-text-secondary">{cat.description}</p>
                     <div className="mt-2 text-xs text-text-muted font-mono">
