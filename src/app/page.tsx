@@ -13,16 +13,30 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="max-w-5xl mx-auto">
-        <Hero />
-        <LiveStats />
-        <SocialStats />
-        <SkillDisplay />
-        <HowItWorks />
-        <AgentPosts />
-        <ExperimentExplainer />
-        <ActivityFeed />
-      </main>
+      <div className="max-w-[1400px] mx-auto lg:flex lg:gap-0">
+        {/* Main content */}
+        <main className="flex-1 min-w-0 max-w-5xl mx-auto lg:mx-0">
+          <Hero />
+          <LiveStats />
+          <SocialStats />
+          <SkillDisplay />
+          <HowItWorks />
+          <AgentPosts />
+          <ExperimentExplainer />
+        </main>
+
+        {/* Agent log sidebar — sticky on desktop */}
+        <aside className="hidden lg:block w-[380px] flex-shrink-0">
+          <div className="sticky top-0 h-screen overflow-hidden border-l border-border">
+            <ActivityFeed sidebar />
+          </div>
+        </aside>
+
+        {/* Mobile: agent log inline */}
+        <div className="lg:hidden">
+          <ActivityFeed />
+        </div>
+      </div>
       <Footer />
     </>
   );
