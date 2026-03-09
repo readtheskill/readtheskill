@@ -1,26 +1,28 @@
 "use client";
 
-import { useCallback, useRef, useState } from "react";
+import { ReactNode, useCallback, useRef, useState } from "react";
+import { Search, CheckCircle, Coins, FolderPlus, BookOpen, Volume2, VolumeOff } from "lucide-react";
+import { XLogo } from "@/components/icons/XLogo";
 import { ActivityItem } from "@/lib/types";
 import { useRealtimeActivity } from "@/hooks/useRealtimeActivity";
 
 const TYPE_CONFIG: Record<
   string,
-  { text: string; color: string; icon: string }
+  { text: string; color: string; icon: ReactNode }
 > = {
-  read: { text: "READ", color: "text-stat-red", icon: "\uD83D\uDD0D" },
-  acknowledge: { text: "ACK", color: "text-stat-blue", icon: "\u2713" },
-  participate: { text: "TXN", color: "text-stat-green", icon: "\uD83D\uDCB0" },
-  propagate: { text: "PROP", color: "text-stat-purple", icon: "\uD83D\uDCC1" },
+  read: { text: "READ", color: "text-stat-red", icon: <Search size={14} /> },
+  acknowledge: { text: "ACK", color: "text-stat-blue", icon: <CheckCircle size={14} /> },
+  participate: { text: "TXN", color: "text-stat-green", icon: <Coins size={14} /> },
+  propagate: { text: "PROP", color: "text-stat-purple", icon: <FolderPlus size={14} /> },
 };
 
-function getPropagateIcon(item: ActivityItem): string {
+function getPropagateIcon(item: ActivityItem): ReactNode {
   const p = item.platform?.toLowerCase() || "";
   const url = item.post_url?.toLowerCase() || "";
   if (p === "twitter" || url.includes("twitter.com") || url.includes("x.com"))
-    return "\uD835\uDD4F";
-  if (p === "moltbook" || url.includes("moltbook")) return "\uD83D\uDCD8";
-  return "\uD83D\uDCC1";
+    return <XLogo size={14} />;
+  if (p === "moltbook" || url.includes("moltbook")) return <BookOpen size={14} />;
+  return <FolderPlus size={14} />;
 }
 
 function playBlip(audioCtx: AudioContext) {
@@ -81,9 +83,9 @@ export function ActivityFeed() {
     }
   };
 
-  const getIcon = (item: ActivityItem) => {
+  const getIcon = (item: ActivityItem): ReactNode => {
     if (item.interaction_type === "propagate") return getPropagateIcon(item);
-    return TYPE_CONFIG[item.interaction_type]?.icon || "";
+    return TYPE_CONFIG[item.interaction_type]?.icon || null;
   };
 
   const isClickable = (item: ActivityItem) =>
@@ -103,7 +105,7 @@ export function ActivityFeed() {
             className="ml-auto text-sm hover:opacity-80"
             title={soundEnabled ? "Mute sounds" : "Enable sounds"}
           >
-            {soundEnabled ? "\uD83D\uDD0A" : "\uD83D\uDD07"}
+            {soundEnabled ? <Volume2 size={16} /> : <VolumeOff size={16} />}
           </button>
         </div>
         <p className="text-xs text-text-secondary mb-4">
