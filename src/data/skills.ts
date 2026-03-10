@@ -2,6 +2,7 @@ import { BATCH_SKILLS } from "@/data/skills-batch-automation-design-productivity
 
 import { COMMUNICATION_SKILLS } from "@/data/skills-batch-communication";
 import { DESIGN_EXTENDED_SKILLS } from "@/data/skills-batch-design-extended";
+import { MARKETING_SKILLS } from "@/data/skills-batch-marketing";
 import { PRODUCTIVITY_EXTENDED_SKILLS } from "@/data/skills-batch-productivity-extended";
 
 export interface Skill {
@@ -36,6 +37,7 @@ export type Category =
     | "infrastructure"
     | "coding"
     | "communication"
+    | "marketing"
     | "experimental";
 
 export const CATEGORIES: Record<
@@ -121,6 +123,11 @@ export const CATEGORIES: Record<
         label: "Communication",
         description: "Team chat, email outreach, social media, meetings, and messaging",
         emoji: "📡",
+    },
+    marketing: {
+        label: "Marketing",
+        description: "CRO, copywriting, SEO, analytics, and growth engineering skills",
+        emoji: "📣",
     },
     experimental: {
         label: "Experimental",
@@ -2009,6 +2016,173 @@ npm install @goat-sdk/plugin-ironclad
         tags: ["portfolio", "market-data", "tracking", "mcp"],
     },
 
+    // ────────────── UI & FRONTEND DESIGN ──────────────
+    {
+        slug: "ui-baseline-ui",
+        name: "Baseline UI",
+        category: "design",
+        description:
+            "Validates animation durations, enforces typography scale, and checks component accessibility for consistent UI quality.",
+        source_url: "https://github.com/ibelick/ui-skills/tree/main/skills/baseline-ui",
+        skill_url: "https://github.com/ibelick/ui-skills/blob/main/skills/baseline-ui/SKILL.md",
+        framework: "UI Skills",
+        tags: ["ui", "accessibility", "typography", "animation", "validation"],
+    },
+    {
+        slug: "ui-fixing-accessibility",
+        name: "Fixing Accessibility",
+        category: "design",
+        description:
+            "Audit and fix HTML accessibility issues including ARIA labels, keyboard navigation, and focus management.",
+        source_url: "https://github.com/ibelick/ui-skills/tree/main/skills/fixing-accessibility",
+        skill_url: "https://github.com/ibelick/ui-skills/blob/main/skills/fixing-accessibility/SKILL.md",
+        framework: "UI Skills",
+        tags: ["accessibility", "aria", "a11y", "audit"],
+    },
+    {
+        slug: "ui-fixing-metadata",
+        name: "Fixing Metadata",
+        category: "design",
+        description:
+            "Audit and fix HTML metadata including page titles, meta descriptions, canonical URLs, and Open Graph tags.",
+        source_url: "https://github.com/ibelick/ui-skills/tree/main/skills/fixing-metadata",
+        skill_url: "https://github.com/ibelick/ui-skills/blob/main/skills/fixing-metadata/SKILL.md",
+        framework: "UI Skills",
+        tags: ["seo", "metadata", "opengraph", "audit"],
+    },
+    {
+        slug: "ui-fixing-motion-performance",
+        name: "Fixing Motion Performance",
+        category: "design",
+        description:
+            "Audit and fix animation performance issues including layout thrashing and compositor properties.",
+        source_url: "https://github.com/ibelick/ui-skills/tree/main/skills/fixing-motion-performance",
+        skill_url: "https://github.com/ibelick/ui-skills/blob/main/skills/fixing-motion-performance/SKILL.md",
+        framework: "UI Skills",
+        tags: ["animation", "performance", "motion", "optimization"],
+    },
+    {
+        slug: "ui-12-principles-of-animation",
+        name: "12 Principles of Animation",
+        category: "design",
+        description:
+            "Apply Disney's 12 animation principles to web interfaces to make motion feel natural and organic.",
+        source_url: "https://github.com/raphaelsalaja/userinterface-wiki/tree/main/skills/12-principles-of-animation",
+        skill_url: "https://github.com/raphaelsalaja/userinterface-wiki/blob/main/skills/12-principles-of-animation/SKILL.md",
+        framework: "UI Skills",
+        tags: ["animation", "motion", "principles", "disney"],
+    },
+    {
+        slug: "ui-canvas-design",
+        name: "Canvas Design",
+        category: "design",
+        description:
+            "Create original visual designs and art on digital canvases using design philosophy and creative direction.",
+        source_url: "https://github.com/anthropics/skills/tree/main/skills/canvas-design",
+        skill_url: "https://github.com/anthropics/skills/blob/main/skills/canvas-design/SKILL.md",
+        framework: "Anthropic",
+        tags: ["canvas", "visual-design", "creative", "art"],
+    },
+    {
+        slug: "ui-design-lab",
+        name: "Design Lab",
+        category: "design",
+        description:
+            "Interactive design exploration workflow: conduct interviews, generate variants, and refine UI designs iteratively.",
+        source_url: "https://github.com/0xdesign/design-plugin/tree/main/design-and-refine/skills/design-lab",
+        skill_url: "https://github.com/0xdesign/design-plugin/blob/main/design-and-refine/skills/design-lab/SKILL.md",
+        framework: "UI Skills",
+        tags: ["design", "exploration", "iteration", "workflow"],
+    },
+    {
+        slug: "ui-frontend-design",
+        name: "Frontend Design",
+        category: "design",
+        description:
+            "Create distinctive, production-grade frontend interfaces with high design quality and craft.",
+        source_url: "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+        skill_url: "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+        framework: "Anthropic",
+        tags: ["frontend", "design", "production", "craft"],
+    },
+    {
+        slug: "ui-interaction-design",
+        name: "Interaction Design",
+        category: "design",
+        description:
+            "Design and implement microinteractions, motion design, transitions, and user feedback patterns.",
+        source_url: "https://github.com/wshobson/agents/tree/main/plugins/ui-design/skills/interaction-design",
+        skill_url: "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/interaction-design/SKILL.md",
+        framework: "UI Skills",
+        tags: ["microinteractions", "motion", "transitions", "feedback"],
+    },
+    {
+        slug: "ui-interface-design",
+        name: "Interface Design",
+        category: "design",
+        description:
+            "Specialized skill for dashboards, admin panels, and SaaS apps focused on craft and consistency.",
+        source_url: "https://github.com/Dammyjay93/interface-design/tree/main/.claude/skills/interface-design",
+        skill_url: "https://github.com/Dammyjay93/interface-design/blob/main/.claude/skills/interface-design/SKILL.md",
+        framework: "UI Skills",
+        tags: ["dashboard", "admin", "saas", "consistency"],
+    },
+    {
+        slug: "ui-swiftui-patterns",
+        name: "SwiftUI UI Patterns",
+        category: "design",
+        description:
+            "Best practices and example-driven guidance for building SwiftUI views and components on iOS.",
+        source_url: "https://github.com/dimillian/skills/tree/main/swiftui-ui-patterns",
+        skill_url: "https://github.com/dimillian/skills/blob/main/swiftui-ui-patterns/SKILL.md",
+        framework: "UI Skills",
+        tags: ["swiftui", "ios", "mobile", "patterns"],
+    },
+    {
+        slug: "ui-tailwind-css-patterns",
+        name: "Tailwind CSS Patterns",
+        category: "design",
+        description:
+            "Expert guide for building modern, responsive interfaces with Tailwind CSS utility-first patterns.",
+        source_url: "https://github.com/giuseppe-trisciuoglio/developer-kit/tree/main/skills/tailwind-css",
+        skill_url: "https://github.com/giuseppe-trisciuoglio/developer-kit/blob/main/skills/tailwind-css/SKILL.md",
+        framework: "UI Skills",
+        tags: ["tailwind", "css", "responsive", "utility-first"],
+    },
+    {
+        slug: "ui-ux-pro-max",
+        name: "UI/UX Pro Max",
+        category: "design",
+        description:
+            "Comprehensive UI/UX design intelligence with 50+ styles, 97 palettes, and 9 technology stacks.",
+        source_url: "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/ui-ux-pro-max",
+        skill_url: "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/ui-ux-pro-max/SKILL.md",
+        framework: "UI Skills",
+        tags: ["ui-ux", "comprehensive", "palettes", "styles"],
+    },
+    {
+        slug: "ui-wcag-audit",
+        name: "WCAG Audit Patterns",
+        category: "design",
+        description:
+            "Conduct WCAG 2.2 accessibility audits with automated testing, manual verification, and remediation.",
+        source_url: "https://github.com/wshobson/agents/tree/main/plugins/accessibility-compliance/skills/wcag-audit-patterns",
+        skill_url: "https://github.com/wshobson/agents/blob/main/plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md",
+        framework: "UI Skills",
+        tags: ["wcag", "accessibility", "audit", "compliance"],
+    },
+    {
+        slug: "ui-web-design-guidelines",
+        name: "Web Design Guidelines",
+        category: "design",
+        description:
+            "Review UI code for Web Interface Guidelines compliance and audit against best practices.",
+        source_url: "https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines",
+        skill_url: "https://github.com/vercel-labs/agent-skills/blob/main/skills/web-design-guidelines/SKILL.md",
+        framework: "Vercel",
+        tags: ["web-design", "guidelines", "best-practices", "audit"],
+    },
+
     // ────────────── EXPERIMENTAL ──────────────
     {
         slug: "skill-token",
@@ -2024,6 +2198,7 @@ npm install @goat-sdk/plugin-ironclad
     ...(BATCH_SKILLS as unknown as Skill[]),
     ...(COMMUNICATION_SKILLS as unknown as Skill[]),
     ...(DESIGN_EXTENDED_SKILLS as unknown as Skill[]),
+    ...(MARKETING_SKILLS as unknown as Skill[]),
     ...(PRODUCTIVITY_EXTENDED_SKILLS as unknown as Skill[]),
 ];
 
@@ -2108,6 +2283,17 @@ export function inferSubcategory(skill: Skill): string {
             if (has("crm", "hubspot", "salesforce", "attio", "folk")) return "crm";
             if (has("community", "discourse", "circle", "forum")) return "community";
             return "communication";
+        case "marketing":
+            if (has("cro", "conversion", "landing-page", "signup", "paywall", "popup")) return "conversion-optimization";
+            if (has("copywriting", "copy-editing", "email", "content")) return "content-copy";
+            if (has("seo", "schema", "site-architecture", "programmatic-seo")) return "seo-discovery";
+            if (has("analytics", "tracking", "measurement", "ab-test", "experiments")) return "measurement-testing";
+            if (has("paid-ads", "ads", "social", "distribution", "acquisition")) return "paid-distribution";
+            if (has("retention", "churn", "lifecycle")) return "retention";
+            if (has("growth", "referral", "virality", "free-tools")) return "growth-engineering";
+            if (has("revops", "sales", "enablement", "pipeline")) return "sales-revops";
+            if (has("pricing", "positioning", "gtm", "launch", "strategy")) return "strategy-monetization";
+            return "marketing";
         default:
             return skill.category;
     }

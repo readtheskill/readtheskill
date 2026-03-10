@@ -16,6 +16,7 @@ import {
   FlaskConical,
   Code2,
   Radio,
+  Megaphone,
 } from "lucide-react";
 import type { Category } from "@/data/skills";
 
@@ -36,6 +37,7 @@ const ICON_MAP: Record<Category, typeof Wallet> = {
   infrastructure: Wrench,
   coding: Code2,
   communication: Radio,
+  marketing: Megaphone,
   experimental: FlaskConical,
 };
 
