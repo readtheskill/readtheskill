@@ -5,6 +5,8 @@ import {
   Landmark,
   Search,
   Settings,
+  PenTool,
+  CheckSquare,
   BarChart3,
   Dice5,
   Palette,
@@ -12,6 +14,8 @@ import {
   ArrowLeftRight,
   Wrench,
   FlaskConical,
+  Code2,
+  Radio,
 } from "lucide-react";
 import type { Category } from "@/data/skills";
 
@@ -22,12 +26,16 @@ const ICON_MAP: Record<Category, typeof Wallet> = {
   defi: Landmark,
   research: Search,
   automation: Settings,
+  design: PenTool,
+  productivity: CheckSquare,
   data: BarChart3,
   prediction: Dice5,
   nfts: Palette,
   oracles: Sparkles,
   bridges: ArrowLeftRight,
   infrastructure: Wrench,
+  coding: Code2,
+  communication: Radio,
   experimental: FlaskConical,
 };
 

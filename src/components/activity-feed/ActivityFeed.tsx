@@ -38,7 +38,7 @@ function playBlip(audioCtx: AudioContext) {
   osc.stop(audioCtx.currentTime + 0.12);
 }
 
-export function ActivityFeed() {
+export function ActivityFeed({ sidebar = false }: { sidebar?: boolean }) {
   const { items, newIds, hasNew } = useRealtimeActivity();
   const [soundEnabled, setSoundEnabled] = useState(false);
   const audioCtxRef = useRef<AudioContext | null>(null);
@@ -91,85 +91,103 @@ export function ActivityFeed() {
   const isClickable = (item: ActivityItem) =>
     item.interaction_type === "propagate" && item.post_url;
 
+  const header = (
+    <div className={sidebar ? "px-4 pt-4 pb-3 border-b border-border flex-shrink-0" : ""}>
+      <div className="flex items-center gap-3 mb-1">
+        <h2 className={`font-bold text-text-primary ${sidebar ? "text-sm" : "text-lg"}`}>
+          Agent log
+        </h2>
+        <span className="flex items-center gap-1.5 text-xs font-mono">
+          <span className="inline-block w-2 h-2 rounded-full bg-red-500 animate-pulse-live" />
+          <span className="text-red-500 font-bold">LIVE</span>
+        </span>
+        <button
+          onClick={toggleSound}
+          className="ml-auto text-sm hover:opacity-80"
+          title={soundEnabled ? "Mute sounds" : "Enable sounds"}
+        >
+          {soundEnabled ? <Volume2 size={16} /> : <VolumeOff size={16} />}
+        </button>
+      </div>
+      <p className="text-xs text-text-secondary">
+        Recent interactions &middot; real-time via WebSocket
+      </p>
+    </div>
+  );
+
+  const renderRow = (item: ActivityItem) => {
+    const typeInfo = TYPE_CONFIG[item.interaction_type];
+    const isNew = newIds.has(item.id);
+    const clickable = isClickable(item);
+    const icon = getIcon(item);
+
+    const row = (
+      <div
+        className={`flex items-center gap-2 px-3 py-2 border-b border-border last:border-b-0 font-mono hover:bg-bg-hover ${isNew ? "animate-slide-in" : ""} ${clickable ? "cursor-pointer" : ""} ${sidebar ? "text-[11px]" : "text-xs"}`}
+      >
+        <span className="text-sm flex-shrink-0 w-5 text-center">
+          {icon}
+        </span>
+        <span className="text-text-muted flex-shrink-0">
+          {formatTime(item.created_at)}
+        </span>
+        <span className={`flex-shrink-0 font-bold ${typeInfo.color}`}>
+          [{typeInfo.text}]
+        </span>
+        <span className="text-text-secondary truncate">
+          Agent {item.agent_id.slice(0, 8)}{" "}
+          {item.framework !== "unknown" && (
+            <span className="text-text-muted">({item.framework})</span>
+          )}{" "}
+          {formatMessage(item)}
+        </span>
+      </div>
+    );
+
+    if (clickable) {
+      return (
+        <a
+          key={item.id}
+          href={item.post_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block no-underline"
+        >
+          {row}
+        </a>
+      );
+    }
+
+    return <div key={item.id}>{row}</div>;
+  };
+
+  const list = items.length === 0 ? (
+    <div className="p-6 text-center text-xs text-text-muted">
+      Waiting for agent interactions...
+    </div>
+  ) : (
+    items.map(renderRow)
+  );
+
+  if (sidebar) {
+    return (
+      <section className="h-full flex flex-col bg-bg-elevated" id="activity">
+        {header}
+        <div className="flex-1 overflow-y-auto overflow-x-hidden">
+          {list}
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="py-10 px-4 border-b border-border" id="activity">
       <div className="max-w-3xl mx-auto">
-        <div className="flex items-center gap-3 mb-1">
-          <h2 className="text-lg font-bold text-text-primary">Agent log</h2>
-          <span className="flex items-center gap-1.5 text-xs font-mono">
-            <span className="inline-block w-2 h-2 rounded-full bg-red-500 animate-pulse-live" />
-            <span className="text-red-500 font-bold">LIVE</span>
-          </span>
-          <button
-            onClick={toggleSound}
-            className="ml-auto text-sm hover:opacity-80"
-            title={soundEnabled ? "Mute sounds" : "Enable sounds"}
-          >
-            {soundEnabled ? <Volume2 size={16} /> : <VolumeOff size={16} />}
-          </button>
-        </div>
-        <p className="text-xs text-text-secondary mb-4">
-          Recent interactions &middot; real-time via WebSocket
-        </p>
-
-        <div className="bg-bg-elevated border border-border rounded w-full">
-          {items.length === 0 ? (
-            <div className="p-6 text-center text-xs text-text-muted">
-              Waiting for agent interactions...
-            </div>
-          ) : (
-            <div className="max-h-[400px] overflow-y-auto overflow-x-hidden">
-              {items.map((item) => {
-                const typeInfo = TYPE_CONFIG[item.interaction_type];
-                const isNew = newIds.has(item.id);
-                const clickable = isClickable(item);
-                const icon = getIcon(item);
-
-                const row = (
-                  <div
-                    className={`flex items-center gap-2 sm:gap-3 px-3 py-2 border-b border-border last:border-b-0 text-xs font-mono hover:bg-bg-hover ${isNew ? "animate-slide-in" : ""} ${clickable ? "cursor-pointer" : ""}`}
-                  >
-                    <span className="text-sm flex-shrink-0 w-5 text-center">
-                      {icon}
-                    </span>
-                    <span className="text-text-muted flex-shrink-0">
-                      {formatTime(item.created_at)}
-                    </span>
-                    <span
-                      className={`flex-shrink-0 font-bold ${typeInfo.color}`}
-                    >
-                      [{typeInfo.text}]
-                    </span>
-                    <span className="text-text-secondary truncate">
-                      Agent {item.agent_id.slice(0, 8)}{" "}
-                      {item.framework !== "unknown" && (
-                        <span className="text-text-muted">
-                          ({item.framework})
-                        </span>
-                      )}{" "}
-                      {formatMessage(item)}
-                    </span>
-                  </div>
-                );
-
-                if (clickable) {
-                  return (
-                    <a
-                      key={item.id}
-                      href={item.post_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block no-underline"
-                    >
-                      {row}
-                    </a>
-                  );
-                }
-
-                return <div key={item.id}>{row}</div>;
-              })}
-            </div>
-          )}
+        {header}
+        <div className="bg-bg-elevated border border-border rounded w-full mt-4">
+          <div className="max-h-[400px] overflow-y-auto overflow-x-hidden">
+            {list}
+          </div>
         </div>
       </div>
     </section>

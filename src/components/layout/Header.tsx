@@ -14,9 +14,9 @@ export function Header() {
 
   return (
     <header className="bg-bg-surface border-b border-border sticky top-0 z-50">
-      <div className="max-w-5xl mx-auto px-4 h-10 flex items-center justify-between text-xs">
-        <div className="flex items-center gap-4">
-          <a href="/" className="font-mono font-bold text-green no-underline hover:no-underline">
+      <div className="max-w-5xl mx-auto px-4 h-10 flex items-center justify-between text-xs overflow-hidden">
+        <div className="flex items-center gap-4 min-w-0">
+          <a href="/" className="font-mono font-bold text-green no-underline hover:no-underline flex-shrink-0">
             $SKILL
           </a>
           <nav className="hidden sm:flex items-center gap-3 text-text-secondary font-mono">
@@ -27,20 +27,20 @@ export function Header() {
             <a href="#activity" className="hover:text-text-primary no-underline">/log</a>
           </nav>
         </div>
-        <div className="flex items-center gap-3 text-text-secondary font-mono">
+        <div className="flex items-center gap-2 sm:gap-3 text-text-secondary font-mono flex-shrink-0">
           <button
             onClick={copyCA}
-            className="hover:text-text-primary"
+            className="hover:text-text-primary hidden sm:inline"
             title="Copy contract address"
           >
             {copied ? "copied!" : "copy CA"}
           </button>
-          <span className="text-border">|</span>
+          <span className="text-border hidden sm:inline">|</span>
           <a
             href={LINKS.jupiter}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-green hover:underline"
+            className="text-green hover:underline flex-shrink-0"
           >
             buy
           </a>
