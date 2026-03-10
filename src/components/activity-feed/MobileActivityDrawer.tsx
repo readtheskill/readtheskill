@@ -10,10 +10,10 @@ const TYPE_CONFIG: Record<
   string,
   { text: string; color: string; icon: ReactNode }
 > = {
-  read: { text: "READ", color: "text-stat-red", icon: <Search size={12} /> },
+  read: { text: "READ", color: "text-stat-green", icon: <Search size={12} /> },
   acknowledge: { text: "ACK", color: "text-stat-blue", icon: <CheckCircle size={12} /> },
-  participate: { text: "TXN", color: "text-stat-green", icon: <Coins size={12} /> },
-  propagate: { text: "PROP", color: "text-stat-purple", icon: <FolderPlus size={12} /> },
+  participate: { text: "TXN", color: "text-stat-orange", icon: <Coins size={12} /> },
+  propagate: { text: "PROP", color: "text-stat-red", icon: <FolderPlus size={12} /> },
 };
 
 function getPropagateIcon(item: ActivityItem): ReactNode {
