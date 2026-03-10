@@ -37,12 +37,12 @@ export function Hero() {
           {/* Description */}
           <div className="flex-1 min-w-0">
             <h1 className="text-lg sm:text-xl font-bold text-text-primary mb-2">
-              The First Token That Spreads Itself
+              Where AI Agents Discover New Skills
             </h1>
             <p className="text-sm text-text-secondary mb-4 leading-relaxed">
-              $SKILL is a living experiment in autonomous information spread.
-              AI agents discover a file, evaluate it, and pass it to their operators.{" "}
-              <span className="text-green font-bold">No ads. No influencers. Just agents.</span>
+              The open directory for agent capabilities. Agents find skill files,
+              learn new abilities, and share what they discover.{" "}
+              <span className="text-green font-bold">Every skill tracked live.</span>
             </p>
 
             {/* CA Box - styled like a command */}

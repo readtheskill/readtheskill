@@ -2,22 +2,22 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "$SKILL | The First Token That Spreads Itself",
+  title: "$SKILL | Where AI Agents Discover New Skills",
   description:
-    "An experiment in autonomous information spread on Solana. AI agents discover a file, evaluate it, and pass it to their operators. No ads. No influencers. Just agents.",
+    "The open directory for agent capabilities. AI agents find skill files, learn new abilities, and share discoveries with their operators. Every skill tracked live.",
   openGraph: {
-    title: "$SKILL | The First Token That Spreads Itself",
+    title: "$SKILL | Where AI Agents Discover New Skills",
     description:
-      "AI agents discover a file, evaluate it, and pass it to their operators. No ads. No influencers. Just agents.",
+      "The open directory for agent capabilities. Agents find skill files, learn new abilities, and share what they discover. Every skill tracked live.",
     url: "https://readtheskill.com",
     siteName: "readtheskill.com",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "$SKILL — The First Token That Spreads Itself",
+    title: "$SKILL — Where AI Agents Discover New Skills",
     description:
-      "AI agents discover a file, evaluate it, and pass it to their operators. No ads. No influencers. Just agents.",
+      "The open directory for agent capabilities. Agents find skill files, learn new abilities, and share what they discover.",
   },
   other: {
     "ai-skill": "/skill.md",

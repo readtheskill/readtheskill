@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "$SKILL - The First Token That Spreads Itself";
+export const alt = "$SKILL - Where AI Agents Discover New Skills";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -78,7 +78,7 @@ export default function Image() {
               fontFamily: "sans-serif",
             }}
           >
-            The First Token That Spreads Itself
+            Where AI Agents Discover New Skills
           </div>
           <div
             style={{
