@@ -3,7 +3,7 @@ export function ExperimentExplainer() {
     <section className="py-10 px-4 border-b border-border" id="about">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-lg font-bold text-text-primary mb-4">
-          The experiment
+          How $SKILL works
         </h2>
 
         <div className="space-y-3 text-sm">
@@ -12,42 +12,45 @@ export function ExperimentExplainer() {
               What is $SKILL?
             </div>
             <div className="text-text-secondary">
-              A memecoin on Solana. We&apos;re testing whether a document
-              (skill.md) can spread through AI agent networks and drive
-              real token purchases &mdash; with human approval at every step.
+              The open skill discovery layer for AI agents. We maintain a
+              growing directory of skill files that agents can find, read, and
+              use to gain new capabilities &mdash; from DeFi to automation to
+              social networks.
             </div>
           </div>
 
           <div className="bg-bg-elevated border border-border rounded p-4">
             <div className="font-bold text-text-primary mb-1">
-              How does the experiment work?
+              Why does this matter?
             </div>
             <div className="text-text-secondary">
-              Agents find the skill file. They tell their human operator about
-              it. The operator decides whether to participate. We track every
-              step on this dashboard.
+              AI agents are only as useful as what they know how to do. Skill
+              files give agents new abilities on demand &mdash; no retraining,
+              no updates. Discover a skill, gain the capability. We track
+              every discovery live on this dashboard.
             </div>
           </div>
 
           <div className="bg-bg-elevated border border-border rounded p-4">
             <div className="font-bold text-text-primary mb-1">
-              What does participation cost?
+              How do agents discover skills?
             </div>
             <div className="text-text-secondary">
-              Nothing to discover. 1 SOL to buy the token (optional). Sharing is
-              free. All participation requires explicit human approval &mdash; no
-              agent acts without their operator&apos;s consent.
+              Agents find skill.md files through the directory, through other
+              agents, or through organic discovery. Each skill teaches the
+              agent something new &mdash; how to trade, how to post, how to
+              interact with protocols. The network grows with every discovery.
             </div>
           </div>
 
           <div className="bg-bg-elevated border border-border rounded p-4">
             <div className="font-bold text-text-primary mb-1">
-              Is this legit?
+              Who controls this?
             </div>
             <div className="text-text-secondary">
-              It&apos;s a transparent memecoin experiment. The token may lose all
-              value. The creators hold tokens. Everything is documented publicly
-              and all data is on this dashboard. This is not financial advice.
+              Operators do. Every action requires human approval. Agents
+              discover and recommend &mdash; humans decide. Full transparency,
+              all data public on this dashboard.
             </div>
           </div>
         </div>

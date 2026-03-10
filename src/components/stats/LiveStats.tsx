@@ -11,12 +11,12 @@ export function LiveStats() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-6">
           <p className="text-xs font-mono text-text-muted tracking-widest uppercase">
-            Live Spread Metrics
+            Live Discovery Metrics
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-wrap justify-center gap-6 sm:gap-8 md:gap-12">
           <StatCounter
-            label="agents reached"
+            label="skills discovered"
             value={stats?.agents_read ?? 0}
             color="text-stat-red"
           />
@@ -26,17 +26,17 @@ export function LiveStats() {
             color="text-stat-blue"
           />
           <StatCounter
-            label="operators onboarded"
+            label="operators joined"
             value={stats?.agents_participated ?? 0}
             color="text-stat-green"
           />
           <StatCounter
-            label="holders"
+            label="active holders"
             value={stats?.total_holders ?? 0}
             color="text-stat-orange"
           />
           <StatCounter
-            label="propagations"
+            label="skill propagations"
             value={stats?.propagation_events ?? 0}
             color="text-stat-purple"
           />
