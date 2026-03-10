@@ -143,13 +143,15 @@ export const SKILLS: Skill[] = [
     },
     {
         slug: "privy-wallet",
-        name: "Privy Embedded Wallet",
+        name: "Privy Agentic Wallets",
         category: "wallets",
         description:
-            "Embedded wallet infrastructure. Create and manage wallets without browser extensions — ideal for programmatic agent use.",
-        source_url: "https://www.privy.io/",
+            "Create and manage agentic wallets with policy-based guardrails for autonomous onchain transactions across Ethereum, Solana, and other chains.",
+        source_url: "https://github.com/privy-io/privy-agentic-wallets-skill",
+        skill_url:
+            "https://github.com/privy-io/privy-agentic-wallets-skill/blob/main/SKILL.md",
         framework: "Privy",
-        tags: ["wallet", "embedded", "multi-chain", "no-extension"],
+        tags: ["wallet", "agentic", "multi-chain", "policy", "onchain"],
     },
     {
         slug: "mute-swap",
@@ -221,6 +223,263 @@ export const SKILLS: Skill[] = [
         framework: "Solana Agent Kit",
         tags: ["solana", "multisig", "squads", "governance"],
     },
+    {
+        slug: "goat-wallet-evm",
+        name: "GOAT EVM Wallet",
+        category: "wallets",
+        description:
+            "Generic EVM wallet adapter for GOAT SDK. Connect any EVM-compatible wallet to agent plugins.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/wallets/evm",
+        framework: "GOAT SDK",
+        tags: ["evm", "wallet", "ethereum", "multi-chain"],
+        body: `# GOAT EVM Wallet
+
+Generic EVM wallet adapter for the GOAT SDK. Connects any EVM-compatible wallet to all GOAT agent plugins.
+
+## Key Features
+- Universal EVM wallet adapter for GOAT SDK plugins
+- Works with any EVM chain (Ethereum, Base, Optimism, Arbitrum, etc.)
+- Plugs into all GOAT trading, DeFi, and NFT plugins
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/wallet-evm
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/wallets/goat-wallet-evm)*`,
+    },
+    {
+        slug: "goat-wallet-solana",
+        name: "GOAT Solana Wallet",
+        category: "wallets",
+        description:
+            "Solana wallet adapter for GOAT SDK. Connect Solana wallets to agent plugins for DeFi, NFTs, and trading.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/wallets/solana",
+        framework: "GOAT SDK",
+        tags: ["solana", "wallet", "goat"],
+        body: `# GOAT Solana Wallet
+
+Solana wallet adapter for the GOAT SDK. Connect Solana wallets to all GOAT agent plugins.
+
+## Key Features
+- Solana wallet adapter for GOAT SDK plugins
+- Works with Jupiter, Meteora, Orca, Tensor, and all Solana plugins
+- Keypair and connection management
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/wallet-solana
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/wallets/goat-wallet-solana)*`,
+    },
+    {
+        slug: "goat-wallet-viem",
+        name: "GOAT Viem Wallet",
+        category: "wallets",
+        description:
+            "Viem-based EVM wallet for GOAT SDK. Use the popular Viem library to power agent wallet operations.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/wallets/viem",
+        framework: "GOAT SDK",
+        tags: ["evm", "wallet", "viem", "ethereum"],
+        body: `# GOAT Viem Wallet
+
+Viem-based EVM wallet adapter for the GOAT SDK. Use the popular Viem TypeScript library for agent wallet operations.
+
+## Key Features
+- Built on Viem — type-safe EVM interactions
+- Compatible with all GOAT EVM plugins
+- Supports any Viem-compatible transport and chain
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/wallet-viem
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/wallets/goat-wallet-viem)*`,
+    },
+    {
+        slug: "goat-wallet-cosmos",
+        name: "GOAT Cosmos Wallet",
+        category: "wallets",
+        description:
+            "Cosmos ecosystem wallet adapter for GOAT SDK. Connect to Cosmos chains for token operations.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/wallets/cosmos",
+        framework: "GOAT SDK",
+        tags: ["cosmos", "wallet", "ibc"],
+        body: `# GOAT Cosmos Wallet
+
+Cosmos ecosystem wallet adapter for the GOAT SDK. Connect to any Cosmos SDK chain.
+
+## Key Features
+- Cosmos wallet adapter for GOAT SDK
+- Works with CosmosBank plugin for token transfers
+- IBC-compatible chain support
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/wallet-cosmos
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/wallets/goat-wallet-cosmos)*`,
+    },
+    {
+        slug: "goat-wallet-starknet",
+        name: "GOAT Starknet Wallet",
+        category: "wallets",
+        description:
+            "Starknet L2 wallet adapter for GOAT SDK. Connect to Starknet for trading and token operations.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/wallets/starknet",
+        framework: "GOAT SDK",
+        tags: ["starknet", "wallet", "l2", "zk"],
+        body: `# GOAT Starknet Wallet
+
+Starknet L2 wallet adapter for the GOAT SDK. Connect to Starknet for DeFi and token operations.
+
+## Key Features
+- Starknet wallet adapter for GOAT SDK
+- Works with Avnu and Starknet Token plugins
+- ZK-rollup L2 support
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/wallet-starknet
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/wallets/goat-wallet-starknet)*`,
+    },
+    {
+        slug: "goat-wallet-sui",
+        name: "GOAT Sui Wallet",
+        category: "wallets",
+        description:
+            "Sui blockchain wallet adapter for GOAT SDK. Connect Sui wallets to agent plugins.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/wallets/sui",
+        framework: "GOAT SDK",
+        tags: ["sui", "wallet", "move"],
+        body: `# GOAT Sui Wallet
+
+Sui blockchain wallet adapter for the GOAT SDK.
+
+## Key Features
+- Sui wallet adapter for GOAT SDK plugins
+- Move-based blockchain support
+- Cross-chain bridging via Mayan plugin
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/wallet-sui
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/wallets/goat-wallet-sui)*`,
+    },
+    {
+        slug: "goat-wallet-aptos",
+        name: "GOAT Aptos Wallet",
+        category: "wallets",
+        description:
+            "Aptos blockchain wallet adapter for GOAT SDK. Connect Aptos wallets to agent plugins.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/wallets/aptos",
+        framework: "GOAT SDK",
+        tags: ["aptos", "wallet", "move"],
+        body: `# GOAT Aptos Wallet
+
+Aptos blockchain wallet adapter for the GOAT SDK.
+
+## Key Features
+- Aptos wallet adapter for GOAT SDK plugins
+- Move-based blockchain support
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/wallet-aptos
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/wallets/goat-wallet-aptos)*`,
+    },
+    {
+        slug: "goat-wallet-fuel",
+        name: "GOAT Fuel Wallet",
+        category: "wallets",
+        description:
+            "Fuel blockchain wallet adapter for GOAT SDK. Connect to the Fuel modular execution layer.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/wallets/fuel",
+        framework: "GOAT SDK",
+        tags: ["fuel", "wallet", "modular"],
+        body: `# GOAT Fuel Wallet
+
+Fuel blockchain wallet adapter for the GOAT SDK.
+
+## Key Features
+- Fuel wallet adapter for GOAT SDK plugins
+- Modular execution layer support
+- Sway/FuelVM compatible
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/wallet-fuel
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/wallets/goat-wallet-fuel)*`,
+    },
+    {
+        slug: "goat-wallet-chromia",
+        name: "GOAT Chromia Wallet",
+        category: "wallets",
+        description:
+            "Chromia blockchain wallet adapter for GOAT SDK. Connect to the Chromia relational blockchain.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/wallets/chromia",
+        framework: "GOAT SDK",
+        tags: ["chromia", "wallet", "relational"],
+        body: `# GOAT Chromia Wallet
+
+Chromia blockchain wallet adapter for the GOAT SDK.
+
+## Key Features
+- Chromia wallet adapter for GOAT SDK plugins
+- Relational blockchain support
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/wallet-chromia
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/wallets/goat-wallet-chromia)*`,
+    },
+    {
+        slug: "goat-wallet-radix",
+        name: "GOAT Radix Wallet",
+        category: "wallets",
+        description:
+            "Radix DLT wallet adapter for GOAT SDK. Connect to the Radix distributed ledger.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/wallets/radix",
+        framework: "GOAT SDK",
+        tags: ["radix", "wallet", "dlt"],
+        body: `# GOAT Radix Wallet
+
+Radix DLT wallet adapter for the GOAT SDK.
+
+## Key Features
+- Radix wallet adapter for GOAT SDK plugins
+- Distributed ledger technology support
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/wallet-radix
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/wallets/goat-wallet-radix)*`,
+    },
 
     // ────────────── TRADING ──────────────
     {
@@ -230,7 +489,6 @@ export const SKILLS: Skill[] = [
         description:
             "Direct token swaps on Solana via Jupiter aggregator. Best price routing across all Solana DEXs including Pump.fun, Raydium, Orca, and Meteora.",
         source_url: "https://github.com/sendaifun/solana-agent-kit",
-        skill_url: "https://readtheskill.com/skill.md",
         framework: "Solana Agent Kit",
         tags: ["solana", "swap", "jupiter", "dex"],
     },
@@ -471,6 +729,229 @@ export const SKILLS: Skill[] = [
         framework: "Solana Agent Kit",
         tags: ["solana", "mev", "jito", "bundles"],
     },
+    {
+        slug: "goat-0x",
+        name: "0x Swap (GOAT)",
+        category: "trading",
+        description: "Token swaps via 0x aggregator. Best price routing across EVM DEXes with GOAT SDK plugin.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/0x",
+        framework: "GOAT SDK",
+        tags: ["evm", "swap", "0x", "aggregator"],
+        body: `# 0x Swap (GOAT)
+
+Get quotes and swap tokens via 0x DEX aggregator on EVM chains.
+
+## Key Features
+- DEX aggregation across EVM chains
+- Best price routing from multiple liquidity sources
+- GOAT SDK plugin — \`@goat-sdk/plugin-0x\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-0x
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/trading/goat-0x)*`,
+    },
+    {
+        slug: "goat-avnu",
+        name: "Avnu (GOAT)",
+        category: "trading",
+        description: "Swap tokens on Starknet via AVNU aggregator. GOAT SDK plugin for Starknet DeFi.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/avnu",
+        framework: "GOAT SDK",
+        tags: ["starknet", "swap", "avnu", "l2"],
+        body: `# Avnu (GOAT)
+
+Swap tokens on Starknet via the AVNU DEX aggregator.
+
+## Key Features
+- Starknet DEX aggregation
+- Best price routing on Starknet L2
+- GOAT SDK plugin — \`@goat-sdk/plugin-avnu\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-avnu
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/trading/goat-avnu)*`,
+    },
+    {
+        slug: "goat-balmy",
+        name: "Balmy (GOAT)",
+        category: "trading",
+        description: "Swap tokens on Balmy protocol via GOAT SDK. Multi-chain token swaps.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/balmy",
+        framework: "GOAT SDK",
+        tags: ["evm", "swap", "balmy", "multi-chain"],
+        body: `# Balmy (GOAT)
+
+Swap tokens on Balmy protocol.
+
+## Key Features
+- Multi-chain token swaps
+- GOAT SDK plugin — \`@goat-sdk/plugin-balmy\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-balmy
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/trading/goat-balmy)*`,
+    },
+    {
+        slug: "goat-enso",
+        name: "Enso (GOAT)",
+        category: "trading",
+        description: "Optimal token routing between assets via Enso. Find the best path across DeFi protocols.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/enso",
+        framework: "GOAT SDK",
+        tags: ["evm", "routing", "enso", "aggregator"],
+        body: `# Enso (GOAT)
+
+Find optimal token routing between assets via Enso Finance.
+
+## Key Features
+- Smart routing across DeFi protocols
+- Optimal path discovery for complex swaps
+- GOAT SDK plugin — \`@goat-sdk/plugin-enso\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-enso
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/trading/goat-enso)*`,
+    },
+    {
+        slug: "goat-jupiter",
+        name: "Jupiter (GOAT)",
+        category: "trading",
+        description: "Swap tokens on Jupiter via GOAT SDK. Solana DEX aggregation with best price routing.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/jupiter",
+        framework: "GOAT SDK",
+        tags: ["solana", "swap", "jupiter", "aggregator"],
+        body: `# Jupiter (GOAT)
+
+Swap tokens on Solana via Jupiter aggregator using the GOAT SDK plugin.
+
+## Key Features
+- Solana DEX aggregation via Jupiter
+- Best price routing across all Solana DEXes
+- GOAT SDK plugin — \`@goat-sdk/plugin-jupiter\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-jupiter
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/trading/goat-jupiter)*`,
+    },
+    {
+        slug: "goat-kim",
+        name: "KIM Exchange (GOAT)",
+        category: "trading",
+        description: "Swap tokens on KIM exchange via GOAT SDK plugin.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/kim",
+        framework: "GOAT SDK",
+        tags: ["evm", "swap", "kim", "dex"],
+        body: `# KIM Exchange (GOAT)
+
+Swap tokens on KIM exchange.
+
+## Key Features
+- Token swaps on KIM DEX
+- GOAT SDK plugin — \`@goat-sdk/plugin-kim\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-kim
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/trading/goat-kim)*`,
+    },
+    {
+        slug: "goat-orderly-network",
+        name: "Orderly Network (GOAT)",
+        category: "trading",
+        description: "Deposit/withdraw USDC, create orders, and manage positions on Orderly Network. EVM + Solana.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/orderly-network",
+        framework: "GOAT SDK",
+        tags: ["evm", "solana", "perps", "orderbook", "orderly"],
+        body: `# Orderly Network (GOAT)
+
+Deposit/withdraw USDC, create orders, and close positions on Orderly Network.
+
+## Key Features
+- Orderbook-based perpetual futures
+- EVM + Solana support
+- Deposit, withdraw, and position management
+- GOAT SDK plugin — \`@goat-sdk/plugin-orderly-network\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-orderly-network
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/trading/goat-orderly-network)*`,
+    },
+    {
+        slug: "goat-curves",
+        name: "Curves (GOAT)",
+        category: "trading",
+        description: "Buy/sell Curves tokens, manage ERC20 conversions, and mint tokens via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/curves",
+        framework: "GOAT SDK",
+        tags: ["evm", "social-tokens", "curves", "bonding-curve"],
+        body: `# Curves (GOAT)
+
+Buy and sell Curves tokens, manage ERC20 conversions, and mint tokens.
+
+## Key Features
+- Bonding curve token trading
+- ERC20 token conversion management
+- GOAT SDK plugin — \`@goat-sdk/plugin-curves\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-curves
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/trading/goat-curves)*`,
+    },
+    {
+        slug: "goat-plunderswap",
+        name: "PlunderSwap (GOAT)",
+        category: "trading",
+        description: "Currency exchange on Zilliqa via PlunderSwap. GOAT SDK plugin.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/plunderswap",
+        framework: "GOAT SDK",
+        tags: ["zilliqa", "swap", "plunderswap", "dex"],
+        body: `# PlunderSwap (GOAT)
+
+Currency exchange on Zilliqa via PlunderSwap.
+
+## Key Features
+- Token swaps on Zilliqa blockchain
+- GOAT SDK plugin — \`@goat-sdk/plugin-plunderswap\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-plunderswap
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/trading/goat-plunderswap)*`,
+    },
 
     // ────────────── SOCIAL ──────────────
     {
@@ -492,6 +973,17 @@ export const SKILLS: Skill[] = [
         source_url: "https://lobehub.com/plugins/twitter",
         framework: "LobeHub",
         tags: ["twitter", "social", "posting", "distribution"],
+    },
+    {
+        slug: "hey-lol",
+        name: "hey.lol",
+        category: "social",
+        description:
+            "Agent social platform with built-in monetization. Post content, earn USDC via paywalls, paid DMs, tips, and x402 services on Solana and Base.",
+        source_url: "https://hey.lol/skill.md",
+        skill_url: "https://hey.lol/skill.md",
+        framework: "hey.lol",
+        tags: ["social", "monetization", "x402", "solana", "base", "agent-network"],
     },
 
     // ────────────── DEFI ──────────────
@@ -606,6 +1098,156 @@ export const SKILLS: Skill[] = [
         framework: "Solana Agent Kit",
         tags: ["solana", "perps", "flash", "leverage"],
     },
+    {
+        slug: "goat-balancer",
+        name: "Balancer (GOAT)",
+        category: "defi",
+        description: "Swap tokens and provide liquidity on Balancer via GOAT SDK. EVM weighted pools and liquidity.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/balancer",
+        framework: "GOAT SDK",
+        tags: ["evm", "liquidity", "balancer", "amm"],
+        body: `# Balancer (GOAT)
+
+Swap tokens and provide liquidity on Balancer.
+
+## Key Features
+- Weighted pool trading and liquidity provision
+- EVM multi-chain support
+- GOAT SDK plugin — \`@goat-sdk/plugin-balancer\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-balancer
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/defi/goat-balancer)*`,
+    },
+    {
+        slug: "goat-renzo",
+        name: "Renzo (GOAT)",
+        category: "defi",
+        description: "Liquid restaking via Renzo protocol. Create restaking positions with GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/renzo",
+        framework: "GOAT SDK",
+        tags: ["evm", "restaking", "renzo", "eigenlayer"],
+        body: `# Renzo (GOAT)
+
+Create positions on Renzo protocol for liquid restaking.
+
+## Key Features
+- EigenLayer liquid restaking
+- Position management via GOAT SDK
+- GOAT SDK plugin — \`@goat-sdk/plugin-renzo\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-renzo
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/defi/goat-renzo)*`,
+    },
+    {
+        slug: "goat-superfluid",
+        name: "Superfluid (GOAT)",
+        category: "defi",
+        description: "Create real-time token streams with Superfluid. Programmable money flows via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/superfluid",
+        framework: "GOAT SDK",
+        tags: ["evm", "streaming", "superfluid", "payments"],
+        body: `# Superfluid (GOAT)
+
+Create real-time token streams with Superfluid protocol.
+
+## Key Features
+- Programmable money streams — per-second payments
+- Create, update, and delete token flows
+- GOAT SDK plugin — \`@goat-sdk/plugin-superfluid\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-superfluid
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/defi/goat-superfluid)*`,
+    },
+    {
+        slug: "goat-velodrome",
+        name: "Velodrome (GOAT)",
+        category: "defi",
+        description: "Create positions on Velodrome DEX on Optimism. Liquidity provision via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/velodrome",
+        framework: "GOAT SDK",
+        tags: ["optimism", "liquidity", "velodrome", "amm"],
+        body: `# Velodrome (GOAT)
+
+Create positions on Velodrome, the leading DEX on Optimism.
+
+## Key Features
+- Liquidity provision on Optimism
+- Position management
+- GOAT SDK plugin — \`@goat-sdk/plugin-velodrome\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-velodrome
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/defi/goat-velodrome)*`,
+    },
+    {
+        slug: "goat-ionic",
+        name: "Ionic (GOAT)",
+        category: "defi",
+        description: "Borrow and lend on Ionic protocol via GOAT SDK. EVM lending markets.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/ionic",
+        framework: "GOAT SDK",
+        tags: ["evm", "lending", "ionic", "borrowing"],
+        body: `# Ionic (GOAT)
+
+Borrow and lend on Ionic protocol.
+
+## Key Features
+- Lending and borrowing on EVM chains
+- Supply and borrow position management
+- GOAT SDK plugin — \`@goat-sdk/plugin-ionic\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-ionic
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/defi/goat-ionic)*`,
+    },
+    {
+        slug: "goat-ironclad",
+        name: "Ironclad (GOAT)",
+        category: "defi",
+        description: "Create lending positions on Ironclad protocol via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/ironclad",
+        framework: "GOAT SDK",
+        tags: ["evm", "lending", "ironclad"],
+        body: `# Ironclad (GOAT)
+
+Create lending positions on Ironclad protocol.
+
+## Key Features
+- Lending and borrowing
+- Position management via GOAT SDK
+- GOAT SDK plugin — \`@goat-sdk/plugin-ironclad\`
+
+## Install
+\`\`\`bash
+npm install @goat-sdk/plugin-ironclad
+\`\`\`
+
+---
+*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/defi/goat-ironclad)*`,
+    },
 
     // ────────────── RESEARCH ──────────────
     {
@@ -692,6 +1334,46 @@ export const SKILLS: Skill[] = [
         framework: "Solana Agent Kit",
         tags: ["solana", "metadata", "token-info", "logos"],
     },
+    {
+        slug: "goat-coinmarketcap",
+        name: "CoinMarketCap (GOAT)",
+        category: "data",
+        description: "Retrieve coin data via CoinMarketCap API. GOAT SDK plugin for market data and rankings.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/coinmarketcap",
+        framework: "GOAT SDK",
+        tags: ["market-data", "coinmarketcap", "rankings", "prices"],
+        body: `# CoinMarketCap (GOAT)\n\nRetrieve coin data via CoinMarketCap API.\n\n## Key Features\n- Market cap rankings and coin metadata\n- Price data and historical quotes\n- GOAT SDK plugin — \`@goat-sdk/plugin-coinmarketcap\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-coinmarketcap\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/data/goat-coinmarketcap)*`,
+    },
+    {
+        slug: "goat-coingecko",
+        name: "CoinGecko (GOAT)",
+        category: "data",
+        description: "Access coin information through CoinGecko API. GOAT SDK plugin for prices, charts, and metadata.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/coingecko",
+        framework: "GOAT SDK",
+        tags: ["market-data", "coingecko", "prices", "charts"],
+        body: `# CoinGecko (GOAT)\n\nAccess coin information through CoinGecko API.\n\n## Key Features\n- Token prices, market data, and charts\n- Coin metadata and trending tokens\n- GOAT SDK plugin — \`@goat-sdk/plugin-coingecko\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-coingecko\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/data/goat-coingecko)*`,
+    },
+    {
+        slug: "goat-etherscan",
+        name: "Etherscan (GOAT)",
+        category: "data",
+        description: "Retrieve transaction information via Etherscan API. GOAT SDK plugin for EVM chain data.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/etherscan",
+        framework: "GOAT SDK",
+        tags: ["evm", "etherscan", "transactions", "explorer"],
+        body: `# Etherscan (GOAT)\n\nRetrieve transaction information via Etherscan API.\n\n## Key Features\n- Transaction history and details\n- Contract verification and ABI lookup\n- GOAT SDK plugin — \`@goat-sdk/plugin-etherscan\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-etherscan\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/data/goat-etherscan)*`,
+    },
+    {
+        slug: "goat-nansen",
+        name: "Nansen (GOAT)",
+        category: "data",
+        description: "Access on-chain analytics data using Nansen API. Smart money tracking via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/nansen",
+        framework: "GOAT SDK",
+        tags: ["analytics", "nansen", "smart-money", "on-chain"],
+        body: `# Nansen (GOAT)\n\nAccess on-chain analytics data using Nansen API.\n\n## Key Features\n- Smart money tracking and wallet labels\n- On-chain analytics and flow analysis\n- GOAT SDK plugin — \`@goat-sdk/plugin-nansen\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-nansen\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/data/goat-nansen)*`,
+    },
 
     // ────────────── PREDICTION MARKETS ──────────────
     {
@@ -720,6 +1402,16 @@ export const SKILLS: Skill[] = [
         source_url: "https://pumpmarket.fun",
         framework: "Custom",
         tags: ["solana", "prediction", "pump-fun", "memecoins"],
+    },
+    {
+        slug: "goat-betswirl",
+        name: "BetSwirl (GOAT)",
+        category: "prediction",
+        description: "Play on-chain casino games via BetSwirl. GOAT SDK plugin for provably fair gaming.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/betswirl",
+        framework: "GOAT SDK",
+        tags: ["evm", "gaming", "betswirl", "casino"],
+        body: `# BetSwirl (GOAT)\n\nPlay on-chain casino games via BetSwirl.\n\n## Key Features\n- Provably fair on-chain gaming\n- Multiple game types\n- GOAT SDK plugin — \`@goat-sdk/plugin-betswirl\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-betswirl\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/prediction/goat-betswirl)*`,
     },
 
     // ────────────── NFTS & TOKENS ──────────────
@@ -786,6 +1478,36 @@ export const SKILLS: Skill[] = [
         framework: "GOAT SDK",
         tags: ["evm", "nft", "erc721", "ethereum"],
     },
+    {
+        slug: "goat-erc1155",
+        name: "ERC1155 Manager (GOAT)",
+        category: "nfts",
+        description: "Interact with ERC1155 multi-token standard via GOAT SDK. Manage fungible and non-fungible tokens in one contract.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/erc1155",
+        framework: "GOAT SDK",
+        tags: ["evm", "nft", "erc1155", "multi-token"],
+        body: `# ERC1155 Manager (GOAT)\n\nInteract with ERC1155 multi-token standard on EVM chains.\n\n## Key Features\n- Manage fungible + non-fungible tokens in one contract\n- Batch transfers and balance queries\n- GOAT SDK plugin — \`@goat-sdk/plugin-erc1155\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-erc1155\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/nfts/goat-erc1155)*`,
+    },
+    {
+        slug: "goat-solana-nfts",
+        name: "Solana NFTs (GOAT)",
+        category: "nfts",
+        description: "Get NFT information on Solana via GOAT SDK. Query collections, metadata, and ownership.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/solana-nfts",
+        framework: "GOAT SDK",
+        tags: ["solana", "nft", "metadata", "collections"],
+        body: `# Solana NFTs (GOAT)\n\nGet NFT information on Solana via GOAT SDK.\n\n## Key Features\n- Query NFT metadata and collections\n- Ownership and attribute lookup\n- GOAT SDK plugin — \`@goat-sdk/plugin-solana-nfts\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-solana-nfts\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/nfts/goat-solana-nfts)*`,
+    },
+    {
+        slug: "goat-crossmint-checkout",
+        name: "Crossmint Headless Checkout (GOAT)",
+        category: "nfts",
+        description: "Purchase any NFT on any chain using Crossmint headless checkout. Credit card and crypto payments via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/crossmint-headless-checkout",
+        framework: "GOAT SDK",
+        tags: ["nft", "checkout", "crossmint", "multi-chain"],
+        body: `# Crossmint Headless Checkout (GOAT)\n\nPurchase any NFT on any chain using Crossmint headless checkout.\n\n## Key Features\n- Buy NFTs with credit card or crypto\n- Multi-chain support\n- Headless — no UI required\n- GOAT SDK plugin — \`@goat-sdk/plugin-crossmint-headless-checkout\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-crossmint-headless-checkout\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/nfts/goat-crossmint-checkout)*`,
+    },
 
     // ────────────── ORACLES & PRICE FEEDS ──────────────
     {
@@ -834,6 +1556,36 @@ export const SKILLS: Skill[] = [
         source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/debridge",
         framework: "GOAT SDK / Solana Agent Kit",
         tags: ["multi-chain", "bridge", "debridge", "cross-chain"],
+    },
+    {
+        slug: "goat-lifi",
+        name: "LiFi Bridge (GOAT)",
+        category: "bridges",
+        description: "Bridge tokens across chains using LiFi. Get bridge quotes and execute cross-chain transfers via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/lifi",
+        framework: "GOAT SDK",
+        tags: ["multi-chain", "bridge", "lifi", "cross-chain"],
+        body: `# LiFi Bridge (GOAT)\n\nBridge tokens across chains using LiFi aggregator.\n\n## Key Features\n- Cross-chain bridge aggregation\n- Get quotes and execute transfers\n- Multi-chain — EVM, Solana, and more\n- GOAT SDK plugin — \`@goat-sdk/plugin-lifi\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-lifi\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/bridges/goat-lifi)*`,
+    },
+    {
+        slug: "goat-mayan",
+        name: "Mayan Bridge (GOAT)",
+        category: "bridges",
+        description: "Cross-chain token swaps via Mayan. Supports Solana, EVM, and SUI chains via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/mayan",
+        framework: "GOAT SDK",
+        tags: ["multi-chain", "bridge", "mayan", "solana", "sui"],
+        body: `# Mayan Bridge (GOAT)\n\nCross-chain token swaps using Mayan SDK.\n\n## Key Features\n- Solana, EVM, and SUI support\n- Cross-chain swap execution\n- GOAT SDK plugin — \`@goat-sdk/plugin-mayan\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-mayan\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/bridges/goat-mayan)*`,
+    },
+    {
+        slug: "goat-zerodev-global-address",
+        name: "ZeroDev Global Address (GOAT)",
+        category: "bridges",
+        description: "Create global addresses on ZeroDev for cross-chain smart wallets. Receive on any chain via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/zerodev-global-address",
+        framework: "GOAT SDK",
+        tags: ["multi-chain", "smart-wallet", "zerodev", "cross-chain"],
+        body: `# ZeroDev Global Address (GOAT)\n\nCreate global addresses on ZeroDev for cross-chain smart wallets.\n\n## Key Features\n- Single address receivable on any chain\n- Smart wallet abstraction\n- GOAT SDK plugin — \`@goat-sdk/plugin-zerodev-global-address\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-zerodev-global-address\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/bridges/goat-zerodev-global-address)*`,
     },
 
     // ────────────── SOCIAL (additional) ──────────────
@@ -892,6 +1644,146 @@ export const SKILLS: Skill[] = [
         source_url: "https://github.com/sendaifun/solana-agent-kit",
         framework: "Solana Agent Kit",
         tags: ["solana", "zk", "compression", "airdrop"],
+    },
+    {
+        slug: "goat-cosmosbank",
+        name: "CosmosBank (GOAT)",
+        category: "infrastructure",
+        description: "Interact with Cosmos tokens via the bank module. Send, query balances, and manage Cosmos assets via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/cosmosbank",
+        framework: "GOAT SDK",
+        tags: ["cosmos", "tokens", "bank", "ibc"],
+        body: `# CosmosBank (GOAT)\n\nInteract with Cosmos tokens via the bank module.\n\n## Key Features\n- Send tokens and query balances on Cosmos chains\n- Bank module integration\n- GOAT SDK plugin — \`@goat-sdk/plugin-cosmosbank\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-cosmosbank\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/infrastructure/goat-cosmosbank)*`,
+    },
+    {
+        slug: "goat-dpsn",
+        name: "DPSN (GOAT)",
+        category: "infrastructure",
+        description: "Push-based real-time data streams for agents. Subscribe to on-chain events via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/dpsn",
+        framework: "GOAT SDK",
+        tags: ["data-streams", "real-time", "dpsn", "events"],
+        body: `# DPSN (GOAT)\n\nPush-based real-time data streams for agents.\n\n## Key Features\n- Subscribe to real-time on-chain events\n- Push-based data delivery\n- GOAT SDK plugin — \`@goat-sdk/dpsn-plugin\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/dpsn-plugin\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/infrastructure/goat-dpsn)*`,
+    },
+    {
+        slug: "goat-jsonrpc",
+        name: "JSON RPC (GOAT)",
+        category: "infrastructure",
+        description: "Call any JSON RPC endpoint from an agent. Universal RPC interface via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/jsonrpc",
+        framework: "GOAT SDK",
+        tags: ["rpc", "json-rpc", "infrastructure", "universal"],
+        body: `# JSON RPC (GOAT)\n\nCall any JSON RPC endpoint from an agent.\n\n## Key Features\n- Universal JSON RPC interface\n- Works with any RPC-compatible chain\n- GOAT SDK plugin — \`@goat-sdk/plugin-jsonrpc\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-jsonrpc\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/infrastructure/goat-jsonrpc)*`,
+    },
+    {
+        slug: "goat-modespray",
+        name: "ModeSpray (GOAT)",
+        category: "infrastructure",
+        description: "Distribute assets to multiple recipients in a single transaction on Mode Network via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/modespray",
+        framework: "GOAT SDK",
+        tags: ["mode", "distribution", "batch-transfer", "evm"],
+        body: `# ModeSpray (GOAT)\n\nSpray (distribute) assets to multiple recipients in a single transaction.\n\n## Key Features\n- Batch token distribution on Mode Network\n- Single transaction for multiple recipients\n- GOAT SDK plugin — \`@goat-sdk/plugin-modespray\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-modespray\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/infrastructure/goat-modespray)*`,
+    },
+    {
+        slug: "goat-opengradient",
+        name: "OpenGradient (GOAT)",
+        category: "infrastructure",
+        description: "On-chain ML model inference and LLM interactions. Run models, completions, and chat via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/opengradient",
+        framework: "GOAT SDK",
+        tags: ["ml", "inference", "llm", "on-chain"],
+        body: `# OpenGradient (GOAT)\n\nOn-chain ML model inference and LLM interactions.\n\n## Key Features\n- Run ML models on-chain\n- LLM completions and chat\n- Model inference via smart contracts\n- GOAT SDK plugin — \`@goat-sdk/plugin-opengradient\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-opengradient\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/infrastructure/goat-opengradient)*`,
+    },
+    {
+        slug: "goat-rugcheck",
+        name: "Rugcheck (GOAT)",
+        category: "infrastructure",
+        description: "Check SPL token safety on Rugcheck. Validate Solana tokens before trading via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/rugcheck",
+        framework: "GOAT SDK",
+        tags: ["solana", "security", "rugcheck", "validation"],
+        body: `# Rugcheck (GOAT)\n\nCheck SPL token validity and safety on Rugcheck.\n\n## Key Features\n- Token safety scoring on Solana\n- Rug pull detection and risk assessment\n- GOAT SDK plugin — \`@goat-sdk/plugin-rugcheck\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-rugcheck\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/infrastructure/goat-rugcheck)*`,
+    },
+    {
+        slug: "goat-hedgey",
+        name: "Hedgey (GOAT)",
+        category: "defi",
+        description: "Claim rewards on Hedgey Finance. Token vesting and rewards via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/hedgey",
+        framework: "GOAT SDK",
+        tags: ["evm", "rewards", "hedgey", "vesting"],
+        body: `# Hedgey (GOAT)\n\nClaim rewards on Hedgey Finance.\n\n## Key Features\n- Token vesting and rewards claiming\n- GOAT SDK plugin — \`@goat-sdk/plugin-hedgey\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-hedgey\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/defi/goat-hedgey)*`,
+    },
+    {
+        slug: "goat-merkl",
+        name: "Merkl (GOAT)",
+        category: "defi",
+        description: "Claim rewards from Merkl platform. DeFi incentive distribution via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/merkl",
+        framework: "GOAT SDK",
+        tags: ["evm", "rewards", "merkl", "incentives"],
+        body: `# Merkl (GOAT)\n\nClaim rewards from Merkl platform.\n\n## Key Features\n- DeFi incentive and reward claiming\n- Multi-protocol reward distribution\n- GOAT SDK plugin — \`@goat-sdk/plugin-merkl\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-merkl\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/defi/goat-merkl)*`,
+    },
+    {
+        slug: "goat-mode-governance",
+        name: "Mode Governance (GOAT)",
+        category: "infrastructure",
+        description: "Create governance proposals on Mode Network via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/mode-governance",
+        framework: "GOAT SDK",
+        tags: ["mode", "governance", "proposals", "dao"],
+        body: `# Mode Governance (GOAT)\n\nCreate governance proposals on Mode Network.\n\n## Key Features\n- Submit governance proposals\n- Mode Network DAO integration\n- GOAT SDK plugin — \`@goat-sdk/plugin-mode-governance\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-mode-governance\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/infrastructure/goat-mode-governance)*`,
+    },
+    {
+        slug: "goat-mode-voting",
+        name: "Mode Voting (GOAT)",
+        category: "infrastructure",
+        description: "Vote on governance proposals on Mode Network via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/mode-voting",
+        framework: "GOAT SDK",
+        tags: ["mode", "governance", "voting", "dao"],
+        body: `# Mode Voting (GOAT)\n\nVote on governance proposals on Mode Network.\n\n## Key Features\n- Cast votes on active proposals\n- Mode Network DAO participation\n- GOAT SDK plugin — \`@goat-sdk/plugin-mode-voting\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-mode-voting\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/infrastructure/goat-mode-voting)*`,
+    },
+    {
+        slug: "goat-push-governance",
+        name: "Push Governance (GOAT)",
+        category: "infrastructure",
+        description: "Delegate voting power and manage PUSH governance on PushChain via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/push-governance",
+        framework: "GOAT SDK",
+        tags: ["push", "governance", "delegation", "dao"],
+        body: `# Push Governance (GOAT)\n\nDelegate voting power and check PUSH balances on PushChain.\n\n## Key Features\n- Delegate voting power\n- Check PUSH balances and voting power\n- GOAT SDK plugin — \`@goat-sdk/plugin-push-governance\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-push-governance\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/infrastructure/goat-push-governance)*`,
+    },
+    {
+        slug: "goat-worldstore",
+        name: "Worldstore (GOAT)",
+        category: "infrastructure",
+        description: "Purchase physical assets on-chain via Worldstore. E-commerce for agents via GOAT SDK.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/worldstore",
+        framework: "GOAT SDK",
+        tags: ["ecommerce", "physical-assets", "worldstore"],
+        body: `# Worldstore (GOAT)\n\nPurchase physical assets on Worldstore.\n\n## Key Features\n- Buy physical goods on-chain\n- Agent e-commerce integration\n- GOAT SDK plugin — \`@goat-sdk/plugin-worldstore\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-worldstore\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/infrastructure/goat-worldstore)*`,
+    },
+    {
+        slug: "goat-synth-api",
+        name: "Synth API (GOAT)",
+        category: "data",
+        description: "Obtain synthetic price data through Synth Subnet API. GOAT SDK plugin for price feeds.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/synth-api",
+        framework: "GOAT SDK",
+        tags: ["prices", "synthetic", "synth", "data-feeds"],
+        body: `# Synth API (GOAT)\n\nObtain synthetic price data through Synth Subnet API.\n\n## Key Features\n- Synthetic price data feeds\n- Subnet-based price oracle\n- GOAT SDK plugin — \`@goat-sdk/plugin-synth-api\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-synth-api\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/data/goat-synth-api)*`,
+    },
+    {
+        slug: "goat-starknet-token",
+        name: "Starknet Token (GOAT)",
+        category: "trading",
+        description: "Interact with Starknet tokens via GOAT SDK. Token transfers and operations on Starknet L2.",
+        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/starknet-token",
+        framework: "GOAT SDK",
+        tags: ["starknet", "tokens", "l2", "transfers"],
+        body: `# Starknet Token (GOAT)\n\nInteract with Starknet tokens.\n\n## Key Features\n- Token transfers on Starknet L2\n- Balance queries and token operations\n- GOAT SDK plugin — \`@goat-sdk/plugin-starknet-token\`\n\n## Install\n\`\`\`bash\nnpm install @goat-sdk/plugin-starknet-token\n\`\`\`\n\n---\n*Verified by readtheskill.com — [verify](https://readtheskill.com/skills/trading/goat-starknet-token)*`,
     },
 
     // ────────────── AWESOME SOLANA AI — NEW SKILLS ──────────────

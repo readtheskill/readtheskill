@@ -13,6 +13,37 @@ import { CategoryIcon } from "@/components/directory/CategoryIcon";
 import fs from "fs";
 import path from "path";
 
+/** Fetch skill.md content from remote skill_url */
+async function fetchSkillContent(url: string): Promise<string> {
+    try {
+        const res = await fetch(toRawMarkdownUrl(url), { next: { revalidate: 3600 } });
+        if (!res.ok) return "";
+        const raw = await res.text();
+        // Guard against HTML pages (e.g., github.com/blob links).
+        if (/<(html|!doctype)/i.test(raw)) return "";
+        return parseSkillMd(raw);
+    } catch {
+        return "";
+    }
+}
+
+function toRawMarkdownUrl(url: string): string {
+    try {
+        const parsed = new URL(url);
+        if (parsed.hostname === "github.com") {
+            const parts = parsed.pathname.split("/").filter(Boolean);
+            // /owner/repo/blob/branch/path/to/file.md -> raw.githubusercontent.com/owner/repo/branch/path/to/file.md
+            if (parts.length >= 5 && parts[2] === "blob") {
+                const [owner, repo, , branch, ...filePath] = parts;
+                return `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${filePath.join("/")}`;
+            }
+        }
+    } catch {
+        return url;
+    }
+    return url;
+}
+
 /** Try multiple paths to find the SKILL.md for a given slug */
 function loadSkillContent(slug: string): string {
     const publicDir = path.join(process.cwd(), "public", "skills");
@@ -64,7 +95,10 @@ export default async function SkillDetailPage({
     }
 
     const cat = CATEGORIES[category as Category];
-    const body = skill.body || loadSkillContent(slug);
+    const body =
+        skill.body ||
+        (skill.skill_url ? await fetchSkillContent(skill.skill_url) : "") ||
+        loadSkillContent(slug);
     const source = skill.source ?? inferSourceFromUrl(skill.source_url);
     const subcategory = inferSubcategory(skill);
 
