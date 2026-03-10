@@ -3,6 +3,7 @@ import { BATCH_SKILLS } from "@/data/skills-batch-automation-design-productivity
 import { COMMUNICATION_SKILLS } from "@/data/skills-batch-communication";
 import { DESIGN_EXTENDED_SKILLS } from "@/data/skills-batch-design-extended";
 import { MARKETING_SKILLS } from "@/data/skills-batch-marketing";
+import { OFFICE_SKILLS } from "@/data/skills-batch-office";
 import { PRODUCTIVITY_EXTENDED_SKILLS } from "@/data/skills-batch-productivity-extended";
 
 export interface Skill {
@@ -38,6 +39,9 @@ export type Category =
     | "coding"
     | "communication"
     | "marketing"
+    | "finance"
+    | "legal"
+    | "hr"
     | "experimental";
 
 export const CATEGORIES: Record<
@@ -128,6 +132,21 @@ export const CATEGORIES: Record<
         label: "Marketing",
         description: "CRO, copywriting, SEO, analytics, and growth engineering skills",
         emoji: "📣",
+    },
+    finance: {
+        label: "Finance & Investment",
+        description: "Financial modeling, valuation, stock analysis, and expense management",
+        emoji: "💰",
+    },
+    legal: {
+        label: "Legal & Compliance",
+        description: "Contract review, NDA generation, and legal document automation",
+        emoji: "⚖️",
+    },
+    hr: {
+        label: "HR & Recruitment",
+        description: "Hiring, screening, job descriptions, and HR process automation",
+        emoji: "👥",
     },
     experimental: {
         label: "Experimental",
@@ -991,6 +1010,22 @@ npm install @goat-sdk/plugin-plunderswap
         skill_url: "https://hey.lol/skill.md",
         framework: "hey.lol",
         tags: ["social", "monetization", "x402", "solana", "base", "agent-network"],
+    },
+
+    // ────────────── COMMUNICATION ──────────────
+    {
+        slug: "agentmail",
+        name: "AgentMail SDK",
+        category: "communication",
+        subcategory: "email-outreach",
+        description:
+            "API-first email platform for AI agents with inbox creation, message send/reply, threads, drafts, attachments, and multi-tenant pods.",
+        source_url: "https://github.com/agentmail-to/agentmail-skills",
+        skill_url:
+            "https://raw.githubusercontent.com/agentmail-to/agentmail-skills/main/agentmail/SKILL.md",
+        framework: "AgentMail",
+        tags: ["email", "inboxes", "threads", "outreach", "automation", "api"],
+        verified: true,
     },
 
     // ────────────── DEFI ──────────────
@@ -2199,6 +2234,7 @@ npm install @goat-sdk/plugin-ironclad
     ...(COMMUNICATION_SKILLS as unknown as Skill[]),
     ...(DESIGN_EXTENDED_SKILLS as unknown as Skill[]),
     ...(MARKETING_SKILLS as unknown as Skill[]),
+    ...(OFFICE_SKILLS as unknown as Skill[]),
     ...(PRODUCTIVITY_EXTENDED_SKILLS as unknown as Skill[]),
 ];
 
