@@ -537,6 +537,39 @@ npm install @goat-sdk/wallet-radix
         source_url: "https://github.com/asterdex/aster-mcp",
         framework: "MCP",
         tags: ["mcp", "futures", "spot", "trading", "cursor"],
+        body: `# Aster MCP Server
+
+MCP server providing 35+ tools for Aster DEX spot and futures trading.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "aster": {
+      "command": "npx",
+      "args": ["-y", "aster-mcp"],
+      "env": { "ASTER_API_KEY": "<your-key>", "ASTER_SECRET_KEY": "<your-secret>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`get_market_data\` — fetch real-time price, volume, and order book for a trading pair
+- \`place_spot_order\` — place a spot buy/sell order (market or limit)
+- \`place_futures_order\` — open/close futures positions with leverage
+- \`get_open_orders\` — list all open orders
+- \`cancel_order\` — cancel a specific order by ID
+- \`get_account_info\` — check balances, margin, and P&L
+- \`set_leverage\` — adjust leverage for a futures pair
+
+### Example Prompt
+> "Buy 0.5 ETH at market price on Aster spot, then check my account balance."
+
+---
+*Source: [asterdex/aster-mcp](https://github.com/asterdex/aster-mcp)*`,
     },
     {
         slug: "binance-skills",
@@ -1979,6 +2012,49 @@ npm install @goat-sdk/plugin-ironclad
 
     // ────────────── 500-ENTRY CSV BATCH (Crypto/Blockchain MCPs) ──────────────
     {
+        slug: "bicscan-mcp",
+        name: "BICScan Risk Scanner",
+        category: "research",
+        description: "Blockchain address risk scoring MCP. Risk scores 0-100 for addresses, domains, and dApps. Multi-chain support.",
+        source_url: "https://github.com/ahnlabio/bicscan-mcp",
+        framework: "MCP",
+        tags: ["security", "risk", "blockchain", "scanning", "mcp"],
+        body: `# BICScan Risk Scanner MCP
+
+Blockchain address risk scoring via MCP. Returns risk scores 0–100 for wallet addresses, domains, and dApps across multiple chains.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "bicscan": {
+      "command": "npx",
+      "args": ["-y", "bicscan-mcp"],
+      "env": { "BICSCAN_API_KEY": "<your-key>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`check_address_risk\` — get a 0–100 risk score for a wallet address (0 = safe, 100 = high risk)
+- \`check_domain_risk\` — scan a domain/dApp URL for phishing or scam indicators
+- \`get_risk_details\` — detailed breakdown of risk factors (sanctions, mixer usage, exploit history)
+
+### Example Prompt
+> "Check the risk score for address 0xabc...123 before I send funds."
+
+### When to Use
+- Before interacting with an unknown wallet or contract
+- Screening dApp URLs for phishing
+- Pre-trade checks in automated trading workflows
+
+---
+*Source: [ahnlabio/bicscan-mcp](https://github.com/ahnlabio/bicscan-mcp)*`,
+    },
+    {
         slug: "armor-crypto-mcp",
         name: "Armor Crypto MCP",
         category: "trading",
@@ -1986,6 +2062,39 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://github.com/armorwallet/armor-crypto-mcp",
         framework: "MCP",
         tags: ["solana", "wallet", "swaps", "dca", "staking", "mcp"],
+        body: `# Armor Crypto MCP
+
+Multi-chain crypto MCP for AI agents. Wallet management, token swaps, DCA strategies, limit orders, and staking — currently on Solana.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "armor": {
+      "command": "npx",
+      "args": ["-y", "armor-crypto-mcp"],
+      "env": { "ARMOR_API_KEY": "<your-key>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`create_wallet\` — create a new Solana wallet
+- \`get_balance\` — check SOL and token balances
+- \`swap_tokens\` — swap between tokens (e.g. SOL → USDC)
+- \`create_dca_order\` — set up dollar-cost averaging (token, amount, interval)
+- \`place_limit_order\` — place a limit buy/sell order
+- \`stake_sol\` — stake SOL to a validator
+- \`get_transaction_history\` — list recent transactions
+
+### Example Prompt
+> "Set up a DCA to buy \$50 of SOL every day for the next 30 days."
+
+---
+*Source: [armorwallet/armor-crypto-mcp](https://github.com/armorwallet/armor-crypto-mcp)*`,
     },
     {
         slug: "bankless-onchain-mcp",
@@ -1995,15 +2104,37 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://github.com/bankless/onchain-mcp",
         framework: "MCP",
         tags: ["onchain", "data", "contracts", "events", "transactions", "mcp"],
-    },
-    {
-        slug: "bicscan-mcp",
-        name: "BICScan Risk Scanner",
-        category: "research",
-        description: "Blockchain address risk scoring MCP. Risk scores 0-100 for addresses, domains, and dApps. Multi-chain support.",
-        source_url: "https://github.com/ahnlabio/bicscan-mcp",
-        framework: "MCP",
-        tags: ["security", "risk", "blockchain", "scanning", "mcp"],
+        body: `# Bankless Onchain MCP
+
+Query on-chain data across blockchains via MCP. Read contracts, monitor events, and analyze transactions.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "bankless-onchain": {
+      "command": "npx",
+      "args": ["-y", "@bankless/onchain-mcp"],
+      "env": { "RPC_URL": "<your-rpc-url>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`read_contract\` — call a read-only contract function (address, ABI, method, args)
+- \`get_events\` — fetch contract events by topic/block range
+- \`get_transaction\` — get full transaction details by hash
+- \`get_balance\` — check native/token balance for an address
+- \`get_block\` — fetch block data by number or hash
+
+### Example Prompt
+> "Read the totalSupply of the USDC contract on Ethereum mainnet."
+
+---
+*Source: [bankless/onchain-mcp](https://github.com/bankless/onchain-mcp)*`,
     },
     {
         slug: "bitnovo-pay-mcp",
@@ -2013,6 +2144,37 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://github.com/bitnovo/mcp-bitnovo-pay",
         framework: "MCP",
         tags: ["payments", "crypto", "invoicing", "mcp"],
+        body: `# Bitnovo Pay MCP
+
+Cryptocurrency payment processing via MCP. Create payment requests, manage webhooks, and track payment status.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "bitnovo-pay": {
+      "command": "npx",
+      "args": ["-y", "mcp-bitnovo-pay"],
+      "env": { "BITNOVO_API_KEY": "<your-key>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`create_payment\` — create a crypto payment request (amount, currency, description)
+- \`get_payment_status\` — check if a payment has been completed
+- \`list_payments\` — list all payments with filters (status, date range)
+- \`create_webhook\` — register a webhook URL for payment events
+- \`get_supported_currencies\` — list supported cryptocurrencies
+
+### Example Prompt
+> "Create a payment request for 50 USDT and give me the payment link."
+
+---
+*Source: [bitnovo/mcp-bitnovo-pay](https://github.com/bitnovo/mcp-bitnovo-pay)*`,
     },
     {
         slug: "chainaware-prediction-mcp",
@@ -2022,6 +2184,42 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://github.com/ChainAware/behavioral-prediction-mcp",
         framework: "MCP",
         tags: ["fraud", "prediction", "rug-pull", "security", "mcp"],
+        body: `# ChainAware Prediction MCP
+
+Wallet behavior prediction and fraud detection via MCP. Detect rug-pulls, rank tokens by safety, and analyze wallet behavioral patterns.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "chainaware": {
+      "command": "npx",
+      "args": ["-y", "@chainaware/behavioral-prediction-mcp"],
+      "env": { "CHAINAWARE_API_KEY": "<your-key>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`detect_rug_pull\` — analyze a token contract for rug-pull risk indicators
+- \`rank_tokens\` — rank tokens by safety score and behavioral signals
+- \`analyze_wallet\` — behavioral analysis of a wallet (patterns, risk flags, associations)
+- \`predict_behavior\` — predict likely next actions for a wallet based on history
+- \`get_fraud_score\` — overall fraud risk score for an address
+
+### Example Prompt
+> "Analyze this token contract for rug-pull risk before I ape in: 0xabc...123"
+
+### When to Use
+- Pre-trade token safety checks
+- Wallet due diligence before interacting with a counterparty
+- Automated fraud screening in trading pipelines
+
+---
+*Source: [ChainAware/behavioral-prediction-mcp](https://github.com/ChainAware/behavioral-prediction-mcp)*`,
     },
     {
         slug: "coingecko-mcp",
@@ -2031,6 +2229,38 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://github.com/coingecko/coingecko-typescript",
         framework: "MCP",
         tags: ["coingecko", "prices", "market-data", "mcp"],
+        body: `# CoinGecko MCP
+
+Official CoinGecko MCP server. Access real-time and historical crypto price data, market caps, volumes, and trending coins.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "coingecko": {
+      "command": "npx",
+      "args": ["-y", "@coingecko/mcp-server"],
+      "env": { "COINGECKO_API_KEY": "<your-key>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`get_price\` — current price for one or more coins (supports multiple vs currencies)
+- \`get_coin_data\` — detailed coin info: description, market cap, ATH, links
+- \`get_market_chart\` — historical price/volume data (1d, 7d, 30d, 1y, max)
+- \`get_trending\` — top trending coins on CoinGecko right now
+- \`search_coins\` — search coins by name or symbol
+- \`get_global_data\` — total market cap, BTC dominance, active coins count
+
+### Example Prompt
+> "What's the current price of ETH in USD and show me the 7-day chart?"
+
+---
+*Source: [coingecko/coingecko-typescript](https://github.com/coingecko/coingecko-typescript)*`,
     },
     {
         slug: "coinex-mcp",
@@ -2040,6 +2270,39 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://github.com/coinexcom/coinex_mcp_server",
         framework: "MCP",
         tags: ["coinex", "exchange", "trading", "futures", "mcp"],
+        body: `# CoinEx MCP
+
+CoinEx exchange MCP server for AI agents. 14 tool sections covering market data, spot trading, futures, and account management.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "coinex": {
+      "command": "npx",
+      "args": ["-y", "coinex-mcp-server"],
+      "env": { "COINEX_ACCESS_ID": "<your-id>", "COINEX_SECRET_KEY": "<your-secret>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`get_market_ticker\` — real-time price, volume, and 24h change for a pair
+- \`get_order_book\` — current order book depth for a trading pair
+- \`place_spot_order\` — place a spot market or limit order
+- \`place_futures_order\` — open/close futures positions
+- \`get_account_balance\` — check balances across spot and futures
+- \`cancel_order\` — cancel an open order
+- \`get_trade_history\` — recent trades for a pair
+
+### Example Prompt
+> "Place a limit buy for 100 USDT worth of BTC at 60000 on CoinEx."
+
+---
+*Source: [coinexcom/coinex_mcp_server](https://github.com/coinexcom/coinex_mcp_server)*`,
     },
     {
         slug: "coinstats-mcp",
@@ -2049,6 +2312,38 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://github.com/CoinStatsHQ/coinstats-mcp",
         framework: "MCP",
         tags: ["portfolio", "market-data", "tracking", "mcp"],
+        body: `# CoinStats MCP
+
+CoinStats MCP server for crypto market data, portfolio tracking, and news aggregation.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "coinstats": {
+      "command": "npx",
+      "args": ["-y", "@coinstats/mcp-server"],
+      "env": { "COINSTATS_API_KEY": "<your-key>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`get_coin_price\` — current price and market data for a coin
+- \`get_portfolio\` — view portfolio holdings with P&L
+- \`get_market_overview\` — top gainers, losers, and market summary
+- \`get_news\` — latest crypto news filtered by coin or topic
+- \`search_coins\` — find coins by name or symbol
+- \`get_coin_chart\` — price chart data for a coin over a time range
+
+### Example Prompt
+> "Show me my portfolio performance and today's top gainers."
+
+---
+*Source: [CoinStatsHQ/coinstats-mcp](https://github.com/CoinStatsHQ/coinstats-mcp)*`,
     },
 
     // ────────────── UI & FRONTEND DESIGN ──────────────
