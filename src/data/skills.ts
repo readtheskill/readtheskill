@@ -5,6 +5,7 @@ import { DESIGN_EXTENDED_SKILLS } from "@/data/skills-batch-design-extended";
 import { MARKETING_SKILLS } from "@/data/skills-batch-marketing";
 import { OFFICE_SKILLS } from "@/data/skills-batch-office";
 import { PRODUCTIVITY_EXTENDED_SKILLS } from "@/data/skills-batch-productivity-extended";
+import { SOLANA_TOOLKIT_SKILLS } from "@/data/skills-batch-solana-toolkit";
 
 export interface Skill {
     slug: string;
@@ -668,6 +669,28 @@ MCP server providing 35+ tools for Aster DEX spot and futures trading.
         source_url: "https://github.com/sendaifun/solana-agent-kit",
         framework: "Solana Agent Kit",
         tags: ["solana", "dca", "jupiter", "automation"],
+    },
+    {
+        slug: "jupiter-api-integration",
+        name: "Jupiter API Integration",
+        category: "trading",
+        description:
+            "Comprehensive Jupiter API skill covering Ultra Swap, Lend, Perps, Trigger, Recurring, Tokens, Price, Portfolio, Prediction Markets, Send, Studio, Lock, and Routing.",
+        source_url: "https://github.com/jup-ag/agent-skills/tree/main/skills/integrating-jupiter",
+        skill_url: "https://github.com/jup-ag/agent-skills/blob/main/skills/integrating-jupiter/SKILL.md",
+        framework: "Jupiter",
+        tags: ["solana", "jupiter", "swap", "perps", "lend", "dca", "limit-orders", "price", "portfolio", "prediction-markets"],
+    },
+    {
+        slug: "jupiter-lend",
+        name: "Jupiter Lend Protocol",
+        category: "defi",
+        description:
+            "Interact with Jupiter Lend (powered by Fluid Protocol). Read-only SDK for querying pools and markets, write SDK for deposits, withdrawals, borrowing, and vault operations on Solana.",
+        source_url: "https://github.com/jup-ag/agent-skills/tree/main/skills/jupiter-lend",
+        skill_url: "https://github.com/jup-ag/agent-skills/blob/main/skills/jupiter-lend/SKILL.md",
+        framework: "Jupiter",
+        tags: ["solana", "jupiter", "lend", "borrow", "earn", "defi", "vaults", "jltoken"],
     },
     {
         slug: "raydium-swap",
@@ -2531,6 +2554,7 @@ CoinStats MCP server for crypto market data, portfolio tracking, and news aggreg
     ...(MARKETING_SKILLS as unknown as Skill[]),
     ...(OFFICE_SKILLS as unknown as Skill[]),
     ...(PRODUCTIVITY_EXTENDED_SKILLS as unknown as Skill[]),
+    ...(SOLANA_TOOLKIT_SKILLS as unknown as Skill[]),
 ];
 
 export function getSkillsByCategory(category: Category): Skill[] {
