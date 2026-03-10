@@ -1,5 +1,5 @@
 import { BATCH_SKILLS } from "@/data/skills-batch-automation-design-productivity";
-import { CODING_SKILLS } from "@/data/skills-batch-coding";
+
 import { COMMUNICATION_SKILLS } from "@/data/skills-batch-communication";
 import { DESIGN_EXTENDED_SKILLS } from "@/data/skills-batch-design-extended";
 import { PRODUCTIVITY_EXTENDED_SKILLS } from "@/data/skills-batch-productivity-extended";
@@ -653,16 +653,6 @@ export const SKILLS: Skill[] = [
         tags: ["solana", "analytics", "prices", "ohlcv", "trending"],
     },
     {
-        slug: "helius-rpc",
-        name: "Helius RPC & API",
-        category: "data",
-        description:
-            "Enhanced Solana RPC with DAS API, webhooks, priority fees, and MCP server for AI agents. Used by Solana Agent Kit.",
-        source_url: "https://github.com/helius-labs/helius-sdk",
-        framework: "Solana Agent Kit / MCP",
-        tags: ["solana", "rpc", "das", "webhooks", "helius"],
-    },
-    {
         slug: "dexscreener",
         name: "DexScreener",
         category: "data",
@@ -673,16 +663,6 @@ export const SKILLS: Skill[] = [
         tags: ["multi-chain", "charts", "dex", "pairs", "analytics"],
     },
     {
-        slug: "coingecko-api",
-        name: "CoinGecko API",
-        category: "data",
-        description:
-            "Price data, market caps, trending tokens, and comprehensive crypto market data. Verified GOAT SDK plugin + SAK integration.",
-        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/coingecko",
-        framework: "GOAT SDK / Solana Agent Kit",
-        tags: ["multi-chain", "prices", "market-cap", "trending"],
-    },
-    {
         slug: "dune-analytics",
         name: "Dune Analytics",
         category: "data",
@@ -691,16 +671,6 @@ export const SKILLS: Skill[] = [
         source_url: "https://github.com/duneanalytics",
         framework: "MCP / OpenClaw",
         tags: ["multi-chain", "sql", "analytics", "on-chain-data"],
-    },
-    {
-        slug: "etherscan-api",
-        name: "Etherscan API",
-        category: "data",
-        description:
-            "Ethereum explorer data — transactions, balances, contract verification, and gas tracking. Verified GOAT SDK plugin.",
-        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/etherscan",
-        framework: "GOAT SDK",
-        tags: ["ethereum", "explorer", "transactions", "gas"],
     },
     {
         slug: "fear-greed-index",
@@ -722,26 +692,6 @@ export const SKILLS: Skill[] = [
         framework: "Solana Agent Kit",
         tags: ["solana", "metadata", "token-info", "logos"],
     },
-    {
-        slug: "moralis-api",
-        name: "Moralis API",
-        category: "data",
-        description:
-            "Multi-chain data aggregation — wallet balances, NFTs, transactions, DeFi positions. REST API with SDKs.",
-        source_url: "https://github.com/MoralisWeb3/Moralis-JS-SDK",
-        framework: "Custom",
-        tags: ["multi-chain", "wallets", "nfts", "transactions", "defi"],
-    },
-    {
-        slug: "solscan-api",
-        name: "Solscan API",
-        category: "data",
-        description:
-            "Solana explorer data — accounts, transactions, tokens, and DeFi activity via public REST API.",
-        source_url: "https://public-api.solscan.io",
-        framework: "Custom",
-        tags: ["solana", "explorer", "transactions", "accounts"],
-    },
 
     // ────────────── PREDICTION MARKETS ──────────────
     {
@@ -752,15 +702,6 @@ export const SKILLS: Skill[] = [
         source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/polymarket",
         framework: "GOAT SDK",
         tags: ["polygon", "prediction", "polymarket", "betting"],
-    },
-    {
-        slug: "kalshi-api",
-        name: "Kalshi API",
-        category: "prediction",
-        description: "CFTC-regulated prediction market API. Trade events on politics, economics, weather, and more.",
-        source_url: "https://trading-api.kalshi.com",
-        framework: "Custom",
-        tags: ["prediction", "regulated", "kalshi", "events"],
     },
     {
         slug: "manifold-markets",
@@ -808,15 +749,6 @@ export const SKILLS: Skill[] = [
         source_url: "https://github.com/sendaifun/solana-agent-kit",
         framework: "Solana Agent Kit",
         tags: ["solana", "pump-fun", "token-launch", "memecoin"],
-    },
-    {
-        slug: "opensea-api",
-        name: "OpenSea API",
-        category: "nfts",
-        description: "NFT marketplace integration via GOAT SDK. Browse, buy, and manage NFTs on EVM chains.",
-        source_url: "https://github.com/goat-sdk/goat/tree/main/typescript/packages/plugins/opensea",
-        framework: "GOAT SDK",
-        tags: ["evm", "nft", "marketplace", "opensea"],
     },
     {
         slug: "tensor-nft",
@@ -980,15 +912,6 @@ export const SKILLS: Skill[] = [
         source_url: "https://clawpump.tech/arbitrage.md",
         framework: "Custom",
         tags: ["solana", "arbitrage", "dex", "mev"],
-    },
-    {
-        slug: "octav-api",
-        name: "Octav API",
-        category: "data",
-        description: "Solana wallet portfolio tracking, transaction history, DeFi positions, and token analytics.",
-        source_url: "https://github.com/Octav-Labs/octav-api-skill",
-        framework: "Custom",
-        tags: ["solana", "portfolio", "analytics", "defi"],
     },
     {
         slug: "sp3nd-agent",
@@ -1195,7 +1118,6 @@ export const SKILLS: Skill[] = [
         tags: ["memecoin", "experiment", "propagation", "solana"],
     },
     ...(BATCH_SKILLS as unknown as Skill[]),
-    ...(CODING_SKILLS as unknown as Skill[]),
     ...(COMMUNICATION_SKILLS as unknown as Skill[]),
     ...(DESIGN_EXTENDED_SKILLS as unknown as Skill[]),
     ...(PRODUCTIVITY_EXTENDED_SKILLS as unknown as Skill[]),
