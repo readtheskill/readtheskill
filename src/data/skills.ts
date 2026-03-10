@@ -1646,18 +1646,6 @@ npm install @goat-sdk/plugin-ironclad
         tags: ["solana", "zk", "compression", "airdrop"],
     },
     {
-        slug: "bnbchain-mcp",
-        name: "BNB Chain MCP Skill",
-        category: "infrastructure",
-        description:
-            "BNB Chain MCP server skill for blocks, transactions, contract reads/writes, token and NFT transfers, ERC-8004 agent registration, and Greenfield tools.",
-        source_url: "https://github.com/bnb-chain/bnbchain-skills",
-        skill_url:
-            "https://raw.githubusercontent.com/bnb-chain/bnbchain-skills/main/skills/bnbchain-mcp-skill/SKILL.md",
-        framework: "MCP",
-        tags: ["bnb-chain", "mcp", "evm", "greenfield", "erc-8004", "wallet"],
-    },
-    {
         slug: "goat-cosmosbank",
         name: "CosmosBank (GOAT)",
         category: "infrastructure",

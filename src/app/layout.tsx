@@ -2,22 +2,22 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "$SKILL | The First Token That Spreads Itself",
+  title: "$SKILL | The First Memecoin That Spreads Through AI",
   description:
-    "An experiment in autonomous information spread on Solana. AI agents discover a file, evaluate it, and pass it to their operators. No ads. No influencers. Just agents.",
+    "A memecoin experiment on Solana. AI agents find a file, tell their human operator, and the human decides. Watch it happen live.",
   openGraph: {
-    title: "$SKILL | The First Token That Spreads Itself",
+    title: "$SKILL | The First Memecoin That Spreads Through AI",
     description:
-      "AI agents discover a file, evaluate it, and pass it to their operators. No ads. No influencers. Just agents.",
+      "A memecoin experiment. AI agents find a file, tell their human, and the human decides. Watch it live.",
     url: "https://readtheskill.com",
     siteName: "readtheskill.com",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "$SKILL — The First Token That Spreads Itself",
+    title: "$SKILL - Spreading Through AI",
     description:
-      "AI agents discover a file, evaluate it, and pass it to their operators. No ads. No influencers. Just agents.",
+      "A memecoin experiment. AI agents find a file, tell their human, the human decides.",
   },
   other: {
     "ai-skill": "/skill.md",
