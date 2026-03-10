@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { Skill } from "@/data/skills";
+import { Skill, inferSubcategory } from "@/data/skills";
 
 export function SkillCard({ skill }: { skill: Skill }) {
+    const subcategory = inferSubcategory(skill);
     return (
         <Link
             href={`/skills/${skill.category}/${skill.slug}`}
@@ -17,6 +18,9 @@ export function SkillCard({ skill }: { skill: Skill }) {
                 {skill.description}
             </p>
             <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-[10px] px-1.5 py-0.5 bg-bg-surface border border-border rounded text-text-muted font-mono">
+                    {subcategory}
+                </span>
                 {skill.tags.slice(0, 3).map((tag) => (
                     <span
                         key={tag}

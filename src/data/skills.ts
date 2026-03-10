@@ -1,10 +1,19 @@
+import { BATCH_SKILLS } from "@/data/skills-batch-automation-design-productivity";
+import { CODING_SKILLS } from "@/data/skills-batch-coding";
+import { COMMUNICATION_SKILLS } from "@/data/skills-batch-communication";
+import { DESIGN_EXTENDED_SKILLS } from "@/data/skills-batch-design-extended";
+import { PRODUCTIVITY_EXTENDED_SKILLS } from "@/data/skills-batch-productivity-extended";
+
 export interface Skill {
     slug: string;
     name: string;
     category: Category;
+    subcategory?: string;
     description: string;
+    source?: "clawhub" | "lobehub" | "github" | "smithery" | "official";
     source_url: string;
     skill_url?: string;
+    verified?: boolean;
     framework: string;
     tags: string[];
     body?: string;
@@ -17,12 +26,16 @@ export type Category =
     | "defi"
     | "research"
     | "automation"
+    | "design"
+    | "productivity"
     | "data"
     | "prediction"
     | "nfts"
     | "oracles"
     | "bridges"
     | "infrastructure"
+    | "coding"
+    | "communication"
     | "experimental";
 
 export const CATEGORIES: Record<
@@ -59,6 +72,16 @@ export const CATEGORIES: Record<
         description: "Task automation and workflow orchestration",
         emoji: "⚙️",
     },
+    design: {
+        label: "Design",
+        description: "Image generation, editing, UI/UX, and creative assets",
+        emoji: "🎨",
+    },
+    productivity: {
+        label: "Productivity",
+        description: "Notes, docs, email, calendars, and project workflows",
+        emoji: "✅",
+    },
     data: {
         label: "Data & Analytics",
         description: "Token analytics, on-chain data, market intelligence",
@@ -88,6 +111,16 @@ export const CATEGORIES: Record<
         label: "Infrastructure",
         description: "Name services, storage, and protocol utilities",
         emoji: "🛠️",
+    },
+    coding: {
+        label: "Coding & Development",
+        description: "IDEs, git, debugging, testing, deployment, and languages",
+        emoji: "💻",
+    },
+    communication: {
+        label: "Communication",
+        description: "Team chat, email outreach, social media, meetings, and messaging",
+        emoji: "📡",
     },
     experimental: {
         label: "Experimental",
@@ -1161,6 +1194,11 @@ export const SKILLS: Skill[] = [
         framework: "readtheskill",
         tags: ["memecoin", "experiment", "propagation", "solana"],
     },
+    ...(BATCH_SKILLS as unknown as Skill[]),
+    ...(CODING_SKILLS as unknown as Skill[]),
+    ...(COMMUNICATION_SKILLS as unknown as Skill[]),
+    ...(DESIGN_EXTENDED_SKILLS as unknown as Skill[]),
+    ...(PRODUCTIVITY_EXTENDED_SKILLS as unknown as Skill[]),
 ];
 
 export function getSkillsByCategory(category: Category): Skill[] {
@@ -1176,4 +1214,75 @@ export function getSkillBySlug(
 
 export function getCategoryCount(category: Category): number {
     return SKILLS.filter((s) => s.category === category).length;
+}
+
+export function inferSourceFromUrl(url: string): Skill["source"] {
+    const lower = url.toLowerCase();
+    if (lower.includes("clawhub")) return "clawhub";
+    if (lower.includes("lobehub")) return "lobehub";
+    if (lower.includes("smithery")) return "smithery";
+    if (lower.includes("github.com")) return "github";
+    return "official";
+}
+
+export function inferSubcategory(skill: Skill): string {
+    const tags = skill.tags.map((tag) => tag.toLowerCase());
+    const has = (...needles: string[]) => needles.some((n) => tags.some((t) => t.includes(n)));
+
+    if (skill.subcategory) return skill.subcategory;
+
+    switch (skill.category) {
+        case "automation":
+            if (has("workflow", "orchestration", "zapier", "n8n", "make")) return "workflows";
+            if (has("calendar", "scheduling", "cron", "reminder")) return "scheduling";
+            if (has("email", "smtp", "gmail", "outlook")) return "email";
+            if (has("browser", "puppeteer", "playwright", "selenium", "scraping")) return "browser-automation";
+            if (has("webhook", "api", "integrations")) return "api-integrations";
+            if (has("cicd", "devops", "deploy")) return "devops";
+            return "automation";
+        case "design":
+            if (has("image-gen", "stable-diffusion", "creative")) return "image-generation";
+            if (has("image-editing", "background-removal", "optimization")) return "image-editing";
+            if (has("ui-ux", "components", "wireframes", "prototyping")) return "ui-ux";
+            if (has("icons", "svg", "illustrations", "graphics")) return "graphics";
+            if (has("video", "animation")) return "video";
+            if (has("3d", "rendering")) return "3d";
+            return "design";
+        case "productivity":
+            if (has("notes", "knowledge", "markdown")) return "notes";
+            if (has("docs", "writing", "wiki")) return "docs";
+            if (has("spreadsheets", "excel", "reports", "database")) return "spreadsheets";
+            if (has("email", "inbox")) return "email";
+            if (has("calendar", "scheduling", "events", "meetings")) return "calendar";
+            if (has("tasks", "todo", "issues", "tickets")) return "task-management";
+            if (has("project-management", "kanban", "sprints", "boards")) return "project-management";
+            if (has("time-tracking", "timesheets")) return "time-tracking";
+            if (has("reading", "research", "bookmarks", "curation")) return "research";
+            if (has("communication", "collaboration", "team", "notifications")) return "communication";
+            return "productivity";
+        case "coding":
+            if (has("ide", "editor", "extensions")) return "ides-editors";
+            if (has("git", "github", "gitlab", "bitbucket", "vcs", "code-review")) return "git-vcs";
+            if (has("language", "python", "rust", "go", "typescript", "ruby", "java", "swift", "kotlin")) return "languages";
+            if (has("npm", "pip", "cargo", "brew", "pnpm", "yarn", "package")) return "package-managers";
+            if (has("test", "jest", "pytest", "vitest", "playwright", "cypress", "e2e")) return "testing";
+            if (has("debug", "profil", "logging", "sentry", "trace")) return "debugging";
+            if (has("deploy", "vercel", "railway", "docker", "aws", "fly", "netlify", "hosting")) return "deployment";
+            if (has("database", "postgres", "redis", "mongo", "supabase", "prisma", "drizzle", "sql")) return "databases";
+            if (has("api", "rest", "graphql", "openapi", "trpc", "hono", "express", "endpoint")) return "apis";
+            if (has("docs", "readme", "storybook", "jsdoc", "documentation")) return "documentation";
+            if (has("cicd", "pipeline", "lint", "format", "actions")) return "cicd";
+            return "coding";
+        case "communication":
+            if (has("chat", "slack", "discord", "teams", "telegram", "mattermost")) return "team-chat";
+            if (has("email", "mailchimp", "newsletter", "outreach", "convertkit", "brevo")) return "email-outreach";
+            if (has("social", "twitter", "linkedin", "instagram", "buffer", "hootsuite", "tiktok")) return "social-media";
+            if (has("meeting", "zoom", "loom", "otter", "transcri", "webinar")) return "meetings";
+            if (has("sms", "twilio", "vonage", "whatsapp", "messaging")) return "sms-messaging";
+            if (has("crm", "hubspot", "salesforce", "attio", "folk")) return "crm";
+            if (has("community", "discourse", "circle", "forum")) return "community";
+            return "communication";
+        default:
+            return skill.category;
+    }
 }

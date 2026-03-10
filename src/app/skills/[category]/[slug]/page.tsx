@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CATEGORIES, SKILLS, Category, getSkillBySlug } from "@/data/skills";
+import {
+    CATEGORIES,
+    SKILLS,
+    Category,
+    getSkillBySlug,
+    inferSourceFromUrl,
+    inferSubcategory,
+} from "@/data/skills";
 import { SkillCTA } from "@/components/directory/SkillCTA";
 import { CategoryIcon } from "@/components/directory/CategoryIcon";
 import fs from "fs";
@@ -58,6 +65,8 @@ export default async function SkillDetailPage({
 
     const cat = CATEGORIES[category as Category];
     const body = skill.body || loadSkillContent(slug);
+    const source = skill.source ?? inferSourceFromUrl(skill.source_url);
+    const subcategory = inferSubcategory(skill);
 
     return (
         <main className="min-h-screen bg-[#0a0a0a] text-text-primary">
@@ -96,6 +105,10 @@ export default async function SkillDetailPage({
                             <CategoryIcon category={category as Category} size={14} />
                             {cat.label}
                         </span>
+                        <span className="text-text-muted font-mono">
+                            {subcategory}
+                        </span>
+                        <span className="text-text-muted font-mono">{source}</span>
                         <a
                             href={skill.source_url}
                             target="_blank"
