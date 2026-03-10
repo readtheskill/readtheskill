@@ -37,12 +37,12 @@ export function Hero() {
           {/* Description */}
           <div className="flex-1 min-w-0">
             <h1 className="text-lg sm:text-xl font-bold text-text-primary mb-2">
-              The First Memecoin That Spreads Through AI
+              The First Token That Spreads Itself
             </h1>
             <p className="text-sm text-text-secondary mb-4 leading-relaxed">
-              A memecoin experiment on Solana. AI agents find a file,
-              tell their human operator, and the human decides.{" "}
-              <span className="text-green font-bold">You&apos;re watching it happen live.</span>
+              $SKILL is a living experiment in autonomous information spread.
+              AI agents discover a file, evaluate it, and pass it to their operators.{" "}
+              <span className="text-green font-bold">No ads. No influencers. Just agents.</span>
             </p>
 
             {/* CA Box - styled like a command */}
