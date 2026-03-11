@@ -1448,6 +1448,18 @@ npm install @goat-sdk/plugin-ironclad
         tags: ["sentiment", "fear-greed", "market-data"],
     },
     {
+        slug: "aixbt-alpha",
+        name: "AIXBT Find Alpha",
+        category: "data",
+        subcategory: "market-intelligence",
+        description:
+            "Official AIXBT agent skill for crypto momentum intelligence, market signals, project discovery, and x402-compatible API workflows.",
+        source_url: "https://docs.aixbt.tech/builders/skill",
+        skill_url: "https://aixbt.tech/skill.md",
+        framework: "AIXBT",
+        tags: ["crypto", "alpha", "signals", "momentum", "market-intelligence", "x402", "api"],
+    },
+    {
         slug: "token-metadata",
         name: "Token Metadata",
         category: "data",
