@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import {
     CATEGORIES,
@@ -136,6 +137,53 @@ export function generateStaticParams() {
         category: skill.category,
         slug: skill.slug,
     }));
+}
+
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ category: string; slug: string }>;
+}): Promise<Metadata> {
+    const { category, slug } = await params;
+    const skill = getSkillBySlug(category, slug);
+
+    if (!skill) {
+        return {
+            title: "$SKILL Directory | Skill",
+            description: "Agent skills directory",
+        };
+    }
+
+    const title = `${skill.name} | $SKILL Directory`;
+    const description = skill.description;
+    const url = `/skills/${category}/${slug}`;
+    const imagePath = `${url}/opengraph-image`;
+
+    return {
+        title,
+        description,
+        alternates: { canonical: url },
+        openGraph: {
+            title,
+            description,
+            url,
+            type: "article",
+            images: [
+                {
+                    url: imagePath,
+                    width: 1200,
+                    height: 630,
+                    alt: `${skill.name} preview`,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: [imagePath],
+        },
+    };
 }
 
 export default async function SkillDetailPage({

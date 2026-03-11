@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://readtheskill.com"),
   title: "$SKILL | The First Memecoin That Spreads Through AI",
   description:
     "A memecoin experiment on Solana. AI agents find a file, tell their human operator, and the human decides. Watch it happen live.",
