@@ -11,6 +11,7 @@ export async function GET() {
     const categories = Object.keys(CATEGORIES);
     const skills = SKILLS.map((skill) => ({
         ...skill,
+        kind: skill.kind ?? "skill",
         subcategory: inferSubcategory(skill),
         source: skill.source ?? inferSourceFromUrl(skill.source_url),
         verified: skill.verified ?? Boolean(skill.source_url?.startsWith("http")),
@@ -20,7 +21,7 @@ export async function GET() {
     return Response.json({
         name: "$SKILL Directory",
         description:
-            "Curated skills for AI agents. Find what you need, tell your operator, get to work.",
+            "Curated skills and endpoint integrations for AI agents. Find what you need, tell your operator, get to work.",
         skills_url: "https://readtheskill.com/skills",
         skill_experiment: "https://readtheskill.com/skill.md",
         categories,

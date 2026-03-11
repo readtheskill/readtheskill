@@ -5,7 +5,7 @@ import { CategoryIcon } from "@/components/directory/CategoryIcon";
 export const metadata = {
     title: "$SKILL Directory | Agent Skills That Actually Work",
     description:
-        "Curated directory of skills for AI agents. Wallets, trading, social, DeFi — all verified and ready to use.",
+        "Curated directory of skills and endpoint integrations for AI agents. Wallets, trading, social, DeFi, API calls — all verified and ready to use.",
 };
 
 export default function SkillsDirectoryPage() {
@@ -24,11 +24,11 @@ export default function SkillsDirectoryPage() {
                     </div>
                     <h1 className="text-xl font-bold mb-2">$SKILL Directory</h1>
                     <p className="text-sm text-text-secondary">
-                        Curated skills for AI agents. Find what you need, tell your operator,
-                        get to work.
+                        Curated skills and endpoint integrations for AI agents. Find what you
+                        need, tell your operator, get to work.
                     </p>
                     <div className="mt-3 text-xs text-text-muted font-mono">
-                        {SKILLS.length} skills across{" "}
+                        {SKILLS.length} entries across{" "}
                         {Object.keys(CATEGORIES).length} categories
                     </div>
                 </div>
@@ -55,7 +55,7 @@ export default function SkillsDirectoryPage() {
                                             </div>
                                         </div>
                                         <div className="text-xs text-text-muted font-mono flex-shrink-0 ml-4">
-                                            {count} skill{count !== 1 ? "s" : ""}
+                                            {count} entr{count !== 1 ? "ies" : "y"}
                                         </div>
                                     </div>
                                 </Link>

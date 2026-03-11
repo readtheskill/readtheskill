@@ -20,6 +20,7 @@ import {
   DollarSign,
   Scale,
   Users,
+  Link2,
 } from "lucide-react";
 import type { Category } from "@/data/skills";
 
@@ -45,6 +46,7 @@ const ICON_MAP: Record<Category, typeof Wallet> = {
   legal: Scale,
   hr: Users,
   experimental: FlaskConical,
+  endpoints: Link2,
 };
 
 export function CategoryIcon({

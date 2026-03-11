@@ -3,6 +3,7 @@ import { BATCH_SKILLS } from "@/data/skills-batch-automation-design-productivity
 import { COMMUNICATION_SKILLS } from "@/data/skills-batch-communication";
 import { DESIGN_EXTENDED_SKILLS } from "@/data/skills-batch-design-extended";
 import { MARKETING_SKILLS } from "@/data/skills-batch-marketing";
+import { ENDPOINT_SKILLS } from "@/data/skills-batch-endpoints";
 import { AWESOME_SOLANA_AI_SKILLS } from "@/data/skills-batch-awesome-solana-ai";
 import { OFFICE_SKILLS } from "@/data/skills-batch-office";
 import { PRODUCTIVITY_EXTENDED_SKILLS } from "@/data/skills-batch-productivity-extended";
@@ -11,12 +12,16 @@ import { SOLANA_TOOLKIT_SKILLS } from "@/data/skills-batch-solana-toolkit";
 export interface Skill {
     slug: string;
     name: string;
+    kind?: "skill" | "endpoint";
     category: Category;
     subcategory?: string;
     description: string;
     source?: "clawhub" | "lobehub" | "github" | "smithery" | "official";
     source_url: string;
     skill_url?: string;
+    endpoint_url?: string;
+    endpoint_method?: "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
+    auth_type?: "api-token" | "api-key" | "oauth" | "x402" | "none";
     verified?: boolean;
     framework: string;
     tags: string[];
@@ -44,7 +49,8 @@ export type Category =
     | "finance"
     | "legal"
     | "hr"
-    | "experimental";
+    | "experimental"
+    | "endpoints";
 
 export const CATEGORIES: Record<
     Category,
@@ -154,6 +160,11 @@ export const CATEGORIES: Record<
         label: "Experimental",
         description: "Cutting-edge experiments in agent economics",
         emoji: "🧪",
+    },
+    endpoints: {
+        label: "Endpoints & Tool Calls",
+        description: "API endpoints, tool-call surfaces, and non-skill integration primitives",
+        emoji: "🔌",
     },
 };
 
@@ -2593,6 +2604,7 @@ CoinStats MCP server for crypto market data, portfolio tracking, and news aggreg
     ...(PRODUCTIVITY_EXTENDED_SKILLS as unknown as Skill[]),
     ...(SOLANA_TOOLKIT_SKILLS as unknown as Skill[]),
     ...(AWESOME_SOLANA_AI_SKILLS as unknown as Skill[]),
+    ...(ENDPOINT_SKILLS as unknown as Skill[]),
 ];
 
 const AWESOME_SOLANA_OVERRIDES: Record<string, Partial<Skill>> = {
@@ -2813,6 +2825,12 @@ export function inferSubcategory(skill: Skill): string {
             if (has("revops", "sales", "enablement", "pipeline")) return "sales-revops";
             if (has("pricing", "positioning", "gtm", "launch", "strategy")) return "strategy-monetization";
             return "marketing";
+        case "endpoints":
+            if (has("crawl", "crawler", "site-map", "sitemap")) return "web-crawling";
+            if (has("scrape", "html", "content", "markdown", "snapshot")) return "web-extraction";
+            if (has("api", "endpoint", "rest", "json", "http")) return "api-calls";
+            if (has("mcp", "tool-call", "tools")) return "tool-calls";
+            return "endpoints";
         default:
             return skill.category;
     }

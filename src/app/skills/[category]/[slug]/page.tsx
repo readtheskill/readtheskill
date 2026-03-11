@@ -98,18 +98,32 @@ function isIncompleteSkillBody(body: string): boolean {
 }
 
 function generateFallbackSkillBody(skill: Skill): string {
+    const kind = skill.kind ?? "skill";
     const heading = `# ${skill.name}`;
     const overview = `${skill.description}`;
     const tags = skill.tags.length ? skill.tags.map((t) => `\`${t}\``).join(", ") : "N/A";
+
+    const endpointDetails =
+        kind === "endpoint"
+            ? `
+## Endpoint Details
+- URL: ${skill.endpoint_url ?? "N/A"}
+- Method: \`${skill.endpoint_method ?? "GET"}\`
+- Auth: \`${skill.auth_type ?? "api-key"}\`
+`
+            : "";
 
     return `${heading}
 
 ${overview}
 
 ## Quick Context
+- Type: \`${kind}\`
 - Category: \`${skill.category}\`
 - Framework: \`${skill.framework}\`
 - Tags: ${tags}
+
+${endpointDetails}
 
 ## Suggested Agent Usage
 > Use ${skill.name} when you need ${skill.description.toLowerCase()}
@@ -129,6 +143,7 @@ ${overview}
 ## Links
 - Source: ${skill.source_url}
 ${skill.skill_url ? `- skill.md: ${skill.skill_url}` : ""}
+${skill.endpoint_url ? `- endpoint: ${skill.endpoint_url}` : ""}
 `;
 }
 
@@ -204,6 +219,7 @@ export default async function SkillDetailPage({
         (skill.skill_url ? await fetchSkillContent(skill.skill_url) : "") ||
         loadSkillContent(slug);
     const body = isIncompleteSkillBody(rawBody) ? generateFallbackSkillBody(skill) : rawBody;
+    const kind = skill.kind ?? "skill";
     const source = skill.source ?? inferSourceFromUrl(skill.source_url);
     const subcategory = inferSubcategory(skill);
 
@@ -240,6 +256,7 @@ export default async function SkillDetailPage({
                     </div>
                     <p className="text-sm text-text-secondary">{skill.description}</p>
                     <div className="flex items-center gap-3 mt-3 text-xs">
+                        <span className="text-text-muted font-mono">{kind}</span>
                         <span className="text-text-muted font-mono flex items-center gap-1.5">
                             <CategoryIcon category={category as Category} size={14} />
                             {cat.label}
@@ -264,6 +281,16 @@ export default async function SkillDetailPage({
                                 className="text-green hover:underline"
                             >
                                 skill.md →
+                            </a>
+                        )}
+                        {skill.endpoint_url && (
+                            <a
+                                href={skill.endpoint_url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-accent hover:underline"
+                            >
+                                endpoint →
                             </a>
                         )}
                     </div>
