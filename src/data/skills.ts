@@ -3,6 +3,7 @@ import { BATCH_SKILLS } from "@/data/skills-batch-automation-design-productivity
 import { COMMUNICATION_SKILLS } from "@/data/skills-batch-communication";
 import { DESIGN_EXTENDED_SKILLS } from "@/data/skills-batch-design-extended";
 import { MARKETING_SKILLS } from "@/data/skills-batch-marketing";
+import { AWESOME_SOLANA_AI_SKILLS } from "@/data/skills-batch-awesome-solana-ai";
 import { OFFICE_SKILLS } from "@/data/skills-batch-office";
 import { PRODUCTIVITY_EXTENDED_SKILLS } from "@/data/skills-batch-productivity-extended";
 import { SOLANA_TOOLKIT_SKILLS } from "@/data/skills-batch-solana-toolkit";
@@ -2579,7 +2580,134 @@ CoinStats MCP server for crypto market data, portfolio tracking, and news aggreg
     ...(OFFICE_SKILLS as unknown as Skill[]),
     ...(PRODUCTIVITY_EXTENDED_SKILLS as unknown as Skill[]),
     ...(SOLANA_TOOLKIT_SKILLS as unknown as Skill[]),
+    ...(AWESOME_SOLANA_AI_SKILLS as unknown as Skill[]),
 ];
+
+const AWESOME_SOLANA_OVERRIDES: Record<string, Partial<Skill>> = {
+    "clawpump-skill": {
+        skill_url: "https://www.clawpump.tech/skill.md",
+        subcategory: "token-launch",
+    },
+    "clawpump-arbitrage": {
+        skill_url: "https://clawpump.tech/arbitrage.md",
+        subcategory: "arbitrage",
+    },
+    "dflow-phantom-connect": {
+        source_url: "https://github.com/DFlowProtocol/dflow_phantom-connect-skill",
+        skill_url: "https://raw.githubusercontent.com/DFlowProtocol/dflow_phantom-connect-skill/main/skill/SKILL.md",
+        subcategory: "wallet-connected-trading",
+    },
+    "dflow-swap": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/dflow",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/dflow/SKILL.md",
+        subcategory: "dex-swaps",
+    },
+    "drift-protocol": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/drift",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/drift/SKILL.md",
+        subcategory: "perps-trading",
+    },
+    "jupiter-api-integration": {
+        skill_url: "https://raw.githubusercontent.com/jup-ag/agent-skills/main/skills/integrating-jupiter/SKILL.md",
+        category: "defi",
+        subcategory: "dex-aggregation",
+    },
+    "jupiter-lend": {
+        skill_url: "https://raw.githubusercontent.com/jup-ag/agent-skills/main/skills/jupiter-lend/SKILL.md",
+        subcategory: "lending-yield",
+    },
+    "kamino-finance": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/kamino",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/kamino/SKILL.md",
+        subcategory: "lending-yield",
+    },
+    "lulo-aggregator": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/lulo",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/lulo/SKILL.md",
+        subcategory: "lending-aggregation",
+    },
+    "meteora-swap": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/meteora",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/meteora/SKILL.md",
+        category: "defi",
+        subcategory: "amm-liquidity",
+    },
+    "orca-whirlpools": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/orca",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/orca/SKILL.md",
+        category: "defi",
+        subcategory: "concentrated-liquidity",
+    },
+    "pumpfun-launch": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/pumpfun",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/pumpfun/SKILL.md",
+        subcategory: "token-launch",
+    },
+    "ranger-finance": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/ranger-finance",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/ranger-finance/SKILL.md",
+        subcategory: "perps-aggregation",
+    },
+    "raydium-swap": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/raydium",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/raydium/SKILL.md",
+        category: "defi",
+        subcategory: "dex-swaps",
+    },
+    "raydium-liquidity": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/raydium",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/raydium/SKILL.md",
+        category: "defi",
+        subcategory: "liquidity-management",
+    },
+    "sanctum-lst": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/sanctum",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/sanctum/SKILL.md",
+        subcategory: "staking-lst",
+    },
+    "debridge-dln": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/debridge",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/debridge/SKILL.md",
+        subcategory: "cross-chain-bridging",
+    },
+    "light-protocol-zk": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/light-protocol",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/light-protocol/SKILL.md",
+        subcategory: "zk-compression",
+    },
+    "metaplex-nft": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/metaplex",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/metaplex/SKILL.md",
+        subcategory: "nft-development",
+    },
+    "pyth-network": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/pyth",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/pyth/SKILL.md",
+        subcategory: "oracle-pricing",
+    },
+    "solana-dev-skill": {
+        category: "coding",
+        subcategory: "solana-development",
+        source_url: "https://github.com/solana-foundation/solana-dev-skill",
+        skill_url: "https://raw.githubusercontent.com/solana-foundation/solana-dev-skill/main/skill/SKILL.md",
+    },
+    "squads-multisig": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/squads",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/squads/SKILL.md",
+        category: "infrastructure",
+        subcategory: "account-abstraction",
+    },
+    "switchboard-oracle": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/switchboard",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/switchboard/SKILL.md",
+        subcategory: "oracle-pricing",
+    },
+};
+
+for (const skill of SKILLS) {
+    const override = AWESOME_SOLANA_OVERRIDES[skill.slug];
+    if (override) Object.assign(skill, override);
+}
 
 export function getSkillsByCategory(category: Category): Skill[] {
     return SKILLS.filter((s) => s.category === category);
