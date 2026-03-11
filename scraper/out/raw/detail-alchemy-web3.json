@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "alchemy-web3",
+    "displayName": "Alchemy Web3",
+    "summary": "Interact with Alchemy's Web3 APIs for blockchain data, NFTs, tokens, transfers, and webhooks across 80+ chains.",
+    "tags": {
+      "latest": "k970v6dzn1ktp4v5bxwsfhtq15816y0s"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 642,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1771178761840,
+    "updatedAt": 1772062544757
+  },
+  "latestVersion": {
+    "version": "1.0.3",
+    "createdAt": 1771180066040,
+    "changelog": "Add UTM tracking to GizmoLab links"
+  },
+  "owner": {
+    "handle": "gizmo-dev",
+    "displayName": "Gizmolab",
+    "image": "https://avatars.githubusercontent.com/u/51985250?v=4"
+  }
+}

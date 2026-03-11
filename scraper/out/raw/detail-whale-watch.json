@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "whale-watch",
+    "displayName": "Whale Watch",
+    "summary": "Monitor large crypto transactions across chains. Track whale wallets, detect unusual volume, alert on big moves. Supports Hedera, Ethereum, and Solana via pu...",
+    "tags": {
+      "latest": "k970hkc9ypqwcq5hh3qd7g75fd8235sn"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 142,
+      "installsAllTime": 1,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772379017444,
+    "updatedAt": 1772379029965
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772379017444,
+    "changelog": "Whale Watch 1.0.0 — Initial Release\n\n- Monitor large crypto transactions across Hedera, Ethereum, and Solana using public APIs.\n- Track and alert on whale wallet activity and unusual transaction volumes.\n- Includes example command-line scripts for querying big transfers and monitoring specific wallets.\n- Tips provided for setup, API usage, and monitoring best practices."
+  },
+  "owner": {
+    "handle": "imaflytok",
+    "displayName": "FLY",
+    "image": "https://avatars.githubusercontent.com/u/258594521?v=4"
+  }
+}

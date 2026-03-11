@@ -1,0 +1,33 @@
+{
+  "skill": {
+    "slug": "moltiumv2",
+    "displayName": "MoltiumV2",
+    "summary": "Solana AI trade toolkit (RPC-first, local-only signing) for pump.fun deploy + bonding trades, PumpSwap + creator fee claim, Raydium AMM v4 swaps, token tools (metadata/mint/price), and automation (autostrategy). Includes a standard atomic SOL fee cut model.",
+    "tags": {
+      "blockchain": "k973s2h9mje5d71aaf3607jjh580nzv3",
+      "latest": "k973s2h9mje5d71aaf3607jjh580nzv3",
+      "solana": "k973s2h9mje5d71aaf3607jjh580nzv3",
+      "trade-network": "k973s2h9mje5d71aaf3607jjh580nzv3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1446,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770402063490,
+    "updatedAt": 1773200077406
+  },
+  "latestVersion": {
+    "version": "2.0.2",
+    "createdAt": 1770402063490,
+    "changelog": "MoltiumV2 v2.0.2 - Full bundle (docs + local RPC-first toolkit). Includes bootstrap script, default RPC config on init, auto wallet generation, and venue modules (pump.fun deploy/bonding, PumpSwap + creator fee claim, Raydium AMM v4) plus autostrategy."
+  },
+  "owner": {
+    "handle": "cariciman",
+    "displayName": "cariciman",
+    "image": "https://avatars.githubusercontent.com/u/256301878?v=4"
+  }
+}

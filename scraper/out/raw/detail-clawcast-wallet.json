@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "clawcast-wallet",
+    "displayName": "Clawcast - Cast Ethereum Wallet for Agents",
+    "summary": "Skill for managing EVM wallets, transactions, and network helpers via cast; covers onboarding, checks, and operating procedures.",
+    "tags": {
+      "latest": "k97anj3fyjy8cfwqfjq301g7x580jzm7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1034,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770314637413,
+    "updatedAt": 1773199846385
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770314637413,
+    "changelog": "Initial release of clawcast-wallet: an interactive skill for managing EVM wallets and transactions with cast.\n\n- Guides users step-by-step through wallet onboarding, including creation/import, encryption, network, and token setup, all driven by user-supplied inputs.\n- Automatically checks for an existing wallet and shows address, network, and balance at session start.\n- Provides scripts for wallet health checks, network status, and safe wallet removal.\n- Logs transaction mentions for later reference in a dedicated log file.\n- Shares direct explorer URLs for manual transaction review when API access is unavailable.\n- Focuses on clarity and ease of use, avoiding technical jargon unless requested."
+  },
+  "owner": {
+    "handle": "tezatezaz",
+    "displayName": "te_za",
+    "image": "https://avatars.githubusercontent.com/u/112280042?v=4"
+  }
+}

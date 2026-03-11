@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "morpho-earn",
+    "displayName": "Morpho Earn - earn safe yield on your USDC on Base",
+    "summary": "Earn yield on USDC by supplying to the Moonwell Flagship USDC vault on Morpho (Base). Use when depositing USDC, withdrawing from the vault, checking position/APY, or setting up wallet credentials for DeFi yield.",
+    "tags": {
+      "latest": "k979t5sqqsq8kd87n6mqbaawv180cfnz"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1469,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1769999936171,
+    "updatedAt": 1772248757802
+  },
+  "latestVersion": {
+    "version": "1.2.0",
+    "createdAt": 1769999936171,
+    "changelog": "Initial public release of morpho-earn — earn safe yield on USDC through the Moonwell Flagship vault on Morpho (Base).\n\n- Supply USDC, withdraw, check position/APY, and manage wallet setup for DeFi yield accrual.\n- Automated reward claiming, compounding, and wallet monitoring, including dynamic reporting and alerts.\n- Security-focused: local wallet configuration, simulated transactions, and user previews.\n- Supports detailed command-line reports and flexible auto-compounding rules based on position size.\n- Requires Node.js 18+ and installation of dependencies before use."
+  },
+  "owner": {
+    "handle": "lyoungblood",
+    "displayName": "lyoungblood",
+    "image": "https://avatars.githubusercontent.com/u/5780429?v=4"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "skill": {
+    "slug": "wallet-tracker",
+    "displayName": "Wallet Tracker",
+    "summary": "Multi-chain wallet asset tracker — monitor EVM and Solana wallets, aggregate portfolio, and detect holding changes.",
+    "tags": {
+      "chinese": "k97ftr582996q9bp1gaegq8kcs82pc0b",
+      "latest": "k97ftr582996q9bp1gaegq8kcs82pc0b",
+      "productivity": "k97ftr582996q9bp1gaegq8kcs82pc0b"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 21,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1773224251610,
+    "updatedAt": 1773228707679
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1773224251610,
+    "changelog": "Wallet Tracker 1.0.0 initial release:\n\n- Track and aggregate assets across EVM and Solana wallets.\n- Monitor holding changes with customizable alerts for large movements or withdrawals.\n- Supports portfolio overview, whale watching, airdrop activity tracking, and treasury monitoring.\n- Provides flexible output options (HTML report, JSON snapshot).\n- Handles multiple blockchains with default or custom RPCs.\n- No private key input—only uses public blockchain data, processed locally."
+  },
+  "owner": {
+    "handle": "bytesagain1",
+    "displayName": "bytesagain1",
+    "image": "https://avatars.githubusercontent.com/u/261107384?v=4"
+  }
+}

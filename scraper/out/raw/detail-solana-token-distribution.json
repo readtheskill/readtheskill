@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "solana-token-distribution",
+    "displayName": "solana-token-distribution",
+    "summary": "For token distribution on Solana 5000x cheaper than SPL (rewards, airdrops, depins, ...). @lightprotocol/compressed-token (TypeScript). Reference examples fo...",
+    "tags": {
+      "latest": "k970rmawxsnbb0bf1p256hsbwd81th5t"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 162,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1772044978588,
+    "updatedAt": 1772064635893
+  },
+  "latestVersion": {
+    "version": "1.0.1",
+    "createdAt": 1772045365662,
+    "changelog": "- Updated Security section to clarify that both HELIUS_API_KEY and a payer keypair are required for mainnet execution; recommended using a secrets manager.\n- Added guidance against hard-coding private keys and clarified no need for secrets for read-only or localnet testing.\n- Added restriction that file-system read tools must be scoped to the project directory and skill references; do not read outside these paths.\n- No functional changes to distribution logic or workflow."
+  },
+  "owner": {
+    "handle": "tilo-14",
+    "displayName": "tilo-14",
+    "image": "https://avatars.githubusercontent.com/u/169537807?v=4"
+  }
+}

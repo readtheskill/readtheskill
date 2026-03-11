@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "sponge-wallet",
+    "displayName": "Sponge Wallet",
+    "summary": "Manages crypto wallets, transfers tokens, swaps on DEXes, checks balances, and accesses paid APIs (search, image gen, prediction markets, web scraping, document parsing, sales prospecting) via x402 micropayments. Use when the user asks about wallet balances, token transfers, swaps, blockchain payments, or paid API services.",
+    "tags": {
+      "latest": "k972qfwmetj1ezsbvews3gc9x5803tnh"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1333,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1769627157942,
+    "updatedAt": 1773198543377
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1769627157942,
+    "changelog": "Init sponge wallet skill"
+  },
+  "owner": {
+    "handle": "rishabluthra",
+    "displayName": "Rishab Luthra",
+    "image": "https://avatars.githubusercontent.com/u/12266349?v=4"
+  }
+}

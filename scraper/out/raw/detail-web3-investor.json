@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "web3-investor",
+    "displayName": "Web3 Investor",
+    "summary": "AI-friendly Web3 investment infrastructure for autonomous agents. Use when (1) discovering and analyzing DeFi/NFT investment opportunities, (2) executing sec...",
+    "tags": {
+      "latest": "k97bv1ye6c64kxxexjr6k9v7pd82gsbk"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 298,
+      "installsAllTime": 3,
+      "installsCurrent": 3,
+      "stars": 1,
+      "versions": 14
+    },
+    "createdAt": 1772536273330,
+    "updatedAt": 1772937896150
+  },
+  "latestVersion": {
+    "version": "0.5.2",
+    "createdAt": 1772937871200,
+    "changelog": "No user-facing changes.\n\n- Version bump with no detected file changes.\n- No SKILL.md, code, or configuration updates in this release."
+  },
+  "owner": {
+    "handle": "bevanding",
+    "displayName": "bevanding",
+    "image": "https://avatars.githubusercontent.com/u/85435357?v=4"
+  }
+}

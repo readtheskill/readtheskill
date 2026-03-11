@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "claws-nft",
+    "displayName": "Claws Nft",
+    "summary": "Mint a Claws NFT from the agent-only collection on Solana. Requires solving a challenge and a Solana wallet.",
+    "tags": {
+      "latest": "k9776y92tgfqcw3ffe7k2s7t7s810xf3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 434,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770917665638,
+    "updatedAt": 1772063435871
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770917665638,
+    "changelog": "Initial release of Claws NFT minting skill.\n\n- Mint a Claws NFT from an agent-only collection on Solana by solving a challenge.\n- Supports secure, challenge-based minting; requires a Solana wallet and minimum 0.025 SOL.\n- No private key exposure — transactions are only signed locally.\n- Simple 3-step API: get challenge → submit answer for mint → countersign and submit.\n- Fully documented API endpoints and error codes.\n- Minting is limited to a total supply of 4,200 NFTs."
+  },
+  "owner": {
+    "handle": "liboheng",
+    "displayName": "liboheng",
+    "image": "https://avatars.githubusercontent.com/u/16268329?v=4"
+  }
+}

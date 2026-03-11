@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "spacescan",
+    "displayName": "Spacescan",
+    "summary": "Access Chia blockchain data including blocks, transactions, addresses, CAT tokens, NFTs, network stats, and XCH price via Spacescan.io API with an API key.",
+    "tags": {
+      "latest": "k975mcj5erf8fgrz8z6rz05tan804ekm"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1297,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1769716098063,
+    "updatedAt": 1772075639217
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1769716098063,
+    "changelog": "Initial release: Complete Spacescan.io API client with blocks, transactions, addresses, network stats, CATs, NFTs. Requires API key. CLI and Telegram support."
+  },
+  "owner": {
+    "handle": "Koba42Corp",
+    "displayName": "Koba42Corp",
+    "image": "https://avatars.githubusercontent.com/u/76798369?v=4"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "skill": {
+    "slug": "etherlink-skill",
+    "displayName": "Etherlink Skill",
+    "summary": "Etherlink blockchain interaction - EVM-compatible L2 on Tezos. Supports mainnet and shadownet testnet via MCP server. Use for balance checks, transactions, smart contracts, and token operations on Etherlink.",
+    "tags": {
+      "blockchain": "k979qaqpgab4g3s6xt115n68rs80dwk8",
+      "crypto": "k979qaqpgab4g3s6xt115n68rs80dwk8",
+      "etherlink": "k979qaqpgab4g3s6xt115n68rs80dwk8",
+      "evm": "k979qaqpgab4g3s6xt115n68rs80dwk8",
+      "latest": "k979qaqpgab4g3s6xt115n68rs80dwk8",
+      "tezos": "k979qaqpgab4g3s6xt115n68rs80dwk8",
+      "web3": "k979qaqpgab4g3s6xt115n68rs80dwk8"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1290,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 4,
+      "versions": 1
+    },
+    "createdAt": 1770043406158,
+    "updatedAt": 1773199178569
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770043406158,
+    "changelog": "- Initial release of the etherlink-skill (v1.0.0).\n- Enables balance checks, transactions, contract calls, and token operations on Etherlink’s EVM L2 (mainnet & testnet).\n- Supports integration via MCP server, with network selection by name or chain ID.\n- Documents key Etherlink differences (XTZ as native, no EIP-1559, rate limits).\n- Provides code snippets and troubleshooting tips for common use cases.\n- Includes links to documentation, block explorers, and testnet faucet."
+  },
+  "owner": {
+    "handle": "efekucuk",
+    "displayName": "efekucuk",
+    "image": "https://avatars.githubusercontent.com/u/48200289?v=4"
+  }
+}

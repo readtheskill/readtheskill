@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "solana-payments-wallet-dev",
+    "displayName": "solana-payments-wallet-dev",
+    "summary": "For stablecoin payment flows and wallet integrations on Solana 200x cheaper token accounts. Receive, send, balance, history, and client-side signing with Pri...",
+    "tags": {
+      "latest": "k9784mqymswyke9x2mfbk6t7x981vqdy"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 179,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1772042896331,
+    "updatedAt": 1773204745056
+  },
+  "latestVersion": {
+    "version": "1.0.2",
+    "createdAt": 1772043519531,
+    "changelog": "- Clarified environment variable requirements: only `HELIUS_RPC_URL` is always required; other secrets are needed only for the Privy signing flow.\n- Updated metadata to reflect optional environment variables for Privy use and provided guidance on obtaining them.\n- Improved security notes to reference the dedicated Privy signing guide instead of duplicating instructions.\n- Simplified and clarified instructions regarding secret management and setup."
+  },
+  "owner": {
+    "handle": "tilo-14",
+    "displayName": "tilo-14",
+    "image": "https://avatars.githubusercontent.com/u/169537807?v=4"
+  }
+}

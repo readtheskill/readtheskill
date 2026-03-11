@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "celo-defi",
+    "displayName": "celo-defi",
+    "summary": "Integrate DeFi protocols on Celo. Use when building swaps, lending, or liquidity applications with Uniswap, Aave, Ubeswap, or other DeFi protocols.",
+    "tags": {
+      "latest": "k971nfjxb86vkv6gckkvwrmq4n82k6f6"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 32,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1773067824562,
+    "updatedAt": 1773069711389
+  },
+  "latestVersion": {
+    "version": "1.0.2011",
+    "createdAt": 1773067824562,
+    "changelog": "Initial publish"
+  },
+  "owner": {
+    "handle": "san-npm",
+    "displayName": "San Clemente",
+    "image": "https://avatars.githubusercontent.com/u/40546417?v=4"
+  }
+}

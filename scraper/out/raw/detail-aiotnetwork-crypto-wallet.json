@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "aiotnetwork-crypto-wallet",
+    "displayName": "Crypto Wallet",
+    "summary": "Discover supported cryptocurrencies, generate deposit addresses, and withdraw crypto to external wallets.",
+    "tags": {
+      "latest": "k97f0e929c55gw5ab35428789s82pbjz"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 25,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1773202473516,
+    "updatedAt": 1773202494499
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1773202473516,
+    "changelog": "Initial release of the Crypto Wallet skill.\n\n- Supports listing of supported cryptocurrencies and their blockchain networks.\n- Allows generating deposit addresses for selected coins and networks.\n- Enables withdrawing crypto to external wallets with fee quoting and status tracking.\n- Includes flows and safety rules for depositing and withdrawing crypto.\n- Requires authentication and transaction PIN for secure withdrawals."
+  },
+  "owner": {
+    "handle": "D9m1n1c",
+    "displayName": "D9m1n1c",
+    "image": "https://avatars.githubusercontent.com/u/109327351?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "hedera-token-mint",
+    "displayName": "Hedera Token Minting",
+    "summary": "Create and manage fungible tokens and NFTs on Hedera with minting, supply control, and permission configuration.",
+    "tags": {
+      "latest": "k9774vwqeb3kdk81yc567t83k9815sd9"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 346,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1771109109042,
+    "updatedAt": 1772063141850
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1771109109042,
+    "changelog": "- Initial release of hedera-token-mint (v1.0.0).\n- Enables minting of fungible tokens and creation of NFT collections on Hedera HTS.\n- Supports setting up token supply types, decimals, and permissions (admin/supply keys).\n- Includes methods for minting NFTs, transferring tokens, and burning tokens.\n- Documentation covers usage examples and key concepts like token types and royalties."
+  },
+  "owner": {
+    "handle": "HarleysCodes",
+    "displayName": "HarleysCodes",
+    "image": "https://avatars.githubusercontent.com/u/116604105?v=4"
+  }
+}

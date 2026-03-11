@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "crypto-market-cli",
+    "displayName": "Crypto Market CLI",
+    "summary": "Track cryptocurrency markets in real-time. 加密货币行情追踪、比特币价格、以太坊ETH、市值排行、DeFi数据、恐惧贪婪指数、趋势币种、空投信息、RSI技术分析、均线分析、金叉死叉、DeFi收益率对比、Gas费查询。Use when checking crypto pri...",
+    "tags": {
+      "latest": "k97acfhv1c94e00s0mrxbmgj3982m1wa"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 108,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 6
+    },
+    "createdAt": 1773062726828,
+    "updatedAt": 1773209048803
+  },
+  "latestVersion": {
+    "version": "1.4.1",
+    "createdAt": 1773140841855,
+    "changelog": "Brand: hello@bytesagain.com"
+  },
+  "owner": {
+    "handle": "bytesagain",
+    "displayName": "bytesagain",
+    "image": "https://avatars.githubusercontent.com/u/119731500?v=4"
+  }
+}

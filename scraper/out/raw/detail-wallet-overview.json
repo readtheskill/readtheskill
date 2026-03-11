@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "wallet-overview",
+    "displayName": "Wallet Overview",
+    "summary": "Check wallet balances, token holdings, and transaction history across all supported chains. Use when you or the user want to see their balance, check holding...",
+    "tags": {
+      "latest": "k97cfhz40xpsa1c96rmc8mr60982kstt"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 60,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1773036356047,
+    "updatedAt": 1773208881850
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1773036356047,
+    "changelog": "- Initial release of the wallet-overview skill.\n- Allows users to view wallet balances, token holdings, and transaction history across all supported EVM chains and Solana.\n- Provides commands for checking authentication, retrieving wallet details, viewing portfolio overviews, and accessing recent account activity.\n- Supports filtering by chain and account address, with pagination options for transaction history.\n- Includes support for common networks like Ethereum, Polygon, Arbitrum, Base, Optimism, Avalanche, BSC, and Solana."
+  },
+  "owner": {
+    "handle": "rachidjarray-hk-qa-fdt",
+    "displayName": "Rachid Jarray",
+    "image": "https://avatars.githubusercontent.com/u/111736103?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "agentic-commerce",
+    "displayName": "Agentic Commerce - Buy IRL Items With USDC",
+    "summary": "AI-powered shopping API for product search and crypto checkout. Use this skill when:\n- Searching for products from Amazon and Shopify\n- Building shopping assistants or product recommendation features\n- Creating purchase orders with crypto (USDC on Solana or Base)\n- Integrating e-commerce checkout into applications\n- Signing and submitting blockchain transactions for purchases",
+    "tags": {
+      "latest": "k97a1q74cp32nczz6x58zf4h1d809jtq"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1878,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 2,
+      "versions": 2
+    },
+    "createdAt": 1769827270474,
+    "updatedAt": 1773198644519
+  },
+  "latestVersion": {
+    "version": "1.0.1",
+    "createdAt": 1769890531594,
+    "changelog": "- Adds support for Base/EVM wallets and transactions alongside Solana.\n- New CLI scripts: `buy_and_sign_base.ts` and `sign_transaction_base.ts` for purchasing and signing on Base.\n- Purchase flow auto-detects blockchain from wallet address format.\n- Updated documentation to reflect Solana and Base support for all endpoints, examples, and required dependencies.\n- CLI usage instructions and outputs for Base/EVM included."
+  },
+  "owner": {
+    "handle": "purch-agent",
+    "displayName": "purch-agent",
+    "image": "https://avatars.githubusercontent.com/u/240499149?v=4"
+  }
+}

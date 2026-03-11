@@ -1,0 +1,39 @@
+{
+  "skill": {
+    "slug": "wallet-pnl",
+    "displayName": "wallet-pnl",
+    "summary": "Analyze any Solana wallet's trading history: win rate, realized PnL, trader type, and copy-trade rating. Use when the user wants to check if a wallet is wort...",
+    "tags": {
+      "copy-trade": "k97fhn86ykvpg4t8k4fe6hc2fd82bema",
+      "crypto": "k97fhn86ykvpg4t8k4fe6hc2fd82bema",
+      "defi": "k97fhn86ykvpg4t8k4fe6hc2fd82bema",
+      "latest": "k97fhn86ykvpg4t8k4fe6hc2fd82bema",
+      "pnl": "k97fhn86ykvpg4t8k4fe6hc2fd82bema",
+      "smart-money": "k97fhn86ykvpg4t8k4fe6hc2fd82bema",
+      "solana": "k97fhn86ykvpg4t8k4fe6hc2fd82bema",
+      "trading": "k97fhn86ykvpg4t8k4fe6hc2fd82bema",
+      "wallet-analysis": "k97fhn86ykvpg4t8k4fe6hc2fd82bema",
+      "win-rate": "k97fhn86ykvpg4t8k4fe6hc2fd82bema"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 72,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772701552083,
+    "updatedAt": 1772701567216
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772701552083,
+    "changelog": "Solana Wallet PnL Analyzer skill initial release:\n\n- Analyze any Solana wallet’s swap history for copy-trade evaluation.\n- Outputs win rate, realized PnL in SOL, trader classification, copy-trade rating, and top traded tokens.\n- Includes copy-trade rating guide and trader type definitions for clarity.\n- Supports both API-based (paid per request) and self-hosted analysis workflows.\n- Requires a Helius API key for transaction data access."
+  },
+  "owner": {
+    "handle": "ultranumblol",
+    "displayName": "ultranumblol",
+    "image": "https://avatars.githubusercontent.com/u/15081029?v=4"
+  }
+}

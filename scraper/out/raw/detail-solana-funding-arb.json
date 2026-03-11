@@ -1,0 +1,37 @@
+{
+  "skill": {
+    "slug": "solana-funding-arb",
+    "displayName": "Solana Funding Rate Arbitrage",
+    "summary": "Solana perpetual DEX funding rate arbitrage - scanner and auto-trader. Compares funding rates across Drift and Flash Trade to find and execute cross-DEX arbitrage opportunities. Use when analyzing Solana perp funding rates, finding funding arbitrage, setting up delta-neutral strategies, or running automated funding collection. Includes Monte Carlo simulation, backtesting, and full auto-trading capabilities.",
+    "tags": {
+      "arbitrage": "k977wc6spavsw6kh530wa6ea7x80rb98",
+      "defi": "k977wc6spavsw6kh530wa6ea7x80rb98",
+      "drift": "k977wc6spavsw6kh530wa6ea7x80rb98",
+      "funding": "k977wc6spavsw6kh530wa6ea7x80rb98",
+      "hackathon": "k97937xg7xyt7nea788bwhgapn80rbw4",
+      "latest": "k977wc6spavsw6kh530wa6ea7x80rb98",
+      "solana": "k977wc6spavsw6kh530wa6ea7x80rb98",
+      "trading": "k977wc6spavsw6kh530wa6ea7x80rb98"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1239,
+      "installsAllTime": 5,
+      "installsCurrent": 5,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1770548583543,
+    "updatedAt": 1773200368094
+  },
+  "latestVersion": {
+    "version": "2.1.0",
+    "createdAt": 1770548681424,
+    "changelog": "Added: Auto-trading with Drift + Flash Trade integration, DRY_RUN mode, position manager, risk controls, cron support"
+  },
+  "owner": {
+    "handle": "Zedit42",
+    "displayName": "Zedit42",
+    "image": "https://avatars.githubusercontent.com/u/87221822?v=4"
+  }
+}

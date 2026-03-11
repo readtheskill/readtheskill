@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "walletconnect-agent",
+    "displayName": "Walletconnect Agent",
+    "summary": "🔗 WalletConnect Agent - dApp Access for AI. Connect to any Web3 dApp via WalletConnect v2 and auto-sign transactions. Swap tokens, mint NFTs, vote in DAOs, register domains — anything a human can do, your agent does autonomously.",
+    "tags": {
+      "latest": "k970cd66npe9p8ccrkyn0f2f7580saq4"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2025,
+      "installsAllTime": 3,
+      "installsCurrent": 3,
+      "stars": 1,
+      "versions": 10
+    },
+    "createdAt": 1770292191293,
+    "updatedAt": 1773199765579
+  },
+  "latestVersion": {
+    "version": "1.6.0",
+    "createdAt": 1770549734800,
+    "changelog": "Security update: eth_sign blocked by default, added --allow-eth-sign flag"
+  },
+  "owner": {
+    "handle": "dAAAb",
+    "displayName": "Ju Chun Ko",
+    "image": "https://avatars.githubusercontent.com/u/1607280?v=4"
+  }
+}

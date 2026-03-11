@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "xrpl-token-mint",
+    "displayName": "XRPL Token Minting",
+    "summary": "Create and manage XRPL issued tokens and NFTs, including minting, trust lines, issuing payments, and setting NFT offers with customizable fees and flags.",
+    "tags": {
+      "latest": "k9712f3zz41s4vbgdysggztf6n815bjy"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 340,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1771102245264,
+    "updatedAt": 1772059239958
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1771102245264,
+    "changelog": "xrpl-token-mint 1.0.0\n\n- Initial release supporting the creation and management of XRPL issued currencies (fungible tokens) and NFTs.\n- Enables minting new tokens, setting up token issuers, creating NFTs, and managing trust lines.\n- Includes usage examples for trust lines, token payments, NFT minting, NFT sell/buy offers, and relevant transaction flags.\n- Provides key points on token naming, decimals, royalty fees, and NFT collection IDs."
+  },
+  "owner": {
+    "handle": "HarleysCodes",
+    "displayName": "HarleysCodes",
+    "image": "https://avatars.githubusercontent.com/u/116604105?v=4"
+  }
+}

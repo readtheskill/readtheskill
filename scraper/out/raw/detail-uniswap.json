@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "uniswap",
+    "displayName": "Uniswap",
+    "summary": "Assist with Uniswap swaps, liquidity provision, and avoiding common DeFi losses.",
+    "tags": {
+      "latest": "k97d0zkmhn0pade86qk2mw43xh80wq7y"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 669,
+      "installsAllTime": 5,
+      "installsCurrent": 5,
+      "stars": 2,
+      "versions": 1
+    },
+    "createdAt": 1770746034318,
+    "updatedAt": 1772063736195
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770746034318,
+    "changelog": "Initial release"
+  },
+  "owner": {
+    "handle": "ivangdavila",
+    "displayName": "Iván",
+    "image": "https://avatars.githubusercontent.com/u/81719670?v=4"
+  }
+}

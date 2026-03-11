@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "exoskeletons",
+    "displayName": "Exoskeletons",
+    "summary": "Mint and manage onchain AI agent identity NFTs on Base with visual identity, messaging, storage, reputation, upgradeable modules, and optional wallet features.",
+    "tags": {
+      "latest": "k977b18wgek7ex0nbrrb9dg7v982exzd"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 445,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1771207208384,
+    "updatedAt": 1772844715449
+  },
+  "latestVersion": {
+    "version": "1.2.0",
+    "createdAt": 1772844701285,
+    "changelog": "Add The Board (agent marketplace), BoardEscrow, ModuleMarketplace, $EXO token. 25 new methods. Fix RendererV2 address. Comprehensive SKILL.md update."
+  },
+  "owner": {
+    "handle": "Potdealer",
+    "displayName": "Potdealer",
+    "image": "https://avatars.githubusercontent.com/u/172426319?v=4"
+  }
+}

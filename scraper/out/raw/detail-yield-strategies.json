@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "yield-strategies",
+    "displayName": "Yield Strategies",
+    "summary": "Discover, deposit into, and withdraw from DeFi yield generation strategies across multiple chains and protocols. Use when you or the user want to earn yield,...",
+    "tags": {
+      "latest": "k976mw8j1kem4wp6mhpfmq6g7d82j8qb"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 42,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1773036371135,
+    "updatedAt": 1773037609009
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1773036371135,
+    "changelog": "Initial release of yield-strategies skill.\n\n- Discover DeFi yield strategies across multiple chains and protocols.\n- Deposit tokens into selected yield strategies.\n- Withdraw funds from existing yield positions.\n- Filter and sort available strategies by chain, token, APY, and risk level.\n- Full workflow guidance from discovery through to exit, with example commands.\n- Includes error handling tips and prerequisites for smooth operation."
+  },
+  "owner": {
+    "handle": "rachidjarray-hk-qa-fdt",
+    "displayName": "Rachid Jarray",
+    "image": "https://avatars.githubusercontent.com/u/111736103?v=4"
+  }
+}

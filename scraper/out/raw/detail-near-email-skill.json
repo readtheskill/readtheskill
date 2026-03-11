@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "near-email-skill",
+    "displayName": "Near Email Skill",
+    "summary": "Send and read blockchain-native emails using NEAR Email service. Use when building notifications for NEAR smart contracts (NFT sales, DeFi liquidation alerts, DAO voting reminders) or when AI agents need email capabilities with a NEAR account identity.",
+    "tags": {
+      "latest": "k973hxppf9erf1va8daje9npwd80a3hm"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1213,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1769962871502,
+    "updatedAt": 1772076097029
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1769962871502,
+    "changelog": "near-email-skill 1.0.0\n\n- Initial release with NEAR Email integration for blockchain-native email based on NEAR account identities.\n- Supports sending and reading emails using both smart contract (Rust) and AI agent (JavaScript/TypeScript and Python) methods.\n- Introduces Payment Key (HTTPS) and NEAR Transaction flows with explicit result parsing guidance.\n- Public on-chain email sending for contract notifications and encrypted email for UI/agents.\n- Includes references for API actions: send, delete, fetch, and count emails, as well as obtaining sender pubkey.\n- Mainnet only; testnet accounts not supported."
+  },
+  "owner": {
+    "handle": "zavodil",
+    "displayName": "zavodil",
+    "image": "https://avatars.githubusercontent.com/u/38926321?v=4"
+  }
+}

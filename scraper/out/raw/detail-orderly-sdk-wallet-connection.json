@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "orderly-sdk-wallet-connection",
+    "displayName": "Orderly Sdk Wallet Connection",
+    "summary": "Comprehensive guide to integrating wallet connection in Orderly Network DEX applications, supporting both EVM (Ethereum, Arbitrum, etc.) and Solana wallets.",
+    "tags": {
+      "latest": "k973rcczqfrra6hrz5ymttpaeh82ep9f"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 54,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772920266221,
+    "updatedAt": 1772920274642
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772920266221,
+    "changelog": "Initial release of orderly-sdk-wallet-connection, providing a unified integration guide for wallet connections in Orderly Network DEX apps.\n\n- Supports both EVM (Ethereum, Arbitrum, etc.) and Solana wallet connections.\n- Introduces the @orderly.network/wallet-connector package for seamless multi-chain wallet integration.\n- Includes instructions for customizing wallet providers and chain switching.\n- Explains use of WalletConnectorProvider and unified WalletConnectorContext for managing wallet state.\n- Guides developers through configuration for MetaMask, WalletConnect, Phantom, Solflare, and more."
+  },
+  "owner": {
+    "handle": "Tarnadas",
+    "displayName": "Mario Reder",
+    "image": "https://avatars.githubusercontent.com/u/5855071?v=4"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "skill": {
+    "slug": "solana-copy-trader",
+    "displayName": "Solana Copy Trader",
+    "summary": "Solana whale copy trading bot. Track any wallet, copy trades in real-time via Jupiter + Pump.fun APIs, with paper trading simulation and live execution. Use...",
+    "tags": {
+      "bot": "k97en80kks58rrbc06ek73njsx81e3av",
+      "crypto": "k97en80kks58rrbc06ek73njsx81e3av",
+      "defi": "k97en80kks58rrbc06ek73njsx81e3av",
+      "jupiter": "k97en80kks58rrbc06ek73njsx81e3av",
+      "latest": "k97en80kks58rrbc06ek73njsx81e3av",
+      "solana": "k97en80kks58rrbc06ek73njsx81e3av",
+      "trading": "k97en80kks58rrbc06ek73njsx81e3av",
+      "whale": "k97en80kks58rrbc06ek73njsx81e3av"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 368,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1771476026801,
+    "updatedAt": 1773203090630
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1771476026801,
+    "changelog": "Initial release — Solana whale copy trader with Jupiter + Pump.fun routing, paper trading simulation, Helius WebSocket tracking."
+  },
+  "owner": {
+    "handle": "YouthAIAgent",
+    "displayName": "YouthAIAgent",
+    "image": "https://avatars.githubusercontent.com/u/240294764?v=4"
+  }
+}

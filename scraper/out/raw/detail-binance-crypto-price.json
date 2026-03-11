@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "binance-crypto-price",
+    "displayName": "Binance Crypto Price",
+    "summary": "Query real-time cryptocurrency prices using the Binance API. Get latest prices for Bitcoin, Ethereum, and all BN listed cryptocurrencies. No API key required.",
+    "tags": {
+      "latest": "k975x6ka9jzjj1fswtcg6x1z9d82awch"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 110,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 4
+    },
+    "createdAt": 1772690322429,
+    "updatedAt": 1772692113551
+  },
+  "latestVersion": {
+    "version": "1.0.3",
+    "createdAt": 1772692103933,
+    "changelog": "Updated description: covers all Binance listed cryptocurrencies"
+  },
+  "owner": {
+    "handle": "yangzhe1991",
+    "displayName": "Zhe (Phil) Yang",
+    "image": "https://avatars.githubusercontent.com/u/860739?v=4"
+  }
+}

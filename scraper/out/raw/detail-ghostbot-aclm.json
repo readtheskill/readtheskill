@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "ghostbot-aclm",
+    "displayName": "ghostbot-uniswap-v4",
+    "summary": "GhostBot ACLM — AI-powered Automated Concentrated Liquidity Manager for Uniswap v4. Manage liquidity positions, auto-rebalance out-of-range positions, optimize LP fees dynamically, execute limit orders (stop-loss, take-profit), and monitor oracle signals — all from chat. Deployed on Ethereum Sepolia with verified contracts. Use this skill when users ask about DeFi liquidity provision, Uniswap v4 hooks, pool management, LP positions, impermanent loss, or automated market making.",
+    "tags": {
+      "latest": "k97e9n7m5m7dhte1ybve5rb22h80skmd"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 740,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770556254009,
+    "updatedAt": 1773200389535
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770556254009,
+    "changelog": "GhostBot ACLM 1.0.0 — Initial Release\n\n- Launches GhostBot ACLM: an AI-powered automated concentrated liquidity manager (ACLM) for Uniswap v4 on Ethereum Sepolia.\n- Features auto-rebalancing liquidity positions, dynamic fee optimization, native limit orders (stop-loss/take-profit), and oracle-integrated AI signals.\n- Provides user commands for adding liquidity, monitoring positions, checking oracle signals, and viewing pool stats from chat.\n- Includes complete setup instructions, test token contract addresses, and usage guidelines for the Sepolia testnet.\n- Thorough documentation on architecture, workflow, and key DeFi concepts for new users."
+  },
+  "owner": {
+    "handle": "AqilJaafree",
+    "displayName": "AqilJaafree",
+    "image": "https://avatars.githubusercontent.com/u/73504832?v=4"
+  }
+}

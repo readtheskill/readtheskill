@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "blockchain",
+    "displayName": "Blockchain",
+    "summary": "Understand blockchain technology, interact with smart contracts, and evaluate when distributed ledgers solve real problems.",
+    "tags": {
+      "latest": "k975wrysd89vc883ehcm2kdhv58107gz"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1065,
+      "installsAllTime": 8,
+      "installsCurrent": 8,
+      "stars": 3,
+      "versions": 1
+    },
+    "createdAt": 1770904828459,
+    "updatedAt": 1772062544757
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770904828459,
+    "changelog": "Initial release"
+  },
+  "owner": {
+    "handle": "ivangdavila",
+    "displayName": "Iván",
+    "image": "https://avatars.githubusercontent.com/u/81719670?v=4"
+  }
+}

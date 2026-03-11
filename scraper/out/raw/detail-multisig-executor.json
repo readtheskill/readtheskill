@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "multisig-executor",
+    "displayName": "Multisig Executor",
+    "summary": "Multi-signature transaction executor for DeFi and DAOs - create, sign, and execute multi-sig transactions. Each call charges 0.001 USDT via SkillPay.",
+    "tags": {
+      "latest": "k977v471svptxrqpkrayb2qtcs82e44a"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 79,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772849463016,
+    "updatedAt": 1773208190627
+  },
+  "latestVersion": {
+    "version": "1.0.1",
+    "createdAt": 1772849463016,
+    "changelog": "- Updated SKILL.md with detailed feature descriptions, usage instructions, example output, pricing, and FAQs.\n- Expanded trigger phrases to support multiple languages and use cases.\n- Clarified required environment variable for SkillPay integration.\n- No major logic or behavioral changes; documentation improvements only."
+  },
+  "owner": {
+    "handle": "mosonchan2023",
+    "displayName": "mosonchan2023",
+    "image": "https://avatars.githubusercontent.com/u/132669994?v=4"
+  }
+}

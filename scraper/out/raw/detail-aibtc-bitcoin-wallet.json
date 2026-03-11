@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "aibtc-bitcoin-wallet",
+    "displayName": "AIBTC Bitcoin Wallet",
+    "summary": "Bitcoin L1 wallet for agents - check balances, send BTC, manage UTXOs. Extends to Stacks L2 (STX, DeFi) and Pillar smart wallets (sBTC yield).",
+    "tags": {
+      "latest": "k978wew6sk7kqr1ma91ycznj6x81gtsw"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1537,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 18
+    },
+    "createdAt": 1770565892395,
+    "updatedAt": 1773200423810
+  },
+  "latestVersion": {
+    "version": "1.26.0",
+    "createdAt": 1771622103254,
+    "changelog": "- chore(main): release 1.26.0 (#176)\n- feat(inbox): allow inbox message resubmission with confirmed txid as payment proof (#183)\n- fix(inbox): make send_inbox_message resilient to stale relay dedup (#181)\n- fix: Add relay health monitoring and nonce gap detection (#174)"
+  },
+  "owner": {
+    "handle": "whoabuddy",
+    "displayName": "whoabuddy",
+    "image": "https://avatars.githubusercontent.com/u/9038904?v=4"
+  }
+}

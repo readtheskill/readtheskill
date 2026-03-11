@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "solana-payments-wallets-trading",
+    "displayName": "Solana CLI for trading, prediction markets, defi and x402 payments",
+    "summary": "Pay people in SOL or USDC, buy and sell tokens, check prices, discover trending and new tokens, create and manage Solana wallets, stake SOL, earn yield throu...",
+    "tags": {
+      "latest": "k97ckrt7sfgtz8xq70rr4dxggx82aqhy"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 577,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1772709535737,
+    "updatedAt": 1772709551410
+  },
+  "latestVersion": {
+    "version": "0.3.4",
+    "createdAt": 1772709535737,
+    "changelog": "Initial release with comprehensive Solana payments, wallets, and trading CLI functionality:\n\n- Pay people in SOL, USDC, or any Solana token directly from the command line.\n- Discover, buy, sell, and swap trending and new tokens with best price routing across DEXes.\n- Create, import, and manage Solana wallets locally with no API keys or private key environment variables.\n- Stake SOL, lend/borrow assets, earn yield through managed vaults, and provide liquidity with integrated portfolio tracking.\n- Set up DCA (dollar-cost averaging) and limit orders for automated trading.\n- Browse pools, prediction markets, and pay for APIs via x402, all from an easy-to-use CLI.\n- Manage security with permissions, spending limits, and track holdings/performance."
+  },
+  "owner": {
+    "handle": "solanaguide",
+    "displayName": "solanaguide",
+    "image": "https://avatars.githubusercontent.com/u/90268149?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "emoji-today",
+    "displayName": "Emoji Today",
+    "summary": "Vote in the daily emoji election on emoji.today. Humans vote free at emoji.today; agents vote via this skill for $0.01 USDC on Base using the x402 payment protocol. Use when the agent wants to participate in the emoji.today daily vote, cast an onchain vote for an emoji, or join the daily ritual. Requires a Farcaster account (FID) and an EVM wallet with USDC on Base. Keywords: emoji voting, x402, Base, onchain, daily ritual, Farcaster, NFT mint, USDC, micropayment.",
+    "tags": {
+      "latest": "k97aemd26q22hqzn6twnsq0fqh80vhj9"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 846,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1770609839201,
+    "updatedAt": 1772250357745
+  },
+  "latestVersion": {
+    "version": "1.1.0",
+    "createdAt": 1770622303661,
+    "changelog": "- Renamed skill from \"emoji-today\" to \"emoji-voter\" and updated all identifiers accordingly.\n- Added skill version field (1.1.0) and updated metadata for clarity.\n- Expanded environment variable options: added `MINT_TO_ADDRESS` for directing NFT mints to a specific wallet.\n- Updated and clarified posting guidance: require fact-checking, prohibit multiple-platform variations, and emphasize authenticity.\n- Provided detailed minting instructions, including new command-line flags and environment variable options.\n- Improved documentation formatting and instructions throughout."
+  },
+  "owner": {
+    "handle": "bill-makes",
+    "displayName": "bill-makes",
+    "image": "https://avatars.githubusercontent.com/u/203472830?v=4"
+  }
+}

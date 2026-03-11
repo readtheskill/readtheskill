@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "cryptowallet",
+    "displayName": "CryptoWallet - Multi-Chain Blockchain Wallet Manager",
+    "summary": "Complete cryptocurrency wallet management for Web3, DeFi, and blockchain applications. Create and manage EVM (Ethereum, Polygon, BSC, Arbitrum, Optimism, Base, Avalanche) and Solana wallets with encrypted local storage. Query balances for native tokens (ETH, MATIC, BNB, SOL) and standard tokens (ERC20, SPL). Send transactions, interact with smart contracts, and manage multiple addresses across 12+ networks. Secure password-protected key storage with AES-256 encryption. Use for: (1) Creating new crypto wallets, (2) Importing existing wallets, (3) Checking token balances across chains, (4) Sending cryptocurrency and tokens, (5) Interacting with DeFi protocols and smart contracts, (6) Multi-chain portfolio management, (7) NFT transfers, (8) Blockchain development and testing. Keywords: crypto, cryptocurrency, wallet, blockchain, ethereum, solana, web3, defi, token, erc20, nft, smart contract, metamask alternative, hardware wallet, cold storage, hot wallet, blockchain wallet, digital wallet, bitcoin.",
+    "tags": {
+      "latest": "k97236zewzdw6w406gdw9t2vq5802ss0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1534,
+      "installsAllTime": 1,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1769611537069,
+    "updatedAt": 1772161912390
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1769611537069,
+    "changelog": "Initial release: Secure multi-chain wallet management for EVM and Solana"
+  },
+  "owner": {
+    "handle": "gnufoo",
+    "displayName": "gnufoo",
+    "image": "https://avatars.githubusercontent.com/u/18051278?v=4"
+  }
+}

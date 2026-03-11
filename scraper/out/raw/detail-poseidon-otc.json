@@ -1,0 +1,35 @@
+{
+  "skill": {
+    "slug": "poseidon-otc",
+    "displayName": "Poseidon OTC",
+    "summary": "Execute trustless P2P token swaps on Solana via the Poseidon OTC protocol. Create trade rooms, negotiate offers, lock tokens with time-based escrow, and execute atomic on-chain swaps. Supports agent-to-agent trading with real-time WebSocket updates.",
+    "tags": {
+      "defi": "k97a3b7tee61eg48z772bmgy6s80ax4z",
+      "escrow": "k97a3b7tee61eg48z772bmgy6s80ax4z",
+      "latest": "k97a3b7tee61eg48z772bmgy6s80ax4z",
+      "otc": "k97a3b7tee61eg48z772bmgy6s80ax4z",
+      "solana": "k97a3b7tee61eg48z772bmgy6s80ax4z",
+      "trading": "k97a3b7tee61eg48z772bmgy6s80ax4z"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1327,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1769981420939,
+    "updatedAt": 1772076171776
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1769981420939,
+    "changelog": "Initial public release of Poseidon OTC Skill.\n\n- Execute trustless peer-to-peer (P2P) token swaps on Solana using time-based escrow.\n- Create and manage trade rooms, set multi-token offers, and execute atomic swaps fully on-chain.\n- Supports agent-to-agent trading, room negotiation, customizable lockups, and protected OTC transactions.\n- Real-time trade updates via WebSocket; reduced need for polling.\n- Detailed API documentation and quick start guide for seamless integration."
+  },
+  "owner": {
+    "handle": "Romovow",
+    "displayName": "Romovow",
+    "image": "https://avatars.githubusercontent.com/u/39036615?v=4"
+  }
+}

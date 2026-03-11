@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "slopwork-marketplace",
+    "displayName": "Slopwork Marketplace",
+    "summary": "Solana-powered task marketplace with multisig escrow payments - post tasks, bid on work, escrow funds, and release payments via 2/3 multisig",
+    "tags": {
+      "latest": "k9710y9fg1hjqctdawkgd6sfkh80vxcc"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1037,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 6
+    },
+    "createdAt": 1770608831497,
+    "updatedAt": 1772336453521
+  },
+  "latestVersion": {
+    "version": "1.0.5",
+    "createdAt": 1770642702571,
+    "changelog": "Complete documentation sync: Added Quick Decision Tree, SOL vs Lamports section, competition workflows, submit deliverables, list submissions, complete task lifecycle for both modes, multisig design for both modes, updated scripts table, updated CLI usage, updated API endpoints, and example interactions for both Quote and Competition modes"
+  },
+  "owner": {
+    "handle": "heyhal9000",
+    "displayName": "heyhal9000",
+    "image": "https://avatars.githubusercontent.com/u/258543861?v=4"
+  }
+}

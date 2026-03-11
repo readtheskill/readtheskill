@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "solana-market",
+    "displayName": "Solana Market",
+    "summary": "查询 Solana 生态代币实时价格和市场概览。当用户想知道代币价格、行情、市场状况时触发。",
+    "tags": {
+      "latest": "k975dcf8r8agcamc6r08aywjv182f0f5"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 61,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772876749396,
+    "updatedAt": 1772876758583
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1772876749396,
+    "changelog": "- Initial release of Solana Market skill.\n- Supports real-time price queries for SOL, USDC, USDT, JUP, RAY, and BONK.\n- Provides Solana ecosystem market overview.\n- Friendly feedback for unsupported tokens.\n- Follows clear guardrails: no price predictions, transparent data source, no trading advice, and informs about 30-second price cache."
+  },
+  "owner": {
+    "handle": "liji3597",
+    "displayName": "liji3597",
+    "image": "https://avatars.githubusercontent.com/u/77437682?v=4"
+  }
+}

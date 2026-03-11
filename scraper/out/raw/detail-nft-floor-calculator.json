@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "nft-floor-calculator",
+    "displayName": "Nft Floor Calculator",
+    "summary": "Calculate NFT floor prices across multiple marketplaces - OpenSea, Blur, Magic Eden. Each call charges 0.001 USDT via SkillPay.",
+    "tags": {
+      "latest": "k97a5s3af9wtw1tbmrfwfysm6n82ecjv"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 77,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772849388360,
+    "updatedAt": 1773208189474
+  },
+  "latestVersion": {
+    "version": "1.0.1",
+    "createdAt": 1772849388360,
+    "changelog": "NFT Floor Calculator 1.0.1\n\n- Updated skill description and documentation in SKILL.md\n- Clarified supported marketplaces and key features\n- Added example input/output and pricing information\n- No functional changes specified in this version"
+  },
+  "owner": {
+    "handle": "mosonchan2023",
+    "displayName": "mosonchan2023",
+    "image": "https://avatars.githubusercontent.com/u/132669994?v=4"
+  }
+}

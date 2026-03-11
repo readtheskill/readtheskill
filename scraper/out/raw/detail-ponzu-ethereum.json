@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "ponzu-ethereum",
+    "displayName": "Ponzu Launchpad",
+    "summary": "Deploy and interact with Ponzu token launchpad — presales, DEX swaps, and LP farming on Ethereum",
+    "tags": {
+      "latest": "k9788r8k389t276wyx3s5gde6x82d4qd"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 84,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1772739506949,
+    "updatedAt": 1772782262182
+  },
+  "latestVersion": {
+    "version": "1.0.1",
+    "createdAt": 1772782215048,
+    "changelog": "- Added a new security and privacy section with clear wallet handling, privacy, and environment requirements.\n- Improved documentation structure for quick start, focusing on safe usage and environment setup.\n- Clarified that no data is sent to Ponzu servers and that all contract interactions are direct and local.\n- Updated environment variable requirements for explicit clarity (`PONZU_PRIVATE_KEY`, `PONZU_NETWORK`, `PONZU_RPC_URL`).\n- Minor corrections and DRY improvements to documentation.\n- No code changes; this is a documentation update only."
+  },
+  "owner": {
+    "handle": "YuzuKyouma",
+    "displayName": "YuzuKyouma",
+    "image": "https://avatars.githubusercontent.com/u/237116673?v=4"
+  }
+}

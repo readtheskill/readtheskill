@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "crypto-wallet",
+    "displayName": "Crypto Wallet",
+    "summary": "Multi-chain cryptocurrency wallet management. Check balances, send tokens, view transaction history across Ethereum, Solana, Bitcoin and more.",
+    "tags": {
+      "latest": "k97eexz2b1q5cpejmehyjabywn82779f"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 187,
+      "installsAllTime": 5,
+      "installsCurrent": 5,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772514353450,
+    "updatedAt": 1773206457142
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772514353450,
+    "changelog": "Initial release of crypto-wallet: a multi-chain cryptocurrency wallet manager.\n\n- Supports Ethereum, Solana, Bitcoin, Polygon, Arbitrum, and Base networks\n- Check wallet balances and view transaction history\n- Send tokens with confirmation and recipient verification\n- Lookup token prices and get a portfolio overview\n- Includes important safety rules for secure usage"
+  },
+  "owner": {
+    "handle": "nvmmonkey",
+    "displayName": "nvmmonkey",
+    "image": "https://avatars.githubusercontent.com/u/100928742?v=4"
+  }
+}

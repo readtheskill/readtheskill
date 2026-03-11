@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "agent-wallet-cli",
+    "displayName": "Agent Wallet CLI",
+    "summary": "Manage crypto wallets (Ethereum, Solana, Polygon, Arbitrum, Base) via agent-wallet-cli. Use for checking balances, sending tokens (ETH/SOL/ERC-20/SPL), signi...",
+    "tags": {
+      "latest": "k97dk62yvsfjc4dk257typ16jx81etc6"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 533,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1770991302467,
+    "updatedAt": 1773201782406
+  },
+  "latestVersion": {
+    "version": "1.4.0",
+    "createdAt": 1771501276822,
+    "changelog": "Clarify --chain is required for balance/send/history; add L2 network usage examples (Base, Polygon, Arbitrum)"
+  },
+  "owner": {
+    "handle": "donald-jackson",
+    "displayName": "donald-jackson",
+    "image": "https://avatars.githubusercontent.com/u/605195?v=4"
+  }
+}

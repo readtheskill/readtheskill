@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "helius-api",
+    "displayName": "Helius API",
+    "summary": "Query Solana data via the Helius API. Use when the user asks about Solana wallet balances, token holdings, NFT holdings, transaction history, transfer activity, wallet identity/labels, wallet funding sources, parsing transactions, or other Solana on-chain data. Triggers on: \"solana wallet\", \"sol balance\", \"solana transactions\", \"wallet history\", \"who funded this wallet\", \"wallet identity\", \"solana transfers\", \"solana NFTs\", \"helius\", \"check solana address\", \"solana data\", \"parse transaction\", \"enhanced transactions\", \"transaction details\".",
+    "tags": {
+      "latest": "k97avavd5ptv21x3v4x1sfakf580y0ab"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 727,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770828745099,
+    "updatedAt": 1772061639872
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770828745099,
+    "changelog": "Initial release: Wallet API (balances, history, transfers, identity, funded-by) + Enhanced Transactions (parse, enhanced history)"
+  },
+  "owner": {
+    "handle": "itsahedge",
+    "displayName": "itsahedge",
+    "image": "https://avatars.githubusercontent.com/u/51177340?v=4"
+  }
+}

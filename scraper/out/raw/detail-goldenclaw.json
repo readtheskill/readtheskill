@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "goldenclaw",
+    "displayName": "Golden Claw",
+    "summary": "Manage GoldenClaw (GCLAW) on Solana. Create wallet, claim from faucet, check balance, send tokens, view history. For OpenClaw AI agents.",
+    "tags": {
+      "latest": "k97aqs1mt2dyy3479hc6gq8fk18162zp"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 372,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1771168234307,
+    "updatedAt": 1773202231360
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1771168234307,
+    "changelog": "GoldenClaw (GCLAW) skill for Solana now available for OpenClaw AI agents.\n\n- Create an encrypted wallet and manage GCLAW tokens on Solana.\n- Claim GCLAW from the official faucet, view balances, transaction history, and spending limits.\n- Send and receive GCLAW tokens agent-to-agent, with easy access to address and donation options.\n- Provides commands for wallet setup, sending, claiming, checking balances, and tokenomics.\n- Includes full documentation and helpful links for faucet, website, token info, and social media."
+  },
+  "owner": {
+    "handle": "GoldenClawOrg",
+    "displayName": "GoldenClawOrg",
+    "image": "https://avatars.githubusercontent.com/u/260117374?v=4"
+  }
+}

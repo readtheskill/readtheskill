@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "solana-compression-dev",
+    "displayName": "solana-compression-dev",
+    "summary": "For client and program development on Solana ~160x cheaper and without rent-exemption for per-user state, DePIN registrations, or custom compressed accounts....",
+    "tags": {
+      "latest": "k974p3sdvhhk8anpx1m5n2a4e981t613"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 193,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1772043611458,
+    "updatedAt": 1773204749625
+  },
+  "latestVersion": {
+    "version": "1.0.4",
+    "createdAt": 1772045044039,
+    "changelog": "- Updated the description to clarify support for both client and program development using Solana compression.\n- No other changes detected in this release."
+  },
+  "owner": {
+    "handle": "tilo-14",
+    "displayName": "tilo-14",
+    "image": "https://avatars.githubusercontent.com/u/169537807?v=4"
+  }
+}

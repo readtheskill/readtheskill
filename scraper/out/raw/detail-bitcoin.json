@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "bitcoin",
+    "displayName": "Bitcoin",
+    "summary": "Assist with Bitcoin transactions, wallets, Lightning, and security decisions.",
+    "tags": {
+      "latest": "k9780ff2vd8cbnrang0ncsq65180tb1d"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 833,
+      "installsAllTime": 4,
+      "installsCurrent": 4,
+      "stars": 2,
+      "versions": 1
+    },
+    "createdAt": 1770680850484,
+    "updatedAt": 1772061036142
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770680850484,
+    "changelog": "Initial release"
+  },
+  "owner": {
+    "handle": "ivangdavila",
+    "displayName": "Iván",
+    "image": "https://avatars.githubusercontent.com/u/81719670?v=4"
+  }
+}

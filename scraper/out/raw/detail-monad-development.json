@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "monad-development",
+    "displayName": "Monad Development",
+    "summary": "Builds dapps on Monad blockchain. Use when deploying contracts, setting up frontends with viem/wagmi, or verifying contracts on Monad testnet or mainnet.",
+    "tags": {
+      "latest": "k978cn0h0esjg2v99zyhabz7hs80k0ts"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1583,
+      "installsAllTime": 4,
+      "installsCurrent": 4,
+      "stars": 2,
+      "versions": 3
+    },
+    "createdAt": 1770025961488,
+    "updatedAt": 1773199138322
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770278140351,
+    "changelog": "Monad development skill initial release.\n\n- Enables deployment and verification of smart contracts on Monad testnet and mainnet.\n- Provides detailed deployment, wallet persistence, and verification workflows using Foundry.\n- Includes instructions for testnet faucet funding and comprehensive contract verification across all Monad explorers.\n- Offers frontend setup guides for viem/wagmi integration.\n- Specifies environment requirements and best practices for contract development on Monad."
+  },
+  "owner": {
+    "handle": "portdeveloper",
+    "displayName": "portdeveloper",
+    "image": "https://avatars.githubusercontent.com/u/108868128?v=4"
+  }
+}

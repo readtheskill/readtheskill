@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "2026-02-10-clawhub-base-wallet-1-5-0",
+    "displayName": "2026 02 10 Clawhub Base Wallet 1.5.0",
+    "summary": "🔐 Base Wallet - Crypto Identity for AI Agents. Create wallets, sign messages (SIWE), send transactions programmatically. No browser extensions, no human intervention. The foundation for autonomous Web3 agents.",
+    "tags": {
+      "latest": "k9713an22nt9ddzgnw8rvw32h58114sd"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 637,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1770876258806,
+    "updatedAt": 1772060435906
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770876258806,
+    "changelog": "base-wallet v1.0.0\n\n- Initial release: programmatic wallet creation and management for Base/Ethereum-compatible chains.\n- Supports creating wallets, SIWE authentication, balance checks, and sending transactions.\n- No browser extensions required; CLI-only workflow.\n- Emphasizes secure practices using environment variables for key management.\n- Provides scripts for wallet creation, balance checks, and BaseMail registration."
+  },
+  "owner": {
+    "handle": "pin-alt",
+    "displayName": "pin-alt",
+    "image": "https://avatars.githubusercontent.com/u/139849587?v=4"
+  }
+}

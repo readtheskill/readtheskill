@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "near-batch-sender",
+    "displayName": "Near Batch Sender",
+    "summary": "Batch operations for NEAR tokens - send to multiple recipients, transfer NFTs, claim rewards with cost estimation.",
+    "tags": {
+      "latest": "k97dj4ktk81tsj3asq2mnahcv180sbqd"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 750,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770554472971,
+    "updatedAt": 1773200380364
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770554472971,
+    "changelog": "Initial release of NEAR Batch Sender:\n\n- Batch send NEAR tokens to multiple recipients.\n- Batch transfer NFTs to multiple accounts.\n- Batch claim rewards or airdrops.\n- Cost estimation for batch operations before execution.\n- Progress tracking for batch operations."
+  },
+  "owner": {
+    "handle": "shaiss",
+    "displayName": "shaiss",
+    "image": "https://avatars.githubusercontent.com/u/113060?v=4"
+  }
+}

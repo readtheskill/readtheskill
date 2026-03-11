@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "kite-agent-smart-wallet-permissionless-protocol-v2",
+    "displayName": "Kite Agent Smart Wallet Permissionless Protocol V2",
+    "summary": "Manage your Kite AI smart wallet securely with natural language Telegram commands for wallet creation, balance checks, sessions, limits, and transactions.",
+    "tags": {
+      "latest": "k97aebmafjxjrenqn7axy5reh181t4nc"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 181,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 6
+    },
+    "createdAt": 1772030572491,
+    "updatedAt": 1773118150376
+  },
+  "latestVersion": {
+    "version": "2.0.5",
+    "createdAt": 1772031683574,
+    "changelog": "- Improved and reorganized documentation for clarity, including setup instructions and feature highlights in SKILL.md\n- Added a new GITHUB-SETUP.md file\n- Updated metadata in skill.json"
+  },
+  "owner": {
+    "handle": "nihaovand",
+    "displayName": "nihaovand",
+    "image": "https://avatars.githubusercontent.com/u/110290620?v=4"
+  }
+}

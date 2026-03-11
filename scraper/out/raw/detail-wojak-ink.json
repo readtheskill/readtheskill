@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "wojak-ink",
+    "displayName": "Wojak.ink - NFT Browser",
+    "summary": "Browse, search, analyze, and track Wojak Farmers Plot NFTs—view floor prices, rarity, price trends, traits, listings, and deal opportunities on the Chia bloc...",
+    "tags": {
+      "latest": "k97fhhma2t14tb2cxz4tvqsxm1804037"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1416,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1769729010188,
+    "updatedAt": 1772075659438
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1769729010188,
+    "changelog": "Initial release: Floor price tracking, NFT search, marketplace listings, character types, collection stats, caching"
+  },
+  "owner": {
+    "handle": "Koba42Corp",
+    "displayName": "Koba42Corp",
+    "image": "https://avatars.githubusercontent.com/u/76798369?v=4"
+  }
+}

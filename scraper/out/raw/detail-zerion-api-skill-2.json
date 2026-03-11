@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "zerion-api-skill-2",
+    "displayName": "Zerion Api",
+    "summary": "Query blockchain wallet data, token prices, and transaction history using the Zerion API via its MCP connector. Use this skill whenever the user asks about: crypto wallet balances, portfolio values, token holdings or positions, DeFi positions (staking, lending, LP), wallet PnL (profit and loss), transaction history, token/fungible asset prices or charts, NFT holdings or NFT portfolio value, or any web3 wallet analytics. Triggers on mentions of wallet addresses (0x...), ENS names, token names/symbols, \"portfolio\", \"positions\", \"PnL\", \"transactions\", \"balance\", \"holdings\", \"NFTs\", or any crypto/DeFi analytics queries. Also use when building artifacts or dashboards that display wallet or token data.",
+    "tags": {
+      "latest": "k974hwawrx5g2fw13ttshf0n0980nt3n"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1107,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1770397027032,
+    "updatedAt": 1772249850411
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1770397027032,
+    "changelog": "Initial release of zerion-api-skill-2.\n\n- Provides access to blockchain wallet data, token prices, NFTs, PnL, and transaction history via the Zerion API MCP connector.\n- Requires users to provide a Zerion API key for authentication each session (not stored or logged).\n- Supports EVM/ENS/Solana addresses, with chain/position filtering options.\n- Includes quick-reference workflows for common DeFi, portfolio, and analytics queries.\n- Guidance provided for secure API key handling and using MCP responses when building dashboards or artifacts.\n- Detailed endpoint and parameter documentation to streamline usage and integration."
+  },
+  "owner": {
+    "handle": "vshamanov",
+    "displayName": "vshamanov",
+    "image": "https://avatars.githubusercontent.com/u/3716229?v=4"
+  }
+}

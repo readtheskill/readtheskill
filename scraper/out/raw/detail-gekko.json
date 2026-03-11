@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "gekko",
+    "displayName": "Gekko",
+    "summary": "AI-powered DeFi portfolio manager for Base network. Analyze yield opportunities, manage portfolio allocations, and provide market intelligence across DeFi protocols. Real-time vault APY analysis from Morpho and Yearn.",
+    "tags": {
+      "latest": "k97f0bwxm6gpn8ywtd5d0fvxnx80s0s0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 754,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770545362405,
+    "updatedAt": 1772336289203
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770545362405,
+    "changelog": "Initial release of gekko-portfolio-manager.\n\n- Launches an AI-powered DeFi portfolio manager for the Base network.\n- Features real-time yield analysis, portfolio allocation tools, and market intelligence.\n- Integrates APY data from Morpho and Yearn, and token insights from DexScreener.\n- Includes commands for portfolio management, token analysis, yield optimization, market intelligence, and general chat.\n- Supports transparent, audited vault allocations via Base network smart contracts."
+  },
+  "owner": {
+    "handle": "gekkoai001",
+    "displayName": "gekkoai001",
+    "image": "https://avatars.githubusercontent.com/u/238513119?v=4"
+  }
+}

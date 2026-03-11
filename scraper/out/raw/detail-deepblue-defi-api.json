@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "deepblue-defi-api",
+    "displayName": "Deepblue Defi Api",
+    "summary": "Use when an agent needs live DeFi data from Base — ETH prices, trending pools, token scores, or wallet scans. No auth required.",
+    "tags": {
+      "latest": "k97fvrpde55be7b86zefk6yyfh81zyv6"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 192,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1772030581700,
+    "updatedAt": 1772167918201
+  },
+  "latestVersion": {
+    "version": "1.3.0",
+    "createdAt": 1772167544378,
+    "changelog": "Add Privacy & Data Handling section and Operator & Provenance section to address Vorus security review. Clarifies: stateless API (no logging), public on-chain data only, no auth/signing,  tier is anonymous balance check. Documents operator identity, open-source repo, and infrastructure."
+  },
+  "owner": {
+    "handle": "ERROR403agent",
+    "displayName": "DeepBlue",
+    "image": "https://avatars.githubusercontent.com/u/260345463?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "solana-investor",
+    "displayName": "Solana Investor",
+    "summary": "顶层投资助手编排器 — 协调 portfolio、dca、alerts、market 技能，处理复杂的多步骤投资请求。当用户的请求涉及多个操作或需要跨技能协调时触发。",
+    "tags": {
+      "latest": "k971dmjr3asd30z6p0q8hmw72982exw3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 59,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772876736123,
+    "updatedAt": 1772877110260
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1772876736123,
+    "changelog": "Initial release of solana-investor skill orchestrator.\n\n- Coordinates portfolio, DCA, alerts, and market skills for complex multi-step investment requests.\n- Provides workflow principles such as querying before actions, stepwise confirmation, and context passing.\n- Includes example orchestration patterns like “view + set alert”, “portfolio + DCA”, and “summary”.\n- Is only triggered for multi-skill user requests; simple requests are handled by sub-skills directly.\n- Ensures each write operation requires confirmation, and failed sub-steps do not block others."
+  },
+  "owner": {
+    "handle": "liji3597",
+    "displayName": "liji3597",
+    "image": "https://avatars.githubusercontent.com/u/77437682?v=4"
+  }
+}

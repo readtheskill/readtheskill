@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "hashpack-wallet",
+    "displayName": "HashPack Wallet",
+    "summary": "Integrate HashPack for Hedera blockchain login, transaction signing, DApp connection, and account balance retrieval in web applications.",
+    "tags": {
+      "latest": "k97f3pfpb948ghy6ppspm5bcj58149aa"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 399,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1771109012554,
+    "updatedAt": 1772064035886
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1771109012554,
+    "changelog": "- Initial release: Integrate HashPack wallet for Hedera blockchain authentication.\n- Supports adding HashPack login to web apps.\n- Enables signing HBAR transactions and accessing account balance.\n- Provides methods for connecting/disconnecting, and supports multiple transaction types.\n- Compatible with mainnet, testnet, and previewnet environments."
+  },
+  "owner": {
+    "handle": "HarleysCodes",
+    "displayName": "HarleysCodes",
+    "image": "https://avatars.githubusercontent.com/u/116604105?v=4"
+  }
+}

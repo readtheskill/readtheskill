@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "evm-wallet",
+    "displayName": "EVM Crypto Wallet for Your Agent",
+    "summary": "Self-sovereign EVM wallet for AI agents. Use when the user wants to create a crypto wallet, check balances, send ETH or ERC20 tokens, swap tokens, or interact with smart contracts. Supports Base, Ethereum, Polygon, Arbitrum, and Optimism. Private keys stored locally — no cloud custody, no API keys required.",
+    "tags": {
+      "latest": "k97e2hxbzbd11p7n8m9ycdrqv980gaqj"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2618,
+      "installsAllTime": 10,
+      "installsCurrent": 10,
+      "stars": 3,
+      "versions": 4
+    },
+    "createdAt": 1769830475078,
+    "updatedAt": 1772162086759
+  },
+  "latestVersion": {
+    "version": "1.0.3",
+    "createdAt": 1770176220994,
+    "changelog": "- Added a prominent SECURITY WARNING section emphasizing never to expose or share your private key.\n- Provided clear, bold instructions on safeguarding the `~/.evm-wallet.json` file.\n- Clarified potential risks if the private key is compromised and immediate steps to mitigate.\n- No changes to installation, command usage, or wallet functions."
+  },
+  "owner": {
+    "handle": "surfer77",
+    "displayName": "surfer77",
+    "image": "https://avatars.githubusercontent.com/u/10869748?v=4"
+  }
+}

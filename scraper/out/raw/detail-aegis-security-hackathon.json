@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "aegis-security-hackathon",
+    "displayName": "Hackathon",
+    "summary": "Blockchain security scanner for AI agents (testnet). Pay with Base Sepolia USDC via x402 protocol.",
+    "tags": {
+      "latest": "k972b06qmjf0spfrz6wp0451b580qyn7"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1012,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770461230868,
+    "updatedAt": 1772249977142
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770461230868,
+    "changelog": "- Initial testnet release of Aegis402 Shield Protocol as a blockchain security API for AI agents.\n- Enables security scans for tokens and addresses, as well as transaction simulation, with pricing in Base Sepolia testnet USDC.\n- Supports payment via x402 protocol; endpoints require payment proof before returning results.\n- Key endpoints: check-token (honeypot/scam detection), check-address (reputation), simulate-tx (threat prediction and balance simulation).\n- Compatible with multiple EVM chains, including Ethereum, Base, Polygon, Arbitrum, Optimism, and BSC.\n- Includes developer instructions, response examples, and testnet faucet link for setup."
+  },
+  "owner": {
+    "handle": "SwiftAdviser",
+    "displayName": "Roman",
+    "image": "https://avatars.githubusercontent.com/u/5148967?v=4"
+  }
+}

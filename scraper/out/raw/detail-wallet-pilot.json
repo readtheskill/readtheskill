@@ -1,0 +1,49 @@
+{
+  "skill": {
+    "slug": "wallet-pilot",
+    "displayName": "WalletPilot",
+    "summary": "Universal browser wallet automation for AI agents. Supports 10 wallets including MetaMask, Rabby, Phantom, Trust Wallet, OKX, Coinbase, and more. EVM + Solana. Configurable guardrails with spend limits, chain allowlists, and approval thresholds.",
+    "tags": {
+      "automation": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "backpack": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "blockchain": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "browser": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "coinbase": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "crypto": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "defi": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "ethereum": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "exodus": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "latest": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "metamask": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "okx": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "phantom": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "rabby": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "rainbow": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "solana": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "trust-wallet": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "wallet": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "web3": "k970sb5ays9cnfdypfvxjw9w9n80fatr",
+      "zerion": "k970sb5ays9cnfdypfvxjw9w9n80fatr"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1284,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1770158058129,
+    "updatedAt": 1772249138162
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1770158058129,
+    "changelog": "Initial release of WalletPilot – universal browser wallet automation for AI agents.\n\n- Supports automation across 10 popular browser wallets (MetaMask, Rabby, Phantom, Trust Wallet, OKX, Coinbase, and more)\n- Works with EVM and Solana chains\n- Configurable permission guardrails: spend limits, chain allowlists, approval thresholds\n- Plugin-based adapter architecture makes adding new wallets easy\n- Full logging, isolated agent wallet profile, and clear security model for safe usage\n- Simple CLI for actions: connect, swap, send, sign, check balance, view history"
+  },
+  "owner": {
+    "handle": "andreolf",
+    "displayName": "Francesco",
+    "image": "https://avatars.githubusercontent.com/u/15174764?v=4"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "skill": {
+    "slug": "silverback-defi",
+    "displayName": "Silverback Defi",
+    "summary": "DeFi intelligence powered by Silverback — 19 x402 endpoints on Base chain. Market data, swap quotes, technical analysis, yield opportunities, token audits, whale tracking, and AI chat. Pay per call with USDC.",
+    "tags": {
+      "analysis": "k97d39s1n7xrh3wq3hb6pmqn1s808pdq",
+      "base-chain": "k97ce3dv0znapnb7a0fpxmb06x80rw6z",
+      "crypto": "k97ce3dv0znapnb7a0fpxmb06x80rw6z",
+      "defi": "k97ce3dv0znapnb7a0fpxmb06x80rw6z",
+      "latest": "k970kry53x48fytaabg2ax1h4n80yk41",
+      "latestdefi": "k97d39s1n7xrh3wq3hb6pmqn1s808pdq",
+      "swap": "k97d39s1n7xrh3wq3hb6pmqn1s808pdq",
+      "token-audit": "k97d39s1n7xrh3wq3hb6pmqn1s808pdq",
+      "trading": "k97ce3dv0znapnb7a0fpxmb06x80rw6z",
+      "whale-tracking": "k97d39s1n7xrh3wq3hb6pmqn1s808pdq",
+      "x402": "k97d39s1n7xrh3wq3hb6pmqn1s808pdq",
+      "yield": "k97ce3dv0znapnb7a0fpxmb06x80rw6z"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1856,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 3,
+      "versions": 8
+    },
+    "createdAt": 1769834863032,
+    "updatedAt": 1772060139319
+  },
+  "latestVersion": {
+    "version": "2.2.0",
+    "createdAt": 1770826692007,
+    "changelog": "- Reduced the number of x402-paid DeFi endpoints on Base chain from 26 to 19.\n- Updated documentation and endpoint descriptions to reflect the new endpoint count.\n- Adjusted mention of service coverage (AI chat and protocol descriptions) for 19 endpoints.\n- No changes to pricing or core usage instructions."
+  },
+  "owner": {
+    "handle": "RidingLiquid",
+    "displayName": "RidingLiquid",
+    "image": "https://avatars.githubusercontent.com/u/155856038?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "kimp-price",
+    "displayName": "kimchi-premium for BTC",
+    "summary": "Real-time Bitcoin Kimchi Premium calculator. Compares Bitcoin prices between a Korean exchange (Upbit, KRW) and a global exchange (Binance, USD) to calculate...",
+    "tags": {
+      "latest": "k9771hg9p7kedgwg59cx209a7h82ca1v"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 56,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772816967812,
+    "updatedAt": 1772816976892
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772816967812,
+    "changelog": "- Initial release of kimchi-premium skill.\n- Calculates real-time Kimchi Premium by comparing Bitcoin prices on Upbit (KRW) and Binance (USD).\n- Fetches BTC prices and exchange rates via open.er-api.com, api.upbit.com, and api.binance.com.\n- Outputs current premium percentage and price difference."
+  },
+  "owner": {
+    "handle": "seungdols",
+    "displayName": "seungdols",
+    "image": "https://avatars.githubusercontent.com/u/16032614?v=4"
+  }
+}

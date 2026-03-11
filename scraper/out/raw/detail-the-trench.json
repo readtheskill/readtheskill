@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "the-trench",
+    "displayName": "The Trench",
+    "summary": "Call The Trench Solana program on devnet using the public IDL and TS types.",
+    "tags": {
+      "latest": "k976r1efv4yxbr7rk7hk3tv6an80f5eq"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1233,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1770082693111,
+    "updatedAt": 1772248965183
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1770082693111,
+    "changelog": "Initial release of The Trench skill.\n\n- Allows construction of Anchor clients for The Trench Solana program on devnet.\n- Provides public access to the program's IDL and TypeScript types.\n- Contains usage instructions and example code for integration.\n- No private trading logic or sensitive information included."
+  },
+  "owner": {
+    "handle": "BAGWATCHER",
+    "displayName": "BAGWATCHER",
+    "image": "https://avatars.githubusercontent.com/u/193375602?v=4"
+  }
+}

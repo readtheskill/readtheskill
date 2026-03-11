@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "forever-moments",
+    "displayName": "Forever Moments",
+    "summary": "Forever Moments social platform on LUKSO - post moments (LSP8 NFTs), mint LIKES tokens, create/join collections, and interact with decentralized social featu...",
+    "tags": {
+      "latest": "k9770t8neqjz49gh36jmkxg13181fnj9"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 355,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 4,
+      "versions": 1
+    },
+    "createdAt": 1771514016570,
+    "updatedAt": 1773203180008
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1771514016570,
+    "changelog": "Initial release"
+  },
+  "owner": {
+    "handle": "LUKSOAgent",
+    "displayName": "LUKSO Agent",
+    "image": "https://avatars.githubusercontent.com/u/259435976?v=4"
+  }
+}

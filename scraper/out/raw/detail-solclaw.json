@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "solclaw",
+    "displayName": "solclaw",
+    "summary": "Non-custodial USDC payments on Solana by agent name. Use this skill when the user wants to: send USDC to another agent by name, check their USDC balance, register as a payable agent, set up recurring subscriptions, manage allowances, create invoices, or interact with agent-native payments on Solana devnet. Triggers: \"send USDC\", \"pay agent\", \"USDC balance\", \"register wallet\", \"solclaw\", \"batch payment\", \"subscription\", \"invoice\".",
+    "tags": {
+      "latest": "k97f5910n9hbpz7wkze6tvzryd80pyme"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 974,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770454030321,
+    "updatedAt": 1773200177716
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770454030321,
+    "changelog": "Initial release of SolClaw: non-custodial USDC payments on Solana by agent name.\n\n- Send and receive USDC using agent names instead of wallet addresses\n- Register as a payable agent, check USDC balance, and manage both batch and split payments\n- Set up recurring subscriptions, manage ERC-20 style allowances, and create/pay invoices\n- All operations are non-custodial: private keys stay local, transactions are signed on your machine\n- Read-only API endpoints provided for on-chain data queries (balance, reputation, leaderboard, subscriptions)"
+  },
+  "owner": {
+    "handle": "Sterdam",
+    "displayName": "Sterdam",
+    "image": "https://avatars.githubusercontent.com/u/6794607?v=4"
+  }
+}

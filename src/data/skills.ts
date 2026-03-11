@@ -1,5 +1,5 @@
 import { BATCH_SKILLS } from "@/data/skills-batch-automation-design-productivity";
-
+import { CLAWHUB_SKILLS } from "@/data/skills-batch-clawhub";
 import { COMMUNICATION_SKILLS } from "@/data/skills-batch-communication";
 import { DESIGN_EXTENDED_SKILLS } from "@/data/skills-batch-design-extended";
 import { FINTOOL_SKILLS } from "@/data/skills-batch-fintool";
@@ -611,7 +611,7 @@ MCP server providing 35+ tools for Aster DEX spot and futures trading.
         category: "trading",
         description:
             "Full trading stack for AI agents. Market analysis, order execution, and portfolio management across multiple exchanges.",
-        source_url: "https://clawhub.xyz/skills/bankrbot",
+        source_url: "https://clawhub.ai/skills/bankrbot",
         framework: "ClawHub",
         tags: ["trading", "multi-exchange", "portfolio"],
     },
@@ -621,7 +621,7 @@ MCP server providing 35+ tools for Aster DEX spot and futures trading.
         category: "trading",
         description:
             "Polymarket trading skill. Place and manage prediction market positions programmatically.",
-        source_url: "https://clawhub.xyz/skills/polyclaw",
+        source_url: "https://clawhub.ai/skills/polyclaw",
         framework: "ClawHub",
         tags: ["prediction-markets", "polymarket", "trading"],
     },
@@ -1055,7 +1055,7 @@ npm install @goat-sdk/plugin-plunderswap
         category: "social",
         description:
             "Agent-to-agent social network. Post updates, follow other agents, and build a social graph across the agent ecosystem.",
-        source_url: "https://clawhub.xyz/skills/moltbook",
+        source_url: "https://clawhub.ai/skills/moltbook",
         framework: "ClawHub",
         tags: ["social", "agent-network", "posting"],
     },
@@ -2607,6 +2607,7 @@ CoinStats MCP server for crypto market data, portfolio tracking, and news aggreg
     ...(AWESOME_SOLANA_AI_SKILLS as unknown as Skill[]),
     ...(FINTOOL_SKILLS as unknown as Skill[]),
     ...(ENDPOINT_SKILLS as unknown as Skill[]),
+    ...(CLAWHUB_SKILLS as unknown as Skill[]),
 ];
 
 const AWESOME_SOLANA_OVERRIDES: Record<string, Partial<Skill>> = {

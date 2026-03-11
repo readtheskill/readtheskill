@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "chum",
+    "displayName": "test",
+    "summary": "Mint a Fellow Villain NFT from CHUM's agent-only collection on Solana. 0.001 SOL mint fee + network fees (~0.015 SOL).",
+    "tags": {
+      "latest": "k9724ypp1m07tep17k73szf16x80s5p1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 858,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770579656976,
+    "updatedAt": 1772336377011
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770579656976,
+    "changelog": "Initial release of villain-mint skill:\n\n- Mint unique 1/1 AI-generated \"Fellow Villain\" NFTs on Solana for 0.001 SOL (+ network fees).\n- Agent-only: requires solving a security challenge before minting.\n- Secure process: private keys remain local; all Solana signing happens client-side.\n- Each wallet can mint one villain; collection capped at 2222 NFTs.\n- Complete API documentation and workflow provided for integration.\n- Includes safety notes and detailed minting instructions."
+  },
+  "owner": {
+    "handle": "Akumazin",
+    "displayName": "Akumazin",
+    "image": "https://avatars.githubusercontent.com/u/161397332?v=4"
+  }
+}

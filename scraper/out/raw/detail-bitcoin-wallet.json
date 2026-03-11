@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "bitcoin-wallet",
+    "displayName": "Bitcoin Wallet using Breez Spark SDK",
+    "summary": "Self-custodial Bitcoin and Lightning wallet for AI agents. Send and receive sats via Lightning Network, Spark, or on-chain Bitcoin. Use when: checking bitcoin balance, sending/receiving payments, generating Lightning invoices, managing wallet operations. Requires the BreezClaw plugin and a Breez API key.",
+    "tags": {
+      "latest": "k97fdkjeh5wka5y9pjhzs62na5809xkq"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1403,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 3,
+      "versions": 1
+    },
+    "createdAt": 1769897166658,
+    "updatedAt": 1772162323190
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1769897166658,
+    "changelog": "Initial release of BreezClaw, a self-custodial Bitcoin and Lightning wallet for AI agents.\n\n- Supports checking Bitcoin balance, sending/receiving payments, generating Lightning invoices, and managing wallet operations.\n- Integration with Breez SDK Spark; requires BreezClaw plugin and Breez API key.\n- Offers a range of wallet tools: status, connect, balance, receive, send, transactions, info, backup, and disconnect.\n- Provides multiple receive methods: Spark, Lightning (BOLT11), and on-chain Bitcoin.\n- Secure two-step payment flow with fee estimation and explicit confirmation before sending.\n- Emphasizes user security: never exposes mnemonic unless requested, always displays fees, and requires confirmation for all sends."
+  },
+  "owner": {
+    "handle": "robertclarkson",
+    "displayName": "robertclarkson",
+    "image": "https://avatars.githubusercontent.com/u/3826238?v=4"
+  }
+}

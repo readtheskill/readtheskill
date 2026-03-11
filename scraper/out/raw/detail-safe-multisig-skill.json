@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "safe-multisig-skill",
+    "displayName": "Safe Multisig Skill",
+    "summary": "Propose, confirm, and execute Safe multisig transactions using the Safe{Core} SDK (protocol-kit v6 / api-kit v4). TypeScript strict. Use when an agent needs to operate a Safe smart account — (1) create/predict a new Safe, (2) fetch Safe owners/threshold/nonce, (3) list pending multisig txs, (4) build + propose a tx, (5) add confirmations, (6) execute a tx onchain, or (7) troubleshoot Safe nonce/signature issues across chains (Base/Ethereum/Optimism/Arbitrum/Polygon/etc.).",
+    "tags": {
+      "latest": "k97ev2xhqp0emwyjzzvtz0fews80vn4v"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 676,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770615689367,
+    "updatedAt": 1772336468226
+  },
+  "latestVersion": {
+    "version": "2.1.0",
+    "createdAt": 1770615689367,
+    "changelog": "safe-multisig-skill 2.1.0\n\n- Adds comprehensive TypeScript-strict scripts for Safe multisig management using Safe{Core} SDK (protocol-kit v6 / api-kit v4).\n- Enables proposing, confirming, and executing multisig transactions across multiple chains (Base, Ethereum, Optimism, Arbitrum, Polygon, etc.).\n- Includes scripts for Safe creation/prediction, state fetching, listing transactions, building/proposing/approving/executing transactions, and troubleshooting nonce/signature issues.\n- Enhances security and usability with extensive input validation, clear configuration options, and detailed usage instructions.\n- All major commands and flows are now documented with examples and references."
+  },
+  "owner": {
+    "handle": "openclaw-consensus-bot",
+    "displayName": "openclaw-consensus-bot",
+    "image": "https://avatars.githubusercontent.com/u/258721376?v=4"
+  }
+}

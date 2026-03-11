@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "solana",
+    "displayName": "Solana",
+    "summary": "Assist with Solana transactions, token accounts, priority fees, and program interactions.",
+    "tags": {
+      "latest": "k97d48pr0wete6pzn9w6t1b0yx80vg00"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 810,
+      "installsAllTime": 7,
+      "installsCurrent": 7,
+      "stars": 2,
+      "versions": 1
+    },
+    "createdAt": 1770681222385,
+    "updatedAt": 1772065836042
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770681222385,
+    "changelog": "Initial release"
+  },
+  "owner": {
+    "handle": "ivangdavila",
+    "displayName": "Iván",
+    "image": "https://avatars.githubusercontent.com/u/81719670?v=4"
+  }
+}

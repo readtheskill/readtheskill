@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "etherlink",
+    "displayName": "Etherlink Skill",
+    "summary": "Etherlink blockchain interaction - EVM-compatible L2 on Tezos. Supports mainnet and shadownet testnet via MCP server. Use for balance checks, transactions, smart contracts, and token operations on Etherlink.",
+    "tags": {
+      "latest": "k97a4gjq8g4ya9cs9avn3d534d80cdd2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1384,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 2,
+      "versions": 1
+    },
+    "createdAt": 1770043482254,
+    "updatedAt": 1773199179192
+  },
+  "latestVersion": {
+    "version": "1.0.1",
+    "createdAt": 1770043482254,
+    "changelog": "Etherlink skill version 1.0.1\n\n- Added detailed SKILL.md documentation, including usage instructions, supported networks, and troubleshooting.\n- Clarified Etherlink network selection, RPC endpoints, and explorer links for both mainnet and testnet.\n- Outlined supported and unsupported JSON-RPC endpoints.\n- Included Etherlink-specific notes, such as native XTZ currency and no EIP-1559 support.\n- Provided quick-start configuration for MCP server integration.\n- Linked to official Etherlink resources and testnet faucet."
+  },
+  "owner": {
+    "handle": "efekucuk",
+    "displayName": "efekucuk",
+    "image": "https://avatars.githubusercontent.com/u/48200289?v=4"
+  }
+}

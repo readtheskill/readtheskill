@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "mplx-genesis",
+    "displayName": "Launch a Token",
+    "summary": "Launch tokens on Solana using Metaplex Genesis protocol",
+    "tags": {
+      "latest": "k971aek1n180sqy5c3y17m4ygd80dxm2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1311,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1770069402136,
+    "updatedAt": 1772248934618
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1770069402136,
+    "changelog": "Initial release with core Metaplex Genesis launch features:\n\n- Enables users to launch tokens on Solana using the Metaplex Genesis protocol.\n- Supports LaunchPool (fair token distribution), Unlocked Buckets, and Raydium liquidity pool graduation.\n- Step-by-step guidance for creating launches, configuring allocation splits, and finalizing token launches.\n- Provides thorough documentation on lifecycle, configuration, wallet setup, and important usage notes."
+  },
+  "owner": {
+    "handle": "blockiosaurus",
+    "displayName": "blockiosaurus",
+    "image": "https://avatars.githubusercontent.com/u/90809591?v=4"
+  }
+}

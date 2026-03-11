@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "yield-shark",
+    "displayName": "Yield Shark",
+    "summary": "🦈 YieldShark - DeFi stablecoin yield monitor with real-time APY tracking across 50+ platforms",
+    "tags": {
+      "latest": "k97frmb03n35n84wsvsycehgyn82c2gw"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 137,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 0,
+      "versions": 7
+    },
+    "createdAt": 1772714611111,
+    "updatedAt": 1772767687195
+  },
+  "latestVersion": {
+    "version": "1.0.6",
+    "createdAt": 1772767665609,
+    "changelog": "✨ 新增 history.mjs 历史记录功能，支持 APY 趋势分析"
+  },
+  "owner": {
+    "handle": "gztanht",
+    "displayName": "Haha Tan",
+    "image": "https://avatars.githubusercontent.com/u/18513327?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "defi-yield-monitor",
+    "displayName": "DeFi Yield Monitor",
+    "summary": "Monitor DeFi lending and savings positions across Aave v3, SparkLend, Spark Savings, and Kamino with balances, APYs, health factors, and yield tracking.",
+    "tags": {
+      "latest": "k973cz3anf5c4jj5mtk0msg05x82gbc9"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 69,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1772983920553,
+    "updatedAt": 1773208742078
+  },
+  "latestVersion": {
+    "version": "1.1.0",
+    "createdAt": 1772984008689,
+    "changelog": "Standalone skill: includes setup.sh and run.sh scripts, auto proxy detection, no source code dependency. Just install and configure wallets."
+  },
+  "owner": {
+    "handle": "reed1898",
+    "displayName": "Reed",
+    "image": "https://avatars.githubusercontent.com/u/129141816?v=4"
+  }
+}

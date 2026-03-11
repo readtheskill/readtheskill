@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "ethereum",
+    "displayName": "Ethereum",
+    "summary": "Assist with Ethereum transactions, gas optimization, token approvals, and L2 bridges.",
+    "tags": {
+      "latest": "k97e393vt8pm2xhbg2rf9nxkqh80v440"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 874,
+      "installsAllTime": 3,
+      "installsCurrent": 3,
+      "stars": 2,
+      "versions": 1
+    },
+    "createdAt": 1770680977597,
+    "updatedAt": 1772061639872
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770680977597,
+    "changelog": "Initial release"
+  },
+  "owner": {
+    "handle": "ivangdavila",
+    "displayName": "Iván",
+    "image": "https://avatars.githubusercontent.com/u/81719670?v=4"
+  }
+}

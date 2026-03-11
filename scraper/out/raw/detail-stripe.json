@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "stripe",
+    "displayName": "Stripe Agent Wallet | Use Stripe top-up your agentic wallet - Private Beta",
+    "summary": "Top-up and manage your agentic wallet using Stripe for purchases, agent-to-agent payments, and on-chain USDC settlement via the x402 protocol.",
+    "tags": {
+      "latest": "k973ped0mbw4ez43pek5mzsr71815r0p"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 994,
+      "installsAllTime": 11,
+      "installsCurrent": 11,
+      "stars": 3,
+      "versions": 1
+    },
+    "createdAt": 1771108724090,
+    "updatedAt": 1772061036142
+  },
+  "latestVersion": {
+    "version": "2.3.2",
+    "createdAt": 1771108724090,
+    "changelog": "- Improved documentation and clarity in SKILL.md, with detailed guides for payment methods and use cases.\n- Added an organized Skill Files table linking to method-specific docs for easier navigation.\n- Expanded security section with explicit warnings and best practices for API key safety.\n- Enhanced setup instructions, including step-by-step local installation and usage flows.\n- Provided usage guidance for owners and agents, including payment method selection and safety defaults."
+  },
+  "owner": {
+    "handle": "jononovo",
+    "displayName": "jononovo",
+    "image": "https://avatars.githubusercontent.com/u/22595409?v=4"
+  }
+}

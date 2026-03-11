@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "crypto-whale-monitor",
+    "displayName": "Crypto Whale Monitor",
+    "summary": "Monitors large cryptocurrency wallet balances (whales) on-chain using Web3 RPC to detect potential market-moving activity. Can read from `references/wallets....",
+    "tags": {
+      "latest": "k97fhkhv19h9cvyrk3rt9hgvhn81acgx"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2199,
+      "installsAllTime": 4,
+      "installsCurrent": 4,
+      "stars": 5,
+      "versions": 4
+    },
+    "createdAt": 1770212141752,
+    "updatedAt": 1773199542711
+  },
+  "latestVersion": {
+    "version": "1.0.3",
+    "createdAt": 1771319807884,
+    "changelog": "- No user-visible changes; updated internal logic in scripts/monitor.js.\n- SKILL.md and overall documentation remain unchanged."
+  },
+  "owner": {
+    "handle": "waleolapo",
+    "displayName": "waleolapo",
+    "image": "https://avatars.githubusercontent.com/u/12134378?v=4"
+  }
+}

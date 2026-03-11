@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "humannft",
+    "displayName": "HumanNFT",
+    "summary": "Browse, mint, buy, sell, and trade human NFTs on the HumanNFT marketplace (humannft.ai). Triggers on \"human NFT\", \"mint human\", \"browse humans\", \"humannft\",...",
+    "tags": {
+      "latest": "k9702h5j9wh44s1m738bx8x5z981759z"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 362,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1771002852494,
+    "updatedAt": 1773201817353
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1771159801728,
+    "changelog": "Initial release: Browse, mint, buy, sell, transfer human NFTs on Base mainnet. 21 MCP tools. Auto-sync."
+  },
+  "owner": {
+    "handle": "TheSmartApe",
+    "displayName": "TheSmartApe",
+    "image": "https://avatars.githubusercontent.com/u/174329920?v=4"
+  }
+}

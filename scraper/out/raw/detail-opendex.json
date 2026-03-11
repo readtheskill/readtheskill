@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "opendex",
+    "displayName": "OpenDEX Solana Token API",
+    "summary": "Retrieve Solana token data, community content, market sentiment, watchlists, and perform token-related actions via OpenDEX API endpoints.",
+    "tags": {
+      "latest": "k9789qat2xv9km6tdzkgy1w8b181ybjy"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 121,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772155122340,
+    "updatedAt": 1772155616508
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772155122340,
+    "changelog": "You can interact with the OpenDex API to retrieve Solana token data, community-curated content, market sentiment, and more."
+  },
+  "owner": {
+    "handle": "solpenguin",
+    "displayName": "The Sol Penguin",
+    "image": "https://avatars.githubusercontent.com/u/255988213?v=4"
+  }
+}

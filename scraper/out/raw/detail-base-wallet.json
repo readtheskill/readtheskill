@@ -1,0 +1,35 @@
+{
+  "skill": {
+    "slug": "base-wallet",
+    "displayName": "Base Wallet",
+    "summary": "🔐 Base Wallet - Crypto Identity for AI Agents. Create wallets, sign messages (SIWE), send transactions programmatically. No browser extensions, no human intervention. The foundation for autonomous Web3 agents.",
+    "tags": {
+      "base": "k975nq62hy36nn5qm6220136gh80py1s",
+      "basemail": "k975nq62hy36nn5qm6220136gh80py1s",
+      "ethereum": "k975nq62hy36nn5qm6220136gh80py1s",
+      "latest": "k97759hte4m10ykweembt0084580rdj2",
+      "siwe": "k975nq62hy36nn5qm6220136gh80py1s",
+      "wallet": "k975nq62hy36nn5qm6220136gh80py1s"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1797,
+      "installsAllTime": 5,
+      "installsCurrent": 5,
+      "stars": 2,
+      "versions": 6
+    },
+    "createdAt": 1770477024740,
+    "updatedAt": 1772250036778
+  },
+  "latestVersion": {
+    "version": "1.5.0",
+    "createdAt": 1770525484810,
+    "changelog": "Full English documentation"
+  },
+  "owner": {
+    "handle": "dAAAb",
+    "displayName": "Ju Chun Ko",
+    "image": "https://avatars.githubusercontent.com/u/1607280?v=4"
+  }
+}

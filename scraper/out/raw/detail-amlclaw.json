@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "amlclaw",
+    "displayName": "AMLClaw",
+    "summary": "AI-powered crypto AML compliance toolkit. Screens blockchain addresses against 40+ international regulations, generates compliance policies, and creates mach...",
+    "tags": {
+      "latest": "k97b2tseskvk27nq4n9ws7z9h582qjyv"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 16,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1773242170659,
+    "updatedAt": 1773242214055
+  },
+  "latestVersion": {
+    "version": "2.0.0",
+    "createdAt": 1773242170659,
+    "changelog": "Unified skill: Screen addresses, generate rules, create policies. Ships with 40+ regulations, 3 rulesets, 3 policies. TrustIn API key optional."
+  },
+  "owner": {
+    "handle": "npc7",
+    "displayName": "npc7",
+    "image": "https://avatars.githubusercontent.com/u/3068585?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "zapper",
+    "displayName": "Zapper",
+    "summary": "Query DeFi portfolio data across 50+ chains via Zapper's GraphQL API. Use when the user wants to check wallet balances, DeFi positions, NFT holdings, token prices, or transaction history. Supports Base, Ethereum, Polygon, Arbitrum, Optimism, and more. Requires ZAPPER_API_KEY.",
+    "tags": {
+      "latest": "k975drd88txdy1db1axdjx8ebh80ca48"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1625,
+      "installsAllTime": 9,
+      "installsCurrent": 9,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1770046871523,
+    "updatedAt": 1772248870801
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770046871523,
+    "changelog": "DeFi portfolio tracking across 50+ chains"
+  },
+  "owner": {
+    "handle": "spirosrap",
+    "displayName": "Spiros Raptis",
+    "image": "https://avatars.githubusercontent.com/u/1444577?v=4"
+  }
+}

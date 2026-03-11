@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "opensea-mcp",
+    "displayName": "OpenSea",
+    "summary": "Query OpenSea NFT marketplace data via official MCP server. Get floor prices, trending collections, token prices, wallet balances, swap quotes, and NFT holdings. Supports Ethereum, Base, Polygon, Solana, and other major chains. Requires OpenSea developer account for MCP token.",
+    "tags": {
+      "latest": "k97e7fevxmpc7dmxt9bv2zhmax80smb8"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1647,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1769885559344,
+    "updatedAt": 1773198794976
+  },
+  "latestVersion": {
+    "version": "1.0.2",
+    "createdAt": 1770513419679,
+    "changelog": "Version 1.0.2\n\n- Documentation updates only; no file or code changes detected.\n- No impact to functionality or interfaces."
+  },
+  "owner": {
+    "handle": "dfinzer",
+    "displayName": "dfinzer",
+    "image": "https://avatars.githubusercontent.com/u/613881?v=4"
+  }
+}

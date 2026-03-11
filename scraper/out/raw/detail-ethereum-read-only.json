@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "ethereum-read-only",
+    "displayName": "Ethereum Read Only",
+    "summary": "Foundry castを使用したウォレット不要のオンチェーン状態読み取り",
+    "tags": {
+      "latest": "k975axh3jbvy6f7he2gcbttk1n80fsq5"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1258,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770079304910,
+    "updatedAt": 1773199267138
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770079304910,
+    "changelog": "initial release"
+  },
+  "owner": {
+    "handle": "Byron-McKeeby",
+    "displayName": "Byron-McKeeby",
+    "image": "https://avatars.githubusercontent.com/u/70863380?v=4"
+  }
+}

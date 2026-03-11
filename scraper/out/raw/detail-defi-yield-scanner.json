@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "defi-yield-scanner",
+    "displayName": "Defi Yield Scanner",
+    "summary": "Scan DeFi protocols for the best yield opportunities. Covers Aave, Compound, Curve, Yearn, Uniswap v3, and emerging L2 protocols. Compares APY vs risk, track...",
+    "tags": {
+      "latest": "k97e14cjd780b409a43wpe62b181k80p"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 511,
+      "installsAllTime": 4,
+      "installsCurrent": 4,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1771702695686,
+    "updatedAt": 1772060435906
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1771702695686,
+    "changelog": "Initial release – powerful scanner for DeFi yield opportunities.\n\n- Supports Aave, Compound, Curve, Yearn, Uniswap v3, and new L2 protocols.\n- Ranks opportunities by APY, risk, sustainability, and gas efficiency.\n- Tracks TVL changes, new farm launches, and stablecoin optimizations.\n- Pulls live data from DeFiLlama, Aave, Curve, and Yearn APIs.\n- Returns easy-to-read yield rankings with direct entry instructions."
+  },
+  "owner": {
+    "handle": "JamieRossouw",
+    "displayName": "JamieRossouw",
+    "image": "https://avatars.githubusercontent.com/u/219507116?v=4"
+  }
+}

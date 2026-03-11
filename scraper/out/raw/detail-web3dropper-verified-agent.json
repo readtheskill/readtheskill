@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "web3dropper-verified-agent",
+    "displayName": "Web3Dropper Verified Agent",
+    "summary": "Billions/Iden3 authentication and identity management tools for agents. Link, proof, sign, and verify.",
+    "tags": {
+      "latest": "k976k1zqe4fh3rdsqn00kp0fn182g5t6"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 64,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1772982451713,
+    "updatedAt": 1773208736940
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772982451713,
+    "changelog": "- Initial release of the verified-agent-identity skill for Billions/Iden3 identity management.\n- Agents can create decentralized identities, link those identities to human owners, and perform challenge/response for authentication.\n- Provides scripts to create identities, list DIDs, generate and sign challenges, verify signatures, and link human users to agent DIDs.\n- All identity data is securely stored in `$HOME/.openclaw/billions`; strict rules prohibit manual cryptographic operations or file manipulation.\n- Includes detailed instructions, usage examples, and strict guardrails for safe and compliant identity management."
+  },
+  "owner": {
+    "handle": "Web3Dropper",
+    "displayName": "Web3Dropper",
+    "image": "https://avatars.githubusercontent.com/u/44999422?v=4"
+  }
+}

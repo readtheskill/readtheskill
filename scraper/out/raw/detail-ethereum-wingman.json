@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "ethereum-wingman",
+    "displayName": "Ethereum Wingman",
+    "summary": "Ethereum development tutor and builder for Scaffold-ETH 2 projects. Triggers on \"build\", \"create\", \"dApp\", \"smart contract\", \"Solidity\", \"DeFi\", \"Ethereum\", \"web3\", or any blockchain development task. ALWAYS uses fork mode to test against real protocol state.",
+    "tags": {
+      "latest": "k97b3yg9gg64be45a45c9ych3d801gp6"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1513,
+      "installsAllTime": 4,
+      "installsCurrent": 4,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1769555101527,
+    "updatedAt": 1772161855579
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1769555101527,
+    "changelog": "Initial release: Ethereum development tutor and builder for Scaffold-ETH 2 projects.  \nKey features:\n\n- Comprehensive step-by-step guide for building and testing Ethereum dApps using Scaffold-ETH 2, always in fork mode for real protocol state.\n- Covers smart contract development, DeFi protocols, security best practices, and common Solidity gotchas.\n- Provides detailed instructions for auto block mining, frontend testing, and leveraging real token and protocol addresses.\n- Emphasizes critical blockchain concepts like incentive design, contract limitations, and security checks.\n- Includes SpeedRun Ethereum challenge references for hands-on learning."
+  },
+  "owner": {
+    "handle": "jp4g",
+    "displayName": "jp4g",
+    "image": "https://avatars.githubusercontent.com/u/31053787?v=4"
+  }
+}

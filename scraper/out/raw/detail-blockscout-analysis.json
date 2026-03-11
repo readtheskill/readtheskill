@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "blockscout-analysis",
+    "displayName": "Blockchain Analysis",
+    "summary": "MANDATORY — invoke this skill BEFORE making any Blockscout MCP tool calls or writing any blockchain data scripts, even when the Blockscout MCP server is alre...",
+    "tags": {
+      "latest": "k976ahs9ed7skctb950kmahk1x829ekj"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 101,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772660320860,
+    "updatedAt": 1772660342614
+  },
+  "latestVersion": {
+    "version": "0.4.0",
+    "createdAt": 1772660320860,
+    "changelog": "- Significant update: Introduces architectural rules and workflows for all Blockscout MCP data access and script building.\n- Calling unlock_blockchain_analysis is now mandatory before any MCP tool usage (except in specific environments).\n- Comprehensive guidance on execution strategies: when to use MCP tools, scripts, hybrid approaches, or LLM reasoning.\n- Clarifies REST API conventions, endpoint discovery, pagination, and response transformation requirements.\n- Documents all 16 available MCP tools and explains the data source priority for on-chain analysis across all EVM chains.\n- Adds details on using Chainscout for chain registry lookups, with clear guidance on its separation from MCP workflows."
+  },
+  "owner": {
+    "handle": "akolotov",
+    "displayName": "Alexander Kolotov",
+    "image": "https://avatars.githubusercontent.com/u/20793260?v=4"
+  }
+}

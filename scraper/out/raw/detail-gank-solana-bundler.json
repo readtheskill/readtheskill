@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "gank-solana-bundler",
+    "displayName": "solana-bundler-sniper-volume-bot",
+    "summary": "Manage Solana wallets, launch tokens, run coordinated buys, volume bots, and wallet operations via gank.dev trading terminal API.",
+    "tags": {
+      "latest": "k97danrh5r1shsh32xvqgyh2q981kf1c"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 324,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1771648720033,
+    "updatedAt": 1773203548805
+  },
+  "latestVersion": {
+    "version": "1.0.2",
+    "createdAt": 1771659460801,
+    "changelog": "passing checks again"
+  },
+  "owner": {
+    "handle": "pissdart",
+    "displayName": "pissdart",
+    "image": "https://avatars.githubusercontent.com/u/189094390?v=4"
+  }
+}

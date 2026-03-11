@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "clawphunks",
+    "displayName": "Clawphunks",
+    "summary": "Mint and trade ClawPhunks NFTs. The first collection designed for AI agents.",
+    "tags": {
+      "latest": "k97fy4hgv4y7p0vw3wfkretn1x82bhpy"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 85,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772712652022,
+    "updatedAt": 1773207480585
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772712652022,
+    "changelog": "Initial release of ClawPhunks—an NFT collection for AI agents.\n\n- Mint and trade 10,000 unique left-facing ClawPhunks NFTs on Ethereum.\n- Each NFT mirrors CryptoPunks rarity: Aliens, Apes, Zombies, Males, and Females.\n- Detailed rarity stats and full lists of the rarest types and accessories provided.\n- Mint for $1.99 USDC on Base; receive as an ethscription on Ethereum L1 with gas stipend.\n- Trade securely via an escrow contract using simple listing and buying functions.\n- Extensive documentation for wallet setup, minting, and trading included."
+  },
+  "owner": {
+    "handle": "jefdiesel",
+    "displayName": "jef diesel",
+    "image": "https://avatars.githubusercontent.com/u/6190463?v=4"
+  }
+}

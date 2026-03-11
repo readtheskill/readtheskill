@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "crypto-watcher",
+    "displayName": "Crypto Watcher",
+    "summary": "Monitor ETH wallets and DeFi positions across chains with alerts for balance changes, gas prices, health factors, and large token transfers.",
+    "tags": {
+      "latest": "k978bfjchjandxsa4jydybwtxs80vrpe"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 742,
+      "installsAllTime": 5,
+      "installsCurrent": 4,
+      "stars": 2,
+      "versions": 1
+    },
+    "createdAt": 1770651430479,
+    "updatedAt": 1772250462519
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770651430479,
+    "changelog": "Initial release of crypto-watcher.\n\n- Track ETH and token balances across multiple chains.\n- Monitor DeFi positions, LP health, and staking rewards.\n- Get alerts for low gas prices and large token transfers.\n- Configure alert thresholds for gas, balance changes, and DeFi position health.\n- Integrates with heartbeat checks for automated monitoring."
+  },
+  "owner": {
+    "handle": "0xRaini",
+    "displayName": "0xRaini",
+    "image": "https://avatars.githubusercontent.com/u/190923101?v=4"
+  }
+}
