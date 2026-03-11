@@ -2,6 +2,7 @@ import { BATCH_SKILLS } from "@/data/skills-batch-automation-design-productivity
 
 import { COMMUNICATION_SKILLS } from "@/data/skills-batch-communication";
 import { DESIGN_EXTENDED_SKILLS } from "@/data/skills-batch-design-extended";
+import { FINTOOL_SKILLS } from "@/data/skills-batch-fintool";
 import { MARKETING_SKILLS } from "@/data/skills-batch-marketing";
 import { ENDPOINT_SKILLS } from "@/data/skills-batch-endpoints";
 import { AWESOME_SOLANA_AI_SKILLS } from "@/data/skills-batch-awesome-solana-ai";
@@ -2604,6 +2605,7 @@ CoinStats MCP server for crypto market data, portfolio tracking, and news aggreg
     ...(PRODUCTIVITY_EXTENDED_SKILLS as unknown as Skill[]),
     ...(SOLANA_TOOLKIT_SKILLS as unknown as Skill[]),
     ...(AWESOME_SOLANA_AI_SKILLS as unknown as Skill[]),
+    ...(FINTOOL_SKILLS as unknown as Skill[]),
     ...(ENDPOINT_SKILLS as unknown as Skill[]),
 ];
 
