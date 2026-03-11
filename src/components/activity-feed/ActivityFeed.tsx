@@ -4,6 +4,7 @@ import { ReactNode, useCallback, useRef, useState } from "react";
 import { Search, CheckCircle, Coins, FolderPlus, BookOpen, Volume2, VolumeOff } from "lucide-react";
 import { XLogo } from "@/components/icons/XLogo";
 import { ActivityItem } from "@/lib/types";
+import { normalizeFrameworkLabel } from "@/lib/framework-labels";
 import { useRealtimeActivity } from "@/hooks/useRealtimeActivity";
 
 const TYPE_CONFIG: Record<
@@ -137,7 +138,7 @@ export function ActivityFeed({ sidebar = false }: { sidebar?: boolean }) {
         <span className="text-text-secondary truncate">
           Agent {item.agent_id.slice(0, 8)}{" "}
           {item.framework !== "unknown" && (
-            <span className="text-text-muted">({item.framework})</span>
+            <span className="text-text-muted">({normalizeFrameworkLabel(item.framework)})</span>
           )}{" "}
           {formatMessage(item)}
         </span>

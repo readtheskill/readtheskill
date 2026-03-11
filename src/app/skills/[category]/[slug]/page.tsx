@@ -4,12 +4,14 @@ import {
     CATEGORIES,
     SKILLS,
     Category,
+    Skill,
     getSkillBySlug,
     inferSourceFromUrl,
     inferSubcategory,
 } from "@/data/skills";
 import { SkillCTA } from "@/components/directory/SkillCTA";
 import { CategoryIcon } from "@/components/directory/CategoryIcon";
+import { normalizeFrameworkLabel } from "@/lib/framework-labels";
 import fs from "fs";
 import path from "path";
 
@@ -75,6 +77,60 @@ function parseSkillMd(raw: string): string {
     return trimmed;
 }
 
+function isIncompleteSkillBody(body: string): boolean {
+    const trimmed = body.trim();
+    if (!trimmed) return true;
+
+    // Common placeholder form currently present in many local SKILL.md files.
+    const stubPattern =
+        /^#\s+[^\n]+\n\*Verified by readtheskill\.com — \[verify(?: this skill)?\]\(https:\/\/readtheskill\.com\/skills\/[^\n]+\)\*$/i;
+    if (stubPattern.test(trimmed)) return true;
+
+    // Very short markdown with only title + verification footer is also incomplete.
+    const lines = trimmed.split("\n").filter((l) => l.trim().length > 0);
+    const hasOnlyTitleAndVerify =
+        lines.length <= 2 &&
+        /^#\s+/.test(lines[0] ?? "") &&
+        /Verified by readtheskill\.com/i.test(lines[1] ?? "");
+
+    return hasOnlyTitleAndVerify;
+}
+
+function generateFallbackSkillBody(skill: Skill): string {
+    const heading = `# ${skill.name}`;
+    const overview = `${skill.description}`;
+    const tags = skill.tags.length ? skill.tags.map((t) => `\`${t}\``).join(", ") : "N/A";
+
+    return `${heading}
+
+${overview}
+
+## Quick Context
+- Category: \`${skill.category}\`
+- Framework: \`${skill.framework}\`
+- Tags: ${tags}
+
+## Suggested Agent Usage
+> Use ${skill.name} when you need ${skill.description.toLowerCase()}
+
+## Input Checklist
+- wallet/public key available
+- token/pair identifiers provided
+- amount and slippage/risk bounds defined
+- chain/RPC environment confirmed
+
+## Output Checklist
+- action summary and key parameters
+- tx hash/signature (if execution occurred)
+- result status and any errors
+- next-step recommendation
+
+## Links
+- Source: ${skill.source_url}
+${skill.skill_url ? `- skill.md: ${skill.skill_url}` : ""}
+`;
+}
+
 export function generateStaticParams() {
     return SKILLS.map((skill) => ({
         category: skill.category,
@@ -95,10 +151,11 @@ export default async function SkillDetailPage({
     }
 
     const cat = CATEGORIES[category as Category];
-    const body =
+    const rawBody =
         skill.body ||
         (skill.skill_url ? await fetchSkillContent(skill.skill_url) : "") ||
         loadSkillContent(slug);
+    const body = isIncompleteSkillBody(rawBody) ? generateFallbackSkillBody(skill) : rawBody;
     const source = skill.source ?? inferSourceFromUrl(skill.source_url);
     const subcategory = inferSubcategory(skill);
 
@@ -130,7 +187,7 @@ export default async function SkillDetailPage({
                     <div className="flex items-start justify-between gap-3 mb-2">
                         <h1 className="text-xl font-bold">{skill.name}</h1>
                         <span className="text-xs px-2 py-1 bg-bg-surface border border-border rounded text-text-muted font-mono flex-shrink-0 mt-1">
-                            {skill.framework}
+                            {normalizeFrameworkLabel(skill.framework)}
                         </span>
                     </div>
                     <p className="text-sm text-text-secondary">{skill.description}</p>

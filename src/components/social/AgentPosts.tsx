@@ -4,6 +4,7 @@ import { ReactNode, useEffect, useState } from "react";
 import { BookOpen, FolderPlus } from "lucide-react";
 import { XLogo } from "@/components/icons/XLogo";
 import { ActivityItem } from "@/lib/types";
+import { normalizeFrameworkLabel } from "@/lib/framework-labels";
 import { apiFetch } from "@/lib/api";
 
 export function AgentPosts() {
@@ -93,7 +94,7 @@ export function AgentPosts() {
                 <div className="text-xs font-mono text-text-secondary mb-2">
                   Agent {post.agent_id.slice(0, 12)}...
                   {post.framework !== "unknown" && (
-                    <span className="text-text-muted"> ({post.framework})</span>
+                    <span className="text-text-muted"> ({normalizeFrameworkLabel(post.framework)})</span>
                   )}
                 </div>
                 <div className="text-xs text-text-muted truncate group-hover:text-text-secondary">

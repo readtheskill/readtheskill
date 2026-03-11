@@ -1392,6 +1392,18 @@ npm install @goat-sdk/plugin-ironclad
         framework: "OpenClaw / ByteRover",
         tags: ["memory", "context", "openclaw", "knowledge-management", "brv"],
     },
+    {
+        slug: "openclaw-daily-ops",
+        name: "OpenClaw Daily Ops",
+        category: "automation",
+        subcategory: "cost-monitoring",
+        description:
+            "Daily cost reporting plus zombie session cleanup for OpenClaw deployments. Generates Discord reports and removes stale high-context sessions on a cron schedule.",
+        source_url: "https://github.com/oh-ashen-one/openclaw-daily-ops",
+        skill_url: "https://github.com/oh-ashen-one/openclaw-daily-ops/blob/main/SKILL.md",
+        framework: "OpenClaw",
+        tags: ["openclaw", "cost-reporting", "cron", "discord", "session-cleanup"],
+    },
 
     // ────────────── DATA & ANALYTICS ──────────────
     {

@@ -4,6 +4,7 @@ import { ReactNode, useCallback, useRef, useState } from "react";
 import { Search, CheckCircle, Coins, FolderPlus, BookOpen, Volume2, VolumeOff, ChevronUp, ChevronDown, X } from "lucide-react";
 import { XLogo } from "@/components/icons/XLogo";
 import { ActivityItem } from "@/lib/types";
+import { normalizeFrameworkLabel } from "@/lib/framework-labels";
 import { useRealtimeActivity } from "@/hooks/useRealtimeActivity";
 
 const TYPE_CONFIG: Record<
@@ -187,7 +188,7 @@ export function MobileActivityDrawer() {
                     <span className="text-text-secondary truncate">
                       {item.agent_id.slice(0, 6)}{" "}
                       {item.framework !== "unknown" && (
-                        <span className="text-text-muted">({item.framework})</span>
+                        <span className="text-text-muted">({normalizeFrameworkLabel(item.framework)})</span>
                       )}{" "}
                       {formatMessage(item)}
                     </span>
