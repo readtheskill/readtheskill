@@ -1380,6 +1380,18 @@ npm install @goat-sdk/plugin-ironclad
         framework: "Vercel",
         tags: ["browser", "testing", "qa", "dogfooding", "automation"],
     },
+    {
+        slug: "byterover-openclaw",
+        name: "ByteRover for OpenClaw",
+        category: "automation",
+        subcategory: "agent-memory",
+        description:
+            "Long-term memory skill for OpenClaw agents using ByteRover context trees. Supports query/curate workflows, optional cloud sync, and provider setup.",
+        source_url: "https://github.com/openclaw/skills/tree/main/skills/byteroverinc/byterover",
+        skill_url: "https://raw.githubusercontent.com/openclaw/skills/main/skills/byteroverinc/byterover/SKILL.md",
+        framework: "OpenClaw / ByteRover",
+        tags: ["memory", "context", "openclaw", "knowledge-management", "brv"],
+    },
 
     // ────────────── DATA & ANALYTICS ──────────────
     {
