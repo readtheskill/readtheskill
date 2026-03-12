@@ -19,6 +19,7 @@
     "scrape:sync": "tsx scraper/pipeline.ts --incremental"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "lucide-react": "^0.577.0",
     "next": "14.2.35",
     "react": "^18",
