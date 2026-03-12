@@ -11,6 +11,14 @@ import { generateBatchFile } from "./output/generate-batch.js";
 import { generateEnrichments } from "./output/generate-enrichments.js";
 import { generateReport } from "./output/report.js";
 import { writeProcessedData, writeRawSnapshot } from "./lib/fs-utils.js";
+import {
+  loadSyncState,
+  saveSyncState,
+  updateSlugHash,
+  markRunComplete,
+  type SyncState,
+} from "./state/sync-state.js";
+import { hashContent } from "./validate/hasher.js";
 import type { PipelineStats, ProcessedSkillRecord } from "./lib/types.js";
 
 interface PipelineOptions {
@@ -18,11 +26,13 @@ interface PipelineOptions {
   skipDiscovery?: boolean;
   skipResolve?: boolean;
   skipValidate?: boolean;
+  incremental?: boolean;
 }
 
 export async function runPipeline(options: PipelineOptions = {}): Promise<{
   records: ProcessedSkillRecord[];
   stats: PipelineStats;
+  syncState?: SyncState;
 }> {
   const stats: PipelineStats = {
     discovered: 0,
@@ -37,14 +47,32 @@ export async function runPipeline(options: PipelineOptions = {}): Promise<{
     errors: [],
   };
 
+  const syncState = options.incremental ? loadSyncState() : undefined;
+  const mode = options.incremental ? "INCREMENTAL" : "FULL";
+
   console.log("\n========================================");
-  console.log("  ClawHub Ingestion Pipeline");
+  console.log(`  ClawHub Ingestion Pipeline (${mode})`);
   console.log("========================================\n");
 
+  if (options.incremental && syncState) {
+    console.log(`[Pipeline] Last sync: ${syncState.last_run_at || "never"}`);
+    console.log(`[Pipeline] Known slugs: ${Object.keys(syncState.known_slugs).length}\n`);
+  }
+
   console.log("[Pipeline] Phase 1: Discovery...");
-  const { slugs } = await runDiscovery({ limit: options.limit });
+  const { slugs } = await runDiscovery({ limit: options.limit, incremental: options.incremental });
   stats.discovered = slugs.length;
-  console.log(`[Pipeline] Discovered ${slugs.length} unique slugs\n`);
+
+  if (options.incremental && slugs.length === 0) {
+    console.log("[Pipeline] No new skills found. Exiting early.\n");
+    if (syncState) {
+      markRunComplete(syncState);
+      saveSyncState(syncState);
+    }
+    return { records: [], stats, syncState };
+  }
+
+  console.log(`[Pipeline] Discovered ${slugs.length} ${options.incremental ? "new" : "unique"} slugs\n`);
 
   console.log("[Pipeline] Phase 1b: Fetching details...");
   const rawRecords = await fetchAllDetails(slugs);
@@ -112,6 +140,19 @@ export async function runPipeline(options: PipelineOptions = {}): Promise<{
   await generateEnrichments(processed);
   await generateReport(stats, processed);
 
+  if (options.incremental && syncState) {
+    console.log("[Pipeline] Updating sync state...");
+    for (const record of processed) {
+      if (record.dedupe.action === "new" || record.dedupe.action === "enrich") {
+        const content = record.skill_content || record.description || "";
+        const hash = hashContent(content);
+        updateSlugHash(syncState, record.slug, hash);
+      }
+    }
+    markRunComplete(syncState);
+    saveSyncState(syncState);
+  }
+
   console.log("\n========================================");
   console.log("  Pipeline Complete!");
   console.log("========================================");
@@ -123,7 +164,7 @@ export async function runPipeline(options: PipelineOptions = {}): Promise<{
   console.log(`  Skipped (dupes):  ${stats.skipped_skills}`);
   console.log("========================================\n");
 
-  return { records: processed, stats };
+  return { records: processed, stats, syncState };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
@@ -132,10 +173,14 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const limit = limitArg ? parseInt(limitArg.split("=")[1], 10) : undefined;
   const skipResolve = args.includes("--skip-resolve");
   const skipValidate = args.includes("--skip-validate");
+  const incremental = args.includes("--incremental");
 
-  runPipeline({ limit, skipResolve, skipValidate })
-    .then(({ stats }) => {
+  runPipeline({ limit, skipResolve, skipValidate, incremental })
+    .then(({ stats, syncState }) => {
       console.log("[Pipeline] Final stats:", JSON.stringify(stats, null, 2));
+      if (incremental && syncState) {
+        console.log(`[Pipeline] Sync state updated: ${syncState.total_synced} total known slugs`);
+      }
     })
     .catch((err) => {
       console.error("[Pipeline] Failed:", err);

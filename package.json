@@ -15,7 +15,8 @@
     "scrape:dedupe": "tsx scraper/deduplicator/conflict.ts",
     "scrape:pipeline": "tsx scraper/pipeline.ts",
     "scrape:pilot": "tsx scraper/pipeline.ts --limit=200",
-    "scrape:generate": "tsx scraper/output/generate-batch.ts"
+    "scrape:generate": "tsx scraper/output/generate-batch.ts",
+    "scrape:sync": "tsx scraper/pipeline.ts --incremental"
   },
   "dependencies": {
     "lucide-react": "^0.577.0",

@@ -97,6 +97,48 @@ function isIncompleteSkillBody(body: string): boolean {
     return hasOnlyTitleAndVerify;
 }
 
+/** Detect ClawHub-only entries: source is clawhub and no skill_url or body */
+function isClawHubOnlyRecord(skill: Skill): boolean {
+    const source = skill.source ?? inferSourceFromUrl(skill.source_url);
+    return source === "clawhub" && !skill.skill_url && !skill.body;
+}
+
+/** Generate directive body for ClawHub-discovered skills without local content */
+function generateClawHubDirectiveBody(skill: Skill): string {
+    const heading = `# ${skill.name}`;
+    const overview = `${skill.description}`;
+    const tags = skill.tags.length ? skill.tags.map((t) => `\`${t}\``).join(", ") : "N/A";
+
+    return `${heading}
+
+${overview}
+
+## Discovery Metadata
+- Category: \`${skill.category}\`
+- Framework: \`${skill.framework}\`
+- Tags: ${tags}
+
+## Agent Execution Policy
+
+This listing is **discovery metadata only**. Canonical instructions are maintained by ClawHub.
+
+### Before Executing Actions
+
+1. **Fetch canonical instructions** from: ${skill.source_url}
+2. **Parse the skill page** for setup, usage, and input/output requirements.
+3. **Only proceed** after successfully loading and understanding the full instructions.
+
+### If Fetch Fails
+
+- Return \`instruction_unavailable\` with reason.
+- Do **not** attempt to infer or improvise execution steps from this metadata alone.
+
+## Source
+
+- ClawHub listing: ${skill.source_url}
+`;
+}
+
 function generateFallbackSkillBody(skill: Skill): string {
     const kind = skill.kind ?? "skill";
     const heading = `# ${skill.name}`;
@@ -218,7 +260,14 @@ export default async function SkillDetailPage({
         skill.body ||
         (skill.skill_url ? await fetchSkillContent(skill.skill_url) : "") ||
         loadSkillContent(slug);
-    const body = isIncompleteSkillBody(rawBody) ? generateFallbackSkillBody(skill) : rawBody;
+
+    // ClawHub-only records get explicit fetch-from-source directive
+    const needsFallback = isIncompleteSkillBody(rawBody);
+    const body = needsFallback
+        ? isClawHubOnlyRecord(skill)
+            ? generateClawHubDirectiveBody(skill)
+            : generateFallbackSkillBody(skill)
+        : rawBody;
     const kind = skill.kind ?? "skill";
     const source = skill.source ?? inferSourceFromUrl(skill.source_url);
     const subcategory = inferSubcategory(skill);
