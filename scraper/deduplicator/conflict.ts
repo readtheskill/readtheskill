@@ -1,4 +1,4 @@
-import type { CategorizedSkillRecord, ProcessedSkillRecord, DedupeResult } from "../lib/types.js";
+import type { CategorizedSkillRecord, SecurityScanRecord, ProcessedSkillRecord, DedupeResult } from "../lib/types.js";
 import type { ExistingSkillEntry, ExistingRegistry } from "./load-existing.js";
 import type { MatchResult } from "./match.js";
 import { loadExistingRegistry } from "./load-existing.js";
@@ -46,7 +46,7 @@ function scoreRichnessExisting(entry: ExistingSkillEntry): RichnessScore {
   };
 }
 
-function scoreRichnessNew(record: CategorizedSkillRecord): RichnessScore {
+function scoreRichnessNew(record: CategorizedSkillRecord | SecurityScanRecord): RichnessScore {
   const hasDescription = Boolean(record.description && record.description.length > 20);
   const hasSkillUrl = Boolean(record.skill_url && record.skill_url_confidence > 0.5);
   const hasBody = Boolean(record.skill_content && record.skill_content.length > 200);
@@ -76,7 +76,7 @@ function scoreRichnessNew(record: CategorizedSkillRecord): RichnessScore {
 }
 
 export function resolveConflict(
-  record: CategorizedSkillRecord,
+  record: CategorizedSkillRecord | SecurityScanRecord,
   match: MatchResult
 ): DedupeResult {
   if (match.matchType === "none") {
@@ -112,7 +112,7 @@ export function resolveConflict(
 }
 
 export function processAllRecords(
-  records: CategorizedSkillRecord[],
+  records: SecurityScanRecord[],
   registry: ExistingRegistry
 ): ProcessedSkillRecord[] {
   console.log(`[Dedupe] Processing ${records.length} records against ${registry.all.length} existing...`);

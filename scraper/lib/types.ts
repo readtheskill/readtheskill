@@ -36,13 +36,20 @@ export interface CategorizedSkillRecord extends ValidatedSkillRecord {
   extracted_tags: string[];
 }
 
+export interface SecurityScanRecord extends CategorizedSkillRecord {
+  security_score: number;
+  security_badge: "pass" | "warn" | "review" | "fail";
+  security_findings_count: number;
+  security_critical_count: number;
+}
+
 export interface DedupeResult {
   action: "new" | "enrich" | "skip";
   existing_slug?: string;
   reason?: string;
 }
 
-export interface ProcessedSkillRecord extends CategorizedSkillRecord {
+export interface ProcessedSkillRecord extends SecurityScanRecord {
   dedupe: DedupeResult;
 }
 
@@ -85,10 +92,14 @@ export interface PipelineStats {
   resolved: number;
   validated: number;
   categorized: number;
+  security_scanned: number;
+  security_passed: number;
+  security_failed: number;
   new_skills: number;
   enriched_skills: number;
   skipped_skills: number;
   by_category: Record<string, number>;
   by_tier: Record<string, number>;
+  by_security_badge: Record<string, number>;
   errors: string[];
 }
