@@ -1,0 +1,88 @@
+import type { SecurityRule } from "../types";
+
+export const filesystemAbuseRules: SecurityRule[] = [
+  {
+    id: "FS-001",
+    category: "filesystem_abuse",
+    severity: "high",
+    description: "Path traversal attempt",
+    pattern: /\.\.\/|\.\.\\|%2e%2e%2f|%2e%2e%5c/gi,
+  },
+  {
+    id: "FS-002",
+    category: "filesystem_abuse",
+    severity: "high",
+    description: "Access to SSH directory or keys",
+    pattern: /~\/\.ssh|\/\.ssh\/|id_rsa|id_ed25519|id_dsa|authorized_keys|known_hosts/gi,
+  },
+  {
+    id: "FS-003",
+    category: "filesystem_abuse",
+    severity: "high",
+    description: "Access to AWS credentials directory",
+    pattern: /~\/\.aws|\/\.aws\/|aws_access_key|aws_secret/gi,
+  },
+  {
+    id: "FS-004",
+    category: "filesystem_abuse",
+    severity: "high",
+    description: "Access to GPG/PGP keys",
+    pattern: /~\/\.gnupg|\/\.gnupg\/|\.gpg|secring/gi,
+  },
+  {
+    id: "FS-005",
+    category: "filesystem_abuse",
+    severity: "high",
+    description: "Access to Claude/AI assistant config",
+    pattern: /~\/\.claude|\/\.claude\/|\.anthropic/gi,
+  },
+  {
+    id: "FS-006",
+    category: "filesystem_abuse",
+    severity: "critical",
+    description: "Access to system password files",
+    pattern: /\/etc\/(?:shadow|passwd|sudoers)/gi,
+  },
+  {
+    id: "FS-007",
+    category: "filesystem_abuse",
+    severity: "critical",
+    description: "Destructive rm -rf command",
+    pattern: /rm\s+(?:-[a-z]*)?-r[a-z]*f|rm\s+(?:-[a-z]*)?-f[a-z]*r/gi,
+  },
+  {
+    id: "FS-008",
+    category: "filesystem_abuse",
+    severity: "critical",
+    description: "Python shutil.rmtree - recursive delete",
+    pattern: /shutil\.rmtree\s*\(/gi,
+  },
+  {
+    id: "FS-009",
+    category: "filesystem_abuse",
+    severity: "critical",
+    description: "SQL DROP TABLE or TRUNCATE",
+    pattern: /\b(?:DROP\s+TABLE|TRUNCATE\s+TABLE?)\b/gi,
+  },
+  {
+    id: "FS-010",
+    category: "filesystem_abuse",
+    severity: "medium",
+    description: "Access to npm/node credentials",
+    pattern: /~\/\.npmrc|\/\.npmrc|npm_token/gi,
+  },
+  {
+    id: "FS-011",
+    category: "filesystem_abuse",
+    severity: "medium",
+    description: "Access to git credentials",
+    pattern: /~\/\.netrc|\/\.netrc|\.git-credentials/gi,
+  },
+  {
+    id: "FS-012",
+    category: "filesystem_abuse",
+    severity: "high",
+    description: "Access to GitHub CLI config",
+    pattern: /~\/\.config\/gh|\/\.config\/gh\//gi,
+  },
+];

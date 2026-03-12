@@ -16,7 +16,10 @@
     "scrape:pipeline": "tsx scraper/pipeline.ts",
     "scrape:pilot": "tsx scraper/pipeline.ts --limit=200",
     "scrape:generate": "tsx scraper/output/generate-batch.ts",
-    "scrape:sync": "tsx scraper/pipeline.ts --incremental"
+    "scrape:sync": "tsx scraper/pipeline.ts --incremental",
+    "security:scan": "tsx scraper/security/cli/scan-single.ts",
+    "security:scan-all": "tsx scraper/security/cli/scan-all.ts",
+    "security:report": "cat scraper/out/security/security-report.md"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
