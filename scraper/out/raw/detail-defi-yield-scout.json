@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "defi-yield-scout",
+    "displayName": "DeFi Yield Scout",
+    "summary": "Scan and compare USDC yield farming APYs on Base and Arbitrum, analyze vault performance, breakeven migration, and protocol risk using live DeFiLlama data.",
+    "tags": {
+      "latest": "k97bb89w9k8n50sz3zvv95tm8n81c2t5"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 383,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1771421462864,
+    "updatedAt": 1772063736195
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1771421462864,
+    "changelog": "DeFi Yield Scout 1.0.0 — Initial Release\n\n- Scan and rank USDC yield farming opportunities across Base and Arbitrum using DeFiLlama data.\n- Compare vaults with migration (breakeven) analysis, including estimated gas/bridge costs and clear verdicts.\n- Display 30-day APY histories with stability scoring and TVL trend direction for yield reliability insights.\n- Present supported protocols, audit statuses, risk notes, and vault standards.\n- Supports subcommands for scanning yields, vault comparison, APY history, and protocol overview.\n- Maps natural language requests to tool subcommands for ease of use."
+  },
+  "owner": {
+    "handle": "joaoolucas",
+    "displayName": "mortiee",
+    "image": "https://avatars.githubusercontent.com/u/83239762?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "meganode-skill",
+    "displayName": "Meganode Skill",
+    "summary": "Provides NodeReal MegaNode blockchain infrastructure APIs for 25+ chains including BSC, Ethereum, opBNB, Optimism, Polygon, Arbitrum, and Klaytn. Covers stan...",
+    "tags": {
+      "latest": "k9794xrp711hjvny6pm09a8z0x825tag"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 103,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772437738362,
+    "updatedAt": 1772438125955
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1772437738362,
+    "changelog": "meganode-skill v0.1.0\n\n- Initial release providing integration with NodeReal MegaNode blockchain infrastructure APIs across 25+ chains (including BSC, Ethereum, Polygon, Arbitrum, Klaytn, and more)\n- Supports standard JSON-RPC, Enhanced APIs for token & NFT data, MegaFuel gasless transactions, Direct Route MEV protection, Debug/Trace, WebSocket subscriptions, and API Marketplace integrations\n- Enforces secure API key handling by requiring the user to provide a NodeReal API key before any requests are made\n- Includes safety, confirmation, and data usage best practices for blockchain operations\n- Features quick references, authentication guidelines, endpoint formats, and usage examples for streamlined dApp development with MegaNode"
+  },
+  "owner": {
+    "handle": "aiden-cao",
+    "displayName": "aiden-cao",
+    "image": "https://avatars.githubusercontent.com/u/104969608?v=4"
+  }
+}

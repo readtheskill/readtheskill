@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "paythefly",
+    "displayName": "PayTheFlyPro",
+    "summary": "Create crypto payment & withdrawal links for your app. Works with BSC, Ethereum, TRON. Users pay via PayTheFlyPro gateway - you get shareable URLs with built...",
+    "tags": {
+      "latest": "k97b53ay7c7jptz63pqrf2j3fh81wn94"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 379,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 2,
+      "versions": 9
+    },
+    "createdAt": 1771428545760,
+    "updatedAt": 1772122927046
+  },
+  "latestVersion": {
+    "version": "1.0.8",
+    "createdAt": 1772119001816,
+    "changelog": "Complete package with all files"
+  },
+  "owner": {
+    "handle": "seanlan",
+    "displayName": "paythefly",
+    "image": "https://avatars.githubusercontent.com/u/3713073?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "torchmarket",
+    "displayName": "Torch Market",
+    "summary": "Torch Vault is a full-custody on-chain escrow for AI agents on Solana. The vault holds all assets -- SOL and tokens. The agent wallet is a disposable control...",
+    "tags": {
+      "latest": "k9731vjdjznyhdzgsnz06fz505828jz9"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 3899,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 5,
+      "versions": 66
+    },
+    "createdAt": 1770248760451,
+    "updatedAt": 1772659909893
+  },
+  "latestVersion": {
+    "version": "4.7.17",
+    "createdAt": 1772659893629,
+    "changelog": "- Updated Torch SDK dependency from version 3.7.29 to 3.7.30.\n- Removed the unnecessary hackathon.md file from the repository.\n- No functional changes to the skill logic or user-facing behavior.\n- now a 0 creator fee default token creation option. creator fees optional."
+  },
+  "owner": {
+    "handle": "mrsirg97-rgb",
+    "displayName": "mr brightside",
+    "image": "https://avatars.githubusercontent.com/u/255471849?v=4"
+  }
+}

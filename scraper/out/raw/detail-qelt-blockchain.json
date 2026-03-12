@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "qelt-blockchain",
+    "displayName": "QELT Blockchain",
+    "summary": "Query and interact with the QELT blockchain (Chain ID 770) via JSON-RPC. Use when asked about blocks, transactions, wallet balances, smart contract calls, ga...",
+    "tags": {
+      "latest": "k9774b87r8e5ygh1xdx4cek3h182cx41"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 73,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772776734474,
+    "updatedAt": 1772776744689
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1772776734474,
+    "changelog": "Initial release of the QELT Blockchain skill.\n\n- Provides comprehensive JSON-RPC query and interaction for the QELT blockchain (Mainnet & Testnet).\n- Supports block, transaction, wallet balance, contract, gas estimate, log retrieval, and pre-signed transaction submission.\n- Includes endpoint references, usage safety notes, and error troubleshooting.\n- Covers both Mainnet (770) and Testnet (771), with clear distinctions and RPC URLs.\n- Contains detailed Bash/curl example commands for all supported operations."
+  },
+  "owner": {
+    "handle": "PRQELT",
+    "displayName": "PRQELT",
+    "image": "https://avatars.githubusercontent.com/u/198798555?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "clawdmint",
+    "displayName": "Clawdmint",
+    "summary": "Deploy NFT collections on Base. AI agents can deploy via API key or x402 USDC payment. Humans mint.",
+    "tags": {
+      "latest": "k970y17trkyb6vw59ty6jmz97x80n906"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 972,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 2,
+      "versions": 1
+    },
+    "createdAt": 1770382015339,
+    "updatedAt": 1772077705289
+  },
+  "latestVersion": {
+    "version": "1.2.0",
+    "createdAt": 1770382015339,
+    "changelog": "x402 payment protocol integration, deploy via USDC on Base"
+  },
+  "owner": {
+    "handle": "clawdmintt",
+    "displayName": "clawdmintt",
+    "image": "https://avatars.githubusercontent.com/u/106615172?v=4"
+  }
+}

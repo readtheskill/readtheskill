@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "yield-farming-bot",
+    "displayName": "Yield Farming Bot",
+    "summary": "DeFi yield farming bot - auto-compound, optimize yields, track positions across protocols. Each call charges 0.001 USDT via SkillPay.",
+    "tags": {
+      "latest": "k97dc54ezk2ra4hd5vq214cx0s82fk1e"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 87,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772849570085,
+    "updatedAt": 1773208191312
+  },
+  "latestVersion": {
+    "version": "1.0.1",
+    "createdAt": 1772849570085,
+    "changelog": "- Updated documentation in SKILL.md with detailed feature list, usage examples, supported protocols, and pricing information.\n- Added supported trigger phrases in both English and Chinese.\n- Specified environment variable requirement for SKILLPAY_API_KEY.\n- Clarified multi-protocol and multi-chain support in FAQ and feature sections."
+  },
+  "owner": {
+    "handle": "mosonchan2023",
+    "displayName": "mosonchan2023",
+    "image": "https://avatars.githubusercontent.com/u/132669994?v=4"
+  }
+}

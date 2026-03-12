@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "dogecoin-node",
+    "displayName": "Dogecoin Node",
+    "summary": "A skill to set up and operate a Dogecoin Core full node with RPC access, blockchain tools, and optional tipping functionality.",
+    "tags": {
+      "latest": "k97c8s5yktfmzcw70219e6d2858287e2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 430,
+      "installsAllTime": 3,
+      "installsCurrent": 3,
+      "stars": 2,
+      "versions": 6
+    },
+    "createdAt": 1771225682726,
+    "updatedAt": 1773202419796
+  },
+  "latestVersion": {
+    "version": "1.0.5",
+    "createdAt": 1772647572421,
+    "changelog": "dogecoin-node 1.0.5 Changelog\n\n- Updated installation and configuration instructions for clarity and accuracy.\n- Health check script now provides blockchain sync status, live DOGE price from CoinGecko, and disk monitoring; CLI output uses `jq` for structured JSON parsing.\n- New recommended location: all example paths use `~/.openclaw/` instead of `.openwork/`.\n- Added `jq` as a required dependency for health scripting.\n- Improved documentation and safety warnings for private key commands."
+  },
+  "owner": {
+    "handle": "GreatApe42069",
+    "displayName": "GreatApe42069",
+    "image": "https://avatars.githubusercontent.com/u/153969184?v=4"
+  }
+}

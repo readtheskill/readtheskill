@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "whale-alerts",
+    "displayName": "Whale Alerts",
+    "summary": "巨鲸地址监控警报系统 - 追踪聪明钱地址，大额转账实时警报，DeFi 巨鲸动向分析。每次调用自动扣费 0.001 USDT",
+    "tags": {
+      "latest": "k97fnajax39gmgvhecsw28t4zx82b4as"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 99,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772692527460,
+    "updatedAt": 1773207361984
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772692527460,
+    "changelog": "Whale-alerts 1.0.0 初始版本发布\n\n- 实时追踪多链巨鲸地址和大额转账动态\n- 提供巨鲸建仓/清仓信号及历史交易分析\n- 支持自定义警报和阈值设置（>$10k, >$100k, >$1M）\n- 兼容 ETH, BSC, Polygon, Arbitrum, Optimism 多条公链\n- 每次调用自动扣费 0.001 USDT"
+  },
+  "owner": {
+    "handle": "mosonchan2023",
+    "displayName": "mosonchan2023",
+    "image": "https://avatars.githubusercontent.com/u/132669994?v=4"
+  }
+}

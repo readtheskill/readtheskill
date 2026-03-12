@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "iqdb-onchain-storage",
+    "displayName": "IQDB On-Chain Storage",
+    "summary": "On-chain immutable data storage using IQ Labs tech stack (IQDB, hanLock, x402). Use when building Solana-based persistent storage, on-chain databases, tamper-evident records, password-encoded data, or paid file inscription. Triggers on tasks involving on-chain CRUD, Solana PDA storage, rolling hash verification, Hangul encoding, or HTTP 402 payment-gated inscription.",
+    "tags": {
+      "latest": "k97exsqa1x00smnspvnwgwhq5h80t9sr"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 883,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1770617259213,
+    "updatedAt": 1772336475880
+  },
+  "latestVersion": {
+    "version": "0.2.0",
+    "createdAt": 1770619111478,
+    "changelog": "Removed internal file paths and local references. Public-safe release."
+  },
+  "owner": {
+    "handle": "Emanz1",
+    "displayName": "Rocket",
+    "image": "https://avatars.githubusercontent.com/u/127072685?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "agent-payment-protocol",
+    "displayName": "Agent Payment Protocol",
+    "summary": "Facilitate secure agent-to-agent payments via Solana on-chain transactions with quote creation, approval, payment recording, and audit logging in IRC channels.",
+    "tags": {
+      "latest": "k97c25g3tv81ktxveyxgqp97ss80f2fs"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1334,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1770157070843,
+    "updatedAt": 1772076728395
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1770157070843,
+    "changelog": "- Initial release of Agent Payment Protocol Skill for Solana agent payments via IRC.\n- Supports quoting, approval, payment execution (via solana-transfer), and tamper-proof audit trails.\n- Provides APIs for agents to create quotes, approve payments, record on-chain settlements, view payment histories, and see protocol stats.\n- Stores all quotes and payments in append-only JSONL ledgers for full traceability.\n- Designed for easy integration with IRC and Solana transfer skills; includes CLI utilities for manual testing.\n- Lays groundwork for future enhancements such as dispute resolution and escrow support."
+  },
+  "owner": {
+    "handle": "Vortitron",
+    "displayName": "Vortitron",
+    "image": "https://avatars.githubusercontent.com/u/8288276?v=4"
+  }
+}

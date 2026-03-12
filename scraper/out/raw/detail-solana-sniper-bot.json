@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "solana-sniper-bot",
+    "displayName": "Solana Sniper Bot",
+    "summary": "Autonomous Solana token sniper and trading bot. Monitors new token launches on Raydium/Jupiter, evaluates rugpull risk with LLM analysis, auto-buys promising launches, and manages exit strategies. Use when user wants to snipe Solana token launches, trade memecoins, monitor new Solana pairs, or build a Solana trading bot. Supports cron-based monitoring, take-profit/stop-loss, and portfolio tracking.",
+    "tags": {
+      "latest": "k97f4kvqqyypf8k7wx53k3d7dx80zy11"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 868,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770848705257,
+    "updatedAt": 1773201381127
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770848705257,
+    "changelog": "Initial release: autonomous Solana token sniper with LLM rugpull detection, Jupiter swaps, Raydium pool monitoring"
+  },
+  "owner": {
+    "handle": "srikanthbellary",
+    "displayName": "srikanthbellary",
+    "image": "https://avatars.githubusercontent.com/u/204752113?v=4"
+  }
+}

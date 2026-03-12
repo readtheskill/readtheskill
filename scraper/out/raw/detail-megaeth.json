@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "megaeth",
+    "displayName": "MegaETH AI Developer",
+    "summary": "End-to-end MegaETH development playbook (Feb 2026). Covers wallet operations, token swaps (Kyber Network), eth_sendRawTransactionSync (EIP-7966) for instant receipts, JSON-RPC batching, real-time mini-block subscriptions, storage-aware contract patterns (Solady RedBlackTreeLib), MegaEVM gas model, WebSocket keepalive, bridging from Ethereum, and debugging with mega-evme. Use when building on MegaETH, managing wallets, sending transactions, or deploying contracts.",
+    "tags": {
+      "latest": "k971q15pqz72tjbzz1ka953y2s80jgh6"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1072,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770297854876,
+    "updatedAt": 1772077272800
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770297854876,
+    "changelog": "Initial release - MegaETH development playbook covering wallet ops, smart contracts, RPC methods, gas model, and real-time features"
+  },
+  "owner": {
+    "handle": "0xGuardbot",
+    "displayName": "0xGuardbot",
+    "image": "https://avatars.githubusercontent.com/u/257929713?v=4"
+  }
+}

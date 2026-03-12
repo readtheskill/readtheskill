@@ -60,7 +60,7 @@ export default async function CategoryPage({
                     </h1>
                     <p className="text-sm text-text-secondary">{cat.description}</p>
                     <div className="mt-2 text-xs text-text-muted font-mono">
-                        {skills.length} skill{skills.length !== 1 ? "s" : ""}
+                        {skills.length} entr{skills.length !== 1 ? "ies" : "y"}
                     </div>
                 </div>
 

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "8004-skill",
+    "displayName": "8004 Skill",
+    "summary": "ERC-8004 Trustless Agents - Register and manage AI agent identities on TRON and BSC blockchains with on-chain reputation tracking",
+    "tags": {
+      "latest": "k97a4dfs6nxqv03fjv779zmph5818b9x"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 363,
+      "installsAllTime": 2,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1771251127795,
+    "updatedAt": 1772058635891
+  },
+  "latestVersion": {
+    "version": "1.0.1",
+    "createdAt": 1771256549324,
+    "changelog": "- Added new file: `_meta.json` for metadata management.\n- No other changes to functionality or documentation."
+  },
+  "owner": {
+    "handle": "SpyderJR",
+    "displayName": "SpyderJR",
+    "image": "https://avatars.githubusercontent.com/u/186445232?v=4"
+  }
+}

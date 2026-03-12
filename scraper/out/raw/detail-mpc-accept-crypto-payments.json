@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "mpc-accept-crypto-payments",
+    "displayName": "MoonPay Commerce (Helio) Accept Crypto Payments",
+    "summary": "Accept crypto payments on Solana via MoonPay Commerce (formerly Helio). Create Pay Links, generate checkout URLs, check transactions, and list supported currencies. Use when the user wants to accept crypto payments, create payment links, charge for products/services with crypto, or query payment transactions. Requires a MoonPay Commerce account with API key and secret.",
+    "tags": {
+      "latest": "k97f93xg5vcyqek539hjdznjsd80zaf6"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1490,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 3
+    },
+    "createdAt": 1769635701274,
+    "updatedAt": 1772054435893
+  },
+  "latestVersion": {
+    "version": "0.3.0",
+    "createdAt": 1770808163040,
+    "changelog": "# Changelog\n\n## v0.3.0\n\n### Security\n\n- **Input sanitization for all user-supplied arguments in `helio.sh`**\n  - Added `validate_input` function that rejects values containing shell metacharacters, URL-unsafe characters, and path traversal sequences (`..`)\n  - Allowlist: `a-zA-Z0-9._@:/-` — covers Helio IDs, currency symbols, wallet addresses, and decimal amounts\n  - Validated arguments: `symbol` (currency-id, create-paylink), `amount` (create-paylink), `paylink_id` (charge, transactions, disable, enable)\n  - Mitigates URL path traversal and terminal output injection when arguments are interpolated into curl URLs and echo statements\n  - Addresses code scanner findings from v0.2.0 review"
+  },
+  "owner": {
+    "handle": "mavagio",
+    "displayName": "mavagio",
+    "image": "https://avatars.githubusercontent.com/u/7386708?v=4"
+  }
+}

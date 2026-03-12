@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "tether-wdk",
+    "displayName": "Tether Wallet Development Kit",
+    "summary": "Tether Wallet Development Kit (WDK) for building non-custodial multi-chain wallets. Use when working with @tetherto/wdk-core, wallet modules (wdk-wallet-btc,...",
+    "tags": {
+      "latest": "k97cc209v1xfsgnbj7k2ax8dcd82jx4j"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 49,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1773077222514,
+    "updatedAt": 1773209138755
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1773077222514,
+    "changelog": "Initial public release of  the skill for using Tether's Wallet Development Kit (WDK).\n\n- Introduces a modular SDK for building non-custodial, multi-chain wallets.\n- Provides unified wallet and protocol interfaces for Bitcoin, Ethereum/EVM, Solana, Spark, TON , and TRON .\n- Supports key DeFi protocol modules: DEX swaps, cross-chain bridges, lending/borrowing, and fiat on/off ramp integration.\n- Includes detailed documentation, quick start guides, and chain-specific reference files for seamless development.\n- npm packages are organized under the @tetherto scope for core, wallet modules, protocol modules, and UI kits/tools."
+  },
+  "owner": {
+    "handle": "tether-skills",
+    "displayName": "tether-skills",
+    "image": "https://avatars.githubusercontent.com/u/263212241?v=4"
+  }
+}

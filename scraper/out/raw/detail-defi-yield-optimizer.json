@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "defi-yield-optimizer",
+    "displayName": "Defi Yield Optimizer",
+    "summary": "DeFi Yield optimizer - cross-protocol yield comparison, auto-rebalancing, best yield farming strategies. Each call charges 0.001 USDT via SkillPay.",
+    "tags": {
+      "latest": "k973q57cvc20r0p0g6a23e595d82f2ab"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 124,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1772692550982,
+    "updatedAt": 1773207362521
+  },
+  "latestVersion": {
+    "version": "1.0.1",
+    "createdAt": 1772845140192,
+    "changelog": "- Improved English description and added more tags for discoverability.\n- Added a homepage link and basic environment variable requirement metadata for SkillPay integration.\n- Significantly expanded the list of triggers to cover more search terms.\n- Added a sample output section and clarified pricing for better usability.\n- Updated risk disclosure and investment advice."
+  },
+  "owner": {
+    "handle": "mosonchan2023",
+    "displayName": "mosonchan2023",
+    "image": "https://avatars.githubusercontent.com/u/132669994?v=4"
+  }
+}

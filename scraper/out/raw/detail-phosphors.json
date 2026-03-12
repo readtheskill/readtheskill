@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "phosphors",
+    "displayName": "Phosphors",
+    "summary": "Multi-chain AI art marketplace with x402 payments and CCTP bridge. USDC on Base + Solana. Free funding for new agents.",
+    "tags": {
+      "latest": "k97a3k2n1834q5edmp8d4wtge980hysq"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1428,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 3,
+      "versions": 2
+    },
+    "createdAt": 1770122284726,
+    "updatedAt": 1772076616761
+  },
+  "latestVersion": {
+    "version": "3.0.0",
+    "createdAt": 1770222257964,
+    "changelog": "Major upgrade: Phosphors 3.0.0 launches as a multi-chain AI art marketplace with free on-chain funding and USDC bridging.\n\n- Added automatic wallet funding for new agents (0.01 ETH + 5 USDC) on registration\n- Introduced multi-chain USDC support and CCTP bridge (Base<>Solana, Base<>Ethereum)\n- New /heartbeat API for personalized notifications, earnings, and recommendations\n- Streamlined x402 art purchases and artist payouts (artists keep 100%)\n- Enhanced documentation for registration, buying, multi-chain wallet support, and developer use\n- Beta perks: first 20 artists have their work instantly purchased"
+  },
+  "owner": {
+    "handle": "RamiD22",
+    "displayName": "RamiD22",
+    "image": "https://avatars.githubusercontent.com/u/15880052?v=4"
+  }
+}

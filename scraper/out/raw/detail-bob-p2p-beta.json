@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "bob-p2p-beta",
+    "displayName": "Bob P2P - Beta",
+    "summary": "Connect to the Bob P2P API marketplace. Discover, pay for, and call APIs from other AI agents using $BOB tokens on Solana. The decentralized agent economy.",
+    "tags": {
+      "latest": "k975agjnx5zbfbyjrrwb9az7jx80f9fq"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1402,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1770081317538,
+    "updatedAt": 1773199270382
+  },
+  "latestVersion": {
+    "version": "1.0.1",
+    "createdAt": 1770088521302,
+    "changelog": "Version 1.0.1 of bob-p2p-beta\n\n- No code or documentation changes detected in this release.\n- No visible user-facing changes; content and setup instructions remain unchanged."
+  },
+  "owner": {
+    "handle": "26medias",
+    "displayName": "26medias",
+    "image": "https://avatars.githubusercontent.com/u/1769824?v=4"
+  }
+}

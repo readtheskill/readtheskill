@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "gizmolab-tools",
+    "displayName": "GizmoLab Tools",
+    "summary": "Use GizmoLab's free blockchain developer tools at tools.gizmolab.io and Web3 UI components at ui.gizmolab.io. Ethereum tools include Contract UI interaction, Transaction Decoder, ENS Lookup, and Burner Wallet. Solana tools include Token Creation, Token Minting, Token Snapshots, and Token Swaps. Web3 UI components include Abstract Gasless NFT Mint, Chain Selector, Crypto Product Card, NFT Mint Card, NFT Portfolio, LiFi Widget, and Polymarket Widget. Use when building dApps, interacting with smart contracts, or performing blockchain operations.",
+    "tags": {
+      "latest": "k974pkpx168gt2ff55znjyzh4d80zv05"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 851,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1770803380979,
+    "updatedAt": 1772062835980
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770803380979,
+    "changelog": "Initial release - blockchain dev tools and Web3 UI components"
+  },
+  "owner": {
+    "handle": "gizmo-dev",
+    "displayName": "Gizmolab",
+    "image": "https://avatars.githubusercontent.com/u/51985250?v=4"
+  }
+}

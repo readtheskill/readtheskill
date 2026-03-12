@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "openscan-crypto",
+    "displayName": "OpenScan Crypto",
+    "summary": "Navigate and query crypto networks via OpenScan infrastructure. Use when the user asks about blockchain data — balances (ETH, ERC20, BTC), blocks, transactio...",
+    "tags": {
+      "latest": "k97bj8k40whyxttk0yktcgr2rx81yk3j"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 146,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772204509591,
+    "updatedAt": 1772212618999
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772204509591,
+    "changelog": "Full EVM + Bitcoin + ENS + price + decode-tx + address-info + RPC management"
+  },
+  "owner": {
+    "handle": "josealoha666",
+    "displayName": "Jose Aloha",
+    "image": "https://avatars.githubusercontent.com/u/259579913?v=4"
+  }
+}

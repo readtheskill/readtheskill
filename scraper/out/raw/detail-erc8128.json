@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "erc8128",
+    "displayName": "ERC-8128",
+    "summary": "Sign and verify HTTP requests with Ethereum wallets using ERC-8128. Use when building authenticated APIs that need wallet-based auth, making signed requests...",
+    "tags": {
+      "latest": "k974h3rw3vejj9z9n728wf559581b68f"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 327,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 2,
+      "versions": 1
+    },
+    "createdAt": 1771290384087,
+    "updatedAt": 1772058935895
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1771290384087,
+    "changelog": "Initial release of erc8128.\n\n- Enables signing and verifying HTTP requests using Ethereum wallets (ERC-8128 standard).\n- Supports both a JavaScript library (@slicekit/erc8128) and command-line interface (erc8128 curl).\n- Provides replay protection, nonce support, request binding options, and request integrity features.\n- Includes extensible verification policies and integration patterns for APIs and agent-based authentication.\n- Comprehensive documentation links and common implementation patterns for servers and bots."
+  },
+  "owner": {
+    "handle": "jacopo-eth",
+    "displayName": "jacopo",
+    "image": "https://avatars.githubusercontent.com/u/39241410?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "sui-decompile",
+    "displayName": "Sui Decompile",
+    "summary": "Fetch on-chain Sui Move contract source code and let your agent explain how smart contracts work. Scrape from Suivision/Suiscan explorers, analyze DeFi protocols, and understand any contract on Sui.",
+    "tags": {
+      "latest": "k976thmbqwp51ky25trqthfnr180x9qh"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 887,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 4
+    },
+    "createdAt": 1770642817748,
+    "updatedAt": 1772053240255
+  },
+  "latestVersion": {
+    "version": "1.0.3",
+    "createdAt": 1770682820832,
+    "changelog": "Add GitHub link and Related Skills section"
+  },
+  "owner": {
+    "handle": "EasonC13",
+    "displayName": "EasonC13",
+    "image": "https://avatars.githubusercontent.com/u/43432631?v=4"
+  }
+}

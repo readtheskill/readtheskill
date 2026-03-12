@@ -1,0 +1,37 @@
+{
+  "skill": {
+    "slug": "solana-dev-skill",
+    "displayName": "Solana Dev Skill",
+    "summary": "End-to-end Solana development playbook (Jan 2026). Prefer Solana Foundation framework-kit (@solana/client + @solana/react-hooks) for React/Next.js UI. Prefer @solana/kit for all new client/RPC/transaction code. When legacy dependencies require web3.js, isolate it behind @solana/web3-compat (or @solana/web3.js as a true legacy fallback). Covers wallet-standard-first connection (incl. ConnectorKit), Anchor/Pinocchio programs, Codama-based client generation, LiteSVM/Mollusk/Surfpool testing, and security checklists.",
+    "tags": {
+      "blockchain": "k97f5ys389jn18m7a5szsdw59980fd8v",
+      "dev": "k97f5ys389jn18m7a5szsdw59980fd8v",
+      "latest": "k97f5ys389jn18m7a5szsdw59980fd8v",
+      "programming": "k97f5ys389jn18m7a5szsdw59980fd8v",
+      "rust": "k97f5ys389jn18m7a5szsdw59980fd8v",
+      "solana": "k97f5ys389jn18m7a5szsdw59980fd8v",
+      "wallet": "k97f5ys389jn18m7a5szsdw59980fd8v",
+      "web3": "k97f5ys389jn18m7a5szsdw59980fd8v"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1667,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 3,
+      "versions": 1
+    },
+    "createdAt": 1770092765172,
+    "updatedAt": 1772058035873
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770092765172,
+    "changelog": "- Initial release of the Solana Development Skill, providing an end-to-end playbook for Solana dApp, program, and client development.\n- Strongly recommends using Solana Foundation framework-kit (@solana/client + @solana/react-hooks) for React/Next.js UIs.\n- Prefers @solana/kit for all new client, RPC, and transaction code; web3.js is isolated behind compatibility adapters when needed.\n- Includes best practices for wallet-standard-first connections, Anchor/Pinocchio program development, Codama-based client SDKs, and modern testing tools (LiteSVM, Mollusk, Surfpool).\n- Details security checklists and provides clear operating procedures for Solana-focused project execution."
+  },
+  "owner": {
+    "handle": "h4rkl",
+    "displayName": "h4rkl",
+    "image": "https://avatars.githubusercontent.com/u/89045610?v=4"
+  }
+}

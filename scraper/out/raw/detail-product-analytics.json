@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "product-analytics",
+    "displayName": "Product Analytics",
+    "summary": "Use when defining product KPIs, building metric dashboards, running cohort or retention analysis, or interpreting feature adoption trends across product stages.",
+    "tags": {
+      "latest": "k979dt31fdvrx3jmrkr1sjngk182q1jj"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 20,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1773239101413,
+    "updatedAt": 1773244016194
+  },
+  "latestVersion": {
+    "version": "2.1.1",
+    "createdAt": 1773239500123,
+    "changelog": "v2.1.1: optimization, reference splits"
+  },
+  "owner": {
+    "handle": "alirezarezvani",
+    "displayName": "Alireza Rezvani",
+    "image": "https://avatars.githubusercontent.com/u/5697919?v=4"
+  }
+}

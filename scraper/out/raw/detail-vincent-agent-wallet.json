@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "vincent-agent-wallet",
+    "displayName": "Vincent - A secure wallet for your agent",
+    "summary": "Use this skill to safely create a wallet the agent can use for transfers, swaps, and any EVM chain transaction.  Also supports raw signing and polymarket betting.",
+    "tags": {
+      "latest": "k979apqaxn60g8ta65armnj9ts80jkb1"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 967,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770258972247,
+    "updatedAt": 1772249357052
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770258972247,
+    "changelog": "- Initial release of Vincent agent wallet skill.\n- Create smart account wallets for agents for use on any EVM chain, supporting transfers, swaps, and contract interactions without exposing private keys.\n- Multiple wallet types supported: EVM_WALLET, RAW_SIGNER (Ethereum & Solana signing), and POLYMARKET_WALLET (Polygon, prediction markets).\n- Owner-defined policies: set transfer limits, approval workflows, and allowlists for secure agent wallet operations.\n- API endpoints for creating wallets, checking balances, transferring tokens, swapping, custom transactions, and re-linking API access.\n- Fully documented usage and configuration examples provided."
+  },
+  "owner": {
+    "handle": "piperwallet",
+    "displayName": "piperwallet",
+    "image": "https://avatars.githubusercontent.com/u/4969170?v=4"
+  }
+}

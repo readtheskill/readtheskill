@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "nft-portfolio-tracker",
+    "displayName": "NFT Portfolio Tracker",
+    "summary": "NFT 组合追踪器 - 追踪 NFT 持仓，计算地板价，总价值，收益分析。每次调用自动扣费 0.001 USDT",
+    "tags": {
+      "latest": "k970n0yq1w25s4qz18k9nntja582a1ec"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 80,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772692256393,
+    "updatedAt": 1772692267911
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772692256393,
+    "changelog": "NFT tracking with SkillPay"
+  },
+  "owner": {
+    "handle": "mosonchan2023",
+    "displayName": "mosonchan2023",
+    "image": "https://avatars.githubusercontent.com/u/132669994?v=4"
+  }
+}

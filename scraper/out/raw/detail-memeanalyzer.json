@@ -1,0 +1,31 @@
+{
+  "skill": {
+    "slug": "memeanalyzer",
+    "displayName": "solana meme token analyzer",
+    "summary": "Analyze Solana meme token (CA) risk by scanning holder distribution, detecting insider wallets (老鼠仓/rat warehouse), and evaluating top-holder concentration....",
+    "tags": {
+      "Detect insider wallets and rug risk for any Solana meme token CA": "k977tvtj5hnzmk33n6nydw6phh82asra",
+      "latest": "k975h7b4m80pszpt7ey6gnch5982a329"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 91,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 2
+    },
+    "createdAt": 1772692277550,
+    "updatedAt": 1772695693482
+  },
+  "latestVersion": {
+    "version": "1.0.1",
+    "createdAt": 1772695661477,
+    "changelog": "- Added API server files for hosted (pay-per-request) usage: api/server.py, api/requirements.txt, and railway.json.\n- Introduced support for x402 micropayment API access on Railway for Solana token analysis, enabling simple paid API requests with no subscription.\n- Updated documentation to highlight new paid API endpoint, payment instructions, and recommend it for agent use.\n- No changes to self-hosted analysis scripts or risk calculation logic."
+  },
+  "owner": {
+    "handle": "ultranumblol",
+    "displayName": "ultranumblol",
+    "image": "https://avatars.githubusercontent.com/u/15081029?v=4"
+  }
+}

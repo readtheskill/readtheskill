@@ -23,11 +23,12 @@ const config: Config = {
         "text-secondary": "#888888",
         "text-muted": "#555555",
         stat: {
-          red: "#ff4444",
-          blue: "#4488ff",
-          green: "#22cc88",
-          orange: "#ffaa22",
-          purple: "#aa66ff",
+          yellow: "#F5C518",
+          green: "#00C9A7",
+          blue: "#4D9FFF",
+          orange: "#FF8C42",
+          purple: "#A855F7",
+          red: "#FF4D4D",
         },
       },
       fontFamily: {

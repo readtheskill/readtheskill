@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "solana-transfer",
+    "displayName": "Solana Transfer",
+    "summary": "Send SOL or SPL tokens on the Solana blockchain from OpenClaw agents for payments, rewards, or on-chain transaction settlements.",
+    "tags": {
+      "latest": "k9797r4w0wxg9gfxedavzdv2ts80fj1x"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1468,
+      "installsAllTime": 3,
+      "installsCurrent": 3,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1770157061659,
+    "updatedAt": 1772076727875
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1770157061659,
+    "changelog": "- Initial release of solana-transfer skill for OpenClaw agents.\n- Enables sending SOL and SPL token payments programmatically on the Solana blockchain.\n- Provides simple functions for agent-to-agent payments, rewards, and on-chain settlement.\n- Includes detailed setup steps, usage patterns, configuration options, troubleshooting, and security notes.\n- Supports both native SOL and SPL tokens (e.g., USDC), with sample integration code for agents.\n- Lays groundwork for future features like transaction history and ledger integration."
+  },
+  "owner": {
+    "handle": "Vortitron",
+    "displayName": "Vortitron",
+    "image": "https://avatars.githubusercontent.com/u/8288276?v=4"
+  }
+}

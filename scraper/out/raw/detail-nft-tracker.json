@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "nft-tracker",
+    "displayName": "Nft Tracker",
+    "summary": "Track Ethereum NFT collections' floor prices, volumes, owners, and recent sales including BAYC, MAYC, CryptoPunks via Reservoir and OpenSea APIs.",
+    "tags": {
+      "latest": "k975mffsd5xf409ypz4239jpj98167bk"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 413,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1771116425759,
+    "updatedAt": 1772060135906
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1771116425759,
+    "changelog": "- Initial release of nft-tracker skill.\n- Track NFT collection prices, floor prices, sales data, and stats for major Ethereum collections.\n- Easy bash and curl commands to fetch data from Reservoir API (no key required) and OpenSea API (with key).\n- Supports popular collections like BAYC, MAYC, CryptoPunks, Azuki, Pudgy Penguins, and more.\n- Includes scripts for price alerts and example queries for floor history, recent sales, top collections, and single token lookup.\n- Simple setup instructions and metadata for API integration."
+  },
+  "owner": {
+    "handle": "ianalloway",
+    "displayName": "ianalloway",
+    "image": "https://avatars.githubusercontent.com/u/200005377?v=4"
+  }
+}

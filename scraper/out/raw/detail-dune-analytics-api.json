@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "dune-analytics-api",
+    "displayName": "Dune Analytics API",
+    "summary": "Dune Analytics API skill for querying, analyzing, and uploading blockchain data. Use this skill whenever the user mentions Dune, on-chain data, blockchain an...",
+    "tags": {
+      "latest": "k97dgz88qr01t7gr1vwdsvhzd182pj1k"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 411,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 2,
+      "versions": 7
+    },
+    "createdAt": 1771688091016,
+    "updatedAt": 1773250321612
+  },
+  "latestVersion": {
+    "version": "2.0.0",
+    "createdAt": 1773245062132,
+    "changelog": "v2.0.0: Add scripts/ (dune_query.py, dune_discover.py, dune_upload.py), evals/, improved description for better triggering, rewrite usage rules to best practices with explanatory style"
+  },
+  "owner": {
+    "handle": "LZ-Web3",
+    "displayName": "LZ-Web3",
+    "image": "https://avatars.githubusercontent.com/u/243738030?v=4"
+  }
+}

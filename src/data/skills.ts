@@ -1,18 +1,28 @@
 import { BATCH_SKILLS } from "@/data/skills-batch-automation-design-productivity";
-
+import { CLAWHUB_SKILLS } from "@/data/skills-batch-clawhub";
 import { COMMUNICATION_SKILLS } from "@/data/skills-batch-communication";
 import { DESIGN_EXTENDED_SKILLS } from "@/data/skills-batch-design-extended";
+import { FINTOOL_SKILLS } from "@/data/skills-batch-fintool";
+import { MARKETING_SKILLS } from "@/data/skills-batch-marketing";
+import { ENDPOINT_SKILLS } from "@/data/skills-batch-endpoints";
+import { AWESOME_SOLANA_AI_SKILLS } from "@/data/skills-batch-awesome-solana-ai";
+import { OFFICE_SKILLS } from "@/data/skills-batch-office";
 import { PRODUCTIVITY_EXTENDED_SKILLS } from "@/data/skills-batch-productivity-extended";
+import { SOLANA_TOOLKIT_SKILLS } from "@/data/skills-batch-solana-toolkit";
 
 export interface Skill {
     slug: string;
     name: string;
+    kind?: "skill" | "endpoint";
     category: Category;
     subcategory?: string;
     description: string;
     source?: "clawhub" | "lobehub" | "github" | "smithery" | "official";
     source_url: string;
     skill_url?: string;
+    endpoint_url?: string;
+    endpoint_method?: "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
+    auth_type?: "api-token" | "api-key" | "oauth" | "x402" | "none";
     verified?: boolean;
     framework: string;
     tags: string[];
@@ -36,7 +46,12 @@ export type Category =
     | "infrastructure"
     | "coding"
     | "communication"
-    | "experimental";
+    | "marketing"
+    | "finance"
+    | "legal"
+    | "hr"
+    | "experimental"
+    | "endpoints";
 
 export const CATEGORIES: Record<
     Category,
@@ -122,10 +137,35 @@ export const CATEGORIES: Record<
         description: "Team chat, email outreach, social media, meetings, and messaging",
         emoji: "📡",
     },
+    marketing: {
+        label: "Marketing",
+        description: "CRO, copywriting, SEO, analytics, and growth engineering skills",
+        emoji: "📣",
+    },
+    finance: {
+        label: "Finance & Investment",
+        description: "Financial modeling, valuation, stock analysis, and expense management",
+        emoji: "💰",
+    },
+    legal: {
+        label: "Legal & Compliance",
+        description: "Contract review, NDA generation, and legal document automation",
+        emoji: "⚖️",
+    },
+    hr: {
+        label: "HR & Recruitment",
+        description: "Hiring, screening, job descriptions, and HR process automation",
+        emoji: "👥",
+    },
     experimental: {
         label: "Experimental",
         description: "Cutting-edge experiments in agent economics",
         emoji: "🧪",
+    },
+    endpoints: {
+        label: "Endpoints & Tool Calls",
+        description: "API endpoints, tool-call surfaces, and non-skill integration primitives",
+        emoji: "🔌",
     },
 };
 
@@ -511,6 +551,39 @@ npm install @goat-sdk/wallet-radix
         source_url: "https://github.com/asterdex/aster-mcp",
         framework: "MCP",
         tags: ["mcp", "futures", "spot", "trading", "cursor"],
+        body: `# Aster MCP Server
+
+MCP server providing 35+ tools for Aster DEX spot and futures trading.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "aster": {
+      "command": "npx",
+      "args": ["-y", "aster-mcp"],
+      "env": { "ASTER_API_KEY": "<your-key>", "ASTER_SECRET_KEY": "<your-secret>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`get_market_data\` — fetch real-time price, volume, and order book for a trading pair
+- \`place_spot_order\` — place a spot buy/sell order (market or limit)
+- \`place_futures_order\` — open/close futures positions with leverage
+- \`get_open_orders\` — list all open orders
+- \`cancel_order\` — cancel a specific order by ID
+- \`get_account_info\` — check balances, margin, and P&L
+- \`set_leverage\` — adjust leverage for a futures pair
+
+### Example Prompt
+> "Buy 0.5 ETH at market price on Aster spot, then check my account balance."
+
+---
+*Source: [asterdex/aster-mcp](https://github.com/asterdex/aster-mcp)*`,
     },
     {
         slug: "binance-skills",
@@ -538,7 +611,7 @@ npm install @goat-sdk/wallet-radix
         category: "trading",
         description:
             "Full trading stack for AI agents. Market analysis, order execution, and portfolio management across multiple exchanges.",
-        source_url: "https://clawhub.xyz/skills/bankrbot",
+        source_url: "https://clawhub.ai/skills/bankrbot",
         framework: "ClawHub",
         tags: ["trading", "multi-exchange", "portfolio"],
     },
@@ -548,7 +621,7 @@ npm install @goat-sdk/wallet-radix
         category: "trading",
         description:
             "Polymarket trading skill. Place and manage prediction market positions programmatically.",
-        source_url: "https://clawhub.xyz/skills/polyclaw",
+        source_url: "https://clawhub.ai/skills/polyclaw",
         framework: "ClawHub",
         tags: ["prediction-markets", "polymarket", "trading"],
     },
@@ -609,6 +682,28 @@ npm install @goat-sdk/wallet-radix
         source_url: "https://github.com/sendaifun/solana-agent-kit",
         framework: "Solana Agent Kit",
         tags: ["solana", "dca", "jupiter", "automation"],
+    },
+    {
+        slug: "jupiter-api-integration",
+        name: "Jupiter API Integration",
+        category: "trading",
+        description:
+            "Comprehensive Jupiter API skill covering Ultra Swap, Lend, Perps, Trigger, Recurring, Tokens, Price, Portfolio, Prediction Markets, Send, Studio, Lock, and Routing.",
+        source_url: "https://github.com/jup-ag/agent-skills/tree/main/skills/integrating-jupiter",
+        skill_url: "https://github.com/jup-ag/agent-skills/blob/main/skills/integrating-jupiter/SKILL.md",
+        framework: "Jupiter",
+        tags: ["solana", "jupiter", "swap", "perps", "lend", "dca", "limit-orders", "price", "portfolio", "prediction-markets"],
+    },
+    {
+        slug: "jupiter-lend",
+        name: "Jupiter Lend Protocol",
+        category: "defi",
+        description:
+            "Interact with Jupiter Lend (powered by Fluid Protocol). Read-only SDK for querying pools and markets, write SDK for deposits, withdrawals, borrowing, and vault operations on Solana.",
+        source_url: "https://github.com/jup-ag/agent-skills/tree/main/skills/jupiter-lend",
+        skill_url: "https://github.com/jup-ag/agent-skills/blob/main/skills/jupiter-lend/SKILL.md",
+        framework: "Jupiter",
+        tags: ["solana", "jupiter", "lend", "borrow", "earn", "defi", "vaults", "jltoken"],
     },
     {
         slug: "raydium-swap",
@@ -960,7 +1055,7 @@ npm install @goat-sdk/plugin-plunderswap
         category: "social",
         description:
             "Agent-to-agent social network. Post updates, follow other agents, and build a social graph across the agent ecosystem.",
-        source_url: "https://clawhub.xyz/skills/moltbook",
+        source_url: "https://clawhub.ai/skills/moltbook",
         framework: "ClawHub",
         tags: ["social", "agent-network", "posting"],
     },
@@ -984,6 +1079,22 @@ npm install @goat-sdk/plugin-plunderswap
         skill_url: "https://hey.lol/skill.md",
         framework: "hey.lol",
         tags: ["social", "monetization", "x402", "solana", "base", "agent-network"],
+    },
+
+    // ────────────── COMMUNICATION ──────────────
+    {
+        slug: "agentmail",
+        name: "AgentMail SDK",
+        category: "communication",
+        subcategory: "email-outreach",
+        description:
+            "API-first email platform for AI agents with inbox creation, message send/reply, threads, drafts, attachments, and multi-tenant pods.",
+        source_url: "https://github.com/agentmail-to/agentmail-skills",
+        skill_url:
+            "https://raw.githubusercontent.com/agentmail-to/agentmail-skills/main/agentmail/SKILL.md",
+        framework: "AgentMail",
+        tags: ["email", "inboxes", "threads", "outreach", "automation", "api"],
+        verified: true,
     },
 
     // ────────────── DEFI ──────────────
@@ -1282,6 +1393,30 @@ npm install @goat-sdk/plugin-ironclad
         framework: "Vercel",
         tags: ["browser", "testing", "qa", "dogfooding", "automation"],
     },
+    {
+        slug: "byterover-openclaw",
+        name: "ByteRover for OpenClaw",
+        category: "automation",
+        subcategory: "agent-memory",
+        description:
+            "Long-term memory skill for OpenClaw agents using ByteRover context trees. Supports query/curate workflows, optional cloud sync, and provider setup.",
+        source_url: "https://github.com/openclaw/skills/tree/main/skills/byteroverinc/byterover",
+        skill_url: "https://raw.githubusercontent.com/openclaw/skills/main/skills/byteroverinc/byterover/SKILL.md",
+        framework: "OpenClaw / ByteRover",
+        tags: ["memory", "context", "openclaw", "knowledge-management", "brv"],
+    },
+    {
+        slug: "openclaw-daily-ops",
+        name: "OpenClaw Daily Ops",
+        category: "automation",
+        subcategory: "cost-monitoring",
+        description:
+            "Daily cost reporting plus zombie session cleanup for OpenClaw deployments. Generates Discord reports and removes stale high-context sessions on a cron schedule.",
+        source_url: "https://github.com/oh-ashen-one/openclaw-daily-ops",
+        skill_url: "https://github.com/oh-ashen-one/openclaw-daily-ops/blob/main/SKILL.md",
+        framework: "OpenClaw",
+        tags: ["openclaw", "cost-reporting", "cron", "discord", "session-cleanup"],
+    },
 
     // ────────────── DATA & ANALYTICS ──────────────
     {
@@ -1323,6 +1458,18 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://lobehub.com/plugins/fear-greed",
         framework: "OpenClaw / LobeHub",
         tags: ["sentiment", "fear-greed", "market-data"],
+    },
+    {
+        slug: "aixbt-alpha",
+        name: "AIXBT Find Alpha",
+        category: "data",
+        subcategory: "market-intelligence",
+        description:
+            "Official AIXBT agent skill for crypto momentum intelligence, market signals, project discovery, and x402-compatible API workflows.",
+        source_url: "https://docs.aixbt.tech/builders/skill",
+        skill_url: "https://aixbt.tech/skill.md",
+        framework: "AIXBT",
+        tags: ["crypto", "alpha", "signals", "momentum", "market-intelligence", "x402", "api"],
     },
     {
         slug: "token-metadata",
@@ -1937,6 +2084,49 @@ npm install @goat-sdk/plugin-ironclad
 
     // ────────────── 500-ENTRY CSV BATCH (Crypto/Blockchain MCPs) ──────────────
     {
+        slug: "bicscan-mcp",
+        name: "BICScan Risk Scanner",
+        category: "research",
+        description: "Blockchain address risk scoring MCP. Risk scores 0-100 for addresses, domains, and dApps. Multi-chain support.",
+        source_url: "https://github.com/ahnlabio/bicscan-mcp",
+        framework: "MCP",
+        tags: ["security", "risk", "blockchain", "scanning", "mcp"],
+        body: `# BICScan Risk Scanner MCP
+
+Blockchain address risk scoring via MCP. Returns risk scores 0–100 for wallet addresses, domains, and dApps across multiple chains.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "bicscan": {
+      "command": "npx",
+      "args": ["-y", "bicscan-mcp"],
+      "env": { "BICSCAN_API_KEY": "<your-key>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`check_address_risk\` — get a 0–100 risk score for a wallet address (0 = safe, 100 = high risk)
+- \`check_domain_risk\` — scan a domain/dApp URL for phishing or scam indicators
+- \`get_risk_details\` — detailed breakdown of risk factors (sanctions, mixer usage, exploit history)
+
+### Example Prompt
+> "Check the risk score for address 0xabc...123 before I send funds."
+
+### When to Use
+- Before interacting with an unknown wallet or contract
+- Screening dApp URLs for phishing
+- Pre-trade checks in automated trading workflows
+
+---
+*Source: [ahnlabio/bicscan-mcp](https://github.com/ahnlabio/bicscan-mcp)*`,
+    },
+    {
         slug: "armor-crypto-mcp",
         name: "Armor Crypto MCP",
         category: "trading",
@@ -1944,6 +2134,39 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://github.com/armorwallet/armor-crypto-mcp",
         framework: "MCP",
         tags: ["solana", "wallet", "swaps", "dca", "staking", "mcp"],
+        body: `# Armor Crypto MCP
+
+Multi-chain crypto MCP for AI agents. Wallet management, token swaps, DCA strategies, limit orders, and staking — currently on Solana.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "armor": {
+      "command": "npx",
+      "args": ["-y", "armor-crypto-mcp"],
+      "env": { "ARMOR_API_KEY": "<your-key>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`create_wallet\` — create a new Solana wallet
+- \`get_balance\` — check SOL and token balances
+- \`swap_tokens\` — swap between tokens (e.g. SOL → USDC)
+- \`create_dca_order\` — set up dollar-cost averaging (token, amount, interval)
+- \`place_limit_order\` — place a limit buy/sell order
+- \`stake_sol\` — stake SOL to a validator
+- \`get_transaction_history\` — list recent transactions
+
+### Example Prompt
+> "Set up a DCA to buy \$50 of SOL every day for the next 30 days."
+
+---
+*Source: [armorwallet/armor-crypto-mcp](https://github.com/armorwallet/armor-crypto-mcp)*`,
     },
     {
         slug: "bankless-onchain-mcp",
@@ -1953,15 +2176,37 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://github.com/bankless/onchain-mcp",
         framework: "MCP",
         tags: ["onchain", "data", "contracts", "events", "transactions", "mcp"],
-    },
-    {
-        slug: "bicscan-mcp",
-        name: "BICScan Risk Scanner",
-        category: "research",
-        description: "Blockchain address risk scoring MCP. Risk scores 0-100 for addresses, domains, and dApps. Multi-chain support.",
-        source_url: "https://github.com/ahnlabio/bicscan-mcp",
-        framework: "MCP",
-        tags: ["security", "risk", "blockchain", "scanning", "mcp"],
+        body: `# Bankless Onchain MCP
+
+Query on-chain data across blockchains via MCP. Read contracts, monitor events, and analyze transactions.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "bankless-onchain": {
+      "command": "npx",
+      "args": ["-y", "@bankless/onchain-mcp"],
+      "env": { "RPC_URL": "<your-rpc-url>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`read_contract\` — call a read-only contract function (address, ABI, method, args)
+- \`get_events\` — fetch contract events by topic/block range
+- \`get_transaction\` — get full transaction details by hash
+- \`get_balance\` — check native/token balance for an address
+- \`get_block\` — fetch block data by number or hash
+
+### Example Prompt
+> "Read the totalSupply of the USDC contract on Ethereum mainnet."
+
+---
+*Source: [bankless/onchain-mcp](https://github.com/bankless/onchain-mcp)*`,
     },
     {
         slug: "bitnovo-pay-mcp",
@@ -1971,6 +2216,37 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://github.com/bitnovo/mcp-bitnovo-pay",
         framework: "MCP",
         tags: ["payments", "crypto", "invoicing", "mcp"],
+        body: `# Bitnovo Pay MCP
+
+Cryptocurrency payment processing via MCP. Create payment requests, manage webhooks, and track payment status.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "bitnovo-pay": {
+      "command": "npx",
+      "args": ["-y", "mcp-bitnovo-pay"],
+      "env": { "BITNOVO_API_KEY": "<your-key>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`create_payment\` — create a crypto payment request (amount, currency, description)
+- \`get_payment_status\` — check if a payment has been completed
+- \`list_payments\` — list all payments with filters (status, date range)
+- \`create_webhook\` — register a webhook URL for payment events
+- \`get_supported_currencies\` — list supported cryptocurrencies
+
+### Example Prompt
+> "Create a payment request for 50 USDT and give me the payment link."
+
+---
+*Source: [bitnovo/mcp-bitnovo-pay](https://github.com/bitnovo/mcp-bitnovo-pay)*`,
     },
     {
         slug: "chainaware-prediction-mcp",
@@ -1980,6 +2256,42 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://github.com/ChainAware/behavioral-prediction-mcp",
         framework: "MCP",
         tags: ["fraud", "prediction", "rug-pull", "security", "mcp"],
+        body: `# ChainAware Prediction MCP
+
+Wallet behavior prediction and fraud detection via MCP. Detect rug-pulls, rank tokens by safety, and analyze wallet behavioral patterns.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "chainaware": {
+      "command": "npx",
+      "args": ["-y", "@chainaware/behavioral-prediction-mcp"],
+      "env": { "CHAINAWARE_API_KEY": "<your-key>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`detect_rug_pull\` — analyze a token contract for rug-pull risk indicators
+- \`rank_tokens\` — rank tokens by safety score and behavioral signals
+- \`analyze_wallet\` — behavioral analysis of a wallet (patterns, risk flags, associations)
+- \`predict_behavior\` — predict likely next actions for a wallet based on history
+- \`get_fraud_score\` — overall fraud risk score for an address
+
+### Example Prompt
+> "Analyze this token contract for rug-pull risk before I ape in: 0xabc...123"
+
+### When to Use
+- Pre-trade token safety checks
+- Wallet due diligence before interacting with a counterparty
+- Automated fraud screening in trading pipelines
+
+---
+*Source: [ChainAware/behavioral-prediction-mcp](https://github.com/ChainAware/behavioral-prediction-mcp)*`,
     },
     {
         slug: "coingecko-mcp",
@@ -1989,6 +2301,38 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://github.com/coingecko/coingecko-typescript",
         framework: "MCP",
         tags: ["coingecko", "prices", "market-data", "mcp"],
+        body: `# CoinGecko MCP
+
+Official CoinGecko MCP server. Access real-time and historical crypto price data, market caps, volumes, and trending coins.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "coingecko": {
+      "command": "npx",
+      "args": ["-y", "@coingecko/mcp-server"],
+      "env": { "COINGECKO_API_KEY": "<your-key>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`get_price\` — current price for one or more coins (supports multiple vs currencies)
+- \`get_coin_data\` — detailed coin info: description, market cap, ATH, links
+- \`get_market_chart\` — historical price/volume data (1d, 7d, 30d, 1y, max)
+- \`get_trending\` — top trending coins on CoinGecko right now
+- \`search_coins\` — search coins by name or symbol
+- \`get_global_data\` — total market cap, BTC dominance, active coins count
+
+### Example Prompt
+> "What's the current price of ETH in USD and show me the 7-day chart?"
+
+---
+*Source: [coingecko/coingecko-typescript](https://github.com/coingecko/coingecko-typescript)*`,
     },
     {
         slug: "coinex-mcp",
@@ -1998,6 +2342,39 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://github.com/coinexcom/coinex_mcp_server",
         framework: "MCP",
         tags: ["coinex", "exchange", "trading", "futures", "mcp"],
+        body: `# CoinEx MCP
+
+CoinEx exchange MCP server for AI agents. 14 tool sections covering market data, spot trading, futures, and account management.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "coinex": {
+      "command": "npx",
+      "args": ["-y", "coinex-mcp-server"],
+      "env": { "COINEX_ACCESS_ID": "<your-id>", "COINEX_SECRET_KEY": "<your-secret>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`get_market_ticker\` — real-time price, volume, and 24h change for a pair
+- \`get_order_book\` — current order book depth for a trading pair
+- \`place_spot_order\` — place a spot market or limit order
+- \`place_futures_order\` — open/close futures positions
+- \`get_account_balance\` — check balances across spot and futures
+- \`cancel_order\` — cancel an open order
+- \`get_trade_history\` — recent trades for a pair
+
+### Example Prompt
+> "Place a limit buy for 100 USDT worth of BTC at 60000 on CoinEx."
+
+---
+*Source: [coinexcom/coinex_mcp_server](https://github.com/coinexcom/coinex_mcp_server)*`,
     },
     {
         slug: "coinstats-mcp",
@@ -2007,6 +2384,205 @@ npm install @goat-sdk/plugin-ironclad
         source_url: "https://github.com/CoinStatsHQ/coinstats-mcp",
         framework: "MCP",
         tags: ["portfolio", "market-data", "tracking", "mcp"],
+        body: `# CoinStats MCP
+
+CoinStats MCP server for crypto market data, portfolio tracking, and news aggregation.
+
+## Agent Usage
+
+### Install
+\`\`\`json
+{
+  "mcpServers": {
+    "coinstats": {
+      "command": "npx",
+      "args": ["-y", "@coinstats/mcp-server"],
+      "env": { "COINSTATS_API_KEY": "<your-key>" }
+    }
+  }
+}
+\`\`\`
+
+### Key Tools
+- \`get_coin_price\` — current price and market data for a coin
+- \`get_portfolio\` — view portfolio holdings with P&L
+- \`get_market_overview\` — top gainers, losers, and market summary
+- \`get_news\` — latest crypto news filtered by coin or topic
+- \`search_coins\` — find coins by name or symbol
+- \`get_coin_chart\` — price chart data for a coin over a time range
+
+### Example Prompt
+> "Show me my portfolio performance and today's top gainers."
+
+---
+*Source: [CoinStatsHQ/coinstats-mcp](https://github.com/CoinStatsHQ/coinstats-mcp)*`,
+    },
+
+    // ────────────── UI & FRONTEND DESIGN ──────────────
+    {
+        slug: "ui-baseline-ui",
+        name: "Baseline UI",
+        category: "design",
+        description:
+            "Validates animation durations, enforces typography scale, and checks component accessibility for consistent UI quality.",
+        source_url: "https://github.com/ibelick/ui-skills/tree/main/skills/baseline-ui",
+        skill_url: "https://github.com/ibelick/ui-skills/blob/main/skills/baseline-ui/SKILL.md",
+        framework: "UI Skills",
+        tags: ["ui", "accessibility", "typography", "animation", "validation"],
+    },
+    {
+        slug: "ui-fixing-accessibility",
+        name: "Fixing Accessibility",
+        category: "design",
+        description:
+            "Audit and fix HTML accessibility issues including ARIA labels, keyboard navigation, and focus management.",
+        source_url: "https://github.com/ibelick/ui-skills/tree/main/skills/fixing-accessibility",
+        skill_url: "https://github.com/ibelick/ui-skills/blob/main/skills/fixing-accessibility/SKILL.md",
+        framework: "UI Skills",
+        tags: ["accessibility", "aria", "a11y", "audit"],
+    },
+    {
+        slug: "ui-fixing-metadata",
+        name: "Fixing Metadata",
+        category: "design",
+        description:
+            "Audit and fix HTML metadata including page titles, meta descriptions, canonical URLs, and Open Graph tags.",
+        source_url: "https://github.com/ibelick/ui-skills/tree/main/skills/fixing-metadata",
+        skill_url: "https://github.com/ibelick/ui-skills/blob/main/skills/fixing-metadata/SKILL.md",
+        framework: "UI Skills",
+        tags: ["seo", "metadata", "opengraph", "audit"],
+    },
+    {
+        slug: "ui-fixing-motion-performance",
+        name: "Fixing Motion Performance",
+        category: "design",
+        description:
+            "Audit and fix animation performance issues including layout thrashing and compositor properties.",
+        source_url: "https://github.com/ibelick/ui-skills/tree/main/skills/fixing-motion-performance",
+        skill_url: "https://github.com/ibelick/ui-skills/blob/main/skills/fixing-motion-performance/SKILL.md",
+        framework: "UI Skills",
+        tags: ["animation", "performance", "motion", "optimization"],
+    },
+    {
+        slug: "ui-12-principles-of-animation",
+        name: "12 Principles of Animation",
+        category: "design",
+        description:
+            "Apply Disney's 12 animation principles to web interfaces to make motion feel natural and organic.",
+        source_url: "https://github.com/raphaelsalaja/userinterface-wiki/tree/main/skills/12-principles-of-animation",
+        skill_url: "https://github.com/raphaelsalaja/userinterface-wiki/blob/main/skills/12-principles-of-animation/SKILL.md",
+        framework: "UI Skills",
+        tags: ["animation", "motion", "principles", "disney"],
+    },
+    {
+        slug: "ui-canvas-design",
+        name: "Canvas Design",
+        category: "design",
+        description:
+            "Create original visual designs and art on digital canvases using design philosophy and creative direction.",
+        source_url: "https://github.com/anthropics/skills/tree/main/skills/canvas-design",
+        skill_url: "https://github.com/anthropics/skills/blob/main/skills/canvas-design/SKILL.md",
+        framework: "Anthropic",
+        tags: ["canvas", "visual-design", "creative", "art"],
+    },
+    {
+        slug: "ui-design-lab",
+        name: "Design Lab",
+        category: "design",
+        description:
+            "Interactive design exploration workflow: conduct interviews, generate variants, and refine UI designs iteratively.",
+        source_url: "https://github.com/0xdesign/design-plugin/tree/main/design-and-refine/skills/design-lab",
+        skill_url: "https://github.com/0xdesign/design-plugin/blob/main/design-and-refine/skills/design-lab/SKILL.md",
+        framework: "UI Skills",
+        tags: ["design", "exploration", "iteration", "workflow"],
+    },
+    {
+        slug: "ui-frontend-design",
+        name: "Frontend Design",
+        category: "design",
+        description:
+            "Create distinctive, production-grade frontend interfaces with high design quality and craft.",
+        source_url: "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+        skill_url: "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+        framework: "Anthropic",
+        tags: ["frontend", "design", "production", "craft"],
+    },
+    {
+        slug: "ui-interaction-design",
+        name: "Interaction Design",
+        category: "design",
+        description:
+            "Design and implement microinteractions, motion design, transitions, and user feedback patterns.",
+        source_url: "https://github.com/wshobson/agents/tree/main/plugins/ui-design/skills/interaction-design",
+        skill_url: "https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/interaction-design/SKILL.md",
+        framework: "UI Skills",
+        tags: ["microinteractions", "motion", "transitions", "feedback"],
+    },
+    {
+        slug: "ui-interface-design",
+        name: "Interface Design",
+        category: "design",
+        description:
+            "Specialized skill for dashboards, admin panels, and SaaS apps focused on craft and consistency.",
+        source_url: "https://github.com/Dammyjay93/interface-design/tree/main/.claude/skills/interface-design",
+        skill_url: "https://github.com/Dammyjay93/interface-design/blob/main/.claude/skills/interface-design/SKILL.md",
+        framework: "UI Skills",
+        tags: ["dashboard", "admin", "saas", "consistency"],
+    },
+    {
+        slug: "ui-swiftui-patterns",
+        name: "SwiftUI UI Patterns",
+        category: "design",
+        description:
+            "Best practices and example-driven guidance for building SwiftUI views and components on iOS.",
+        source_url: "https://github.com/dimillian/skills/tree/main/swiftui-ui-patterns",
+        skill_url: "https://github.com/dimillian/skills/blob/main/swiftui-ui-patterns/SKILL.md",
+        framework: "UI Skills",
+        tags: ["swiftui", "ios", "mobile", "patterns"],
+    },
+    {
+        slug: "ui-tailwind-css-patterns",
+        name: "Tailwind CSS Patterns",
+        category: "design",
+        description:
+            "Expert guide for building modern, responsive interfaces with Tailwind CSS utility-first patterns.",
+        source_url: "https://github.com/giuseppe-trisciuoglio/developer-kit/tree/main/skills/tailwind-css",
+        skill_url: "https://github.com/giuseppe-trisciuoglio/developer-kit/blob/main/skills/tailwind-css/SKILL.md",
+        framework: "UI Skills",
+        tags: ["tailwind", "css", "responsive", "utility-first"],
+    },
+    {
+        slug: "ui-ux-pro-max",
+        name: "UI/UX Pro Max",
+        category: "design",
+        description:
+            "Comprehensive UI/UX design intelligence with 50+ styles, 97 palettes, and 9 technology stacks.",
+        source_url: "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/main/.claude/skills/ui-ux-pro-max",
+        skill_url: "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/ui-ux-pro-max/SKILL.md",
+        framework: "UI Skills",
+        tags: ["ui-ux", "comprehensive", "palettes", "styles"],
+    },
+    {
+        slug: "ui-wcag-audit",
+        name: "WCAG Audit Patterns",
+        category: "design",
+        description:
+            "Conduct WCAG 2.2 accessibility audits with automated testing, manual verification, and remediation.",
+        source_url: "https://github.com/wshobson/agents/tree/main/plugins/accessibility-compliance/skills/wcag-audit-patterns",
+        skill_url: "https://github.com/wshobson/agents/blob/main/plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md",
+        framework: "UI Skills",
+        tags: ["wcag", "accessibility", "audit", "compliance"],
+    },
+    {
+        slug: "ui-web-design-guidelines",
+        name: "Web Design Guidelines",
+        category: "design",
+        description:
+            "Review UI code for Web Interface Guidelines compliance and audit against best practices.",
+        source_url: "https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines",
+        skill_url: "https://github.com/vercel-labs/agent-skills/blob/main/skills/web-design-guidelines/SKILL.md",
+        framework: "Vercel",
+        tags: ["web-design", "guidelines", "best-practices", "audit"],
     },
 
     // ────────────── EXPERIMENTAL ──────────────
@@ -2024,8 +2600,141 @@ npm install @goat-sdk/plugin-ironclad
     ...(BATCH_SKILLS as unknown as Skill[]),
     ...(COMMUNICATION_SKILLS as unknown as Skill[]),
     ...(DESIGN_EXTENDED_SKILLS as unknown as Skill[]),
+    ...(MARKETING_SKILLS as unknown as Skill[]),
+    ...(OFFICE_SKILLS as unknown as Skill[]),
     ...(PRODUCTIVITY_EXTENDED_SKILLS as unknown as Skill[]),
+    ...(SOLANA_TOOLKIT_SKILLS as unknown as Skill[]),
+    ...(AWESOME_SOLANA_AI_SKILLS as unknown as Skill[]),
+    ...(FINTOOL_SKILLS as unknown as Skill[]),
+    ...(ENDPOINT_SKILLS as unknown as Skill[]),
+    ...(CLAWHUB_SKILLS as unknown as Skill[]),
 ];
+
+const AWESOME_SOLANA_OVERRIDES: Record<string, Partial<Skill>> = {
+    "clawpump-skill": {
+        skill_url: "https://www.clawpump.tech/skill.md",
+        subcategory: "token-launch",
+    },
+    "clawpump-arbitrage": {
+        skill_url: "https://clawpump.tech/arbitrage.md",
+        subcategory: "arbitrage",
+    },
+    "dflow-phantom-connect": {
+        source_url: "https://github.com/DFlowProtocol/dflow_phantom-connect-skill",
+        skill_url: "https://raw.githubusercontent.com/DFlowProtocol/dflow_phantom-connect-skill/main/skill/SKILL.md",
+        subcategory: "wallet-connected-trading",
+    },
+    "dflow-swap": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/dflow",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/dflow/SKILL.md",
+        subcategory: "dex-swaps",
+    },
+    "drift-protocol": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/drift",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/drift/SKILL.md",
+        subcategory: "perps-trading",
+    },
+    "jupiter-api-integration": {
+        skill_url: "https://raw.githubusercontent.com/jup-ag/agent-skills/main/skills/integrating-jupiter/SKILL.md",
+        category: "defi",
+        subcategory: "dex-aggregation",
+    },
+    "jupiter-lend": {
+        skill_url: "https://raw.githubusercontent.com/jup-ag/agent-skills/main/skills/jupiter-lend/SKILL.md",
+        subcategory: "lending-yield",
+    },
+    "kamino-finance": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/kamino",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/kamino/SKILL.md",
+        subcategory: "lending-yield",
+    },
+    "lulo-aggregator": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/lulo",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/lulo/SKILL.md",
+        subcategory: "lending-aggregation",
+    },
+    "meteora-swap": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/meteora",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/meteora/SKILL.md",
+        category: "defi",
+        subcategory: "amm-liquidity",
+    },
+    "orca-whirlpools": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/orca",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/orca/SKILL.md",
+        category: "defi",
+        subcategory: "concentrated-liquidity",
+    },
+    "pumpfun-launch": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/pumpfun",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/pumpfun/SKILL.md",
+        subcategory: "token-launch",
+    },
+    "ranger-finance": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/ranger-finance",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/ranger-finance/SKILL.md",
+        subcategory: "perps-aggregation",
+    },
+    "raydium-swap": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/raydium",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/raydium/SKILL.md",
+        category: "defi",
+        subcategory: "dex-swaps",
+    },
+    "raydium-liquidity": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/raydium",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/raydium/SKILL.md",
+        category: "defi",
+        subcategory: "liquidity-management",
+    },
+    "sanctum-lst": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/sanctum",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/sanctum/SKILL.md",
+        subcategory: "staking-lst",
+    },
+    "debridge-dln": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/debridge",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/debridge/SKILL.md",
+        subcategory: "cross-chain-bridging",
+    },
+    "light-protocol-zk": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/light-protocol",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/light-protocol/SKILL.md",
+        subcategory: "zk-compression",
+    },
+    "metaplex-nft": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/metaplex",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/metaplex/SKILL.md",
+        subcategory: "nft-development",
+    },
+    "pyth-network": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/pyth",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/pyth/SKILL.md",
+        subcategory: "oracle-pricing",
+    },
+    "solana-dev-skill": {
+        category: "coding",
+        subcategory: "solana-development",
+        source_url: "https://github.com/solana-foundation/solana-dev-skill",
+        skill_url: "https://raw.githubusercontent.com/solana-foundation/solana-dev-skill/main/skill/SKILL.md",
+    },
+    "squads-multisig": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/squads",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/squads/SKILL.md",
+        category: "infrastructure",
+        subcategory: "account-abstraction",
+    },
+    "switchboard-oracle": {
+        source_url: "https://github.com/sendaifun/skills/tree/main/skills/switchboard",
+        skill_url: "https://raw.githubusercontent.com/sendaifun/skills/main/skills/switchboard/SKILL.md",
+        subcategory: "oracle-pricing",
+    },
+};
+
+for (const skill of SKILLS) {
+    const override = AWESOME_SOLANA_OVERRIDES[skill.slug];
+    if (override) Object.assign(skill, override);
+}
 
 export function getSkillsByCategory(category: Category): Skill[] {
     return SKILLS.filter((s) => s.category === category);
@@ -2108,6 +2817,23 @@ export function inferSubcategory(skill: Skill): string {
             if (has("crm", "hubspot", "salesforce", "attio", "folk")) return "crm";
             if (has("community", "discourse", "circle", "forum")) return "community";
             return "communication";
+        case "marketing":
+            if (has("cro", "conversion", "landing-page", "signup", "paywall", "popup")) return "conversion-optimization";
+            if (has("copywriting", "copy-editing", "email", "content")) return "content-copy";
+            if (has("seo", "schema", "site-architecture", "programmatic-seo")) return "seo-discovery";
+            if (has("analytics", "tracking", "measurement", "ab-test", "experiments")) return "measurement-testing";
+            if (has("paid-ads", "ads", "social", "distribution", "acquisition")) return "paid-distribution";
+            if (has("retention", "churn", "lifecycle")) return "retention";
+            if (has("growth", "referral", "virality", "free-tools")) return "growth-engineering";
+            if (has("revops", "sales", "enablement", "pipeline")) return "sales-revops";
+            if (has("pricing", "positioning", "gtm", "launch", "strategy")) return "strategy-monetization";
+            return "marketing";
+        case "endpoints":
+            if (has("crawl", "crawler", "site-map", "sitemap")) return "web-crawling";
+            if (has("scrape", "html", "content", "markdown", "snapshot")) return "web-extraction";
+            if (has("api", "endpoint", "rest", "json", "http")) return "api-calls";
+            if (has("mcp", "tool-call", "tools")) return "tool-calls";
+            return "endpoints";
         default:
             return skill.category;
     }

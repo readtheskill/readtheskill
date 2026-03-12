@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "solana-wallet",
+    "displayName": "Solana + Polymarket + X Wallet Agent",
+    "summary": "Manage Solana and Polygon wallets, run Polymarket weather arbitrage, post to X/Twitter, and execute Raydium swaps — all from natural language.",
+    "tags": {
+      "latest": "k979wnegxv89kqx8v9e7wt11fs82beaq"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 131,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 7
+    },
+    "createdAt": 1772658133889,
+    "updatedAt": 1772717181152
+  },
+  "latestVersion": {
+    "version": "1.1.2",
+    "createdAt": 1772717160379,
+    "changelog": "Fix: surface full Raydium error on quote failure; add USDC_MINT mainnet constant; CLI swap now supports any input mint with SOL/USDC aliases"
+  },
+  "owner": {
+    "handle": "inspi-writer001",
+    "displayName": "inspiration_gx",
+    "image": "https://avatars.githubusercontent.com/u/94226358?v=4"
+  }
+}

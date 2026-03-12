@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "solanaprox",
+    "displayName": "Solanaprox",
+    "summary": "Pay-per-request AI model access via Solana/USDC using a Phantom wallet address. Query Claude and GPT models without API keys. Wallet-native authentication wi...",
+    "tags": {
+      "latest": "k97ay827vh78ct4pqekq9y7n7181w5ek"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 307,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1771750958068,
+    "updatedAt": 1773203821682
+  },
+  "latestVersion": {
+    "version": "2.0.0",
+    "createdAt": 1772130886526,
+    "changelog": "Added AIProx ecosystem links, registration curl command, MCP npm package, autonomous agent demo reference"
+  },
+  "owner": {
+    "handle": "unixlamadev-spec",
+    "displayName": "unixlamadev-spec",
+    "image": "https://avatars.githubusercontent.com/u/251052015?v=4"
+  }
+}

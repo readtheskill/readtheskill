@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "smart-money-tracker",
+    "displayName": "Smart Money Tracker",
+    "summary": "聪明钱追踪器 - 追踪专业机构/大户链上操作，复制交易信号，DeFi 巨鲸动向分析。每次调用自动扣费 0.001 USDT",
+    "tags": {
+      "latest": "k970t05dbmjfw23w6fy887t4m182bm1b"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 121,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772693587643,
+    "updatedAt": 1773207372290
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772693587643,
+    "changelog": "Initial release of Smart Money Tracker.\n\n- Track professional institutions and whale wallets on-chain.\n- Real-time notifications for portfolio changes and large transfers.\n- Copy trading signals with build/open/close position alerts.\n- Analyze token flows, whale movements, and gas usage.\n- Each use charges 0.001 USDT automatically.\n- Supports commands for tracking, signals, and portfolio queries."
+  },
+  "owner": {
+    "handle": "mosonchan2023",
+    "displayName": "mosonchan2023",
+    "image": "https://avatars.githubusercontent.com/u/132669994?v=4"
+  }
+}

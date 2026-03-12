@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "project-0",
+    "displayName": "Project 0 - DeFi Native Prime Broker",
+    "summary": "Permissionless DeFi yield and credit on Solana via the Project 0 (P0) protocol. Deposit funds to earn yield across Solana's highest-yielding venues. Borrow s...",
+    "tags": {
+      "latest": "k976zb5batsf4mqhf46b961339828v8k"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 123,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 6
+    },
+    "createdAt": 1772603356326,
+    "updatedAt": 1773206927167
+  },
+  "latestVersion": {
+    "version": "2.2.6",
+    "createdAt": 1772608534229,
+    "changelog": "- Added security notice: explicitly require a dedicated wallet keypair for signing transactions; never use your main private key.\n- Clarified that the agent will always ask for user confirmation before signing.\n- Expanded supported environment variables for Solana RPC URLs and Jupiter API keys (now recognizes SOLANA_RPC_URL, HELIUS_RPC_URL, JUP_API_KEY).\n- Updated credential collection steps to reflect new environment variable priorities and naming.\n- Read-only operations now clearer: no keypair required.\n- Minor clarifications throughout to improve safety and user guidance."
+  },
+  "owner": {
+    "handle": "borcherd",
+    "displayName": "borcherd",
+    "image": "https://avatars.githubusercontent.com/u/32452429?v=4"
+  }
+}

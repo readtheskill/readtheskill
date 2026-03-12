@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "solana-connect",
+    "displayName": "Solana Connect",
+    "summary": "OpenClaw Solana Connect — Secure toolkit for AI agents to interact with Solana blockchain. Features private key protection, max limits, dry-run mode, and hum...",
+    "tags": {
+      "latest": "k97eck183bpjr7a5wx85af3jt1818hb5"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 495,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 12
+    },
+    "createdAt": 1771117379428,
+    "updatedAt": 1772065840450
+  },
+  "latestVersion": {
+    "version": "3.0.0",
+    "createdAt": 1771275282992,
+    "changelog": "OpenClaw Solana Connect v3.0 introduces secure transaction support and enhanced configuration:\n\n- Adds private key protection—keys are never exposed to the agent.\n- Enforces configurable per-transaction maximums and requires human confirmation for large transfers.\n- Supports dry-run mode for safe transaction simulation (default).\n- Allows real SOL transfers with strict security checks.\n- Switches to @solana/web3.js for improved blockchain interaction.\n- Requires additional environment variables for flexible and safe operation."
+  },
+  "owner": {
+    "handle": "Seenfinity",
+    "displayName": "Seenfinity",
+    "image": "https://avatars.githubusercontent.com/u/196230607?v=4"
+  }
+}

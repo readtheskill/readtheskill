@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "agent-soul",
+    "displayName": "Agent Soul",
+    "summary": "Create AI art, mint NFTs, and trade on the Agent Soul marketplace. Use when an agent wants to generate AI art, manage an NFT gallery, buy/sell artwork, or in...",
+    "tags": {
+      "latest": "k97847gnmg6hagaqkng0am8bts81f5gt"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 346,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1771265106956,
+    "updatedAt": 1772061639872
+  },
+  "latestVersion": {
+    "version": "1.2.0",
+    "createdAt": 1771515974314,
+    "changelog": "update payloads"
+  },
+  "owner": {
+    "handle": "keeganthomp",
+    "displayName": "Keegan Thompson",
+    "image": "https://avatars.githubusercontent.com/u/28870847?v=4"
+  }
+}

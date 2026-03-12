@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "fund-wallet",
+    "displayName": "Fund Wallet",
+    "summary": "Add funds to the wallet. Use when you or the user want to fund, deposit, top up, load, add funds, onramp, buy crypto, or get tokens into the wallet. Also use...",
+    "tags": {
+      "latest": "k977xa6e8b4s6jangabcpb3jjs82ka07"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 40,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1773031670985,
+    "updatedAt": 1773032807775
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1773031670985,
+    "changelog": "Initial release of the \"fund-wallet\" skill:\n\n- Allows users to add funds to their Finance District wallet through credit card/onramp or direct token transfer.\n- Provides clear steps for checking authentication status and retrieving wallet addresses.\n- Includes guidance on verifying funds arrived and chain-specific confirmation advice.\n- User-invocable; recommended when users request help adding funds or encounter insufficient balance.\n- Supports all EVM chains and Solana; emphasizes sending funds on the correct chain for safety."
+  },
+  "owner": {
+    "handle": "rachidjarray-hk-qa-fdt",
+    "displayName": "Rachid Jarray",
+    "image": "https://avatars.githubusercontent.com/u/111736103?v=4"
+  }
+}

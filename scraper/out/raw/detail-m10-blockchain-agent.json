@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "m10-blockchain-agent",
+    "displayName": "M10 OneSource Blockchain Agent",
+    "summary": "Ask natural language questions about Ethereum blockchain data. Covers historical on-chain activity (events, transactions, blocks, token transfers, NFTs), liv...",
+    "tags": {
+      "latest": "k97d2hzw99agwvjy0e1ar8cee181pc4b"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 316,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1771624229831,
+    "updatedAt": 1772056535877
+  },
+  "latestVersion": {
+    "version": "1.0.4",
+    "createdAt": 1771877395815,
+    "changelog": "- Updated payment section to clarify this is a paid endpoint using HTTP 402 and the x402 protocol; payment processing is now explicitly the client's responsibility.\n- Removed requirement for an x402-compatible wallet; now only network access is required.\n- Adjusted language throughout to emphasize standard HTTP 402 payment handling and clearly separate the agent from wallet/signing concerns.\n- Documentation streamlined for easier understanding of paid access and error handling."
+  },
+  "owner": {
+    "handle": "shawnwollenberg",
+    "displayName": "Shawn Wollenberg",
+    "image": "https://avatars.githubusercontent.com/u/12882820?v=4"
+  }
+}

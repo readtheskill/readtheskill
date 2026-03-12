@@ -1,0 +1,36 @@
+{
+  "skill": {
+    "slug": "carbium",
+    "displayName": "Carbium — Solana DeFi Infrastructure",
+    "summary": "Use Carbium Solana infrastructure for RPC calls, gRPC/Yellowstone real-time streaming, DEX swap quotes and execution (CQ1 engine), and pump.fun token sniping...",
+    "tags": {
+      "defi": "k97ctdpphh2ypnw3hmanfwgy5x81syx2",
+      "grpc": "k97ctdpphh2ypnw3hmanfwgy5x81syx2",
+      "latest": "k97ctdpphh2ypnw3hmanfwgy5x81syx2",
+      "rpc": "k97ctdpphh2ypnw3hmanfwgy5x81syx2",
+      "solana": "k97ctdpphh2ypnw3hmanfwgy5x81syx2",
+      "trading": "k97ctdpphh2ypnw3hmanfwgy5x81syx2",
+      "web3": "k97ctdpphh2ypnw3hmanfwgy5x81syx2"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 167,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 2,
+      "versions": 2
+    },
+    "createdAt": 1771961363957,
+    "updatedAt": 1772060135906
+  },
+  "latestVersion": {
+    "version": "1.0.1",
+    "createdAt": 1771961849106,
+    "changelog": "Added metadata: homepage, docs, repository, author, license (MIT), support link."
+  },
+  "owner": {
+    "handle": "Ukkometa",
+    "displayName": "Ukkometa",
+    "image": "https://avatars.githubusercontent.com/u/251883933?v=4"
+  }
+}

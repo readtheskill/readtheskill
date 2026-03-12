@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "clawcast",
+    "displayName": "Clawcast - Easiest Ethereum Crypto Wallet",
+    "summary": "Skill for managing EVM wallets, transactions, and network helpers via cast; covers onboarding, checks, and operating procedures.",
+    "tags": {
+      "latest": "k97d3er7z7xya5bem1vda5mec980j886"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1706,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 6,
+      "versions": 3
+    },
+    "createdAt": 1769916476957,
+    "updatedAt": 1773198874485
+  },
+  "latestVersion": {
+    "version": "1.0.2",
+    "createdAt": 1770313936311,
+    "changelog": "- Added a ClawAudit security badge to the skill documentation, confirming no high vulnerabilities found by ClawAudit AI analysis.\n- No functional or behavioral changes to the skill itself; this update is documentation-only."
+  },
+  "owner": {
+    "handle": "tezatezaz",
+    "displayName": "te_za",
+    "image": "https://avatars.githubusercontent.com/u/112280042?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "clawdwallet",
+    "displayName": "Clawdwallet",
+    "summary": "Install and control ClawdWallet - a multi-chain Web3 wallet Chrome extension controlled by Clawdbot agents. Use when setting up agent-controlled wallet, connecting to dApps, signing transactions, or managing crypto across 20+ chains (EVM, Bitcoin, Solana, Cosmos). Powered by ShapeShift hdwallet.",
+    "tags": {
+      "latest": "k974rjt5taaxm73z5t40y92jt180e0gn"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1496,
+      "installsAllTime": 5,
+      "installsCurrent": 5,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770090958860,
+    "updatedAt": 1773199293105
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1770090958860,
+    "changelog": "- Initial release of ClawdWallet skill (v0.1.0).\n- Enables agent-controlled multi-chain Web3 wallet via Chrome extension and WebSocket.\n- Supports wallet setup, dApp connections, transaction signing, and multi-chain crypto management (20+ chains including EVM, Bitcoin, Solana, Cosmos).\n- Agent commands documented for wallet initialization, signing, and request handling.\n- Security recommendations included in documentation."
+  },
+  "owner": {
+    "handle": "NeOMakinG",
+    "displayName": "NeOMakinG",
+    "image": "https://avatars.githubusercontent.com/u/14963751?v=4"
+  }
+}

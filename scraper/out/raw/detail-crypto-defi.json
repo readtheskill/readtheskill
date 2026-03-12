@@ -1,0 +1,32 @@
+{
+  "skill": {
+    "slug": "crypto-defi",
+    "displayName": "DeFi Calculator",
+    "summary": "DeFi收益计算器。APY计算、无常损失、流动性挖矿、质押收益、Gas费、协议对比。DeFi yield calculator with impermanent loss, staking. DeFi、加密货币、收益。",
+    "tags": {
+      "chinese": "k97an805vyevcs27nv8fwwjed982pddz",
+      "latest": "k97an805vyevcs27nv8fwwjed982pddz",
+      "productivity": "k97an805vyevcs27nv8fwwjed982pddz"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 29,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1773213517137,
+    "updatedAt": 1773213713531
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1773213517137,
+    "changelog": "DeFi Calculator 1.0.0 – Initial Release\n\n- Calculate DeFi returns: APY, impermanent loss, yield farming, staking, and gas fees.\n- Includes protocol comparison tools.\n- Designed for Chinese users and market context.\n- Practical, easy-to-use commands for multiple DeFi scenarios."
+  },
+  "owner": {
+    "handle": "xueyetianya",
+    "displayName": "xueyetianya",
+    "image": "https://avatars.githubusercontent.com/u/218210530?v=4"
+  }
+}

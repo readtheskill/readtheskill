@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "stonebornbot",
+    "displayName": "StonebornBot",
+    "summary": "High-speed NFT mint bot for Ethereum and EVM chains. Use when the user wants to snipe NFT mints, speed-mint collections, set up multi-wallet minting bots, configure mint sniping with pre-signed transactions, or automate NFT minting across multiple wallets. Supports ERC721A, Archetype contracts, Flashbots, war mode gas, WebSocket monitoring, mempool watching, and batch minting with 100+ wallets.",
+    "tags": {
+      "latest": "k974v44a5d3m6590y6k86szfx1813wkg"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 438,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770949950735,
+    "updatedAt": 1773201647565
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770949950735,
+    "changelog": "High-speed NFT mint bot - multi-wallet, Archetype support, war mode gas, Flashbots, WebSocket monitoring, mempool watching, batch minting 200+ wallets"
+  },
+  "owner": {
+    "handle": "Olawoyin206",
+    "displayName": "thepublisher",
+    "image": "https://avatars.githubusercontent.com/u/45623312?v=4"
+  }
+}

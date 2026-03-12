@@ -1,0 +1,23 @@
+{
+  "slug-overrides": {
+    "solana-agent-kit": { "category": "automation", "subcategory": "agent-frameworks" },
+    "goat-sdk": { "category": "automation", "subcategory": "agent-frameworks" },
+    "eliza": { "category": "automation", "subcategory": "agent-frameworks" },
+    "privy-agentic-wallets": { "category": "wallets", "subcategory": "smart-wallets" },
+    "jupiter-swap": { "category": "trading", "subcategory": "dex-integration" },
+    "raydium-swap": { "category": "trading", "subcategory": "dex-integration" },
+    "pyth-price-feed": { "category": "oracles", "subcategory": "price-feeds" },
+    "wormhole-bridge": { "category": "bridges", "subcategory": "token-bridges" }
+  },
+  "repo-overrides": {
+    "sendaifun/solana-agent-kit": { "category": "automation", "subcategory": "agent-frameworks" },
+    "goat-sdk/goat": { "category": "automation", "subcategory": "agent-frameworks" },
+    "elizaOS/eliza": { "category": "automation", "subcategory": "agent-frameworks" }
+  },
+  "tag-overrides": {
+    "solana": { "weight": 0.3, "bias": "trading" },
+    "ethereum": { "weight": 0.3, "bias": "trading" },
+    "defi": { "weight": 0.5, "bias": "defi" },
+    "nft": { "weight": 0.5, "bias": "nfts" }
+  }
+}

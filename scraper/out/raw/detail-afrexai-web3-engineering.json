@@ -1,0 +1,39 @@
+{
+  "skill": {
+    "slug": "afrexai-web3-engineering",
+    "displayName": "Web3 & Blockchain Engineering",
+    "summary": "Comprehensive methodology for designing, securing, and operating blockchain systems, including smart contracts, DeFi, tokenomics, and platform selection guid...",
+    "tags": {
+      "bitcoin": "k97e3jtn00k8b6jvaehccv0qss81fz4p",
+      "blockchain": "k97e3jtn00k8b6jvaehccv0qss81fz4p",
+      "defi": "k97e3jtn00k8b6jvaehccv0qss81fz4p",
+      "ethereum": "k97e3jtn00k8b6jvaehccv0qss81fz4p",
+      "latest": "k97e3jtn00k8b6jvaehccv0qss81fz4p",
+      "security": "k97e3jtn00k8b6jvaehccv0qss81fz4p",
+      "smart-contract": "k97e3jtn00k8b6jvaehccv0qss81fz4p",
+      "solidity": "k97e3jtn00k8b6jvaehccv0qss81fz4p",
+      "tokenomics": "k97e3jtn00k8b6jvaehccv0qss81fz4p",
+      "web3": "k97e3jtn00k8b6jvaehccv0qss81fz4p"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 326,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1771525771952,
+    "updatedAt": 1772064035886
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1771525771952,
+    "changelog": "afrexai-web3-engineering 1.0.0 – Initial public release\n\n- Introduces a comprehensive, framework-agnostic methodology for designing, building, and operating blockchain-based systems.\n- Provides a step-by-step decision process for determining if a project should use blockchain, hybrid, or traditional databases.\n- Includes platform selection matrix and decision tree covering leading blockchains and rollups.\n- Outlines smart contract architecture patterns, upgradeability options, and recommended development standards for Solidity projects.\n- Features a practical coding standards checklist for secure and maintainable smart contract development.\n- Details tokenomics phase with token type selection guidance."
+  },
+  "owner": {
+    "handle": "1kalin",
+    "displayName": "1kalin",
+    "image": "https://avatars.githubusercontent.com/u/15705344?v=4"
+  }
+}

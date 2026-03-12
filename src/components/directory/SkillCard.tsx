@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { Skill, inferSubcategory } from "@/data/skills";
+import { normalizeFrameworkLabel } from "@/lib/framework-labels";
 
 export function SkillCard({ skill }: { skill: Skill }) {
     const subcategory = inferSubcategory(skill);
+    const kind = skill.kind ?? "skill";
     return (
         <Link
             href={`/skills/${skill.category}/${skill.slug}`}
@@ -11,13 +13,16 @@ export function SkillCard({ skill }: { skill: Skill }) {
             <div className="flex items-start justify-between gap-2 mb-2">
                 <div className="font-bold text-text-primary text-sm">{skill.name}</div>
                 <span className="text-[10px] px-1.5 py-0.5 bg-bg-surface border border-border rounded text-text-muted font-mono flex-shrink-0">
-                    {skill.framework}
+                    {normalizeFrameworkLabel(skill.framework)}
                 </span>
             </div>
             <p className="text-xs text-text-secondary leading-relaxed mb-3">
                 {skill.description}
             </p>
             <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-[10px] px-1.5 py-0.5 bg-bg-surface border border-border rounded text-text-muted font-mono">
+                    {kind}
+                </span>
                 <span className="text-[10px] px-1.5 py-0.5 bg-bg-surface border border-border rounded text-text-muted font-mono">
                     {subcategory}
                 </span>

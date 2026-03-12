@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "openclaw-zapper-api",
+    "displayName": "Zapper Api",
+    "summary": "Query DeFi portfolios, token holdings, NFTs, transactions, and prices via Zapper API. Supports 50+ chains. Use when user asks about wallet balances, DeFi positions, NFT collections, token prices, or transaction history.",
+    "tags": {
+      "latest": "k976pbcfdne8eedze04qz2fg7980jpsv"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 981,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770327097235,
+    "updatedAt": 1772077426906
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1770327097235,
+    "changelog": "- Initial release of zapper-api skill for querying DeFi portfolios, token holdings, NFTs, transactions, and prices via the Zapper API.\n- Supports over 50 blockchains including Ethereum, Solana, Polygon, Arbitrum, and more.\n- Provides commands for portfolio summaries, token breakdowns, DeFi positions, NFT collections, transaction history, and price lookups.\n- Allows configuration of multiple wallets with label support; output formats include JSON and summary views.\n- Includes options for 24h price changes, per-wallet breakdown, and item limits.\n- Requires a Zapper API key (free tier available) for use."
+  },
+  "owner": {
+    "handle": "zivhm",
+    "displayName": "zivhm",
+    "image": "https://avatars.githubusercontent.com/u/136268229?v=4"
+  }
+}

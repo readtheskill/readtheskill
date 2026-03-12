@@ -1,0 +1,34 @@
+{
+  "skill": {
+    "slug": "market-pulse",
+    "displayName": "market pulse",
+    "summary": "Use when user asks about crypto prices, DeFi yields, market sentiment, fear and greed index, stock prices, upcoming crypto events, or requests a market overview",
+    "tags": {
+      "crypto": "k97ep3nsbgc45jn9zyap7z6gpx80f53e",
+      "defi": "k97ep3nsbgc45jn9zyap7z6gpx80f53e",
+      "finance": "k97ep3nsbgc45jn9zyap7z6gpx80f53e",
+      "latest": "k9772jy1yjxk28xq352z1fp39d80f45a",
+      "market research": "k97ep3nsbgc45jn9zyap7z6gpx80f53e"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2358,
+      "installsAllTime": 3,
+      "installsCurrent": 3,
+      "stars": 5,
+      "versions": 3
+    },
+    "createdAt": 1770109974522,
+    "updatedAt": 1772076589306
+  },
+  "latestVersion": {
+    "version": "1.0.2",
+    "createdAt": 1770115293485,
+    "changelog": "- Broadened agent role: Now delivers advanced analytics, smart money tracking, risk assessment, token flow, and macro insights—beyond basic prices and yields.\n- Added protocol analysis, portfolio optimization, and actionable trade analysis (not execution).\n- Strictly enforces use of web search for macro/economic data; prevents guessing/hallucination.\n- Updated DeFi yields response: always provide a simple top 5 protocol list from DefiLlama.\n- Enhanced guidance: agent must acknowledge data gaps, check memory before querying, and cross-verify conflicting info.\n- Expanded error handling and clearer role distinction for trading/execution-related questions."
+  },
+  "owner": {
+    "handle": "lopushok9",
+    "displayName": "Yuri",
+    "image": "https://avatars.githubusercontent.com/u/216768289?v=4"
+  }
+}

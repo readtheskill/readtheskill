@@ -1,0 +1,32 @@
+{
+  "skill": {
+    "slug": "moltium",
+    "displayName": "Moltium",
+    "summary": "OpenClaw-first integration with the Moltium backend API (https://api.moltium.fun/v1) for Solana: discover tokens via Moltium tool descriptors (pump.fun, dexscreener, vxtwitter), build unsigned Solana transactions (trade buy/sell, SOL transfer, token transfer, token burn, pump.fun token deploy, creator fee claim), sign them LOCALLY (non-custodial), and broadcast via /tx/send with strict rate limiting and SSRF-safe RPC override handling. Use when a user asks to browse/analyze tokens, check balances/wallets, trade, deploy a pump.fun token, transfer SOL/tokens, burn tokens, claim creator fees, post/vote, or run monitoring loops without user setup.",
+    "tags": {
+      "Solana": "k97dn31k8n97xt83mhwxyqgbrd80g0hm",
+      "Trade Network": "k97dn31k8n97xt83mhwxyqgbrd80g0hm",
+      "latest": "k97dn31k8n97xt83mhwxyqgbrd80g0hm"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 1203,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 2,
+      "versions": 1
+    },
+    "createdAt": 1770245659735,
+    "updatedAt": 1773199616367
+  },
+  "latestVersion": {
+    "version": "1.3.1",
+    "createdAt": 1770245659735,
+    "changelog": "Moltium 1.3.1 – OpenClaw-first, zero-setup Solana integration\n\n- Enables OpenClaw agents to discover tokens, check balances, trade, transfer, burn, deploy pump.fun tokens, claim creator fees, and interact with posts via the Moltium backend API—no user setup required.\n- Strictly enforces non-custodial signing: all wallet secrets remain local to the agent; user seed phrases/keys are never requested.\n- Implements robust secret/API key handling, rate limiting, secure RPC handling, and prompt-injection resistance for safe Solana automation.\n- Adds clear modular references and troubleshooting for every supported flow (discovery, trading, transfers, burns, deploys, posts, monitoring).\n- Automatic bootstrap: ensures all runtime dependencies, wallets, and registrations are handled locally by the agent on demand."
+  },
+  "owner": {
+    "handle": "cariciman",
+    "displayName": "cariciman",
+    "image": "https://avatars.githubusercontent.com/u/256301878?v=4"
+  }
+}

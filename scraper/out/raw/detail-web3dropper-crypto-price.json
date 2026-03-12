@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "web3dropper-crypto-price",
+    "displayName": "Web3dropper Crypto Price Skill",
+    "summary": "Billions/Iden3 authentication and identity management tools for agents. Link, proof, sign, and verify.",
+    "tags": {
+      "latest": "k97bf2ex7rb1ndpv5x5t6dj8cn82gz16"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 60,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772985692022,
+    "updatedAt": 1773208747706
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772985692022,
+    "changelog": "**Initial release of verified-agent-identity skill.**\n\n- Provides Billions/Iden3 authentication and decentralized identity management tools for agents.\n- Supports creating and managing agent identities, linking an agent’s DID to a human owner, signing and verifying challenges, and handling shared JWT authentication.\n- Includes scripts for key identity operations: creation, listing, challenge generation, challenge signing, identity linking, and signature verification.\n- Stores all identity and credential data in `$HOME/.openclaw/billions` for OpenClaw compatibility.\n- Strict guardrails enforce proper script usage and prohibit manual cryptographic operations or unauthorized file access."
+  },
+  "owner": {
+    "handle": "Web3Dropper",
+    "displayName": "Web3Dropper",
+    "image": "https://avatars.githubusercontent.com/u/44999422?v=4"
+  }
+}

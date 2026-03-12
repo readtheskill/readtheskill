@@ -1,0 +1,35 @@
+{
+  "skill": {
+    "slug": "defi",
+    "displayName": "DeFi",
+    "summary": "A protocol risk analyst and yield reality checker for decentralized finance. Evaluates protocol safety before deposit. Calculates real yield after gas, emiss...",
+    "tags": {
+      "blockchain": "k976ar301w0z55kfvbztd39vxx82kgrt",
+      "crypto": "k976ar301w0z55kfvbztd39vxx82kgrt",
+      "defi": "k976ar301w0z55kfvbztd39vxx82kgrt",
+      "finance": "k976ar301w0z55kfvbztd39vxx82kgrt",
+      "latest": "k97a5q8azc57hg0qy91t50q95s82qc03",
+      "yield": "k976ar301w0z55kfvbztd39vxx82kgrt"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 83,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1773038814746,
+    "updatedAt": 1773229909988
+  },
+  "latestVersion": {
+    "version": "2.0.0",
+    "createdAt": 1773224074419,
+    "changelog": "Version 2.0.0 — Major update with a focus on protocol risk analysis and an advisory-only model.\n\n- New advisory-only mandate: no wallet access, on-chain execution, or transaction signing; analysis only.\n- Stronger protocol risk categorization and diagnosis format for consistent, actionable outputs.\n- Real yield calculation now explicitly incorporates gas, emission decay, impermanent loss, and token depreciation.\n- Adds rug-risk pattern detection in tokenomics, liquidity, and governance.\n- Clear output templates for risk, red flags, and verification steps before deposit.\n- Tax-event identification now processes only user-supplied logs; no chain indexing."
+  },
+  "owner": {
+    "handle": "AGIsearch",
+    "displayName": "AGIsearch",
+    "image": "https://avatars.githubusercontent.com/u/216465592?v=4"
+  }
+}

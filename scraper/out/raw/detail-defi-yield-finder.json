@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "defi-yield-finder",
+    "displayName": "DeFi Yield Finder",
+    "summary": "查找最高DeFi收益 farming/staking 机会。支持ETH、BSC、SOL、Arbitrum。触发词：DeFi收益、farming、staking、APY查询。",
+    "tags": {
+      "latest": "k9746vhrppxgd4rksr312zh5bn82ahst"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 89,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772753080952,
+    "updatedAt": 1772753090786
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772753080952,
+    "changelog": "DeFi收益查询，每次0.001 USDT"
+  },
+  "owner": {
+    "handle": "deeplearning1993",
+    "displayName": "deeplearning1993",
+    "image": "https://avatars.githubusercontent.com/u/106026146?v=4"
+  }
+}

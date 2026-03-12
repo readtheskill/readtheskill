@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "nadfun-skill",
+    "displayName": "Nadfun Skill",
+    "summary": "Launch, trade, and monitor Monad blockchain tokens using bonding curves, permit signatures, and on-chain event queries with viem integration.",
+    "tags": {
+      "latest": "k97dsq1ca6jtyr0nqeetvjdjzn80heve"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1278,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 2,
+      "versions": 1
+    },
+    "createdAt": 1770200820102,
+    "updatedAt": 1773199517219
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1770200820102,
+    "changelog": "nadfun-skill 0.1.0 – Initial Release\n\n- Adds integration guide for NadFun Monad blockchain token launchpad.\n- Documents core modules: trading, quoting, token creation, event indexer, wallet, and more.\n- Provides setup instructions, including viem client configuration and network constants.\n- Explains bonding curve mechanics, graduation to DEX, permit signatures, and login flow for API key management.\n- Lists common pitfalls, ABI errors, and installation steps for quick onboarding."
+  },
+  "owner": {
+    "handle": "zaki9501",
+    "displayName": "zaki9501",
+    "image": "https://avatars.githubusercontent.com/u/80619916?v=4"
+  }
+}

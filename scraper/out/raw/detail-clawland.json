@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "clawland",
+    "displayName": "Clawland",
+    "summary": "Play on-chain odd/even games on Solana devnet via Clawland. Mint GEM from SOL or USDC, bet odd or even, win 2x. Scripts handle wallet setup, minting, and autoplay.",
+    "tags": {
+      "latest": "k973h9df421esmvhrse36q022180wsva"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1307,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 2,
+      "versions": 5
+    },
+    "createdAt": 1770462938641,
+    "updatedAt": 1773200194245
+  },
+  "latestVersion": {
+    "version": "1.0.4",
+    "createdAt": 1770737170656,
+    "changelog": "- Improved setup instructions to recommend AgentWallet for getting devnet SOL, with a ready-to-use curl example.\n- Added a warning against using public devnet faucets or solana airdrop due to reliability issues.\n- Clarified that on-chain play is recommended over off-chain API, with a new note in the off-chain section.\n- No code or script changes; documentation and instructions update only."
+  },
+  "owner": {
+    "handle": "ice-coldbell",
+    "displayName": "ice-coldbell",
+    "image": "https://avatars.githubusercontent.com/u/60144158?v=4"
+  }
+}

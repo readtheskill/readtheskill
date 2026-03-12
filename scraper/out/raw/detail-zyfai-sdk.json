@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "zyfai-sdk",
+    "displayName": "Zyfai Yield Automation",
+    "summary": "Earn yield on any Ethereum wallet on Base, Arbitrum, and Plasma. Use when a user wants passive DeFi yield on their funds. Deploys a non-custodial determinist...",
+    "tags": {
+      "latest": "k972j2kreqs0d9ae0848fdbwsd823wc0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2034,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 3,
+      "versions": 10
+    },
+    "createdAt": 1770021955356,
+    "updatedAt": 1772370023918
+  },
+  "latestVersion": {
+    "version": "1.0.9",
+    "createdAt": 1772369645874,
+    "changelog": "zyfai-sdk 1.0.9 Changelog\n\n- Updated documentation to clarify that subaccounts (Safe smart wallets) are now deterministic.\n- Minor text edits for clearer explanations and improved flow in the SKILL.md.\n- No code or file changes—documentation update only."
+  },
+  "owner": {
+    "handle": "PaulDeFi",
+    "displayName": "PaulDeFi",
+    "image": "https://avatars.githubusercontent.com/u/131051860?v=4"
+  }
+}

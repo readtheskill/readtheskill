@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "newsriver-intelligence",
+    "displayName": "NewsRiver Global Intelligence",
+    "summary": "Professional Quantitative Intelligence & DeFi Execution for AI Agents. 10 years of news-price correlation, Enso DeFi super-aggregator (200+ DEXs, 15+ chains)...",
+    "tags": {
+      "latest": "k977ryg53nnhpnezvax1rkyjbs82mrt2"
+    },
+    "stats": {
+      "comments": 1,
+      "downloads": 237,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 14
+    },
+    "createdAt": 1772606924373,
+    "updatedAt": 1773206954870
+  },
+  "latestVersion": {
+    "version": "1.0.13",
+    "createdAt": 1773157769140,
+    "changelog": "**Major update: Adds DeFi execution, cross-chain bridging, and secure agent wallets to existing quantitative intelligence features.**\n\n- Integrated Enso Finance super-aggregator: Swap, bridge, yield, and DeFi bundles across 200+ DEXs and 15+ chains.\n- Added cross-chain bridging support via Across Protocol.\n- Introduced Privy TEE-secured agent wallets for safe DeFi execution.\n- Updated homepage and author URLs, expanded tags to cover new DeFi and wallet capabilities.\n- Retained quantitative alpha, historical memories, and AI chat features.\n- Updated API usage examples and endpoint documentation."
+  },
+  "owner": {
+    "handle": "BidurS",
+    "displayName": "Bidur P Shiwakoti",
+    "image": "https://avatars.githubusercontent.com/u/26152139?v=4"
+  }
+}

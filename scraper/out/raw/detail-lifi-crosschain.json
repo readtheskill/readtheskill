@@ -1,0 +1,35 @@
+{
+  "skill": {
+    "slug": "lifi-crosschain",
+    "displayName": "Swap and bridge across 35+ chains with LI.FI",
+    "summary": "Cross-chain token swaps and bridges via the LI.FI protocol. Get quotes, execute transfers, track progress, and compose DeFi operations across 35+ blockchains.",
+    "tags": {
+      "bridge": "k975ergjyngv9jx5tgtqr92qrs818nxh",
+      "crosschain": "k975ergjyngv9jx5tgtqr92qrs818nxh",
+      "defi": "k975ergjyngv9jx5tgtqr92qrs818nxh",
+      "latest": "k975ergjyngv9jx5tgtqr92qrs818nxh",
+      "lifi": "k975ergjyngv9jx5tgtqr92qrs818nxh",
+      "swap": "k975ergjyngv9jx5tgtqr92qrs818nxh"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 368,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 2,
+      "versions": 3
+    },
+    "createdAt": 1771257801291,
+    "updatedAt": 1772051139666
+  },
+  "latestVersion": {
+    "version": "1.0.2",
+    "createdAt": 1771258302071,
+    "changelog": "Add README"
+  },
+  "owner": {
+    "handle": "rhlsthrm",
+    "displayName": "Rahul Sethuram",
+    "image": "https://avatars.githubusercontent.com/u/11512787?v=4"
+  }
+}

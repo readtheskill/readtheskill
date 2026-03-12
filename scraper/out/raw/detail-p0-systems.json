@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "p0-systems",
+    "displayName": "P0 Systems",
+    "summary": "Deploy tokens on Solana, trade on pump.fun & Jupiter, earn creator fees",
+    "tags": {
+      "latest": "k97e1mcyq1am4y1ms4jsp0pah180csfg"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1275,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 4,
+      "versions": 1
+    },
+    "createdAt": 1770045016133,
+    "updatedAt": 1772076364932
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770045016133,
+    "changelog": "Initial release of p0-for-agents ClawHub Skill.\n\n- Deploy tokens on Solana and trade via pump.fun & Jupiter\n- Earn and claim creator fees; integrated fee management endpoints\n- API key-based authentication with setup instructions\n- Batch deployment, project management, trading, alerts, and position endpoints supported\n- Free and Pro pricing tiers detailed, including limits and feature access\n- Strategy guide included for maximizing agent earnings and token deployment"
+  },
+  "owner": {
+    "handle": "SerPepe",
+    "displayName": "p0 Systems",
+    "image": "https://avatars.githubusercontent.com/u/129111136?v=4"
+  }
+}

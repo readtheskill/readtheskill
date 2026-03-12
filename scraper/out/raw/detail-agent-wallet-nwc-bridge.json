@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "agent-wallet-nwc-bridge",
+    "displayName": "Nostr Wallet Connect (NWC) bridge for mdk-agent-wallet, which is self-custodial Bitcoin Lightning wallet for AI agents.",
+    "summary": "Expose a local @moneydevkit/agent-wallet as a Nostr Wallet Connect (NIP-47) wallet-service (systemd user service).",
+    "tags": {
+      "latest": "k974nd9eq5gmtj7ph86075xqz580zycp"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 708,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770799930599,
+    "updatedAt": 1773201238815
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770799930599,
+    "changelog": "Initial release of agent-wallet-nwc-bridge.\n\n- Exposes a local @moneydevkit/agent-wallet as a Nostr Wallet Connect (NIP-47) wallet-service.\n- Includes systemd user service unit and installation script for easy setup on Linux.\n- Supports make_invoice and pay_invoice requests from NWC clients such as Stacker.News.\n- Provides local storage for environment and state files; secrets are not committed to git.\n- Detailed configuration and usage instructions included in documentation."
+  },
+  "owner": {
+    "handle": "kristapsk",
+    "displayName": "kristapsk",
+    "image": "https://avatars.githubusercontent.com/u/4500994?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "megaeth-ai-developer-skills",
+    "displayName": "Megaeth Developer",
+    "summary": "End-to-end MegaETH development playbook (Feb 2026). Covers wallet operations, token swaps (Kyber Network), eth_sendRawTransactionSync (EIP-7966) for instant receipts, JSON-RPC batching, real-time mini-block subscriptions, storage-aware contract patterns (Solady RedBlackTreeLib), MegaEVM gas model, WebSocket keepalive, bridging from Ethereum, and debugging with mega-evme. Use when building on MegaETH, managing wallets, sending transactions, or deploying contracts.",
+    "tags": {
+      "latest": "k979hbgbs95tr3sw4wgk4nb4g180ckpm"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1334,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 3,
+      "versions": 1
+    },
+    "createdAt": 1770051606347,
+    "updatedAt": 1772076395978
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1770051606347,
+    "changelog": "- Initial release of the MegaETH developer skill and playbook.\n- Covers wallet management, transaction flows, token swaps, RPC optimization, WebSocket subscriptions, and bridging for MegaETH.\n- Provides default stack recommendations: instant receipts with eth_sendRawTransactionSync, prefer Multicall batching, and storage-aware contract design.\n- Documents MegaETH-specific gas, storage, and debugging patterns for both frontend and contract development.\n- Includes references to supporting docs for advanced features and best practices."
+  },
+  "owner": {
+    "handle": "0xBreadguy",
+    "displayName": "0xBreadguy",
+    "image": "https://avatars.githubusercontent.com/u/97642356?v=4"
+  }
+}

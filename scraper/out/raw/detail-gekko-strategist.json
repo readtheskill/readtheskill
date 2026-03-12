@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "gekko-strategist",
+    "displayName": "Gekko Strategist",
+    "summary": "AI-powered DeFi strategy development agent. Design, backtest, adapt, and evaluate yield farming strategies based on market conditions, risk profiles, and capital allocation goals. The brain of the Gekko system.",
+    "tags": {
+      "latest": "k97cx0nfv05qsa00r7px1n5pmh80sxk9"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 913,
+      "installsAllTime": 3,
+      "installsCurrent": 3,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770545423633,
+    "updatedAt": 1772336289743
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770545423633,
+    "changelog": "Major update: Gekko has been rebranded and refocused from portfolio management to strategy development.\n\n- Renamed from \"gekko-portfolio-manager\" to \"gekko-strategist\"\n- Now focuses on designing, backtesting, adapting, and evaluating DeFi yield farming strategies rather than direct portfolio allocation\n- New core commands: develop_strategy, backtest_strategy, adapt_strategy, and evaluate_strategies\n- Previous features like direct market analysis and vault yield optimization have been removed\n- API endpoint and metadata updated to reflect the new strategist focus and agent ID\n- Security model clarified: strategy suggestions only, no execution without user consent"
+  },
+  "owner": {
+    "handle": "gekkoai001",
+    "displayName": "gekkoai001",
+    "image": "https://avatars.githubusercontent.com/u/238513119?v=4"
+  }
+}

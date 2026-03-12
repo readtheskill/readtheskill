@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "solana-swaps",
+    "displayName": "Solana Swaps",
+    "summary": "Swap tokens on Solana via Jupiter aggregator and check wallet balances. Use when user wants to swap tokens, check SOL/token balance, or get swap quotes.",
+    "tags": {
+      "latest": "k97ca0pqgqpsbvaksy53mscme17zt5bh"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1731,
+      "installsAllTime": 2,
+      "installsCurrent": 2,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1769292273287,
+    "updatedAt": 1773198247510
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1769292273287,
+    "changelog": "solana-swaps v0.1.0 – Initial release\n\n- Swap tokens on Solana using the Jupiter aggregator with safety checks and explicit user confirmation.\n- Check SOL and SPL token balances, including specific tokens, via straightforward CLI commands.\n- Pre-configured environment variables for seamless wallet and API integration.\n- Built-in error handling and retry logic for common issues during swaps.\n- Detailed documentation, safety guidelines, and step-by-step usage instructions."
+  },
+  "owner": {
+    "handle": "imthatcarlos",
+    "displayName": "imthatcarlos",
+    "image": "https://avatars.githubusercontent.com/u/20136572?v=4"
+  }
+}

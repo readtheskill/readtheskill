@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "nft-mint-monitor",
+    "displayName": "NFT Mint Monitor",
+    "summary": "NFT铸造监控，追踪即将铸造的热门NFT项目，提醒mint时间。每次调用收费0.001 USDT。触发词：NFT铸造、mint监控、NFT提醒、白名单mint。",
+    "tags": {
+      "latest": "k9711vtpv70w75gdzvvedcgjqd82c321"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 89,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772761740848,
+    "updatedAt": 1773207762813
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772761740848,
+    "changelog": "NFT铸造监控，0.001 USDT/次"
+  },
+  "owner": {
+    "handle": "deeplearning1993",
+    "displayName": "deeplearning1993",
+    "image": "https://avatars.githubusercontent.com/u/106026146?v=4"
+  }
+}

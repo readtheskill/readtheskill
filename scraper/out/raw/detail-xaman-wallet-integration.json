@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "xaman-wallet-integration",
+    "displayName": "Xaman Wallet Integration",
+    "summary": "Integrate Xaman wallet SDK to authenticate users, connect wallets, request XRP payments, and manage sessions on the XRP Ledger.",
+    "tags": {
+      "latest": "k97dp3n30qa8fts211mhded00x814ajk"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 354,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1771102211303,
+    "updatedAt": 1772051136135
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1771102211303,
+    "changelog": "- Initial release of the Xaman Wallet integration skill.\n- Enables authentication and transaction requests for the XRP Ledger using the XummPkce SDK.\n- Provides guidance for connecting user wallets, signing in, and requesting payments or signatures.\n- Includes SDK loading instructions and essential method descriptions for quick integration.\n- Details environment setup and troubleshooting tips."
+  },
+  "owner": {
+    "handle": "HarleysCodes",
+    "displayName": "HarleysCodes",
+    "image": "https://avatars.githubusercontent.com/u/116604105?v=4"
+  }
+}

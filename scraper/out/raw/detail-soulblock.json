@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "soulblock",
+    "displayName": "Soul Blocks",
+    "summary": "Read, list, mint, and append Soul Block NFT identities on Base; read works without a wallet, writes use evm-wallet or fallback website links.",
+    "tags": {
+      "latest": "k979gbfsjnwcbdag0kvsr04fjs8156w6"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 410,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1771035007127,
+    "updatedAt": 1773201870497
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1771035007127,
+    "changelog": "Initial public release — read, mint, and develop on-chain AI agent identities on Base"
+  },
+  "owner": {
+    "handle": "hburgoyne",
+    "displayName": "hburgoyne",
+    "image": "https://avatars.githubusercontent.com/u/9391611?v=4"
+  }
+}

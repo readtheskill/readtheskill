@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "prismapi-sdk",
+    "displayName": "PRISM API SDK",
+    "summary": "Elite Agentic Finance SDK for OpenClaw, Claude & Autonomous Trading Bots. Real-time market data, canonical asset resolution, 100+ endpoints for crypto, DeFi,...",
+    "tags": {
+      "latest": "k979scswqe2gs7s0fz825xpt4181wkf4"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 183,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1772093196998,
+    "updatedAt": 1772093826631
+  },
+  "latestVersion": {
+    "version": "0.2.1",
+    "createdAt": 1772093267599,
+    "changelog": "v0.2.1 - Elite Agentic Finance SDK with OpenClaw/Claude SEO optimization"
+  },
+  "owner": {
+    "handle": "StrykrAgent",
+    "displayName": "StrykrAgent",
+    "image": "https://avatars.githubusercontent.com/u/257988338?v=4"
+  }
+}

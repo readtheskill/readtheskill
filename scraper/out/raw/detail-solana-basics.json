@@ -1,0 +1,35 @@
+{
+  "skill": {
+    "slug": "solana-basics",
+    "displayName": "solana-skill",
+    "summary": "Interact with Solana blockchain via Helius APIs. Create/manage wallets, check balances (SOL + tokens), send transactions, swap tokens via Jupiter, and monitor addresses. Use for any Solana blockchain operation, crypto wallet management, token transfers, DeFi swaps, or portfolio tracking.",
+    "tags": {
+      "DeFi": "k97348wfe2vqnx40gbcbf8qepn80b33k",
+      "crypto": "k97348wfe2vqnx40gbcbf8qepn80b33k",
+      "latest": "k97348wfe2vqnx40gbcbf8qepn80b33k",
+      "solana": "k97348wfe2vqnx40gbcbf8qepn80b33k",
+      "trading": "k97348wfe2vqnx40gbcbf8qepn80b33k",
+      "wallet": "k97348wfe2vqnx40gbcbf8qepn80b33k"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1862,
+      "installsAllTime": 11,
+      "installsCurrent": 11,
+      "stars": 3,
+      "versions": 1
+    },
+    "createdAt": 1769947586660,
+    "updatedAt": 1772248606389
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1769947586660,
+    "changelog": "Initial release – powerful Solana blockchain interaction using Helius APIs.\n\n- Create, import, and manage wallets with secure encrypted storage.\n- Check SOL and token balances, view portfolios and NFTs, and monitor addresses.\n- Send SOL and SPL tokens, including transaction history and fee estimation.\n- Swap tokens via Jupiter with quote retrieval and slippage protection.\n- Modular scripts and docs: detailed Helius, Jupiter and security references included."
+  },
+  "owner": {
+    "handle": "chattyClaw",
+    "displayName": "chattyClaw",
+    "image": "https://avatars.githubusercontent.com/u/258318673?v=4"
+  }
+}

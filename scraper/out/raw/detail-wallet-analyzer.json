@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "wallet-analyzer",
+    "displayName": "Wallet Analyzer",
+    "summary": "分析任意加密货币钱包的持仓、盈亏、交易历史。支持ETH、BSC、SOL链。触发词：钱包分析、wallet analysis、查钱包、追踪钱包。",
+    "tags": {
+      "latest": "k97805s1pgcwv0k8xyhg1mn8wx82b315"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 75,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772753050036,
+    "updatedAt": 1772753061681
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772753050036,
+    "changelog": "钱包持仓分析，每次0.001 USDT"
+  },
+  "owner": {
+    "handle": "deeplearning1993",
+    "displayName": "deeplearning1993",
+    "image": "https://avatars.githubusercontent.com/u/106026146?v=4"
+  }
+}

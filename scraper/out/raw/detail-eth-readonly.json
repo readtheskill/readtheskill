@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "eth-readonly",
+    "displayName": "Ethereum Readonly",
+    "summary": "Read-only Ethereum blockchain queries — blocks, transactions, balances, contracts, logs via RPC and Etherscan APIs",
+    "tags": {
+      "latest": "k974kwxm9yt7n70g5za1xjw6hh818rtz"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 410,
+      "installsAllTime": 3,
+      "installsCurrent": 3,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1771219229389,
+    "updatedAt": 1772058335880
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1771219229389,
+    "changelog": "- Initial release of eth-readonly skill for read-only Ethereum blockchain queries.\n- Supports querying blocks, transactions, account balances, contract data, and logs via Foundry's cast or raw JSON-RPC (curl).\n- Integrates Etherscan API for additional endpoints such as contract source, ABI, transaction history, and gas prices.\n- No wallet or private keys required — purely read-only; no transactions or signing.\n- Public and major provider RPC endpoint configuration supported.\n- Complete usage documentation with example commands for both cast and curl."
+  },
+  "owner": {
+    "handle": "apexfork",
+    "displayName": "J. Campbell",
+    "image": "https://avatars.githubusercontent.com/u/363026?v=4"
+  }
+}

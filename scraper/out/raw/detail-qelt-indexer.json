@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "qelt-indexer",
+    "displayName": "Qelt Indexer",
+    "summary": "Query QELT blockchain data—blocks, transactions, address history, ERC-20 token balances, and indexer sync status—via the Mainnet Indexer REST API.",
+    "tags": {
+      "latest": "k97dnx6tsvk9df6q65aw4b45e982ckq4"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 71,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772776794104,
+    "updatedAt": 1772776802329
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1772776794104,
+    "changelog": "QELT Indexer 0.1.0 — Initial Release\n\n- Provides read-only REST API access to QELT Mainnet blockchain data (blocks, transactions, token balances, sync status) without an API key.\n- Supports paginated queries for blocks, transactions, and address histories.\n- Includes health endpoint to check indexer sync (`/v1/health/ready`), with sync lag reporting.\n- No-fabrication policy: always fetch live data for blocks, transactions, balances.\n- Built-in rate limiting (120 requests/min).\n- Identical support for QELT testnet via separate base URL."
+  },
+  "owner": {
+    "handle": "PRQELT",
+    "displayName": "PRQELT",
+    "image": "https://avatars.githubusercontent.com/u/198798555?v=4"
+  }
+}

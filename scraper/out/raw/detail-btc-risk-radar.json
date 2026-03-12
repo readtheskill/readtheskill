@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "btc-risk-radar",
+    "displayName": "BTC Risk Radar",
+    "summary": "Professional BTC risk radar using public options, perp, and spot data. Use when the user wants a clear Bitcoin risk snapshot with volatility/skew context, pa...",
+    "tags": {
+      "latest": "k97dqs6pcz5ybkj2hp303tyfg982jvfg"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 79,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1772969814161,
+    "updatedAt": 1773070627082
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1773067121730,
+    "changelog": "Promote to product-ready 1.0.0 and improve ClawHub summary copy: clearer professional positioning, confidence-aware risk snapshot framing, and stronger market-facing presentation."
+  },
+  "owner": {
+    "handle": "spyfree",
+    "displayName": "Li Xin",
+    "image": "https://avatars.githubusercontent.com/u/2403860?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "whale-watcher",
+    "displayName": "Whale Watcher",
+    "summary": "Monitor crypto whale wallets for large transactions. Track big moves on Ethereum, BSC, and other chains. Get alerts when whales move significant amounts.",
+    "tags": {
+      "latest": "k97445tw0685e44wfrbfjy8mc582c8gz"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 79,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1772773002694,
+    "updatedAt": 1772774036023
+  },
+  "latestVersion": {
+    "version": "1.0.2",
+    "createdAt": 1772773985471,
+    "changelog": "- Reduced the monthly price of the Pro plan from $9.99 to $1.99.\n- No other changes to features or functionality."
+  },
+  "owner": {
+    "handle": "alexbrc20",
+    "displayName": "eddie",
+    "image": "https://avatars.githubusercontent.com/u/26967962?v=4"
+  }
+}

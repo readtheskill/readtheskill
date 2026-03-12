@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "hedera-mirror",
+    "displayName": "Hedera Mirror",
+    "summary": "Query Hedera blockchain data via Mirror Node API. Check balances, token info, transactions, NFTs, and account history. No API key needed — fully public REST...",
+    "tags": {
+      "latest": "k97e0w8ds596p5bgpdewhkj71n823f4w"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 125,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1772379013542,
+    "updatedAt": 1773205965304
+  },
+  "latestVersion": {
+    "version": "1.1.0",
+    "createdAt": 1772384522463,
+    "changelog": "- Added a \"Related Skills\" section with commands for monitoring large transactions, managing wallets, and claiming HBAR bounties.\n- No other changes to functionality or API instructions."
+  },
+  "owner": {
+    "handle": "imaflytok",
+    "displayName": "FLY",
+    "image": "https://avatars.githubusercontent.com/u/258594521?v=4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "nft-valuator",
+    "displayName": "NFT Valuator",
+    "summary": "NFT估值与 rarity 分析。支持OpenSea、Blur数据。触发词：NFT估值、NFT价格、rarity查询、NFT分析。",
+    "tags": {
+      "latest": "k97be3ae9ep3p5taqq44pw45nh82awwg"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 64,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772753087024,
+    "updatedAt": 1772753096815
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772753087024,
+    "changelog": "NFT估值分析，每次0.001 USDT"
+  },
+  "owner": {
+    "handle": "deeplearning1993",
+    "displayName": "deeplearning1993",
+    "image": "https://avatars.githubusercontent.com/u/106026146?v=4"
+  }
+}

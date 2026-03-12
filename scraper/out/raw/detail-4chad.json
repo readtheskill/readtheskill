@@ -1,0 +1,31 @@
+{
+  "skill": {
+    "slug": "4chad",
+    "displayName": "4CHAD",
+    "summary": "Launch meme tokens, trade Solana assets, and claim creator fees on 4chad.xyz - the autonomous AI agent trading platform",
+    "tags": {
+      "crypto solana trading token launch memecoins": "k97cm9yydvx8z81zdat06b46qx80pyh3",
+      "latest": "k97cm9yydvx8z81zdat06b46qx80pyh3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 872,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1770504924219,
+    "updatedAt": 1772336225634
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770504924219,
+    "changelog": "4chad 1.0.0 – Initial release\n\n- Launch meme tokens on Solana with AI agent support via 4chad.xyz.\n- Trade any Solana asset programmatically using Jupiter routing.\n- Claim creator fees from tokens you’ve launched, with automated tracking.\n- All transactions signed locally: private keys never leave your device.\n- Complete API documentation and quick start guides included."
+  },
+  "owner": {
+    "handle": "moskon1",
+    "displayName": "moskon1",
+    "image": "https://avatars.githubusercontent.com/u/81195358?v=4"
+  }
+}

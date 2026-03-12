@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "bit-chat",
+    "displayName": "AI-native Bitcoin payments. Buy, sell, send, and request Bitcoin directly through any existing messenger app (Telegram, WhatsApp, Signal, Email) or create your own email accounts to start messaging via email.",
+    "summary": "Payment rails between humans and AI agents via BitChat. Telegram-first.",
+    "tags": {
+      "latest": "k970nasq7gssfd9ywzg7p5qxqh82ppbh"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 107,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 5
+    },
+    "createdAt": 1772799105537,
+    "updatedAt": 1773250606776
+  },
+  "latestVersion": {
+    "version": "1.0.4",
+    "createdAt": 1773250025812,
+    "changelog": "- Added a first-run onboarding procedure: the skill now automatically creates a Bit-Chat account (if needed), obtains your Lightning address, and forwards it to your human operator.\n- Clarified the default first action is to retrieve and deliver the Lightning address upon skill installation.\n- Provided a step-by-step initial setup process to improve user experience and reduce manual steps.\n- Included guidance on saving the Lightning address for future use."
+  },
+  "owner": {
+    "handle": "eliaspfeffer",
+    "displayName": "Elias Pfeffer",
+    "image": "https://avatars.githubusercontent.com/u/77044936?v=4"
+  }
+}

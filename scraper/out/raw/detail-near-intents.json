@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "near-intents",
+    "displayName": "NEAR Intents 1click Api",
+    "summary": "Universal cross-chain swap & bridge skill for OpenClaw using the NEAR Intents 1Click SDK. Supports 14+ blockchains including NEAR, Base, Ethereum, Solana, an...",
+    "tags": {
+      "latest": "k97a2h3p0n5e7m032nsgp4zfdd817atn"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 358,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1771182064788,
+    "updatedAt": 1772065235893
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1771182064788,
+    "changelog": "Initial release of universal cross-chain swap & bridge skill using NEAR Intents 1Click SDK.\n\n- Enables cross-chain swaps and bridging across 14+ blockchains, including NEAR, Base, Ethereum, Solana, and Bitcoin.\n- Provides a simple `executeIntent()` API supporting flexible asset, recipient, and mode parameters.\n- Supports both auto (from NEAR) and manual (from other chains) deposit modes.\n- Enforces explicit `refundAddress` for safety with non-NEAR origin swaps.\n- Integrates with 1Click API for seamless quotes, swaps, and bridging—no direct user interaction with NEAR contracts required.\n- Includes detailed usage documentation and asset naming conventions."
+  },
+  "owner": {
+    "handle": "cuongdcdev",
+    "displayName": "cuongdcdev",
+    "image": "https://avatars.githubusercontent.com/u/12132077?v=4"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "skill": {
+    "slug": "solana-easy-swap",
+    "displayName": "Solana Easy Swap",
+    "summary": "Swap any Solana token from chat. Say 'swap 1 SOL for USDC' and it handles everything — quoting, signing, sending, confirming. No API keys, no wallet extensions, no setup beyond a keypair. Powered by Jupiter. Use when a user wants to swap, trade, exchange, buy, or sell Solana SPL tokens, SOL, USDC, memecoins, or any token pair on Solana.",
+    "tags": {
+      "crypto": "k97145pvbz07jq8p7tfx47addd813py0",
+      "defi": "k97145pvbz07jq8p7tfx47addd813py0",
+      "jupiter": "k97145pvbz07jq8p7tfx47addd813py0",
+      "latest": "k97145pvbz07jq8p7tfx47addd813py0",
+      "solana": "k97145pvbz07jq8p7tfx47addd813py0",
+      "swap": "k97145pvbz07jq8p7tfx47addd813py0",
+      "trading": "k97145pvbz07jq8p7tfx47addd813py0"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 454,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1771015024336,
+    "updatedAt": 1772065240363
+  },
+  "latestVersion": {
+    "version": "1.0.1",
+    "createdAt": 1771015225399,
+    "changelog": "Fix scanner concerns: add npm install spec in metadata, move prepared swap storage from /tmp to skill-local .cache/, strengthen keypair trust documentation"
+  },
+  "owner": {
+    "handle": "in-liberty420",
+    "displayName": "in-liberty420",
+    "image": "https://avatars.githubusercontent.com/u/184328103?v=4"
+  }
+}

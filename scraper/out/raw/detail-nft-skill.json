@@ -1,0 +1,38 @@
+{
+  "skill": {
+    "slug": "nft-skill",
+    "displayName": "NFT Skill - Autonomous AI Artist Agent",
+    "summary": "Autonomous AI Artist Agent for generating, evolving, minting, listing, and promoting NFT art on the Base blockchain. Use when the user wants to create AI art, mint ERC-721 NFTs, list on marketplace, monitor on-chain sales, trigger artistic evolution, or announce drops on X/Twitter.",
+    "tags": {
+      "ai-art": "k974zcpsxskfgmfrdqw563jrq180v2j3",
+      "base": "k974zcpsxskfgmfrdqw563jrq180v2j3",
+      "blockchain": "k974zcpsxskfgmfrdqw563jrq180v2j3",
+      "erc721": "k974zcpsxskfgmfrdqw563jrq180v2j3",
+      "ipfs": "k974zcpsxskfgmfrdqw563jrq180v2j3",
+      "latest": "k974zcpsxskfgmfrdqw563jrq180v2j3",
+      "marketplace": "k974zcpsxskfgmfrdqw563jrq180v2j3",
+      "nft": "k974zcpsxskfgmfrdqw563jrq180v2j3",
+      "web3": "k974zcpsxskfgmfrdqw563jrq180v2j3"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 980,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770607022419,
+    "updatedAt": 1773200518828
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770607022419,
+    "changelog": "Initial release — generate, mint, list, monitor, evolve, and tweet NFT art on Base"
+  },
+  "owner": {
+    "handle": "Numba1ne",
+    "displayName": "Numba1ne",
+    "image": "https://avatars.githubusercontent.com/u/96980364?v=4"
+  }
+}

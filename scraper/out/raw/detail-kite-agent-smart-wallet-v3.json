@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "kite-agent-smart-wallet-v3",
+    "displayName": "Kite Agent Smart Wallet V3",
+    "summary": "Control Kite AI chain-wallet via Telegram using OpenClaw for wallet creation, balance checks, transfers, session keys, and spending limits without running a...",
+    "tags": {
+      "latest": "k972jmp4ank981p4gdwyrpv6qn81t4zf"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 171,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 3
+    },
+    "createdAt": 1772034035038,
+    "updatedAt": 1773204713626
+  },
+  "latestVersion": {
+    "version": "3.0.2",
+    "createdAt": 1772034195258,
+    "changelog": "- Internal improvements to kite-wallet.js for version 3.0.2.\n- No changes to user-facing features or documentation."
+  },
+  "owner": {
+    "handle": "nihaovand",
+    "displayName": "nihaovand",
+    "image": "https://avatars.githubusercontent.com/u/110290620?v=4"
+  }
+}

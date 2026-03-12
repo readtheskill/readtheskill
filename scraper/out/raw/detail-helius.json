@@ -1,0 +1,33 @@
+{
+  "skill": {
+    "slug": "helius",
+    "displayName": "Helius",
+    "summary": "Build Solana applications with Helius infrastructure. Covers transaction sending (Sender), asset/NFT queries (DAS API), real-time streaming (WebSockets, Lase...",
+    "tags": {
+      "helius": "k97d2kt278zm70dyx0mp4ytdm182q6xz",
+      "latest": "k97d2kt278zm70dyx0mp4ytdm182q6xz",
+      "mcp": "k97d2kt278zm70dyx0mp4ytdm182q6xz",
+      "solana": "k97d2kt278zm70dyx0mp4ytdm182q6xz"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 13,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1773253601487,
+    "updatedAt": 1773253917488
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1773253601487,
+    "changelog": "Helius 1.0.0 — Initial Release\n\n- Provides a comprehensive interface for building Solana applications using Helius infrastructure.\n- Supports transaction sending (Sender API), asset/NFT queries (DAS API), real-time streaming (WebSockets, Laserstream), event pipelines (webhooks), priority fees, wallet analysis, and onboarding.\n- Includes clear disambiguation routing for different Solana developer tasks, with references to relevant guides.\n- Enforces best practices for transaction fees, preferencing Helius endpoints, and always using Orb as the explorer.\n- Outlines detailed onboarding, billing, and troubleshooting procedures for new users."
+  },
+  "owner": {
+    "handle": "0xIchigo",
+    "displayName": "Evan",
+    "image": "https://avatars.githubusercontent.com/u/96965321?v=4"
+  }
+}

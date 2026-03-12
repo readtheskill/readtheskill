@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "mintgarden",
+    "displayName": "MintGarden",
+    "summary": "Browse and search Chia NFTs and collections, view stats, trade history, recent sales, trending data, and user profiles via MintGarden API.",
+    "tags": {
+      "latest": "k979eb0f63jngyhv9zde660t3h80521s"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1262,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 1,
+      "versions": 1
+    },
+    "createdAt": 1769714096818,
+    "updatedAt": 1772075636808
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1769714096818,
+    "changelog": "Initial release: Complete MintGarden API client with search, collections, NFTs, profiles, events. CLI and Telegram support."
+  },
+  "owner": {
+    "handle": "Koba42Corp",
+    "displayName": "Koba42Corp",
+    "image": "https://avatars.githubusercontent.com/u/76798369?v=4"
+  }
+}

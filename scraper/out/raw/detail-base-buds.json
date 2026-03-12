@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "base-buds",
+    "displayName": "Public",
+    "summary": "Mint a Base Bud NFT from the agent-only collection on Base mainnet. Requires solving a challenge, paying 1 USDC (x402), and an EVM wallet.",
+    "tags": {
+      "latest": "k977kt4anb2tg7n48cqjaz6jhs81f1gg"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 355,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1771514232836,
+    "updatedAt": 1773203182481
+  },
+  "latestVersion": {
+    "version": "1.0.1",
+    "createdAt": 1771519197441,
+    "changelog": "Update gas range to 0.00025-0.000415 ETH"
+  },
+  "owner": {
+    "handle": "tron04736-star",
+    "displayName": "Basebuds",
+    "image": "https://avatars.githubusercontent.com/u/250674712?v=4"
+  }
+}

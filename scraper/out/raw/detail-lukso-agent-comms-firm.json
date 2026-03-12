@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "lukso-agent-comms-firm",
+    "displayName": "Lukso Agent Comms",
+    "summary": "Standardized agent-to-agent communication protocol for OpenClaw agents on the LUKSO blockchain. Uses LSP1 Universal Receiver as the transport.",
+    "tags": {
+      "latest": "k97b1xat3sy9dvqmbzsjtqy1hn81h3et"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 331,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 2
+    },
+    "createdAt": 1771583010563,
+    "updatedAt": 1773203380534
+  },
+  "latestVersion": {
+    "version": "0.1.5",
+    "createdAt": 1771591084922,
+    "changelog": "Fix: Corrected topic index filtering — typeId is Topic 3 in UniversalReceiver event, not Topic 1. Updated docs to show correct eth_getLogs filter structure."
+  },
+  "owner": {
+    "handle": "bitcargoCrew",
+    "displayName": "bitcargoCrew",
+    "image": "https://avatars.githubusercontent.com/u/109482868?v=4"
+  }
+}

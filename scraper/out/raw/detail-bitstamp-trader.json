@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "bitstamp-trader",
+    "displayName": "Bitstamp Trader",
+    "summary": "Safety-first Bitcoin and crypto trading on Bitstamp via CLI. Use when the user wants to check crypto prices, view account balance, place buy/sell orders, man...",
+    "tags": {
+      "latest": "k97f88j9986b9008rsg1addc4x81z2yf"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 137,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772171224276,
+    "updatedAt": 1772171827910
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772171224276,
+    "changelog": "Initial release: safety-first Bitstamp trading CLI with CCXT. Dry-run default, kill switch, max order size, daily volume limits, price sanity checks, full audit trail. Supports BTC/USD and ETH/USD."
+  },
+  "owner": {
+    "handle": "zhen08",
+    "displayName": "Zhen",
+    "image": "https://avatars.githubusercontent.com/u/778081?v=4"
+  }
+}

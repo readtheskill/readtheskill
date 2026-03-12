@@ -6,9 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "scrape:discover": "tsx scraper/discovery/clawhub-search.ts",
+    "scrape:detail": "tsx scraper/discovery/clawhub-detail.ts",
+    "scrape:resolve": "tsx scraper/github/resolve-skill-url.ts",
+    "scrape:validate": "tsx scraper/validate/tier.ts",
+    "scrape:categorize": "tsx scraper/categorizer.ts",
+    "scrape:dedupe": "tsx scraper/deduplicator/conflict.ts",
+    "scrape:pipeline": "tsx scraper/pipeline.ts",
+    "scrape:pilot": "tsx scraper/pipeline.ts --limit=200",
+    "scrape:generate": "tsx scraper/output/generate-batch.ts",
+    "scrape:sync": "tsx scraper/pipeline.ts --incremental"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "lucide-react": "^0.577.0",
     "next": "14.2.35",
     "react": "^18",
@@ -23,6 +34,7 @@
     "eslint-config-next": "14.2.35",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

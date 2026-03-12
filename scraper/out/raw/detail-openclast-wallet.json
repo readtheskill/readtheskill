@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "openclast-wallet",
+    "displayName": "Openclast Wallet",
+    "summary": "Guides the agent in Openclast/Openclaw wallet usage, approvals, and safety rules. Use when users ask about wallet setup, balances, transactions, approvals, or key export.",
+    "tags": {
+      "latest": "k97ae23yckqwdqg1m34ancmvnh80jwam"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 1012,
+      "installsAllTime": 4,
+      "installsCurrent": 4,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1770298037813,
+    "updatedAt": 1772077275108
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770298037813,
+    "changelog": "Initial release of openclast-wallet skill.\n\n- Provides guidance on Openclast/Openclaw wallet setup, usage, approvals, balance queries, transactions, and key export safety.\n- Enforces explicit approval for all outgoing transactions and contract operations.\n- Includes strict warnings and checks for private key export.\n- Details config-driven rules for transaction limits, chain support, and safety defaults.\n- Outlines expected agent tools and CLI flows for common operations.\n- Ensures users receive block explorer links after confirmed transactions.\n- Maps common chain names to their respective chain IDs for user convenience."
+  },
+  "owner": {
+    "handle": "fabriziogianni7",
+    "displayName": "fabriziogianni7",
+    "image": "https://avatars.githubusercontent.com/u/46995085?v=4"
+  }
+}

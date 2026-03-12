@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "defillama-api",
+    "displayName": "DefiLlama API",
+    "summary": "使用 DefiLlama API/SDK 获取 TVL、stablecoins、coins 价格、yields、volumes、fees、perps、unlocks、bridges、ETFs、narratives、token liquidity、main page、DAT、meta 等数据的 CLI 技能；当需要...",
+    "tags": {
+      "latest": "k972rrrft4a9xmn7405w2wgfex81xn1q"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 252,
+      "installsAllTime": 1,
+      "installsCurrent": 1,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772087828694,
+    "updatedAt": 1772089024526
+  },
+  "latestVersion": {
+    "version": "0.1.0",
+    "createdAt": 1772087828694,
+    "changelog": "Initial release: DefiLlama API CLI skill\n\n- Provides CLI access to DefiLlama data: TVL, stablecoins, coins prices, yields, volumes, fees, perps, unlocks, bridges, ETFs, narratives, token liquidity, meta, and DAT.\n- Must use run.py to invoke; direct execution of scripts is prohibited.\n- Supports both public and Pro API endpoints (Pro endpoints require DEFILLAMA_API_KEY).\n- Includes detailed CLI usage examples for each supported data category.\n- Lists common error messages and troubleshooting tips."
+  },
+  "owner": {
+    "handle": "poploli2",
+    "displayName": "lewis",
+    "image": "https://avatars.githubusercontent.com/u/133581727?v=4"
+  }
+}

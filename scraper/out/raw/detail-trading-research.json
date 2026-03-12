@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "trading-research",
+    "displayName": "Trading Research",
+    "summary": "Binance cryptocurrency trading research, technical analysis, and position management. Triggers on requests for crypto prices, market data, trading analysis, DCA planning, position sizing, whale activity, or any trading research questions about Bitcoin, altcoins, or crypto markets.",
+    "tags": {
+      "latest": "k97eqwvf31se59vc5vtng99bjh80jv4p"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 2793,
+      "installsAllTime": 11,
+      "installsCurrent": 11,
+      "stars": 2,
+      "versions": 1
+    },
+    "createdAt": 1770296676331,
+    "updatedAt": 1772077271300
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1770296676331,
+    "changelog": "Initial release: Binance market data, technical analysis, DCA calculator, position sizer, market scanner, whale tracker"
+  },
+  "owner": {
+    "handle": "fpsjago",
+    "displayName": "fpsjago",
+    "image": "https://avatars.githubusercontent.com/u/105124565?v=4"
+  }
+}

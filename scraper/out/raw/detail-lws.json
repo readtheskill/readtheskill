@@ -1,0 +1,30 @@
+{
+  "skill": {
+    "slug": "lws",
+    "displayName": "Local Wallet Standard",
+    "summary": "Lightweight Wallet Signer CLI — generate wallets, derive addresses, and sign messages across EVM, Solana, Bitcoin, Cosmos, and Tron chains.",
+    "tags": {
+      "latest": "k975w3smxp143vpyg25tsfm5fd821tkh"
+    },
+    "stats": {
+      "comments": 0,
+      "downloads": 129,
+      "installsAllTime": 0,
+      "installsCurrent": 0,
+      "stars": 0,
+      "versions": 1
+    },
+    "createdAt": 1772250780928,
+    "updatedAt": 1773205458740
+  },
+  "latestVersion": {
+    "version": "1.0.0",
+    "createdAt": 1772250780928,
+    "changelog": "Initial release of lws: Lightweight Wallet Signer CLI.\n\n- Generate BIP-39 mnemonics, derive addresses, and sign messages for EVM, Solana, Bitcoin, Cosmos, and Tron chains.\n- Minimal, offline-first CLI.\n- Wallet management: create, list, and store wallets locally.\n- Easy installation script and update/uninstall commands included.\n- Works on macOS and Linux; requires git and Rust."
+  },
+  "owner": {
+    "handle": "njdawn",
+    "displayName": "njdawn",
+    "image": "https://avatars.githubusercontent.com/u/198129386?v=4"
+  }
+}
