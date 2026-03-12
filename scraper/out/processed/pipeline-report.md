@@ -1,71 +1,91 @@
 # ClawHub Ingestion Pipeline Report
 
-Generated: 2026-03-11T19:30:21.034Z
+Generated: 2026-03-12T19:29:26.039Z
 
 ## Summary
 
 | Metric | Count |
 |--------|-------|
-| Discovered slugs | 200 |
+| Discovered slugs | 3187 |
 | Resolved SKILL.md URLs | 0 |
 | Valid content | 0 |
-| Categorized | 200 |
-| **New skills** | 199 |
-| **Enrichments** | 0 |
-| Skipped (duplicates) | 1 |
+| Categorized | 3184 |
+| **New skills** | 2972 |
+| **Enrichments** | 10 |
+| Skipped (duplicates) | 202 |
 
 ## By Category
 
 | Category | Count |
 |----------|-------|
-| wallets | 45 |
-| nfts | 37 |
-| trading | 30 |
-| defi | 30 |
-| coding | 17 |
-| infrastructure | 10 |
-| prediction | 5 |
-| data | 5 |
-| bridges | 4 |
-| social | 3 |
-| design | 3 |
-| research | 3 |
-| endpoints | 2 |
-| experimental | 2 |
-| productivity | 2 |
-| communication | 1 |
-| legal | 1 |
+| coding | 493 |
+| automation | 369 |
+| productivity | 309 |
+| social | 292 |
+| design | 275 |
+| data | 236 |
+| research | 203 |
+| trading | 191 |
+| experimental | 123 |
+| communication | 98 |
+| marketing | 98 |
+| wallets | 97 |
+| infrastructure | 95 |
+| defi | 94 |
+| endpoints | 37 |
+| prediction | 36 |
+| bridges | 32 |
+| oracles | 31 |
+| legal | 26 |
+| nfts | 25 |
+| finance | 14 |
+| hr | 10 |
 
 ## By Tier
 
 | Tier | Count |
 |------|-------|
-| indexed | 200 |
+| indexed | 3184 |
 
 ## Sample New Skills (first 20)
 
 | Slug | Name | Category | Tier |
 |------|------|----------|------|
-| solana | Solana | nfts | indexed |
-| solana-transfer | Solana Transfer | nfts | indexed |
-| solana-basics | solana-skill | trading | indexed |
-| solana-swaps | Solana Swaps | trading | indexed |
-| solana-skills | Solana | wallets | indexed |
-| solana-easy-swap | Solana Easy Swap | trading | indexed |
-| solana-sniper-bot | Solana Sniper Bot | trading | indexed |
-| solana-payments-wallets-trading | Solana CLI for trading, prediction markets, defi and x402 payments | trading | indexed |
-| solana-funding-arb | Solana Funding Rate Arbitrage | trading | indexed |
-| solana-dev | Solana Dev | coding | indexed |
-| solana-funding-arb-cn | Solana Funding Arb Cn | trading | indexed |
-| solana-copy-trader | Solana Copy Trader | trading | indexed |
-| solana-wallet | Solana + Polymarket + X Wallet Agent | wallets | indexed |
-| colony-solana | Colony Solana | trading | indexed |
-| gank-solana-bundler | solana-bundler-sniper-volume-bot | wallets | indexed |
-| solana-trade | Solana Trade | trading | indexed |
-| solana-payments-wallet-dev | solana-payments-wallet-dev | wallets | indexed |
-| solana-compression-dev | solana-compression-dev | coding | indexed |
-| solana-token-distribution | solana-token-distribution | defi | indexed |
-| solana-market | Solana Market | prediction | indexed |
+| crypto-agent-payments | Crypto Wallets & Payments for AI Agents | wallets | indexed |
+| warden-app | Warden App | wallets | indexed |
+| nexwave-gateway | Nexwave Gateway | wallets | indexed |
+| clawmegle-staking | clawmegle staking | defi | indexed |
+| pocket-money | pocket-money | wallets | indexed |
+| fund | Fund | wallets | indexed |
+| paygents | PayGents | wallets | indexed |
+| amazon-checkout | CreditClaw Amazon | Order & Checkout at Amazon.com securely | wallets | indexed |
+| clankerkit | ClankerKit | wallets | indexed |
+| senddy | Senddy | wallets | indexed |
+| pet-operator | Pet Operator | wallets | indexed |
+| polymarket-proxy-trader | Polymarket Proxy Trader | wallets | indexed |
+| bsc-dev-monitor-v2 | Bsc Dev Monitor Skill | wallets | indexed |
+| token-approval-checker | Token Approval Checker | wallets | indexed |
+| whale-shark | Whale Shark | wallets | indexed |
+| orderly-sdk-trading-workflows | Orderly Sdk Trading Workflows | trading | indexed |
+| trading | Trading | trading | indexed |
+| trading-coach | Trading Coach | trading | indexed |
+| day-trading-skill | Day Trading Investor Pro | trading | indexed |
+| hyperliquid-trading | Hyperliquid Trading & Analysis | trading | indexed |
+
+## Sample Enrichments (first 10)
+
+| Existing Slug | New Data From | Reason |
+|---------------|---------------|--------|
+| solana-easy-swap | solana-easy-swap | New entry richer: 6.0 vs 3.4 |
+| ethereum-wingman | ethereum-wingman | New entry richer: 6.0 vs 3.8 |
+| zapper | zapper | New entry richer: 6.0 vs 3.5 |
+| safe-multisig | safe-multisig | New entry richer: 5.0 vs 0.0 |
+| safe-multisig-skill | safe-multisig-skill | New entry richer: 5.0 vs 0.0 |
+| nft-tracker | nft-tracker | New entry richer: 5.5 vs 3.3 |
+| gizmolab-tools | gizmolab-tools | New entry richer: 6.0 vs 1.1 |
+| wallet-pnl | wallet-pnl | New entry richer: 4.6 vs 2.3 |
+| dexscreener | dexscreener | New entry richer: 5.2 vs 3.0 |
+| clanker | clanker | New entry richer: 5.8 vs 3.4 |
 
 ## Output Files
 

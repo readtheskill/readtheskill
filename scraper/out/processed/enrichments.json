@@ -1,0 +1,229 @@
+[
+  {
+    "existing_slug": "solana-easy-swap",
+    "updates": {
+      "subcategory": "dex-integration",
+      "tags": [
+        "crypto",
+        "defi",
+        "jupiter",
+        "solana",
+        "swap",
+        "trading",
+        "any",
+        "token",
+        "sol",
+        "usdc"
+      ]
+    },
+    "source_record": {
+      "slug": "solana-easy-swap",
+      "clawhub_url": "https://clawhub.ai/skill/solana-easy-swap"
+    },
+    "reason": "New entry richer: 6.0 vs 3.4"
+  },
+  {
+    "existing_slug": "ethereum-wingman",
+    "updates": {
+      "subcategory": "testing",
+      "tags": [
+        "ethereum",
+        "development",
+        "wingman",
+        "tutor",
+        "builder",
+        "scaffold-eth",
+        "projects",
+        "triggers",
+        "build",
+        "create"
+      ]
+    },
+    "source_record": {
+      "slug": "ethereum-wingman",
+      "clawhub_url": "https://clawhub.ai/skill/ethereum-wingman"
+    },
+    "reason": "New entry richer: 6.0 vs 3.8"
+  },
+  {
+    "existing_slug": "zapper",
+    "updates": {
+      "subcategory": "transfers",
+      "tags": [
+        "zapper",
+        "defi",
+        "api",
+        "query",
+        "portfolio",
+        "data",
+        "across",
+        "chains",
+        "via",
+        "graphql"
+      ]
+    },
+    "source_record": {
+      "slug": "zapper",
+      "clawhub_url": "https://clawhub.ai/skill/zapper"
+    },
+    "reason": "New entry richer: 6.0 vs 3.5"
+  },
+  {
+    "existing_slug": "safe-multisig",
+    "updates": {
+      "tags": [
+        "safe",
+        "multisig",
+        "propose",
+        "execute",
+        "nonce",
+        "skill",
+        "confirm",
+        "transactions",
+        "using",
+        "core"
+      ]
+    },
+    "source_record": {
+      "slug": "safe-multisig",
+      "clawhub_url": "https://clawhub.ai/skill/safe-multisig"
+    },
+    "reason": "New entry richer: 5.0 vs 0.0"
+  },
+  {
+    "existing_slug": "safe-multisig-skill",
+    "updates": {
+      "tags": [
+        "safe",
+        "multisig",
+        "propose",
+        "execute",
+        "nonce",
+        "skill",
+        "confirm",
+        "transactions",
+        "using",
+        "core"
+      ]
+    },
+    "source_record": {
+      "slug": "safe-multisig-skill",
+      "clawhub_url": "https://clawhub.ai/skill/safe-multisig-skill"
+    },
+    "reason": "New entry richer: 5.0 vs 0.0"
+  },
+  {
+    "existing_slug": "nft-tracker",
+    "updates": {
+      "subcategory": "collections",
+      "tags": [
+        "nft",
+        "tracker",
+        "track",
+        "ethereum",
+        "collections",
+        "floor",
+        "prices",
+        "volumes",
+        "owners",
+        "recent"
+      ]
+    },
+    "source_record": {
+      "slug": "nft-tracker",
+      "clawhub_url": "https://clawhub.ai/skill/nft-tracker"
+    },
+    "reason": "New entry richer: 5.5 vs 3.3"
+  },
+  {
+    "existing_slug": "gizmolab-tools",
+    "updates": {
+      "subcategory": "solana-development",
+      "tags": [
+        "tools",
+        "gizmolab",
+        "token",
+        "include",
+        "nft",
+        "use",
+        "blockchain",
+        "web3",
+        "components",
+        "mint"
+      ]
+    },
+    "source_record": {
+      "slug": "gizmolab-tools",
+      "clawhub_url": "https://clawhub.ai/skill/gizmolab-tools"
+    },
+    "reason": "New entry richer: 6.0 vs 1.1"
+  },
+  {
+    "existing_slug": "wallet-pnl",
+    "updates": {
+      "tags": [
+        "copy-trade",
+        "crypto",
+        "defi",
+        "pnl",
+        "smart-money",
+        "solana",
+        "trading",
+        "wallet-analysis",
+        "win-rate",
+        "wallet"
+      ]
+    },
+    "source_record": {
+      "slug": "wallet-pnl",
+      "clawhub_url": "https://clawhub.ai/skill/wallet-pnl"
+    },
+    "reason": "New entry richer: 4.6 vs 2.3"
+  },
+  {
+    "existing_slug": "dexscreener",
+    "updates": {
+      "subcategory": "dex-integration",
+      "tags": [
+        "dexscreener",
+        "api",
+        "query",
+        "market",
+        "data",
+        "search",
+        "pairs",
+        "inspect",
+        "liquidity",
+        "volume"
+      ]
+    },
+    "source_record": {
+      "slug": "dexscreener",
+      "clawhub_url": "https://clawhub.ai/skill/dexscreener"
+    },
+    "reason": "New entry richer: 5.2 vs 3.0"
+  },
+  {
+    "existing_slug": "clanker",
+    "updates": {
+      "subcategory": "dex-integration",
+      "tags": [
+        "clanker",
+        "tokens",
+        "base",
+        "deploy",
+        "erc20",
+        "using",
+        "sdk",
+        "create",
+        "built-in",
+        "uniswap"
+      ]
+    },
+    "source_record": {
+      "slug": "clanker",
+      "clawhub_url": "https://clawhub.ai/skill/clanker"
+    },
+    "reason": "New entry richer: 5.8 vs 3.4"
+  }
+]
