@@ -598,6 +598,18 @@ MCP server providing 35+ tools for Aster DEX spot and futures trading.
         tags: ["binance", "spot", "signals", "meme", "audit"],
     },
     {
+        slug: "bybit-trading",
+        name: "Bybit AI Trading",
+        category: "trading",
+        description:
+            "Trade on Bybit using natural language. Spot, derivatives, earn products, and account management. Works with Claude, ChatGPT, OpenClaw, Cursor, and any AI assistant.",
+        source_url: "https://github.com/bybit-exchange/skills",
+        skill_url: "https://raw.githubusercontent.com/bybit-exchange/skills/main/SKILL.md",
+        verified: true,
+        framework: "AgentSkills",
+        tags: ["bybit", "trading", "spot", "derivatives", "perpetuals", "earn"],
+    },
+    {
         slug: "opensea-cli",
         name: "OpenSea CLI & SDK",
         category: "trading",
