@@ -13,6 +13,7 @@ import {
 import { SkillCTA } from "@/components/directory/SkillCTA";
 import { CategoryIcon } from "@/components/directory/CategoryIcon";
 import { normalizeFrameworkLabel } from "@/lib/framework-labels";
+import { getSecurityScore, getSecurityBadgeColor, getSecurityBadgeEmoji } from "@/lib/security-scores";
 import fs from "fs";
 import path from "path";
 
@@ -272,6 +273,11 @@ export default async function SkillDetailPage({
     const source = skill.source ?? inferSourceFromUrl(skill.source_url);
     const subcategory = inferSubcategory(skill);
 
+    // Get security score
+    const securityData = getSecurityScore(skill.slug);
+    const securityScore = skill.security_score ?? securityData?.score;
+    const securityBadge = skill.security_badge ?? securityData?.badge;
+
     return (
         <main className="min-h-screen bg-[#0a0a0a] text-text-primary">
             <div className="max-w-3xl mx-auto px-4 py-10">
@@ -304,7 +310,16 @@ export default async function SkillDetailPage({
                         </span>
                     </div>
                     <p className="text-sm text-text-secondary">{skill.description}</p>
-                    <div className="flex items-center gap-3 mt-3 text-xs">
+                    <div className="flex items-center gap-3 mt-3 text-xs flex-wrap">
+                        {securityBadge && (
+                            <span
+                                className={`px-2 py-0.5 rounded border font-mono flex items-center gap-1 ${getSecurityBadgeColor(securityBadge)}`}
+                                title={`Security Score: ${securityScore ?? "N/A"}/100`}
+                            >
+                                {getSecurityBadgeEmoji(securityBadge)} {securityBadge}
+                                {securityScore !== undefined && ` (${securityScore})`}
+                            </span>
+                        )}
                         <span className="text-text-muted font-mono">{kind}</span>
                         <span className="text-text-muted font-mono flex items-center gap-1.5">
                             <CategoryIcon category={category as Category} size={14} />

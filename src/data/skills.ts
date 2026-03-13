@@ -27,6 +27,8 @@ export interface Skill {
     framework: string;
     tags: string[];
     body?: string;
+    security_score?: number;
+    security_badge?: "pass" | "warn" | "review" | "fail";
 }
 
 export type Category =
