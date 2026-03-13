@@ -1454,16 +1454,16 @@ npm install @goat-sdk/plugin-ironclad
         tags: ["multi-chain", "charts", "dex", "pairs", "analytics"],
     },
     {
-        slug: "dune-analytics",
-        name: "Dune CLI & Skills",
+        slug: "dune-cli",
+        name: "Dune CLI & Agent Skills",
         category: "data",
         description:
-            "Query blockchain data via DuneSQL directly from your AI agent. CLI for dataset discovery, query execution, and credit management. Works with Claude Code, Cursor, Codex, and any skills-compatible agent.",
+            "Official Dune skill for AI agents. Query 100+ blockchains via DuneSQL, discover decoded contract tables, search datasets with column schemas, manage saved queries with parameters, and monitor credit usage. Includes reference docs for query execution, dataset discovery, DuneSQL cheatsheet, and error recovery.",
         source_url: "https://github.com/duneanalytics/skills",
         skill_url: "https://raw.githubusercontent.com/duneanalytics/skills/main/skills/dune/SKILL.md",
         verified: true,
         framework: "AgentSkills",
-        tags: ["blockchain", "sql", "analytics", "on-chain-data", "defi", "nft", "ethereum"],
+        tags: ["blockchain", "dunesql", "analytics", "on-chain-data", "ethereum", "decoded-contracts", "dataset-search"],
     },
     {
         slug: "fear-greed-index",
