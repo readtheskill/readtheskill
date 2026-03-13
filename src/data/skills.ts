@@ -1455,13 +1455,15 @@ npm install @goat-sdk/plugin-ironclad
     },
     {
         slug: "dune-analytics",
-        name: "Dune Analytics",
+        name: "Dune CLI & Skills",
         category: "data",
         description:
-            "On-chain data queries across 100+ blockchains. REST API, Python/TypeScript SDKs, and MCP server for AI agents.",
-        source_url: "https://github.com/duneanalytics",
-        framework: "MCP / OpenClaw",
-        tags: ["multi-chain", "sql", "analytics", "on-chain-data"],
+            "Query blockchain data via DuneSQL directly from your AI agent. CLI for dataset discovery, query execution, and credit management. Works with Claude Code, Cursor, Codex, and any skills-compatible agent.",
+        source_url: "https://github.com/duneanalytics/skills",
+        skill_url: "https://raw.githubusercontent.com/duneanalytics/skills/main/skills/dune/SKILL.md",
+        verified: true,
+        framework: "AgentSkills",
+        tags: ["blockchain", "sql", "analytics", "on-chain-data", "defi", "nft", "ethereum"],
     },
     {
         slug: "fear-greed-index",
