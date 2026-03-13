@@ -716,6 +716,19 @@ MCP server providing 35+ tools for Aster DEX spot and futures trading.
         tags: ["bybit", "trading", "spot", "derivatives", "perpetuals", "earn"],
     },
     {
+        slug: "unusual-whales",
+        name: "Unusual Whales API",
+        category: "trading",
+        description:
+            "Query unusual options flow, dark pool prints, market tide sentiment, spot gamma exposure (GEX), insider/politician trades, financial statements, and technical indicators. Anti-hallucination protocol with strict endpoint validation.",
+        source: "official",
+        source_url: "https://unusualwhales.com/public-api/mcp",
+        skill_url: "https://unusualwhales.com/skill.md",
+        verified: true,
+        framework: "MCP / AgentSkills",
+        tags: ["options", "flow", "dark-pool", "gamma", "gex", "sentiment", "insider-trading", "technicals"],
+    },
+    {
         slug: "opensea-cli",
         name: "OpenSea CLI & SDK",
         category: "trading",
